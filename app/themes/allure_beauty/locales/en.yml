@@ -1,5 +1,7 @@
 en:
   allure_beauty:
     welcome: 'Welcome'
+    global:
+      copyright:              "Copyright © %{year}. All Rights Reserved"
     links:
       home: 'Home'
