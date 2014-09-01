@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ listing.name }}</title>
+  {{ 'all.js' | asset_path | script_tag }}
+  {{ 'all.css' | asset_path | stylesheet_tag }}
+</head>
+<body>
+{% include "shared/header" %}
+{{ content_for_layout }}
+{% include "shared/footer" %}
+</body>
+</html>
