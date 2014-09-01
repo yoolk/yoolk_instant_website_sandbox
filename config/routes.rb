@@ -1,7 +1,4 @@
 YoolkInstantWebsiteSandbox::Application.routes.draw do
-  match '(*any)' => redirect { |params, request|
-    URI.parse(request.url).tap { |uri| uri.host.sub!(/^www\./i, '') }.to_s
-  }, constraints: { host: /^www\./i }, via: [:get]
 
   root "home#index"
   get  "send_mail"          => "contact_us#send_mail"
@@ -9,9 +6,6 @@ YoolkInstantWebsiteSandbox::Application.routes.draw do
   get  "send_reservation"   => "reservation#send_reservation"
   get  "send_mail"          => "mailer#send_email"
   post "contact"            => "home#contact"
-
-  devise_for  :accounts, class_name: "Yoolk::Account",
-              path: "office", skip: [:confirmations, :passwords]
 
   resources :about_us,      :only => [:index]
   resources :contact_us,    :only => [:index,:create]
