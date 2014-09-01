@@ -1,0 +1,207 @@
+{
+  "id" : 1,
+  "alias_id" : "kh1",
+  "name" : "Yellow Tower",
+  "address" : "No. 191, Tonle Sap (Rd.), Village 1, Sangkat Chroy Changva, 12110 Phnom Penh",
+  "lat" : 11.574302136424594,
+  "long" : 104.93494145572186,
+  "zoom_level" : 16,
+  "is_active" : true,
+  "created_at" : "2014-08-13 08:59:54 UTC",
+  "updated_at" : "2014-08-13 08:59:54 UTC",
+  "business_type" : {
+    "id" : 1,
+    "name" : "Business Listing",
+    "display_order" : 1
+  },
+  "country" : {
+    "id" : 1,
+    "name" : "Cambodia"
+  },
+  "location" : {
+    "id" : 1,
+    "alias_id" : "kh1",
+    "name" : "Phnom Penh",
+    "priority" : 1
+  },
+  "portal" : {
+    "id" : 1,
+    "domain_name" : "yellowpages-cambodia.dev",
+    "abbreviation" : "kh",
+    "created_at" : "2014-08-13 08:59:54 UTC",
+    "updated_at" : "2014-08-13 08:59:54 UTC",
+    "language" : {
+      "id" : 1,
+      "name" : "English",
+      "two_code" : "en"
+    }
+  },
+  "keyphrases" : [
+    {
+      "id" : 1,
+      "text" : "Shopping Centres",
+      "position" : 1,
+      "created_at" : "2014-08-13 08:59:54 UTC",
+      "updated_at" : "2014-08-13 08:59:54 UTC"
+    },
+    {
+      "id" : 2,
+      "text" : "Oil Filters",
+      "position" : 2,
+      "created_at" : "2014-08-13 08:59:54 UTC",
+      "updated_at" : "2014-08-13 08:59:54 UTC"
+    },
+    {
+      "id" : 3,
+      "text" : "Range Rover",
+      "position" : 3,
+      "created_at" : "2014-08-13 08:59:54 UTC",
+      "updated_at" : "2014-08-13 08:59:54 UTC"
+    },
+    {
+      "id" : 4,
+      "text" : "Car",
+      "position" : 4,
+      "created_at" : "2014-08-13 08:59:54 UTC",
+      "updated_at" : "2014-08-13 08:59:54 UTC"
+    },
+    {
+      "id" : 5,
+      "text" : "Automobile",
+      "position" : 5,
+      "created_at" : "2014-08-13 08:59:54 UTC",
+      "updated_at" : "2014-08-13 08:59:54 UTC"
+    },
+    {
+      "id" : 6,
+      "text" : "Vehicle Service",
+      "position" : 6,
+      "created_at" : "2014-08-13 08:59:54 UTC",
+      "updated_at" : "2014-08-13 08:59:54 UTC"
+    },
+    {
+      "id" : 7,
+      "text" : "Generators Leasing",
+      "position" : 7,
+      "created_at" : "2014-08-13 08:59:54 UTC",
+      "updated_at" : "2014-08-13 08:59:54 UTC"
+    },
+    {
+      "id" : 8,
+      "text" : "Generator Service",
+      "position" : 8,
+      "created_at" : "2014-08-13 08:59:54 UTC",
+      "updated_at" : "2014-08-13 08:59:54 UTC"
+    }
+  ],
+  "business_photos" : [
+    {
+      "id" : 1,
+      "name" : "Open Space",
+      "embed_script" : "<iframe height='450' frameborder='0' width='630' scrolling='no' src='https://maps.google.com/maps?q=&amp;layer=c&amp;sll=33.533085,-117.776074&amp;cid=4215633868679829652&amp;panoid=Ecx4lyIFvPT6cIjaiKvgdA&amp;cbp=13,137.23,,0,2.94&amp;gl=US&amp;hl=en&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=33.533085,-117.776074&amp;spn=0.006295,0.006295&amp;t=m&amp;cbll=33.533213,-117.776073&amp;source=embed&amp;output=svembed' marginwidth='0' marginheight='0'></iframe>",
+      "created_at" : "2014-08-13 08:59:54 UTC",
+      "updated_at" : "2014-08-13 08:59:54 UTC"
+    }
+  ],
+  "communications" : [
+    {
+      "id" : 1,
+      "label" : "Mobile Phone",
+      "type" : "Mobile Phone",
+      "value" : "010 559 239",
+      "is_first_line" : true,
+      "created_at" : "2014-08-13 08:59:54 UTC",
+      "updated_at" : "2014-08-13 08:59:54 UTC"
+    },
+    {
+      "id" : 2,
+      "label" : "E-Mail",
+      "type" : "E-Mail",
+      "value" : "chamnap@yoolk.com",
+      "created_at" : "2014-08-13 08:59:54 UTC",
+      "updated_at" : "2014-08-13 08:59:54 UTC"
+    }
+  ],
+  "extra_communications" : [
+    {
+      "id" : 1,
+      "type" : "Address",
+      "label" : "Address",
+      "value" : "#468E0, St. 128, Khan 7 Makara, Sangkat Mittapheap, Phnom Penh",
+      "created_at" : "2014-08-13 08:59:54 UTC",
+      "updated_at" : "2014-08-13 08:59:54 UTC"
+    },
+    {
+      "id" : 2,
+      "type" : "Branch Office",
+      "label" : "BRANCH OFFICE",
+      "value" : "Yellow Tower - Siem Reap",
+      "created_at" : "2014-08-13 08:59:54 UTC",
+      "updated_at" : "2014-08-13 08:59:54 UTC"
+    },
+    {
+      "id" : 3,
+      "type" : "Department",
+      "label" : "Department",
+      "value" : "",
+      "created_at" : "2014-08-13 08:59:54 UTC",
+      "updated_at" : "2014-08-13 08:59:54 UTC"
+    },
+    {
+      "id" : 4,
+      "type" : "Department",
+      "label" : "Department",
+      "value" : "R & D",
+      "created_at" : "2014-08-13 08:59:54 UTC",
+      "updated_at" : "2014-08-13 08:59:54 UTC"
+    },
+    {
+      "id" : 5,
+      "type" : "E-mail",
+      "label" : "E-Mail",
+      "value" : "radin@yoolk.com",
+      "created_at" : "2014-08-13 08:59:54 UTC",
+      "updated_at" : "2014-08-13 08:59:54 UTC"
+    },
+    {
+      "id" : 6,
+      "label" : "Mobile Phone (Amanda Kong)",
+      "type" : "Mobile Phone",
+      "value" : "016-210 3559",
+      "created_at" : "2014-08-13 08:59:54 UTC",
+      "updated_at" : "2014-08-13 08:59:54 UTC"
+    },
+    {
+      "id" : 7,
+      "label" : "Mobile Phone (L.H Chua)",
+      "type" : "Mobile Phone",
+      "value" : "016-208 4015",
+      "created_at" : "2014-08-13 08:59:54 UTC",
+      "updated_at" : "2014-08-13 08:59:54 UTC"
+    },
+    {
+      "id" : 8,
+      "label" : "Mobile Phone (Angeline Ang)",
+      "type" : "Mobile Phone",
+      "value" : "016-208 3915",
+      "created_at" : "2014-08-13 08:59:54 UTC",
+      "updated_at" : "2014-08-13 08:59:54 UTC"
+    },
+    {
+      "id" : 9,
+      "label" : "Facebook",
+      "type" : "Facebook",
+      "value" : "http://www.facebook.com/pages/Ladder-technology-industrial-sdn-bhd-03-3325-9415/508871785815117?sk=app_442217585812642",
+      "created_at" : "2014-08-13 08:59:54 UTC",
+      "updated_at" : "2014-08-13 08:59:54 UTC"
+    },
+    {
+      "id" : 10,
+      "label" : "Twitter",
+      "type" : "Twitter",
+      "value" : "http://www.twitter.com/chamnap",
+      "created_at" : "2014-08-13 08:59:54 UTC",
+      "updated_at" : "2014-08-13 08:59:54 UTC"
+    }
+  ]
+}
