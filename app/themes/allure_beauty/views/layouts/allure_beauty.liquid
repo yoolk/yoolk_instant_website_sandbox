@@ -6,8 +6,10 @@
   {{ 'all.css' | asset_path | stylesheet_tag }}
 </head>
 <body>
-  {% include "shared/header" %}
-  {{ content_for_layout }}
+  <div class="container">
+    {% include "shared/header" %}
+    {{ content_for_layout }}
+  </div>
   {% include "shared/footer" %}
 </body>
 </html>

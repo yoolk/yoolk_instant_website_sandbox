@@ -1,10 +1,12 @@
 <header>
-  {{ "logo.jpeg" | asset_path | image_tag: "yellow tower" }}
-  <ul>
+  <div class="logo">
+    {{ "logo.jpeg" | asset_path | image_tag: "yellow tower": "some" }}
+  </div>
+  <ul class="nav">
     <li>{{ 'home' | link_to_home }}</li>
-    <li>{{ 'service' | link_to_services }}</li>
+    <li>{{ 'services' | link_to_services }}</li>
     <li>{{ 'galleries' | link_to_galleries }}</li>
-    <li>{{ 'announcement' | link_to_announcements }}</li>
+    <li>{{ 'announcements' | link_to_announcements }}</li>
     <li>{{ 'people' | link_to_people }}</li>
     <li>{{ 'about us' | link_to_about_us }}</li>
     <li>{{ 'contact us' | link_to_contact_us }}</li>

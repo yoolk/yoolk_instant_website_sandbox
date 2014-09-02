@@ -1,23 +1,28 @@
 <footer>
-  <section class="main-menu">
-    <ul>
-      <li>home</li>
-      <li>service</li>
-      <li>gallery</li>
-      <li>about us</li>
-      <li>contact us</li>
-    </ul>
-  </section>
-  <section class="contact-us">
-    <p>{{ listing.address }}</p>
-  </section>
-  <section class="share">
-    <ul>
-      <li><a href="#">Facebook</a></li>
-      <li><a href="#">Google+</a></li>
-      <li><a href="#">Twitter</a></li>
-      <li><a href="#">LinkIn</a></li>
-    </ul>
-  </section>
-  <p><a href="#">{{ "global.copyright" | translate }}</a></p>
+  <div class="container">
+    <section class="main-menu footer-section">
+      <h2>main menu</h2>
+      <ul>
+        <li>home</li>
+        <li>service</li>
+        <li>gallery</li>
+        <li>about us</li>
+        <li>contact us</li>
+      </ul>
+    </section>
+    <section class="contact-us footer-section">
+      <h2>contact us</h2>
+      <p>{{ listing.address }}</p>
+    </section>
+    <section class="share footer-section">
+      <h2>share</h2>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Google+</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">LinkIn</a></li>
+      </ul>
+    </section>
+    <p><a href="#">{{ "global.copyright" | translate }}</a></p>
+  </div>
 </footer>

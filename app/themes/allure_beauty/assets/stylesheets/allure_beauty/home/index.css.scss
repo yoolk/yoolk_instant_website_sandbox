@@ -1,3 +1,50 @@
-body {
-
+.container {
+  width: 1170px;
+  margin: 0 auto;
 }
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.logo,
+.nav {
+  display: inline-block;
+}
+.logo {
+  width: 150px;
+}
+.nav {
+  width: 1016px;
+  text-align: right;
+  float: right;
+}
+.nav li {
+  display: inline-block;
+}
+header, footer {
+  background: #fbfbfb;
+}
+
+.footer-section {
+  display: inline-block;
+  width: 370px;
+  float: left;
+  margin: 0 15px;
+  h2 {
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+  & + p {
+    clear: both;
+    text-align: center;
+  }
+}
+
+
+.share {
+    margin-right: 0;
+  }
