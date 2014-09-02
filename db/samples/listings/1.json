@@ -267,5 +267,41 @@
   "galleries": [
   ],
   "announcements": [
-  ]
+  ],
+  "instant_website": {
+    "cover_photos": [
+      {
+        "caption": "some",
+        "image": {
+          "attachment_meta": {
+            "original": {
+              "width": 558,
+              "height": 372,
+              "url": "1.jpg"
+            },
+            "large": {
+              "width": 994,
+              "height": 368,
+              "url": "cover.png"
+            },
+            "medium": {
+              "width": 364,
+              "height": 243,
+              "url": "/samples/images/products/medium/1.png"
+            },
+            "small": {
+              "width": 196,
+              "height": 131,
+              "url": "/samples/images/products/small/1.png"
+            },
+            "thumbnail": {
+              "width": 60,
+              "height": 40,
+              "url": "/samples/images/products/thumbnail/1.png"
+            }
+          }
+        }
+      }
+    ]
+  }
 }

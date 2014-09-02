@@ -46,5 +46,19 @@ header, footer {
 
 
 .share {
-    margin-right: 0;
-  }
+  margin-right: 0;
+}
+
+.cover-photo {
+  position: relative;
+}
+.summary-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.summary {
+  margin: 0 15px;
+  width: 200px;
+  height: 70px;
+}
