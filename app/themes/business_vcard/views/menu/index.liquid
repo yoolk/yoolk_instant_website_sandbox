@@ -1,0 +1,39 @@
+{% for category in listing.food_categories %}
+  {% for food in category.foods %}
+    <div class="catalog">
+      <a href="/foods/kh12806-office-rental-foods/59-ground-floor">
+        <h2 class="catalog-title">{{ food.name }}</h2>
+      </a>
+      <div class="catalog-image">
+        {% if food.photos.first != blank %}
+          <a href="#" class="cboxElement">
+            {{ food.photos.first.attachment_meta.large.url | asset_path | image_tag }}
+          </a>
+        {% endif %}
+      </div>
+      <ol class="catalog-thumbnails">
+        {% for photo in food.photos %}
+          {% if photo != blank %}
+            <li class="catalog-thumbnails-image" data-photo-url="#">
+              <a class="active" href="" rel="" title="" >
+                {{ photo.attachment_meta.thumbnail.url | asset_path | image_tag }}
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ol>
+      <div class="catalog-info">
+        <ul class="catalog-info-specifications">
+          {% for property_hash in food.properties %}
+            {% for property in property_hash %}
+              <li class="clearfix food-list">
+                <span class="ellipsis">{{ property[0] }}</span>
+                <span class="ellipsis">{{ property[1] }}</span>
+              </li>
+            {% endfor %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% endfor %}
+{% endfor %}

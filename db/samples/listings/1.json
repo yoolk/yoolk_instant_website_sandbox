@@ -577,5 +577,62 @@
         }
       ]
     }
+  ],
+  "food_categories": [
+    {
+      "id": 40,
+      "name": "Ice-cream",
+      "foods": [
+        {
+          "id": 137,
+          "name": "Florida Strawberry Ice Cream",
+          "description": "&lt;div&gt;show me something&lt;/div&gt;<br><blockquote><blockquote>and a host of new technologies, </blockquote></blockquote>",
+          "delivery": false,
+          "created_at": "2014-08-13 08:59:54 UTC",
+          "updated_at": "2014-08-13 08:59:54 UTC",
+          "properties": [
+            {
+              "Type": "Ice Cream"
+            },
+            {
+              "Flavor": "Strawberry"
+            }
+          ],
+          "photos": [
+            {
+              "id": 189,
+              "content_type": "image/jpeg",
+              "attachment_meta": {
+                "original": {
+                  "width": 1440,
+                  "height": 956,
+                  "url": "foods/original/410.jpg"
+                },
+                "large": {
+                  "width": 994,
+                  "height": 660,
+                  "url": "foods/large/410.jpg"
+                },
+                "medium": {
+                  "width": 364,
+                  "height": 242,
+                  "url": "foods/medium/410.jpg"
+                },
+                "small": {
+                  "width": 196,
+                  "height": 130,
+                  "url": "foods/small/410.jpg"
+                },
+                "thumbnail": {
+                  "width": 50,
+                  "height": 50,
+                  "url": "foods/thumbnail/410.jpg"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
   ]
 }
