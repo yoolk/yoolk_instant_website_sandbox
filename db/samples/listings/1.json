@@ -267,6 +267,28 @@
   "galleries": [
   ],
   "announcements": [
+    {
+      "id": 1237,
+      "text": "Go to http://www.rubyonrails.org and say hello to david@loudthinking.com Apple has indeed purchased Beats, which includes both Beats Audio hardware and Beats Music, the streaming radio service that was founded by rapper Dr. Dre and longtime music industry exec Jimmy Iovine. The deal was reported to be in the works earlier this month, and was said to be worth an estimated $3.2 billion at the time, though a recent New York Post report said it was cut to $3 billion after Apple completed its due diligence. The price is indeed $3 billion, with $2.6 billion in cash and $400 million in stock.
+  Apple typically makes smaller purchases of startups and companies most people have never heard of, so Beats is a considerable change of course for the company. The last really high-profile acquisition Apple made was NeXT, back when it bought that company to bring Steve Jobs back into the fold.",
+      "created_at": "2014-05-22 16:18:44 UTC",
+      "image": {
+        "id": 225,
+        "content_type": "image/jpg",
+        "attachment_meta": {
+          "large": {
+            "width": 994,
+            "height": 1286,
+            "url": "announcements/large/221891.jpg"
+          },
+          "medium": {
+            "width": 364,
+            "height": 471,
+            "url": "announcements/medium/221891.jpg"
+          }
+        }
+      }
+    }
   ],
   "instant_website": {
     "cover_photos": [
