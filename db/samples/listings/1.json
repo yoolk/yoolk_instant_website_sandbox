@@ -376,5 +376,84 @@
       "display_order": 1,
       "image": null
     }
+  ],
+  "service_categories": [
+    {
+      "category_id": "5402bc4669702d5c8af20100",
+      "services": [
+        {
+          "id": 20,
+          "name": "Rooftop",
+          "description": "&lt;div&gt;show me something&lt;/div&gt;<br><blockquote>and a host of new technologies, </blockquote><b>Special features</b><ul><li>widen space</li><li>Security</li></ul>",
+          "properties": [
+            {
+              "Basin": "9.3 sqm"
+            },
+            {
+              "Rooftop": "94.28 sqm"
+            },
+            {
+              "Stair Area": "7.52 sqm"
+            },
+            {
+              "Total": "111.1 sqm"
+            }
+          ],
+          "photos": [
+            {
+              "id": 1112,
+              "content_type": "image/jpeg",
+              "attachment_meta": {
+                "original": {
+                  "width": 994,
+                  "height": 637,
+                  "url": "/services/original/588.gif"
+                },
+                "large": {
+                  "width": 994,
+                  "height": 637,
+                  "url": "/services/large/588.gif"
+                },
+                "medium": {
+                  "width": 364,
+                  "height": 233,
+                  "url": "/services/medium/588.gif"
+                },
+                "small": {
+                  "width": 196,
+                  "height": 126,
+                  "url": "/services/small/588.gif"
+                },
+                "thumbnail": {
+                  "width": 50,
+                  "height": 50,
+                  "url": "/services/thumbnail/588.gif"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "name": "3rd floor",
+          "description": "&lt;div&gt;show me something&lt;/div&gt;<br><blockquote>and a host of new technologies, </blockquote><b>Special features</b><ul><li>widen space</li><li>Security</li></ul>",
+          "properties": [
+            {
+              "Basin": "9.3 sqm"
+            },
+            {
+              "Rooftop": "94.28 sqm"
+            },
+            {
+              "Stair Area": "7.52 sqm"
+            },
+            {
+              "Total": "111.1 sqm"
+            }
+          ],
+          "photos": []
+        }
+      ]
+    }
   ]
 }

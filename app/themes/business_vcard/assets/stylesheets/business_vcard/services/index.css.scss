@@ -1,0 +1,17 @@
+.catalog-image,
+.catalog-thumbnails,
+.catalog-info {
+  display: inline-block;
+}
+.catalog-image {
+  width: 322px;
+  img {
+    max-width: 100%;
+  }
+}
+.catalog-thumbnails {
+  width: 60px;
+}
+.catalog-info {
+  width: 500px;
+}
