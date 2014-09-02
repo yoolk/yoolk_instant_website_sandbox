@@ -1,0 +1,38 @@
+{% for category in listing.product_categories %}
+  {% for product in category.products %}
+    <div class="catalog">
+      <a href="/products/kh12806-office-rental-products/59-ground-floor">
+        <h2 class="catalog-title">{{ product.name }}</h2>
+      </a>
+      <div class="catalog-image">
+        {% if product.photos.first != blank %}
+          <a href="#" class="cboxElement">
+            {{ product.photos.first.attachment_meta.large.url | asset_path | image_tag }}
+          </a>
+        {% endif %}
+      </div>
+      <ol class="catalog-thumbnails">
+        {% for photo in product.photos %}
+          {% if photo != blank %}
+            <li class="catalog-thumbnails-image" data-photo-url="#">
+              <a class="active" href="" rel="" title="" >
+                {{ photo.attachment_meta.thumbnail.url | asset_path | image_tag }}
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ol>
+      <div class="catalog-info">
+        <ul class="catalog-info-specifications">
+          {% for feature_hash in product.features %}
+            {% for feature in feature_hash %}
+              <li class="clearfix product-list">
+                <span class="ellipsis">{{ feature[0] }}</span><span class="ellipsis">{{ feature[1] }}</span>
+              </li>
+            {% endfor %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% endfor %}
+{% endfor %}
