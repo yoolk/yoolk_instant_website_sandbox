@@ -1,14 +1,17 @@
-<header>
-  <div class="logo">
-    {{ "logo.jpeg" | asset_path | image_tag: "yellow tower": "some" }}
-  </div>
-  <ul class="nav">
-    <li>{{ 'home' | link_to_home }}</li>
+<div class="nav">
+  {{ listing.logo.image.attachment_meta.medium.url | asset_path | image_tag }}
+
+  <ul>
+    <li>{{ 'contact us' | link_to_home }}</li>
+    <li>{{ 'map' | link_to_map }}</li>
+    <li>{{ 'about us' | link_to_about_us }}</li>
+    <li>{{ 'brochures' | link_to_services }}</li>
+    <li>{{ 'photos' | link_to_galleries }}</li>
+    <li>{{ 'products' | link_to_products }}</li>
     <li>{{ 'services' | link_to_services }}</li>
-    <li>{{ 'galleries' | link_to_galleries }}</li>
+    <li>{{ 'menu' | link_to_foods }}</li>
     <li>{{ 'announcements' | link_to_announcements }}</li>
     <li>{{ 'people' | link_to_people }}</li>
-    <li>{{ 'about us' | link_to_about_us }}</li>
     <li>{{ 'contact us' | link_to_contact_us }}</li>
   </ul>
-</header>
+</div>
