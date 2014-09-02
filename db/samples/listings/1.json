@@ -331,5 +331,50 @@
         }
       }
     }
-  }
+  },
+  "catalog_items": [
+    {
+      "id": "CB34EE79-80EB-418F-B481-557A373BD7FE",
+      "title": "Open office plan",
+      "html_text": "Our key ingredients to aesthetic office space comprise of high ceilings, lots of volume, natural light and, our favorite, the hanging&nbsp;<b></b>mezzanines and&nbsp;vertical plant life, providing not only a refreshing environment but also a buffer space between the hot sun and the work area, whilst letting the natural light in, visually pleasing, yet functional.<br>",
+      "show_image": true,
+      "published": false,
+      "display_order": 2,
+      "image": {
+        "id": 1187082,
+        "content_type": "image/jpg",
+        "attachment_meta": {
+          "original": {
+            "width": 600,
+            "height": 1193,
+            "url": "/catalog_items/original/1187082.jpg"
+          },
+          "large": {
+            "width": 600,
+            "height": 1193,
+            "url": "/catalog_items/large/1187082.jpg"
+          },
+          "medium": {
+            "width": 322,
+            "height": 640,
+            "url": "/catalog_items/medium/1187082.jpg"
+          },
+          "small": {
+            "width": 196,
+            "height": 390,
+            "url": "/catalog_items/small/1187082.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "4a266eb0-b3c3-11e2-ac49-123141053e9b",
+      "title": "About Us",
+      "html_text": "<u>Modern office</u> space&copy;for rent or buy",
+      "show_image": false,
+      "published": true,
+      "display_order": 1,
+      "image": null
+    }
+  ]
 }
