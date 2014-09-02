@@ -303,5 +303,33 @@
         }
       }
     ]
+  },
+  "logo": {
+    "image": {
+      "id": 1545743,
+      "content_type": "image/jpg",
+      "attachment_meta": {
+        "original": {
+          "width": 322,
+          "height": 322,
+          "url": "/logos/original/1545743.jpg"
+        },
+        "large": {
+          "width": 220,
+          "height": 220,
+          "url": "/logos/large/1545743.jpg"
+        },
+        "medium": {
+          "width": 150,
+          "height": 150,
+          "url": "/logos/medium/1545743.jpg"
+        },
+        "small": {
+          "width": 50,
+          "height": 50,
+          "url": "/logos/small/1545743.jpg"
+        }
+      }
+    }
   }
 }
