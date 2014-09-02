@@ -7,6 +7,9 @@
 </head>
 <body>
   <div class="nav">
+
+    {{ listing.logo.image.attachment_meta.medium.url | asset_path | image_tag }}
+
     <ul>
       <li>{{ 'contact us' | link_to_home }}</li>
       <li>{{ 'map' | link_to_map }}</li>
