@@ -4,8 +4,16 @@ body {
   color: $body-font-color;
 }
 .nav {
-  width: 270px;
   float: left;
+  height: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 270px;
 }
 .main-container {
   width: 1030px;

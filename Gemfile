@@ -11,6 +11,9 @@ gem 'yoolk_instant_website_liquid', github: 'yoolk/yoolk_instant_website_liquid'
 gem 'liquid-rails',                 github: 'yoolk/liquid-rails'
 gem 'themes_on_rails',              github: 'yoolk/themes_on_rails', branch: 'liquid'
 
+# .js.coffee file
+gem 'coffee-rails', '~> 4.0.0'
+
 # Better json parser
 gem 'oj'
 

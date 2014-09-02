@@ -2,9 +2,13 @@
 <html>
 <head>
   <title>{{ listing.name }}</title>
+  <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
   {{ 'all.js' | asset_path | script_tag }}
   {{ 'all.css' | asset_path | stylesheet_tag }}
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
   {% include 'shared/nav' %}
