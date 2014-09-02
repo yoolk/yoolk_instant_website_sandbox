@@ -1,6 +1,14 @@
-#card {
+.vcard {
   width: 620px;
   height: 322px;
   border: 1px solid #ebebeb;
   border-radius: 4px;
+  background: white;
+}
+
+.listing-categories,
+.listing-communications {
+  display: inline-block;
+  width: 50%;
+  float: left;
 }

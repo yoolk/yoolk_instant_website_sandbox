@@ -1,5 +1,6 @@
 body {
-  background-color: #f9f9f9;
+  font-family: $base-font-family;
+  background-color: $body-bg-color;
   color: $body-font-color;
 }
 .nav {
