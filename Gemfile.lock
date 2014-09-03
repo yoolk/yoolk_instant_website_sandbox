@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/yoolk/liquid-rails.git
-  revision: d28e4ea83fd385f985eb973d2e50e40e72688c8a
+  revision: 0fe4e9b873fed2c76992517d9a733d8fbbf96fd9
   specs:
     liquid-rails (0.1.0)
       liquid (~> 3.0.0.rc1)
