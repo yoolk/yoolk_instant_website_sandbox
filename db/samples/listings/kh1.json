@@ -703,5 +703,58 @@
         }
       ]
     }
+  ],
+  "artworks": [
+  {
+    "id": "A0642ABA-76A1-11E3-8199-12314004313C",
+    "created_at": "Mon, 06 Jan 2014 07:10:31 UTC +00:00",
+    "description": "",
+    "image":
+      {
+        "id": 220229,
+        "attachment_meta":
+        {
+          "original":
+           {
+              "width": 994,
+              "height": 1169,
+              "size": 1950179,
+              "url":
+              "/assets/business_vcard/brochures/original/220229.png"
+            },
+          "large":
+           {
+              "width": 994,
+              "height": 1169,
+              "size": 1896203,
+              "url":
+              "/assets/business_vcard/brochures/large/220229.png"
+            },
+          "medium":
+            {
+              "width": 322,
+              "height": 379,
+              "size": 238906,
+              "url":
+              "/assets/business_vcard/brochures/medium/220229.png"
+            },
+          "small":
+            {
+              "width": 196,
+              "height": 231,
+              "size": 94805,
+              "url":
+              "/assets/business_vcard/brochures/small/220229.png"
+            }
+        },
+        "content_type": "image/png",
+        "created_at": "Mon, 06 Jan 2014 07:10:25 UTC +00:00",
+        "updated_at": "Mon, 06 Jan 2014 07:15:26 UTC +00:00"
+      },
+      "is_active": true,
+      "name": "Tower Ad 2014 for Web",
+      "text": "Property Investment\r\nOffice Space\r\nOffice Rental Services\r\nOffice Rental\r\nReal Estate Investment\r\nOffice Lease\r\nCommercial Lease\r\nOffice Building\r\nCommercial Property\r\nInternational Property\r\nOverseas Property\r\nCommercial Real Estate\r\nBusiness Centres\r\nProperty for sale\r\n",
+      "updated_at": "Thu, 12 Jun 2014 08:37:00 UTC +00:00"
+    }
   ]
 }

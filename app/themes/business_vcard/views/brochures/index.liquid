@@ -1,0 +1,6 @@
+<h1 class="page-title">brochures</h1>
+<div id="prochures">
+  {% for brochure in listing.artworks %}
+    {{ brochure.image.attachment_meta.large.url | image_tag }}
+  {% endfor %}
+</div>
