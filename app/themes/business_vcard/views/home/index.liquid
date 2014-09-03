@@ -1,38 +1,34 @@
-<div class="main-container">
-  <div class="main-container-middle">
-    <div class="main-container-center">
-      <div class="shadow-effect" itemscope: "" itemtype: "http://schema.org/LocalBusiness">
-        <div class="vcard listing">
-          <h1 class="listing-name" itemprop: "name">
-            {{ listing.name }}
-          </h1>
-          <p class="listing-description" itemprop: "description">
-            {{ "Local Business in Phnom Penh - Cambodia" }}
-          </p>
-          <div class="listing-categories" itemscope: "">
-            <ul>
-              <li>Office Rental Services</li>
-              <li>Business Centres</li>
-              <li>Real Estate Agencies & Appraisers</li>
-              <li>Directories & Guides</li>
-              <li>Property Investment Companies</li>
-            </ul>
-          </div>
-          <div class="listing-communications">
-            <div class="listing-address" itemprop: "address", itemscope: "", itemtype: "http://schema.org/PostalAddress">
-              <address itemprop: "streetAddress">
-                {{ listing.address }}
-              </address>
+<div class="shadow-effect" itemscope: "" itemtype: "http://schema.org/LocalBusiness">
+  <div class="vcard">
+    <div class="listing">
+      <h1 class="listing-name" itemprop: "name">
+        {{ listing.name }}
+      </h1>
+      <p class="listing-description" itemprop: "description">
+        {{ "Local Business in Phnom Penh - Cambodia" }}
+      </p>
+      <div class="listing-categories" itemscope: "">
+        <ul>
+          <li>Office Rental Services</li>
+          <li>Business Centres</li>
+          <li>Real Estate Agencies & Appraisers</li>
+          <li>Directories & Guides</li>
+          <li>Property Investment Companies</li>
+        </ul>
+      </div>
+      <div class="listing-communications">
+        <div class="listing-address" itemprop: "address", itemscope: "", itemtype: "http://schema.org/PostalAddress">
+          <address itemprop: "streetAddress">
+            {{ listing.address }}
+          </address>
 
-              <div class="listing-contact" itemscope: "", itemtype: "http://schema.org/ContactPoint">
-                <dl class="listing-contact-list">
-                  <dt>Tel</dt>
-                    <dd>012 869 111<dd>
-                  <dt>E-Mail</dt>
-                    <dd>yellow.tower.co@gmail.com</dd>
-                </dl>
-              </div>
-            </div>
+          <div class="listing-contact" itemscope: "", itemtype: "http://schema.org/ContactPoint">
+            <dl class="listing-contact-list">
+              <dt>Tel</dt>
+                <dd>012 869 111<dd>
+              <dt>E-Mail</dt>
+                <dd>yellow.tower.co@gmail.com</dd>
+            </dl>
           </div>
         </div>
       </div>

@@ -1,4 +1,25 @@
+html,
+body,
+.main-container {
+  height: 100%;
+}
+
+.shadow-effect {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
 .vcard {
+  display: table-cell;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.listing {
+  display: block;
+  margin: auto;
+
   width: 620px;
   height: 322px;
   border: 1px solid #ebebeb;
