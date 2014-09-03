@@ -287,25 +287,25 @@
                 "width": 994,
                 "height": 746,
                 "size": 97300,
-                "url": "/assets/business_vcard/galleries/original/222108.jpg"
+                "url": "/attachments/images/galleries/original/222108.jpg"
               },
               "large": {
                 "width": 994,
                 "height": 746,
                 "size": 184847,
-                "url": "/assets/business_vcard/galleries/large/222108.jpg"
+                "url": "/attachments/images/galleries/large/222108.jpg"
               },
               "medium": {
                 "width": 322,
                 "height": 242,
                 "size": 30353,
-                "url": "/assets/business_vcard/galleries/medium/222108.jpg"
+                "url": "/attachments/images/galleries/medium/222108.jpg"
               },
               "small": {
                 "width": 196,
                 "height": 147,
                 "size": 13580,
-                "url": "/assets/business_vcard/galleries/small/222108.jpg"
+                "url": "/attachments/images/galleries/small/222108.jpg"
               }
             }
           }
@@ -324,28 +324,28 @@
                     "height": 746,
                     "size": 211434,
                     "url":
-                    "/assets/business_vcard/galleries/original/222109.jpg"},
+                    "/attachments/images/galleries/original/222109.jpg"},
                   "large":
                   {
                     "width": 994,
                     "height": 746,
                     "size": 211156,
                     "url":
-                    "/assets/business_vcard/galleries/large/222109.jpg"},
+                    "/attachments/images/galleries/large/222109.jpg"},
                   "medium":
                   {
                     "width": 322,
                     "height": 242,
                     "size": 36739,
                     "url":
-                    "/assets/business_vcard/galleries/medium/222109.jpg"},
+                    "/attachments/images/galleries/medium/222109.jpg"},
                   "small":
                   {
                     "width": 196,
                     "height": 147,
                     "size": 18735,
                     "url":
-                    "/assets/business_vcard/galleries/small/222109.jpg"
+                    "/attachments/images/galleries/small/222109.jpg"
                   }
                 },
               "content_type": "image/jpeg",
@@ -370,28 +370,28 @@
                   "height": 746,
                   "size": 221059,
                   "url":
-                  "/assets/business_vcard/galleries/original/222110.jpg"},
+                  "/attachments/images/galleries/original/222110.jpg"},
                 "large":
                   {
                     "width": 994,
                     "height": 746,
                     "size": 220799,
                     "url":
-                    "/assets/business_vcard/galleries/large/222110.jpg"},
+                    "/attachments/images/galleries/large/222110.jpg"},
                 "medium":
                   {
                     "width": 322,
                     "height": 242,
                     "size": 36775,
                     "url":
-                    "/assets/business_vcard/galleries/medium/222110.jpg"},
+                    "/attachments/images/galleries/medium/222110.jpg"},
                 "small":
                   {
                     "width": 196,
                     "height": 147,
                     "size": 17927,
                     "url":
-                    "/assets/business_vcard/galleries/small/222110.jpg"
+                    "/attachments/images/galleries/small/222110.jpg"
                   }
                 },
             "content_type": "image/jpeg",
@@ -471,22 +471,22 @@
         "original": {
           "width": 322,
           "height": 322,
-          "url": "logos/original/1.jpeg"
+          "url": "/attachments/images/logos/original/1.jpeg"
         },
         "large": {
           "width": 220,
           "height": 220,
-          "url": "logos/large/1.jpeg"
+          "url": "/attachments/images/logos/large/1.jpeg"
         },
         "medium": {
           "width": 150,
           "height": 150,
-          "url": "/assets/business_vcard/logos/medium/1.jpeg"
+          "url": "/attachments/images/logos/medium/1.jpeg"
         },
         "small": {
           "width": 50,
           "height": 50,
-          "url": "logos/small/1.jpeg"
+          "url": "/attachments/images/logos/small/1.jpeg"
         }
       }
     }
@@ -506,22 +506,22 @@
           "original": {
             "width": 600,
             "height": 1193,
-            "url": "/assets/business_vcard/catalog_items/original/220253.jpeg"
+            "url": "/attachments/images/catalog_items/original/220253.jpeg"
           },
           "large": {
             "width": 600,
             "height": 1193,
-            "url": "/assets/business_vcard/catalog_items/large/220253.jpeg"
+            "url": "/attachments/images/catalog_items/large/220253.jpeg"
           },
           "medium": {
             "width": 322,
             "height": 640,
-            "url": "/assets/business_vcard/catalog_items/medium/220253.jpeg"
+            "url": "/attachments/images/catalog_items/medium/220253.jpeg"
           },
           "small": {
             "width": 196,
             "height": 390,
-            "url": "/assets/business_vcard/catalog_items/small/220253.jpeg"
+            "url": "/attachments/images/catalog_items/small/220253.jpeg"
           }
         }
       }
@@ -566,27 +566,27 @@
                 "original": {
                   "width": 994,
                   "height": 637,
-                  "url": "/assets/business_vcard//services/original/588.gif"
+                  "url": "/attachments/images/services/original/588.gif"
                 },
                 "large": {
                   "width": 994,
                   "height": 637,
-                  "url": "/assets/business_vcard//services/large/588.gif"
+                  "url": "/attachments/images/services/large/588.gif"
                 },
                 "medium": {
                   "width": 364,
                   "height": 233,
-                  "url": "/assets/business_vcard//services/medium/588.gif"
+                  "url": "/attachments/images/services/medium/588.gif"
                 },
                 "small": {
                   "width": 196,
                   "height": 126,
-                  "url": "/assets/business_vcard//services/small/588.gif"
+                  "url": "/attachments/images/services/small/588.gif"
                 },
                 "thumbnail": {
                   "width": 50,
                   "height": 50,
-                  "url": "/assets/business_vcard//services/thumbnail/588.gif"
+                  "url": "/attachments/images/services/thumbnail/588.gif"
                 }
               }
             }
@@ -646,27 +646,27 @@
                 "original": {
                   "width": 558,
                   "height": 372,
-                  "url": "/assets/business_vcard/products/original/4390.jpg"
+                  "url": "/attachments/images/products/original/4390.jpg"
                 },
                 "large": {
                   "width": 558,
                   "height": 372,
-                  "url": "/assets/business_vcard/products/large/4390.jpg"
+                  "url": "/attachments/images/products/large/4390.jpg"
                 },
                 "medium": {
                   "width": 364,
                   "height": 243,
-                  "url": "/assets/business_vcard/products/medium/4390.jpg"
+                  "url": "/attachments/images/products/medium/4390.jpg"
                 },
                 "small": {
                   "width": 196,
                   "height": 131,
-                  "url": "/assets/business_vcard/products/small/4390.jpg"
+                  "url": "/attachments/images/products/small/4390.jpg"
                 },
                 "thumbnail": {
                   "width": 60,
                   "height": 40,
-                  "url": "/assets/business_vcard/products/thumbnail/4390.jpg"
+                  "url": "/attachments/images/products/thumbnail/4390.jpg"
                 }
               }
             },
@@ -677,27 +677,27 @@
                 "original": {
                   "width": 558,
                   "height": 372,
-                  "url": "/assets/business_vcard/products/original/52.jpg"
+                  "url": "/attachments/images/products/original/52.jpg"
                 },
                 "large": {
                   "width": 558,
                   "height": 372,
-                  "url": "/assets/business_vcard/products/large/52.jpg"
+                  "url": "/attachments/images/products/large/52.jpg"
                 },
                 "medium": {
                   "width": 364,
                   "height": 243,
-                  "url": "/assets/business_vcard/products/medium/52.jpg"
+                  "url": "/attachments/images/products/medium/52.jpg"
                 },
                 "small": {
                   "width": 196,
                   "height": 131,
-                  "url": "/assets/business_vcard/products/small/52.jpg"
+                  "url": "/attachments/images/products/small/52.jpg"
                 },
                 "thumbnail": {
                   "width": 60,
                   "height": 40,
-                  "url": "/assets/business_vcard/products/thumbnail/52.jpg"
+                  "url": "/attachments/images/products/thumbnail/52.jpg"
                 }
               }
             },
@@ -708,27 +708,27 @@
                 "original": {
                   "width": 450,
                   "height": 300,
-                  "url": "/assets/business_vcard/products/original/4389.jpg"
+                  "url": "/attachments/images/products/original/4389.jpg"
                 },
                 "large": {
                   "width": 450,
                   "height": 300,
-                  "url": "/assets/business_vcard/products/large/4389.jpg"
+                  "url": "/attachments/images/products/large/4389.jpg"
                 },
                 "medium": {
                   "width": 364,
                   "height": 243,
-                  "url": "/assets/business_vcard/products/medium/4389.jpg"
+                  "url": "/attachments/images/products/medium/4389.jpg"
                 },
                 "small": {
                   "width": 196,
                   "height": 131,
-                  "url": "/assets/business_vcard/products/small/4389.jpg"
+                  "url": "/attachments/images/products/small/4389.jpg"
                 },
                 "thumbnail": {
                   "width": 60,
                   "height": 40,
-                  "url": "/assets/business_vcard/products/thumbnail/4389.jpg"
+                  "url": "/attachments/images/products/thumbnail/4389.jpg"
                 }
               }
             }
@@ -765,27 +765,27 @@
                 "original": {
                   "width": 1440,
                   "height": 956,
-                  "url": "/assets/business_vcard/foods/original/410.jpg"
+                  "url": "/attachments/images/foods/original/410.jpg"
                 },
                 "large": {
                   "width": 994,
                   "height": 660,
-                  "url": "/assets/business_vcard/foods/large/410.jpg"
+                  "url": "/attachments/images/foods/large/410.jpg"
                 },
                 "medium": {
                   "width": 364,
                   "height": 242,
-                  "url": "/assets/business_vcard/foods/medium/410.jpg"
+                  "url": "/attachments/images/foods/medium/410.jpg"
                 },
                 "small": {
                   "width": 196,
                   "height": 130,
-                  "url": "/assets/business_vcard/foods/small/410.jpg"
+                  "url": "/attachments/images/foods/small/410.jpg"
                 },
                 "thumbnail": {
                   "width": 50,
                   "height": 50,
-                  "url": "/assets/business_vcard/foods/thumbnail/410.jpg"
+                  "url": "/attachments/images/foods/thumbnail/410.jpg"
                 }
               }
             }
@@ -810,7 +810,7 @@
               "height": 1169,
               "size": 1950179,
               "url":
-              "/assets/business_vcard/brochures/original/220229.png"
+              "/attachments/images/brochures/original/220229.png"
             },
           "large":
            {
@@ -818,7 +818,7 @@
               "height": 1169,
               "size": 1896203,
               "url":
-              "/assets/business_vcard/brochures/large/220229.png"
+              "/attachments/images/brochures/large/220229.png"
             },
           "medium":
             {
@@ -826,7 +826,7 @@
               "height": 379,
               "size": 238906,
               "url":
-              "/assets/business_vcard/brochures/medium/220229.png"
+              "/attachments/images/brochures/medium/220229.png"
             },
           "small":
             {
@@ -834,7 +834,7 @@
               "height": 231,
               "size": 94805,
               "url":
-              "/assets/business_vcard/brochures/small/220229.png"
+              "/attachments/images/brochures/small/220229.png"
             }
         },
         "content_type": "image/png",

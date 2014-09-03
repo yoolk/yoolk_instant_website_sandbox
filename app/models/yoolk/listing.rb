@@ -8,7 +8,7 @@ module Yoolk
     end
 
     def self.find(alias_id)
-      path       = Rails.root.join('db', 'samples', 'listings', "#{alias_id}.json")
+      path       = Rails.root.join('db', 'samples', 'jsons', "#{alias_id}.json")
       attributes = Oj.load(File.read(path))
 
       Yoolk::Listing.new(attributes)
