@@ -17,7 +17,8 @@ body {
   background: white;
 }
 .main-container {
-  width: 1030px;
+  // width: 1030px;
+  width: 1046px;
   float: right;
 }
 
@@ -58,4 +59,10 @@ body {
     float: right;
     background: white;
   }
+}
+.page-title {
+  margin: 0;
+  font-weight: normal;
+  text-transform: capitalize;
+  padding: 18px 40px;
 }
