@@ -1,8 +1,8 @@
 <h1 class="page-title">about us</h1>
 {% for catalog_item in listing.catalog_items %}
-  <article class="about-us-item">
-    <h2 class="about-us-item-title">{{ catalog_item.title }}</h2>
-    <p class="about-us-item-description">{{ catalog_item.html_text }}</p>
+  <article class="article-item">
+    <h2 class="title-item">{{ catalog_item.title }}</h2>
+    <p class="item-description">{{ catalog_item.html_text }}</p>
     {{ catalog_item.image.attachment_meta.large.url | asset_path | image_tag }}
   </article>
 {% endfor %}
