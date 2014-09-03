@@ -2,6 +2,7 @@
 .catalog-thumbnails,
 .catalog-info {
   display: inline-block;
+  float: left;
 }
 .catalog-image {
   width: 322px;
@@ -11,7 +12,35 @@
 }
 .catalog-thumbnails {
   width: 60px;
+
 }
-.catalog-info {
-  width: 500px;
+.catalog-thumbnails li {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+.catalog {
+  background: white;
+  margin: 0 40px 78px 40px;
+  > a{ text-decoration: none; }
+}
+.catalog-title {
+  font-weight: normal;
+  color: $body-font-color;
+  background: $page-title-bg-color;
+  padding: 15px 20px;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.catalog-body {
+  padding: 20px;
+}
+.catalog-thumbnails {
+  list-style: none;
+  padding: 0;
+  margin: 0 40px 0 25px;
+}
+.catalog-info-specifications {
+  width: 366px;
+  padding: 0;
 }
