@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/yoolk/liquid-rails.git
-  revision: d3dcf2f4ab207e65121603eef9b615f8ab00fb37
+  revision: 0fe4e9b873fed2c76992517d9a733d8fbbf96fd9
   specs:
     liquid-rails (0.1.0)
       liquid (~> 3.0.0.rc1)
@@ -16,11 +16,12 @@ GIT
 
 GIT
   remote: git://github.com/yoolk/yoolk_instant_website_liquid.git
-  revision: db7269659d40f64396ddbf27f5ba49f11f409f4f
+  revision: 85f0fc8758dff1d4c93fbe04dd7ca9c5cf20cd30
   specs:
     yoolk_instant_website_liquid (1.0.0.alpha1)
       bootstrap-sass (~> 3.2.0)
-      jquery-rails (~> 3.0.4)
+      coffee-rails (~> 4.0.1)
+      jquery-rails (~> 3.1.2)
       rails (~> 4.0.9)
       sass-rails (~> 4.0.2)
       therubyracer (~> 0.12.1)
@@ -54,7 +55,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.2)
-    bootstrap-sass (3.2.0.1)
+    bootstrap-sass (3.2.0.2)
       sass (~> 3.2)
     builder (3.1.4)
     coderay (1.1.0)
@@ -64,7 +65,7 @@ GEM
     coffee-script (2.3.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.7.1)
+    coffee-script-source (1.8.0)
     daemons (1.1.9)
     erubis (2.7.0)
     eventmachine (1.0.3)
@@ -72,7 +73,7 @@ GEM
     hashie (3.2.0)
     hike (1.2.3)
     i18n (0.6.11)
-    jquery-rails (3.0.4)
+    jquery-rails (3.1.2)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.1)
@@ -93,6 +94,8 @@ GEM
       slop (~> 3.4)
     pry-rails (0.3.2)
       pry (>= 0.9.10)
+    quiet_assets (1.0.3)
+      railties (>= 3.1, < 5.0)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -123,7 +126,7 @@ GEM
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sprockets-rails (2.1.3)
+    sprockets-rails (2.1.4)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
@@ -149,11 +152,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  coffee-rails (~> 4.0.0)
   hashie (~> 3.2.0)
   liquid-rails!
   oj
   pry-rails
+  quiet_assets
   rails (= 4.0.9)
   themes_on_rails!
   thin

@@ -7,8 +7,8 @@ module Yoolk
       @attributes = Hashie::Mash.new(attributes)
     end
 
-    def self.find(id)
-      path       = Rails.root.join('db', 'samples', 'listings', "#{id}.json")
+    def self.find(alias_id)
+      path       = Rails.root.join('db', 'samples', 'listings', "#{alias_id}.json")
       attributes = Oj.load(File.read(path))
 
       Yoolk::Listing.new(attributes)
