@@ -416,22 +416,22 @@
           "original": {
             "width": 600,
             "height": 1193,
-            "url": "/catalog_items/original/1187082.jpg"
+            "url": "/assets/business_vcard/catalog_items/original/220253.jpeg"
           },
           "large": {
             "width": 600,
             "height": 1193,
-            "url": "/catalog_items/large/1187082.jpg"
+            "url": "/assets/business_vcard/catalog_items/large/220253.jpeg"
           },
           "medium": {
             "width": 322,
             "height": 640,
-            "url": "/catalog_items/medium/1187082.jpg"
+            "url": "/assets/business_vcard/catalog_items/medium/220253.jpeg"
           },
           "small": {
             "width": 196,
             "height": 390,
-            "url": "/catalog_items/small/1187082.jpg"
+            "url": "/assets/business_vcard/catalog_items/small/220253.jpeg"
           }
         }
       }

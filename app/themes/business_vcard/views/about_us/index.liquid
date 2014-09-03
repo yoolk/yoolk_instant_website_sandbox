@@ -3,6 +3,6 @@
   <article class="article-item">
     <h2 class="title-item">{{ catalog_item.title }}</h2>
     <p class="item-description">{{ catalog_item.html_text }}</p>
-    {{ catalog_item.image.attachment_meta.large.url | asset_path | image_tag }}
+    {{ catalog_item.image.attachment_meta.large.url | image_tag }}
   </article>
 {% endfor %}
