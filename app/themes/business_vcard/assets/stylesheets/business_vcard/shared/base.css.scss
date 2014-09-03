@@ -44,3 +44,18 @@ body {
   min-height: 90%;
   padding-bottom: 26px;
 }
+
+.list-dotted > li{
+  height: 17px;
+  list-style: none;
+  clear: both;
+  background: asset-url("business_vcard/dotted_line.png") repeat-x bottom;
+  span:first-child {
+    float: left;
+    background: white;
+  }
+  span:last-child {
+    float: right;
+    background: white;
+  }
+}
