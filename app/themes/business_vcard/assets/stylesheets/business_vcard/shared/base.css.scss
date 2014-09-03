@@ -14,8 +14,23 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   width: 270px;
+  background: white;
 }
 .main-container {
   width: 1030px;
   float: right;
+}
+
+.nav ul {
+  list-style: none;
+  li a {
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    text-transform: capitalize;
+  }
+}
+.nav>img {
+  display: block;
+  margin: 15px auto;
 }
