@@ -1,3 +1,10 @@
-# gallery page
 <h1 class="page-title">photo</h1>
-{{ @galleries }}
+<div id="galleries">
+  {% for album in listing.image_galleries %}
+    {% for gallery_image in album.gallery_images %}
+      <div class="gallery">
+        {{ gallery_image.image.attachment_meta.medium.url | image_tag }}
+      </div>
+    {% endfor %}
+  {% endfor %}
+</div>

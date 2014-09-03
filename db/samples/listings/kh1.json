@@ -264,7 +264,54 @@
       ]
     }
   ],
-  "galleries": [
+  "image_galleries": [
+    {
+      "id": 30292,
+      "uuid": "8C348ACA-1602-11E4-8907-22000A900832",
+      "name": "1st Floor Office",
+      "display_order": 10,
+      "gallery_images": [
+      {
+        "id": 222108,
+        "caption": 1,
+        "display_order": 0,
+        "created_at": "Tue, 19 Aug 2014 10:06:49 UTC +00:00",
+        "updated_at": "Tue, 19 Aug 2014 10:07:50 UTC +00:00",
+        "image": {
+          "id": 222287,
+          "created_at": "2014-08-19 10:06:49 UTC",
+          "updated_at": "2014-08-19 10:07:50 UTC",
+          "content_type": "image/png",
+          "attachment_meta": {
+            "original": {
+              "width": 994,
+              "height": 746,
+              "size": 97300,
+              "url": "/assets/business_vcard/galleries/original/222108.jpg"
+            },
+            "large": {
+              "width": 994,
+              "height": 746,
+              "size": 184847,
+              "url": "/assets/business_vcard/galleries/large/222108.jpg"
+            },
+            "medium": {
+              "width": 322,
+              "height": 242,
+              "size": 30353,
+              "url": "/assets/business_vcard/galleries/medium/222108.jpg"
+            },
+            "small": {
+              "width": 196,
+              "height": 147,
+              "size": 13580,
+              "url": "/assets/business_vcard/galleries/small/222108.jpg"
+            }
+          }
+        }
+      }
+      ]
+    }
   ],
   "announcements": [
     {
