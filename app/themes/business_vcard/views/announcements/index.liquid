@@ -1,4 +1,4 @@
-<h1>announcement</h1>
+<h1 class="page-title">announcement</h1>
 {% for announcement in listing.announcements %}
   <article class="announcement">
     {{ announcement.image.attachment_meta.medium.url | asset_path | image_tag }}
