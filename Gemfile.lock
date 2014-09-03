@@ -16,7 +16,7 @@ GIT
 
 GIT
   remote: git://github.com/yoolk/yoolk_instant_website_liquid.git
-  revision: 7f3fba555a7cbe08f296e137697d66e7e1e9c823
+  revision: 3d7e39180253e01d91d975e985343297188b9c45
   specs:
     yoolk_instant_website_liquid (1.0.0.alpha1)
       bootstrap-sass (~> 3.2.0)
