@@ -1,15 +1,22 @@
 <div class="nav">
-  {{ listing.logo.image.attachment_meta.medium.url | asset_path | image_tag }}
+  <div class="side-nav">
+    {{ listing.logo.image.attachment_meta.medium.url | asset_path | image_tag }}
 
-  <ul>
-    <li>{{ 'contact us' | link_to_home }}</li>
-    <li>{{ 'map'        | link_to_map }}</li>
-    <li>{{ 'about us'   | link_to_about_us }}</li>
-    <li>{{ 'brochures'  | link_to_services }}</li>
-    <li>{{ 'photos'     | link_to_galleries }}</li>
-    <li>{{ 'products'   | link_to_products }}</li>
-    <li>{{ 'services'   | link_to_services }}</li>
-    <li>{{ 'menu'       | link_to_foods }}</li>
-    <li>{{ 'announcements' | link_to_announcements }}</li>
-  </ul>
+    <ul>
+      <li>{{ 'contact us' | link_to_home }}</li>
+      <li>{{ 'map'        | link_to_map }}</li>
+      <li>{{ 'about us'   | link_to_about_us }}</li>
+      <li>{{ 'brochures'  | link_to_services }}</li>
+      <li>{{ 'photos'     | link_to_galleries }}</li>
+      <li>{{ 'products'   | link_to_products }}</li>
+      <li>{{ 'services'   | link_to_services }}</li>
+      <li>{{ 'menu'       | link_to_foods }}</li>
+      <li>{{ 'announcements' | link_to_announcements }}</li>
+    </ul>
+
+    <div class="office">
+      <span class="office-img"></span>
+      <p class="office-account">My office</p>
+    </div>
+  </div>
 </div>
