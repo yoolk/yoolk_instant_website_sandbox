@@ -6,6 +6,7 @@ namespace :instant_website do
       FileUtils.mkdir_p 'public/attachments/images'
       FileUtils.mkdir_p 'public/attachments/pdfs'
 
+      FileUtils.rm_rf   'public/attachments'
       FileUtils.cp_r    'db/samples/attachments',  'public/'
     end
   end
