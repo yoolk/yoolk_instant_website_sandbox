@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/yoolk/liquid-rails.git
-  revision: a61fc04fd22d66be1fa9c572a3ad3942903945b1
+  revision: da2ecce78a983dd5c1e88e320ca4f31d2a3838c2
   specs:
     liquid-rails (0.1.0)
       liquid (~> 3.0.0.rc1)
@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: git://github.com/yoolk/themes_on_rails.git
-  revision: 11a7b288ed02c0d2f82839a301ffe7dac2fa42c9
+  revision: fde714319bf9d169ec07b9d8de6850d6ef9fc9a7
   branch: liquid
   specs:
     themes_on_rails (0.3.0)
@@ -16,7 +16,7 @@ GIT
 
 GIT
   remote: git://github.com/yoolk/yoolk_instant_website_liquid.git
-  revision: 3d7e39180253e01d91d975e985343297188b9c45
+  revision: cbe06a4f2e73b0d78d61da84e717a6542a3886cd
   specs:
     yoolk_instant_website_liquid (1.0.0.alpha1)
       bootstrap-sass (~> 3.2.0)
