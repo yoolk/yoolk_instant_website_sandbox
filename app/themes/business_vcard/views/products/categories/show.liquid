@@ -2,7 +2,7 @@
 
 {% for product in product_category.products %}
   <div class="catalog">
-    <a href="/products/kh12806-office-rental-products/59-ground-floor">
+    <a href="{{product.id}}">
       <h2 class="catalog-title">{{ product.name }}</h2>
     </a>
     <div class="catalog-body">

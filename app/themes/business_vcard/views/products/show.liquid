@@ -1,1 +1,18 @@
-{{ product.name }}
+<h1 class="page-title">{{ product.name }}</h1>
+
+<div class="catalog-detail">
+  <div class="catalog-detail-description">
+    <p>{{ product.description }}</p>
+  </div>
+  <ul class="catalog-detail-specifications list-dotted">
+    {% for f in product.features %}
+      <li>
+        <span>{{ f.name }}</span>
+        <span>{{ f.value }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+  {% for photo in product.photos %}
+    {{ photo.attachment_meta.large.url | image_tag }}
+  {% endfor %}
+</div>
