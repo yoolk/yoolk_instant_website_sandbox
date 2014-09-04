@@ -48,6 +48,10 @@ body {
     font-weight: normal;
     color: $nav-color;
     padding: 0;
+    padding-bottom: 7px;
+  }
+  li:last-child a {
+    padding-bottom: 0;
   }
 }
 
