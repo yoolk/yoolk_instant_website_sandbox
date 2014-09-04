@@ -1,11 +1,11 @@
 $(window).load ->
 
   _collageRemoveWhiteSpace = ->
-    $('.Collage').removeWhitespace().collagePlus()
+    $('.collage').removeWhitespace().collagePlus()
 
   _collage = ->
-    $('.Collage').collagePlus({
-      'targetHeight'        : 200,
+    $('.collage').collagePlus({
+      'targetHeight'        : 250,
       'fadeSpeed'           : 3000,
       'effect'              : 'effect-2',
       'direction'           : 'vertical',

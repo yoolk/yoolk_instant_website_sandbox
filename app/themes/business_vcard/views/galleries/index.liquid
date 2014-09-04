@@ -1,5 +1,5 @@
 <h1 class="page-title">photo</h1>
-<div id="galleries" class="Collage effect-parent">
+<div id="galleries" class="collage effect-parent">
   {% for album in listing.image_galleries %}
     {% for gallery_image in album.gallery_images %}
       {{ gallery_image.image.attachment_meta.medium.url | image_tag }}
