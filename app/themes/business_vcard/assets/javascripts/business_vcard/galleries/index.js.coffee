@@ -5,7 +5,7 @@ $(window).load ->
 
   _collage = ->
     $('.collage').collagePlus({
-      'targetHeight'        : 250,
+      'targetHeight'        : 200,
       'fadeSpeed'           : 3000,
       'effect'              : 'effect-2',
       'direction'           : 'vertical',
