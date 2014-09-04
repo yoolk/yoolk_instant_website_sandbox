@@ -32,7 +32,7 @@
         </ul>
       </li>
       <li>
-        {{ 'menu'       | link_to_foods }}
+        {{ 'menu'       | link_to_menu }}
         <ul class="sub-nav">
           {% for food_category in listing.food_categories %}
             <li>{{ food_category.name | link_to: "#" }}</li>
