@@ -32,4 +32,27 @@ body,
   display: inline-block;
   width: 50%;
   float: left;
+  ul {
+    list-style-position: inside;
+    padding: 0;
+    li {
+      line-height: 24px;
+    }
+  }
+}
+
+.listing-name {
+  margin-bottom: 0;
+}
+
+.listing-description {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.listing-description,
+.listing-categories li,
+.listing-contact-list li {
+  color: $nav-color;
+  font-size: 14px;
 }
