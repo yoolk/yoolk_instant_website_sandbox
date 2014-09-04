@@ -34,17 +34,23 @@ body {
     font-weight: bold;
     padding: 13px 21px;
     font-size: 15px;
-    + ul {
-      padding-left: 50px;
-      font-size: 13px;
-      color: $nav-color;
-    }
+  }
+}
+
+.nav ul.sub-nav {
+  padding-left: 50px;
+  a {
+    font-size: 13px;
+    font-weight: normal;
+    color: $nav-color;
+    padding: 0;
   }
 }
 
 .active {
   color: $body-font-color !important;
 }
+
 .nav img {
   display: block;
   margin: 15px auto;
@@ -85,6 +91,12 @@ body {
   font-weight: normal;
 }
 
+.bold {
+  font-weight: bold;
+}
+.color333 {
+  color: $body-font-color;
+}
 .article-item {
   padding: 0 0 78px 40px;
 }
