@@ -539,6 +539,7 @@
   "service_categories": [
     {
       "category_id": "5402bc4669702d5c8af20100",
+      "name": "Office Rental Services",
       "services": [
         {
           "id": 20,
