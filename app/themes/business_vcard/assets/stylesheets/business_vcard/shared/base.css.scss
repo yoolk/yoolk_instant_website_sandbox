@@ -24,12 +24,26 @@ body {
 
 .nav ul {
   list-style: none;
+  padding: 0;
   li a {
     text-decoration: none;
     display: block;
     padding: 5px;
     text-transform: capitalize;
+    color: $nav-color;
+    font-weight: bold;
+    padding: 13px 21px;
+    font-size: 15px;
+    + ul {
+      padding-left: 50px;
+      font-size: 13px;
+      color: $nav-color;
+    }
   }
+}
+
+.active {
+  color: $body-font-color !important;
 }
 .nav img {
   display: block;
