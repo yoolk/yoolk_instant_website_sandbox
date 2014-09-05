@@ -3,7 +3,12 @@
   <article class="announcement">
     {{ announcement.image.attachment_meta.large.url | image_tag }}
     <div class="announcement-description">
-      <p>{{ announcement.text }}</p>
+      <p>
+        {{ announcement.text }}
+        <strong class="readmore">
+          <a href="{{ announcement.id | announcement_path }}">read more</a>
+        </strong>
+      </p>
     </div>
     <div class="annnouncement-timestamp">
       <p>
