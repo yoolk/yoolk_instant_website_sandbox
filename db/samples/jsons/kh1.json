@@ -792,8 +792,9 @@
   ],
   "service_categories": [
     {
-      "category_id": "5402bc4669702d5c8af20100",
+      "category_id": "4515FDE4-D6DF-48FF-834E-4FC46B35E142",
       "name": "Office Rental Services",
+      "alias_id": "kh10316",
       "services": [
         {
           "id": 20,
