@@ -66,14 +66,18 @@ body {
 
 .office {
   position: absolute;
-  bottom: 0;
+  bottom: 33px;
+  left: 62px;
 }
 .side-nav {
   position: relative;
   min-height: 90%;
-  padding-bottom: 26px;
+  padding-bottom: 93px;
 }
 
+.side-nav > ul {
+  border-bottom: 1px solid $page-title-bg-color;
+}
 .list-dotted > li{
   height: 17px;
   list-style: none;
@@ -115,3 +119,18 @@ body {
 }
 
 .clear { clear: both; }
+
+.office-account {
+  display: block;
+  text-transform: capitalize;
+  color: $nav-color;
+  text-decoration: none;
+  padding: 13px 35px;
+}
+
+.office-img {
+  background: asset-url("business_vcard/male-office.png");
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: -1px 6px;
+}
