@@ -139,6 +139,7 @@ body {
   left: -7px;
   top: 8px;
 }
+
 .icon-time-default {
   width: 18px;
   height: 18px;
@@ -147,4 +148,19 @@ body {
   background-position: 1px 1px;
   background-repeat: no-repeat;
   background-position: 0px 3px;
+}
+time.timeago {
+  position: relative;
+  cursor: default;
+}
+time.timeago[title]:hover:after {
+  content: attr(title);
+  background: #333;
+  padding: 5px;
+  color: white;
+  position: absolute;
+  top: -27px;
+  left: 21px;
+  border-radius: 4px;
+  font-size: 12px;
 }
