@@ -1,0 +1,8 @@
+<h1 class="page-title">announcements</h1>
+<article class="article-item">
+  <img src="{{ announcement.image.attachment_meta.large.url }}">
+  <p class="item-description">{{ announcement.text }}</p>
+  <p>
+    <time class="timeago icon-time-default" datetime="{{ announcement.updated_at | date: '%Y-%m-%d' }}" title="{{ announcement.updated_at | date: '%B %d, %Y %k:%M' }}"></time>
+  </p>
+</article>
