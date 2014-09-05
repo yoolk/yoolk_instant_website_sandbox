@@ -1,0 +1,18 @@
+<h1 class="page-title">{{ food.name }}</h1>
+
+<div class="catalog-detail">
+  <div class="catalog-detail-description">
+    <p>{{ food.description }}</p>
+  </div>
+  <ul class="catalog-detail-specifications list-dotted">
+    {% for f in food.properties %}
+      <li>
+        <span>{{ f.name }}</span>
+        <span>{{ f.value }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+  {% for photo in food.photos %}
+    {{ photo.attachment_meta.large.url | image_tag }}
+  {% endfor %}
+</div>

@@ -18,6 +18,10 @@ module Yoolk
       product_categories.map(&:products).flatten
     end
 
+    def foods
+      food_categories.map(&:foods).flatten
+    end
+
     def to_liquid
       @hash
     end

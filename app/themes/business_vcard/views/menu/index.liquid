@@ -3,7 +3,7 @@
 {% for category in listing.food_categories %}
   {% for food in category.foods %}
     <div class="catalog">
-      <a href="/foods/kh12806-office-rental-foods/59-ground-floor">
+      <a href="{{ category.id | menu_category_path }}">
         <h2 class="catalog-title">{{ food.name }}</h2>
       </a>
       <div class="catalog-body">
