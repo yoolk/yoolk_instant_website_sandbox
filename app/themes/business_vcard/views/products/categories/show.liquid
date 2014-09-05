@@ -2,7 +2,7 @@
 
 {% for product in product_category.products %}
   <div class="catalog">
-    <a href="{{product.id}}">
+    <a href="/products/{{product_category.id}}/{{product.id}}">
       <h2 class="catalog-title">{{ product.name }}</h2>
     </a>
     <div class="catalog-body">

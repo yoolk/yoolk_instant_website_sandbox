@@ -2,7 +2,7 @@
 
 {% for food in menu.foods %}
   <div class="catalog">
-    <a href="{{ food.id | menu_path }}">
+    <a href="/menu/{{menu.id}}/{{food.id}}">
       <h2 class="catalog-title">{{ food.name }}</h2>
     </a>
     <div class="catalog-body">
@@ -28,9 +28,15 @@
         <ul class="catalog-info-specifications list-dotted">
           {% for property_hash in food.properties %}
             {% for property in property_hash %}
+              {% comment %}
               <li class="clearfix food-list">
                 <span class="ellipsis">{{ property.first }}</span>
                 <span class="ellipsis">{{ property.last }}</span>
+              </li>
+              {% endcomment %}
+              <li>
+                <span>1</span>
+                <span>2222</span>
               </li>
             {% endfor %}
           {% endfor %}

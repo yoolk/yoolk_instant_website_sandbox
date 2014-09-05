@@ -7,8 +7,14 @@
   <ul class="catalog-detail-specifications list-dotted">
     {% for f in food.properties %}
       <li>
-        <span>{{ f.name }}</span>
-        <span>{{ f.value }}</span>
+        {% comment %}
+          <span>{{ f.name }}</span>
+          <span>{{ f.value }}</span>
+        {% endcomment %}
+        <li>
+          <span>type</span>
+          <span>ice cream</span>
+        </li>
       </li>
     {% endfor %}
   </ul>
