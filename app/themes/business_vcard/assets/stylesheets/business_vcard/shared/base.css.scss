@@ -126,11 +126,16 @@ body {
   color: $nav-color;
   text-decoration: none;
   padding: 13px 35px;
+  position: relative;
 }
 
-.office-img {
-  background: asset-url("business_vcard/male-office.png");
-  background-size: 30px 30px;
-  background-repeat: no-repeat;
-  background-position: -1px 6px;
+.nav .office-img {
+  width: 30px;
+  margin: 0;
+  padding: 0;
+  border-radius: 19px;
+  background: #ECECEC;
+  position: absolute;
+  left: -7px;
+  top: 8px;
 }
