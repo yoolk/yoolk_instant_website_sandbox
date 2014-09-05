@@ -8,7 +8,7 @@
     <div class="annnouncement-timestamp">
       <p>
         <span class="icon-time-default"></span>
-        <time class="timeago" datetime="2014-07-28T03:21:06+00:00" title="" data-original-title="July 28, 2014 10:21">{{ announcement.created_at | date: "%a, %b %d, %y" }}</time>
+        <time class="timeago" datetime="{{ announcement.updated_at | date: '%Y-%m-%d' }}"></time>
       </p>
     </div>
   </article>

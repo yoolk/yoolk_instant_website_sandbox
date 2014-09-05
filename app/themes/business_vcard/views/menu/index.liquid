@@ -3,7 +3,7 @@
 {% for category in listing.food_categories %}
   {% for food in category.foods %}
     <div class="catalog">
-      <a href="/menu/{{menu.id}}/{{food.id}}">
+      <a href="/menu/{{category.id}}/{{food.id}}">
         <h2 class="catalog-title">{{ food.name }}</h2>
       </a>
       <div class="catalog-body">
