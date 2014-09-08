@@ -1,7 +1,7 @@
 jQuery ->
   _initMapCanvasHeight = ->
     win_height  = $(window).height()
-    $("#map-canvas").css("height", 576 )
+    $("#map-canvas").css("height", win_height - 75 )
 
   _renderMap   = ->
     mapCanvas  = $("#map-canvas")
