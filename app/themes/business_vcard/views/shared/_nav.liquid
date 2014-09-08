@@ -1,6 +1,6 @@
 <div class="nav">
   <div class="side-nav">
-    {{ listing.logo.image.attachment_meta.medium.url | image_tag }}
+    {{ listing.logo.image.attachment_meta.medium.url | image_tag | link_to_home}}
 
     <ul>
       <li>{{ 'contact us' | link_to_home }}</li>
