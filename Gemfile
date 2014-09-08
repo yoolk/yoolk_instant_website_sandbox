@@ -9,8 +9,8 @@ gem 'liquid-rails',                 github: 'yoolk/liquid-rails'
 gem 'themes_on_rails',              github: 'yoolk/themes_on_rails', branch: 'liquid'
 
 group :development do
-  gem 'oj'
-  gem 'hashie',           '~> 3.2.0'
+  gem 'oj',               '~> 2.10.2'
+  gem 'hashie',           '~> 3.3.1'
   gem 'quiet_assets'
 
   gem 'thin'

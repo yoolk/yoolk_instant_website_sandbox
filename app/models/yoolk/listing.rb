@@ -14,6 +14,10 @@ module Yoolk
       Yoolk::Listing.new(attributes)
     end
 
+    def to_param
+      "#{id}"
+    end
+
     def products
       product_categories.map(&:products).flatten
     end
