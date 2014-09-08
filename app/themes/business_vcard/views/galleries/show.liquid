@@ -1,6 +1,8 @@
 <h1 class="page-title">{{ image_gallery.name }}</h1>
 <div id="galleries" class="collage effect-parent">
   {% for gallery_image in image_gallery.gallery_images %}
-    {{ gallery_image.image.attachment_meta.medium.url | image_tag }}
+    <a href="{{ gallery_image.image.attachment_meta.large.url }}" rel="group" data-colorbox="true" data-colorbox-height="95%25" data-colorbox-width="95%25" data-colorbox-photo="true" data-colorbox-static="true">
+      {{ gallery_image.image.attachment_meta.medium.url | image_tag }}
+    </a>
   {% endfor %}
 </div>
