@@ -145,22 +145,10 @@ body {
   height: 18px;
   padding-left: 23px;
   background: asset-url("business_vcard/time.png");
-  background-position: 1px 1px;
   background-repeat: no-repeat;
-  background-position: 0px 3px;
+  background-position: 0px;
 }
 time.timeago {
   position: relative;
   cursor: default;
-}
-time.timeago[title]:hover:after {
-  content: attr(title);
-  background: #333;
-  padding: 5px;
-  color: white;
-  position: absolute;
-  top: -27px;
-  left: 21px;
-  border-radius: 4px;
-  font-size: 12px;
 }

@@ -3,6 +3,6 @@
   <img src="{{ announcement.image.attachment_meta.large.url }}">
   <p class="item-description">{{ announcement.text }}</p>
   <p>
-    <time class="timeago icon-time-default" datetime="{{ announcement.updated_at | date: '%Y-%m-%d' }}" title="{{ announcement.updated_at | date: '%B %d, %Y %k:%M' }}"></time>
+    <time class="timeago icon-time-default tooltip_link" data-toggle="tooltip" datetime="{{ announcement.updated_at | date: '%Y-%m-%d' }}" title="{{ announcement.updated_at | date: '%B %d, %Y %k:%M' }}"></time>
   </p>
 </article>
