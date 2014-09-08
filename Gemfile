@@ -8,6 +8,8 @@ gem 'yoolk_instant_website_liquid', github: 'yoolk/yoolk_instant_website_liquid'
 gem 'liquid-rails',                 github: 'yoolk/liquid-rails'
 gem 'themes_on_rails',              github: 'yoolk/themes_on_rails', branch: 'liquid'
 
+gem 'colorbox-rails',               '0.1.2', github: "radin-reth/colorbox-rails"
+
 group :development do
   gem 'oj'
   gem 'hashie',           '~> 3.2.0'

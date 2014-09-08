@@ -3,20 +3,22 @@
 <head>
   <title>{{ listing.name }}</title>
   {{ 'http://fonts.googleapis.com/css?family=Source+Sans+Pro' | stylesheet_link_tag }}
-  {{ 'http://maps.google.com/maps/api/js?sensor=true' | javascript_include_tag }}
-
-  {{ 'business_vcard/all.js'  | asset_path | javascript_include_tag }}
 
   {{ 'http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css' | stylesheet_link_tag }}
-  {{ 'http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js' | javascript_include_tag }}
 
   {{ 'business_vcard/all.css' | asset_path | stylesheet_link_tag }}
   {% csrf_meta_tags %}
+
 </head>
 <body>
   {% include 'shared/nav' %}
   <div class="main-container">
     {{ content_for_layout }}
   </div>
+
+  {{ 'business_vcard/all.js'  | asset_path | javascript_include_tag }}
+  {{ 'http://maps.google.com/maps/api/js?sensor=true' | javascript_include_tag }}
+  {{ 'http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js' | javascript_include_tag }}
+
 </body>
 </html>

@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/radin-reth/colorbox-rails.git
+  revision: dffd4ca16e8a66adf927fd955674dbca771f0e58
+  specs:
+    colorbox-rails (0.1.2)
+      jquery-rails
+      rails (>= 3.1.1)
+
+GIT
   remote: git://github.com/yoolk/liquid-rails.git
   revision: da2ecce78a983dd5c1e88e320ca4f31d2a3838c2
   specs:
@@ -152,6 +160,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  colorbox-rails (= 0.1.2)!
   hashie (~> 3.2.0)
   liquid-rails!
   oj
