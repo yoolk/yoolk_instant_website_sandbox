@@ -1,21 +1,21 @@
-<h1 class="page-title">products</h1>
+<h1 class="page-title">menus</h1>
 
-{% for category in listing.product_categories %}
-  {% for product in category.products %}
+{% for category in listing.food_categories %}
+  {% for food in category.foods %}
     <div class="catalog">
-      <a href="/products/{{category.id}}/{{product.id}}">
-        <h2 class="catalog-title">{{ product.name }}</h2>
+      <a href="/menu/{{category.id}}/{{food.id}}">
+        <h2 class="catalog-title">{{ food.name }}</h2>
       </a>
       <div class="catalog-body">
         <div class="catalog-image">
-          {% if product.photos.first != blank %}
+          {% if food.photos.first != blank %}
             <a href="#" class="cboxElement">
-              {{ product.photos.first.attachment_meta.large.url | image_tag }}
+              {{ food.photos.first.attachment_meta.large.url | image_tag }}
             </a>
           {% endif %}
         </div>
         <ol class="catalog-thumbnails">
-          {% for photo in product.photos %}
+          {% for photo in food.photos %}
             {% if photo != blank %}
               <li class="catalog-thumbnails-image" data-photo-url="#">
                 <a class="active" href="" rel="" title="" >
@@ -27,9 +27,9 @@
         </ol>
         <div class="catalog-info">
           <ul class="catalog-info-specifications list-dotted">
-            {% for feature_hash in product.features %}
+            {% for feature_hash in food.properties %}
               {% for feature in feature_hash %}
-                <li class="clearfix product-list">
+                <li class="clearfix food-list">
                   <span class="ellipsis">{{ feature[0] }}</span><span class="ellipsis">{{ feature[1] }}</span>
                 </li>
               {% endfor %}

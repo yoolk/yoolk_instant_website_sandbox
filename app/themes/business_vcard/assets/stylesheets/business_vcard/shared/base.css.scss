@@ -66,14 +66,18 @@ body {
 
 .office {
   position: absolute;
-  bottom: 0;
+  bottom: 33px;
+  left: 62px;
 }
 .side-nav {
   position: relative;
   min-height: 90%;
-  padding-bottom: 26px;
+  padding-bottom: 93px;
 }
 
+.side-nav > ul {
+  border-bottom: 1px solid $page-title-bg-color;
+}
 .list-dotted > li{
   height: 17px;
   list-style: none;
@@ -94,7 +98,6 @@ body {
   text-transform: capitalize;
   padding: 18px 40px;
   background-color: $page-title-bg-color;
-  margin-bottom: 20px;
 }
 .title-item {
   font-weight: normal;
@@ -115,3 +118,36 @@ body {
 }
 
 .clear { clear: both; }
+
+.office-account {
+  display: block;
+  text-transform: capitalize;
+  color: $nav-color;
+  text-decoration: none;
+  padding: 13px 35px;
+  position: relative;
+}
+
+.nav .office-img {
+  width: 30px;
+  margin: 0;
+  padding: 0;
+  border-radius: 19px;
+  background: #ECECEC;
+  position: absolute;
+  left: -7px;
+  top: 8px;
+}
+
+.icon-time-default {
+  width: 18px;
+  height: 18px;
+  padding-left: 23px;
+  background: asset-url("business_vcard/time.png");
+  background-repeat: no-repeat;
+  background-position: 0px;
+}
+time.timeago {
+  position: relative;
+  cursor: default;
+}

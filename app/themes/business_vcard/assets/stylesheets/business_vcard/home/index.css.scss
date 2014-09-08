@@ -25,6 +25,7 @@ body,
   border-radius: 4px;
   background: white;
   padding: 20px;
+  position: relative;
 }
 
 .listing-categories,
@@ -54,5 +55,11 @@ body,
 .listing-categories li,
 .listing-contact-list li {
   color: $nav-color;
-  font-size: 14px;
+  font-size: 13px;
+}
+
+.listing-communications {
+  bottom: 15px;
+  position: absolute;
+  right: 15px;
 }

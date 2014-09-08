@@ -1,6 +1,6 @@
 <div class="nav">
   <div class="side-nav">
-    {{ listing.logo.image.attachment_meta.medium.url | image_tag }}
+    {{ listing.logo.image.attachment_meta.medium.url | image_tag | link_to_home}}
 
     <ul>
       <li>{{ 'contact us' | link_to_home }}</li>
@@ -11,7 +11,9 @@
         {{ 'photos'     | link_to_galleries }}
         <ul class="sub-nav">
           {% for album in listing.image_galleries %}
-            <li>{{ album.name | link_to: "#" }}</li>
+            <li>
+              <a href="{{ album.id | gallery_path }}">{{ album.name }}</a>
+            </li>
           {% endfor %}
         </ul>
       </li>
@@ -19,7 +21,9 @@
         {{ 'products'   | link_to_products }}
         <ul class="sub-nav">
           {% for product_category in listing.product_categories %}
-            <li>{{ product_category.name | link_to: "#" }}</li>
+            <li>
+              <a href="{{ product_category.id | products_category_path}}">{{ product_category.name }}</a>
+            </li>
           {% endfor %}
         </ul>
       </li>
@@ -27,15 +31,19 @@
         {{ 'services'   | link_to_services }}
         <ul class="sub-nav">
           {% for service_category in listing.service_categories %}
-            <li>{{ service_category.name | link_to: "#" }}</li>
+            <li>
+              <a href="{{ service_category.alias_id | services_category_path }}">{{ service_category.name }}</a>
+            </li>
           {% endfor %}
         </ul>
       </li>
       <li>
-        {{ 'menu'       | link_to_foods }}
+        {{ 'menu'       | link_to_menu }}
         <ul class="sub-nav">
           {% for food_category in listing.food_categories %}
-            <li>{{ food_category.name | link_to: "#" }}</li>
+            <li>
+              <a href="{{food_category.id | menu_category_path}}">{{food_category.name}}</a>
+            </li>
           {% endfor %}
         </ul>
       </li>
@@ -43,8 +51,9 @@
     </ul>
 
     <div class="office">
-      <span class="office-img"></span>
-      <p class="office-account">My office</p>
+      <a href="/office" class="office-account">
+        <img src="{{'business_vcard/male-office.png' | asset_path }}" class="office-img"> my office
+      </a>
     </div>
   </div>
 </div>

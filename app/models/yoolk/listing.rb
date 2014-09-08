@@ -22,6 +22,14 @@ module Yoolk
       product_categories.map(&:products).flatten
     end
 
+    def foods
+      food_categories.map(&:foods).flatten
+    end
+
+    def services
+      service_categories.map(&:services).flatten
+    end
+
     def to_liquid
       @hash
     end

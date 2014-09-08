@@ -5,3 +5,11 @@
     max-width: 100%;
   }
 }
+.readmore a {
+  text-transform: capitalize;
+  color: $body-font-color;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,21 +1,20 @@
-<h1 class="page-title">menus</h1>
+<h1 class="page-title">{{service_category.name}}</h1>
 
-{% for category in listing.food_categories %}
-  {% for food in category.foods %}
+  {% for service in service_category.services %}
     <div class="catalog">
-      <a href="/foods/kh12806-office-rental-foods/59-ground-floor">
-        <h2 class="catalog-title">{{ food.name }}</h2>
+      <a href="/services/{{service_category.alias_id}}/{{service.id}}">
+        <h2 class="catalog-title">{{ service.name }}</h2>
       </a>
       <div class="catalog-body">
         <div class="catalog-image">
-          {% if food.photos.first != blank %}
+          {% if service.photos.first != blank %}
             <a href="#" class="cboxElement">
-              {{ food.photos.first.attachment_meta.large.url | image_tag }}
+              {{ service.photos.first.attachment_meta.large.url | image_tag }}
             </a>
           {% endif %}
         </div>
         <ol class="catalog-thumbnails">
-          {% for photo in food.photos %}
+          {% for photo in service.photos %}
             {% if photo != blank %}
               <li class="catalog-thumbnails-image" data-photo-url="#">
                 <a class="active" href="" rel="" title="" >
@@ -27,10 +26,11 @@
         </ol>
         <div class="catalog-info">
           <ul class="catalog-info-specifications list-dotted">
-            {% for feature_hash in food.properties %}
+            {% for feature_hash in service.properties %}
               {% for feature in feature_hash %}
-                <li class="clearfix food-list">
-                  <span class="ellipsis">{{ feature[0] }}</span><span class="ellipsis">{{ feature[1] }}</span>
+                <li class="clearfix service-list">
+                  <span class="ellipsis">{{ feature[0] }}</span>
+                  <span class="ellipsis">{{ feature[1] }}</span>
                 </li>
               {% endfor %}
             {% endfor %}
@@ -40,4 +40,3 @@
       </div>
     </div>
   {% endfor %}
-{% endfor %}
