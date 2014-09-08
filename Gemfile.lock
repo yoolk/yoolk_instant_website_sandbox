@@ -1,12 +1,4 @@
 GIT
-  remote: git://github.com/radin-reth/colorbox-rails.git
-  revision: dffd4ca16e8a66adf927fd955674dbca771f0e58
-  specs:
-    colorbox-rails (0.1.2)
-      jquery-rails
-      rails (>= 3.1.1)
-
-GIT
   remote: git://github.com/yoolk/liquid-rails.git
   revision: da2ecce78a983dd5c1e88e320ca4f31d2a3838c2
   specs:
@@ -34,6 +26,15 @@ GIT
       sass-rails (~> 4.0.2)
       therubyracer (~> 0.12.1)
       uglifier (>= 1.3.0)
+
+GIT
+  remote: git@github.com:radin-reth/colorbox-rails.git
+  revision: 48ac41376f0e87a6c9138a9d2d65b0794fca0d77
+  branch: 0-1-2-stable
+  specs:
+    colorbox-rails (0.1.2)
+      jquery-rails
+      rails (>= 3.1.1)
 
 GEM
   remote: https://rubygems.org/
