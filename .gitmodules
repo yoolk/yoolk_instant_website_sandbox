@@ -1,0 +1,3 @@
+[submodule "yoolk_liquid"]
+	path = yoolk_liquid
+	url = git@github.com:yoolk/yoolk_liquid.git
