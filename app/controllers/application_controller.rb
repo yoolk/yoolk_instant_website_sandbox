@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
   private
 
     def set_listing
-      @listing = Yoolk::Listing.find(params[:alias_id] || 'kh1')
+      @listing = Yoolk::Sandbox::Listing.find(params[:alias_id] || 'kh1')
     end
 
     def theme_resolver

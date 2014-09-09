@@ -4,16 +4,17 @@ source 'https://rubygems.org'
 gem 'rails',              '4.0.9'
 
 # Liquid
-gem 'yoolk_instant_website_liquid', github: 'yoolk/yoolk_instant_website_liquid'
 gem 'liquid-rails',                 github: 'yoolk/liquid-rails'
 gem 'themes_on_rails',              github: 'yoolk/themes_on_rails', branch: 'liquid'
+gem 'yoolk_liquid',                 github: 'yoolk/yoolk_instant_website_liquid'
 
-gem 'colorbox-rails',               '0.1.2', git: "git@github.com:radin-reth/colorbox-rails.git", branch: '0-1-2-stable'
 
 group :development do
   gem 'oj',               '~> 2.10.2'
   gem 'hashie',           '~> 3.3.1'
   gem 'quiet_assets'
+
+  gem 'colorbox-rails',   github: 'radin-reth/colorbox-rails', branch: '0-1-2-stable'
 
   gem 'thin'
   gem 'pry-rails'

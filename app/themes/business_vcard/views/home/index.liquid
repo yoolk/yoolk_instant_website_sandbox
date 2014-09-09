@@ -1,13 +1,16 @@
-<div class="shadow-effect" itemscope: "" itemtype: "http://schema.org/LocalBusiness">
+<div class="shadow-effect" itemscope="" itemtype="http://schema.org/LocalBusiness">
   <div class="vcard">
     <div class="listing">
-      <h1 class="listing-name" itemprop: "name">
+      <h1 class="listing-name" itemprop="name">
         {{ listing.name }}
       </h1>
-      <em class="listing-description" itemprop: "description">
-        {{ "Local Business in Phnom Penh - Cambodia" }}
+      <em class="listing-description" itemprop="description">
+        {{ 'Local Business in ' | append: listing.location.name }}
+        {% if listing.country %}
+          {{ ' - ' | append: listing.country.name }}
+        {% endif %}
       </em>
-      <div class="listing-categories" itemscope: "">
+      <div class="listing-categories" itemscope="">
         <ul>
           <li>Office Rental Services</li>
           <li>Business Centres</li>
@@ -17,21 +20,25 @@
         </ul>
       </div>
       <div class="listing-communications">
-        <div class="listing-address" itemprop: "address", itemscope: "", itemtype: "http://schema.org/PostalAddress">
-          <address itemprop: "streetAddress">
+        <div class="listing-address" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+          <address itemprop="streetAddress">
             {{ listing.address }}
           </address>
 
-          <div class="listing-contact" itemscope: "", itemtype: "http://schema.org/ContactPoint">
+          <div class="listing-contact" itemscope="" itemtype="http://schema.org/ContactPoint">
             <ul class="listing-contact-list list-dotted">
-              <li>
-                <span>Tel</span>
-                <span class="bold color333">012 869 111<span>
-              </li>
+              {% if listing.telephone %}
+                <li>
+                  <span>Tel</span>
+                  <span class="bold color333">{{ listing.telephone.value }}<span>
+                </li>
+              {% endif %}
+              {% if listing.email %}
               <li>
                 <span>E-Mail</span>
-                <span class="bold color333">yellow.tower.co@gmail.com</span>
+                <span class="bold color333">{{ listing.email.value }}</span>
               </li>
+              {% endif %}
             </ul>
           </div>
         </div>
