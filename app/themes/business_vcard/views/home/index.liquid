@@ -12,11 +12,9 @@
       </em>
       <div class="listing-categories" itemscope="">
         <ul>
-          <li>Office Rental Services</li>
-          <li>Business Centres</li>
-          <li>Real Estate Agencies & Appraisers</li>
-          <li>Directories & Guides</li>
-          <li>Property Investment Companies</li>
+          {% for listing_category in listing.listing_categories %}
+            <li>{{ listing_category.name }}</li>
+          {% endfor %}
         </ul>
       </div>
       <div class="listing-communications">

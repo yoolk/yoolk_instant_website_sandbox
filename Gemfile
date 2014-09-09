@@ -4,9 +4,9 @@ source 'https://rubygems.org'
 gem 'rails',              '4.0.9'
 
 # Liquid
-gem 'liquid-rails',                 github: 'yoolk/liquid-rails'
-gem 'themes_on_rails',              github: 'yoolk/themes_on_rails', branch: 'liquid'
-gem 'yoolk_liquid',                 github: 'yoolk/yoolk_instant_website_liquid'
+gem 'liquid-rails',       github: 'yoolk/liquid-rails'
+gem 'themes_on_rails',    github: 'yoolk/themes_on_rails', branch: 'liquid'
+gem 'yoolk_liquid',       path:   '/Users/chamnapchhorn/workspace/yoolk/yoolk_liquid'#'yoolk_liquid'
 
 
 group :development do

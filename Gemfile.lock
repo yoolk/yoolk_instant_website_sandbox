@@ -8,14 +8,6 @@ GIT
       rails (>= 3.1.1)
 
 GIT
-  remote: git://github.com/yoolk/liquid-rails.git
-  revision: c69f0daa1702aeba2b1ff8a730873592ad8456cd
-  specs:
-    liquid-rails (0.1.0)
-      liquid (~> 3.0.0.rc1)
-      rails (>= 3.2)
-
-GIT
   remote: git://github.com/yoolk/themes_on_rails.git
   revision: fde714319bf9d169ec07b9d8de6850d6ef9fc9a7
   branch: liquid
@@ -23,9 +15,15 @@ GIT
     themes_on_rails (0.3.0)
       rails (>= 3.2)
 
-GIT
-  remote: git://github.com/yoolk/yoolk_instant_website_liquid.git
-  revision: 8d7de459a947f689edb595ba93a907bdb34d965f
+PATH
+  remote: /Users/chamnapchhorn/workspace/me/liquid-rails
+  specs:
+    liquid-rails (0.1.0)
+      liquid (~> 3.0.0.rc1)
+      rails (>= 3.2)
+
+PATH
+  remote: /Users/chamnapchhorn/workspace/yoolk/yoolk_liquid
   specs:
     yoolk_liquid (1.0.0.alpha1)
       bootstrap-sass (~> 3.2.0)
