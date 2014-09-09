@@ -23,9 +23,8 @@ GIT
     themes_on_rails (0.3.0)
       rails (>= 3.2)
 
-GIT
-  remote: git://github.com/yoolk/yoolk_liquid.git
-  revision: 5cecbdc2b3286d68a0ded33b4a2eb17bfa09f53d
+PATH
+  remote: yoolk_liquid
   specs:
     yoolk_liquid (1.0.0.alpha1)
       bootstrap-sass (~> 3.2.0)
@@ -108,7 +107,7 @@ GEM
     multi_json (1.10.1)
     oj (2.10.2)
     polyglot (0.3.5)
-    pry (0.10.0)
+    pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
