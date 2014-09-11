@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: git://github.com/yoolk/liquid-rails.git
-  revision: c9fe88cd9c0cddd54d6003a43d1a4bd7952ccca5
+  revision: b799b9fd546dc14f72e8783c657169d048f4399b
   specs:
     liquid-rails (0.1.0)
       liquid (~> 3.0.0.rc1)
@@ -30,6 +30,7 @@ PATH
       bootstrap-sass (~> 3.2.0)
       coffee-rails (~> 4.0.1)
       jquery-rails (~> 3.1.2)
+      kaminari (~> 0.16.1)
       oj (~> 2.10.2)
       rails (~> 4.0.9)
       sass-rails (~> 4.0.2)
@@ -96,6 +97,9 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.1)
+    kaminari (0.16.1)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     libv8 (3.16.14.5)
     liquid (3.0.0.rc1)
     mail (2.5.4)
