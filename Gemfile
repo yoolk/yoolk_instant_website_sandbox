@@ -10,10 +10,7 @@ gem 'yoolk_liquid',       path:   'yoolk_liquid'
 
 
 group :development do
-  gem 'oj',               '~> 2.10.2'
-  gem 'hashie',           '~> 3.3.1'
   gem 'quiet_assets'
-
   gem 'colorbox-rails',   github: 'radin-reth/colorbox-rails', branch: '0-1-2-stable'
 
   gem 'thin'

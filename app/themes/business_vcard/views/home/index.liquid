@@ -32,10 +32,10 @@
                 </li>
               {% endif %}
               {% if listing.email %}
-              <li>
-                <span>E-Mail</span>
-                <span class="bold color333">{{ listing.email.value }}</span>
-              </li>
+                <li>
+                  <span>E-Mail</span>
+                  <span class="bold color333">{{ listing.email.value | mail_to }}</span>
+                </li>
               {% endif %}
             </ul>
           </div>
