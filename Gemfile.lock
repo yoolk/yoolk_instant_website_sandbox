@@ -30,6 +30,7 @@ PATH
       bootstrap-sass (~> 3.2.0)
       coffee-rails (~> 4.0.1)
       jquery-rails (~> 3.1.2)
+      oj (~> 2.10.2)
       rails (~> 4.0.9)
       sass-rails (~> 4.0.2)
       therubyracer (~> 0.12.1)
@@ -88,7 +89,6 @@ GEM
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (2.2.1)
-    hashie (3.3.1)
     hike (1.2.3)
     i18n (0.6.11)
     ice_nine (0.11.0)
@@ -177,9 +177,7 @@ PLATFORMS
 
 DEPENDENCIES
   colorbox-rails!
-  hashie (~> 3.3.1)
   liquid-rails!
-  oj (~> 2.10.2)
   pry-rails
   quiet_assets
   rails (= 4.0.9)

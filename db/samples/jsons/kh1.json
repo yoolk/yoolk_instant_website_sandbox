@@ -56,7 +56,9 @@
             "text": "Office Rental Services"
           }
         ]
-      }
+      },
+      "created_at": "2014-08-13 08:59:54 UTC",
+      "updated_at": "2014-08-13 08:59:54 UTC"
     },
     {
       "id": "2",
@@ -68,7 +70,9 @@
       "display_on_web": true,
       "subcategories_count": 0,
       "listings_count": 1,
-      "level": 1
+      "level": 1,
+      "created_at": "2014-08-13 08:59:54 UTC",
+      "updated_at": "2014-08-13 08:59:54 UTC"
     }
   ],
   "keyphrases": [
@@ -372,8 +376,8 @@
           "id": 222108,
           "caption": 1,
           "display_order": 0,
-          "created_at": "Tue, 19 Aug 2014 10:06:49 UTC +00:00",
-          "updated_at": "Tue, 19 Aug 2014 10:07:50 UTC +00:00",
+          "created_at": "2014-08-19 08:59:54 UTC",
+          "updated_at": "2014-08-19 08:59:54 UTC",
           "image": {
             "id": 222287,
             "created_at": "2014-08-19 10:06:49 UTC",
@@ -410,7 +414,6 @@
         {
           "id": 222108,
           "caption": "222065.",
-          "created_at": "Mon, 28 Jul 2014 02:55:02 UTC +00:00",
           "display_order": 0,
           "image": {
             "id": 222108,
@@ -440,16 +443,14 @@
                 "url": "/attachments/images/galleries/small/222109.jpg"
               }
             },
-            "content_type": "image/jpeg",
-            "created_at": "Mon, 28 Jul 2014 02:55:02 UTC +00:00",
-            "updated_at": "Mon, 28 Jul 2014 02:55:41 UTC +00:00"
+            "content_type": "image/jpeg"
           },
-          "updated_at": "Mon, 28 Jul 2014 02:55:41 UTC +00:00"
+          "created_at": "2014-07-28 02:55:41 UTC",
+          "updated_at": "2014-07-28 02:55:41 UTC"
         },
         {
           "id": 222109,
           "caption": "222066.",
-          "created_at": "Mon, 28 Jul 2014 02:55:09 UTC +00:00",
           "display_order": 0,
           "image": {
             "id": 222109,
@@ -479,11 +480,10 @@
                 "url": "/attachments/images/galleries/small/222110.jpg"
               }
             },
-            "content_type": "image/jpeg",
-            "created_at": "Mon, 28 Jul 2014 02:55:09 UTC +00:00",
-            "updated_at": "Mon, 28 Jul 2014 02:56:03 UTC +00:00"
+            "content_type": "image/jpeg"
           },
-          "updated_at": "Mon, 28 Jul 2014 02:56:03 UTC +00:00"
+          "created_at": "2014-07-28 02:58:41 UTC",
+          "updated_at": "2014-07-28 02:58:41 UTC"
         }
       ]
     },
@@ -492,13 +492,11 @@
       "uuid": "AEC3B150-1603-11E4-8907-22000A900832",
       "caption": "222068.",
       "name": "Office Yoolk",
-      "created_at": "Mon, 28 Jul 2014 03:03:17 UTC +00:00",
       "display_order": 0,
       "gallery_images": [
         {
           "id": 222111,
           "caption": "222068.",
-          "created_at": "Mon, 28 Jul 2014 03:03:17 UTC +00:00",
           "display_order": 0,
           "image": {
             "id": 222111,
@@ -528,16 +526,14 @@
                 "url": "/attachments/images/galleries/small/222111.jpg"
               }
             },
-            "content_type": "image/jpeg",
-            "created_at": "Mon, 28 Jul 2014 03:03:17 UTC +00:00",
-            "updated_at": "Mon, 28 Jul 2014 03:04:12 UTC +00:00"
+            "content_type": "image/jpeg"
           },
-          "updated_at": "Mon, 28 Jul 2014 03:04:12 UTC +00:00"
+          "created_at": "2014-07-28 03:40:42 UTC",
+          "updated_at": "2014-07-28 03:40:42 UTC"
         },
         {
           "id": 222113,
           "caption": "222070.",
-          "created_at": "Mon, 28 Jul 2014 03:03:32 UTC +00:00",
           "display_order": 0,
           "image": {
             "id": 222113,
@@ -567,16 +563,14 @@
                 "url": "/attachments/images/galleries/small/222113.jpg"
               }
             },
-            "content_type": "image/jpeg",
-            "created_at": "Mon, 28 Jul 2014 03:03:32 UTC +00:00",
-            "updated_at": "Mon, 28 Jul 2014 03:04:44 UTC +00:00"
+            "content_type": "image/jpeg"
           },
-          "updated_at": "Mon, 28 Jul 2014 03:04:44 UTC +00:00"
+          "created_at": "2014-07-28 03:30:42 UTC",
+          "updated_at": "2014-07-28 03:30:42 UTC"
         },
         {
           "id": 222127,
           "caption": "1553987",
-          "created_at": "Mon, 28 Jul 2014 03:40:23 UTC +00:00",
           "display_order": 0,
           "image": {
             "id": 222127,
@@ -606,16 +600,14 @@
                 "url": "/attachments/images/galleries/small/222127.jpg"
               }
             },
-            "content_type": "image/jpeg",
-            "created_at": "Mon, 28 Jul 2014 03:40:23 UTC +00:00",
-            "updated_at": "Mon, 28 Jul 2014 03:41:14 UTC +00:00"
+            "content_type": "image/jpeg"
           },
-          "updated_at": "Mon, 28 Jul 2014 03:41:14 UTC +00:00"
+          "created_at": "2014-07-28 03:40:42 UTC",
+          "updated_at": "2014-07-28 03:40:42 UTC"
         },
         {
           "id": 222128,
           "caption": "1553988",
-          "created_at": "Mon, 28 Jul 2014 03:40:29 UTC +00:00",
           "display_order": 0,
           "image": {
             "id": 222128,
@@ -645,16 +637,14 @@
                 "url": "/attachments/images/galleries/small/222128.jpg"
               }
             },
-            "content_type": "image/jpeg",
-            "created_at": "Mon, 28 Jul 2014 03:40:29 UTC +00:00",
-            "updated_at": "Mon, 28 Jul 2014 03:41:14 UTC +00:00"
+            "content_type": "image/jpeg"
           },
-          "updated_at": "Mon, 28 Jul 2014 03:41:14 UTC +00:00"
+          "created_at": "2014-07-28 08:40:42 UTC",
+          "updated_at": "2014-07-28 08:40:42 UTC"
         },
         {
           "id": 222130,
           "caption": "1554013",
-          "created_at": "Mon, 28 Jul 2014 03:40:42 UTC +00:00",
           "display_order": 0,
           "image": {
             "id": 222130,
@@ -684,11 +674,10 @@
                 "url": "/attachments/images/galleries/small/222130.jpg"
               }
             },
-            "content_type": "image/jpeg",
-            "created_at": "Mon, 28 Jul 2014 03:40:42 UTC +00:00",
-            "updated_at": "Mon, 28 Jul 2014 03:41:14 UTC +00:00"
+            "content_type": "image/jpeg"
           },
-          "updated_at": "Mon, 28 Jul 2014 03:41:14 UTC +00:00"
+          "created_at": "2014-07-28 03:40:42 UTC",
+          "updated_at": "2014-07-28 03:40:42 UTC"
         }
       ]
     }
@@ -698,6 +687,7 @@
       "id": 1237,
       "text": "Go to http://www.rubyonrails.org and say hello to david@loudthinking.com Apple has indeed purchased Beats, which includes both Beats Audio hardware and Beats Music, the streaming radio service that was founded by rapper Dr. Dre and longtime music industry exec Jimmy Iovine. The deal was reported to be in the works earlier this month, and was said to be worth an estimated $3.2 billion at the time, though a recent New York Post report said it was cut to $3 billion after Apple completed its due diligence. The price is indeed $3 billion, with $2.6 billion in cash and $400 million in stock. Apple typically makes smaller purchases of startups and companies most people have never heard of, so Beats is a considerable change of course for the company. The last really high-profile acquisition Apple made was NeXT, back when it bought that company to bring Steve Jobs back into the fold.",
       "created_at": "2014-05-22 16:18:44 UTC",
+      "updated_at": "2014-05-22 16:18:44 UTC",
       "image": {
         "id": 225,
         "content_type": "image/jpg",
@@ -827,8 +817,12 @@
   ],
   "service_categories": [
     {
-      "category_id": "5402bc4669702d5c8af20100",
+      "id": "1",
+      "alias_id": "kh1",
       "name": "Office Rental Services",
+      "short_name": "Office Rental Services",
+      "created_at": "2014-08-13 08:59:54 UTC",
+      "updated_at": "2014-08-13 08:59:54 UTC",
       "services": [
         {
           "id": 20,
@@ -965,7 +959,6 @@
   "artworks": [
     {
       "id": "A0642ABA-76A1-11E3-8199-12314004313C",
-      "created_at": "Mon, 06 Jan 2014 07:10:31 UTC +00:00",
       "description": "",
       "image": {
         "id": 220229,
@@ -995,14 +988,13 @@
             "url": "/attachments/images/brochures/small/220229.png"
           }
         },
-        "content_type": "image/png",
-        "created_at": "Mon, 06 Jan 2014 07:10:25 UTC +00:00",
-        "updated_at": "Mon, 06 Jan 2014 07:15:26 UTC +00:00"
+        "content_type": "image/png"
       },
       "is_active": true,
       "name": "Tower Ad 2014 for Web",
       "text": "Property Investment\r\nOffice Space\r\nOffice Rental Services\r\nOffice Rental\r\nReal Estate Investment\r\nOffice Lease\r\nCommercial Lease\r\nOffice Building\r\nCommercial Property\r\nInternational Property\r\nOverseas Property\r\nCommercial Real Estate\r\nBusiness Centres\r\nProperty for sale\r\n",
-      "updated_at": "Thu, 12 Jun 2014 08:37:00 UTC +00:00"
+      "created_at": "2014-01-06 07:55:41 UTC",
+      "updated_at": "2014-01-06 07:55:41 UTC"
     }
   ]
 }
