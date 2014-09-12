@@ -3,7 +3,7 @@
 {% for category in listing.service_categories %}
   {% for service in category.services %}
     <div class="catalog">
-      <a href="/services/{{category.alias_id}}/{{service.id}}">
+      <a href="{{ service.url }}">
         <h2 class="catalog-title">{{ service.name }}</h2>
       </a>
       <div class="catalog-body">
