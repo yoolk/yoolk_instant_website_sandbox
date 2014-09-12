@@ -3,6 +3,6 @@ class ServicesController < ApplicationController
   end
 
   def show
-    @service = @listing.services.select{|service| service.id == params[:id].to_i }[0]
+    @service = @listing.services.find { |service| service.id == params[:id].to_i }
   end
 end
