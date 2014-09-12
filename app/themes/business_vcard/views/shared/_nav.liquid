@@ -12,7 +12,7 @@
         <ul class="sub-nav">
           {% for album in listing.image_galleries %}
             <li>
-              <a href="{{ album.id | gallery_path }}">{{ album.name }}</a>
+              <a href="{{ album | gallery_url }}">{{ album.name }}</a>
             </li>
           {% endfor %}
         </ul>
@@ -22,7 +22,7 @@
         <ul class="sub-nav">
           {% for product_category in listing.product_categories %}
             <li>
-              <a href="{{ product_category.id | products_category_path}}">{{ product_category.name }}</a>
+              <a href="{{ product_category | products_category_url }}">{{ product_category.name }}</a>
             </li>
           {% endfor %}
         </ul>
@@ -32,7 +32,7 @@
         <ul class="sub-nav">
           {% for service_category in listing.service_categories %}
             <li>
-              <a href="{{ service_category.alias_id | services_category_path }}">{{ service_category.name }}</a>
+              <a href="{{ service_category | services_category_url }}">{{ service_category.name }}</a>
             </li>
           {% endfor %}
         </ul>
@@ -42,7 +42,7 @@
         <ul class="sub-nav">
           {% for food_category in listing.food_categories %}
             <li>
-              <a href="{{food_category.id | menu_category_path}}">{{food_category.name}}</a>
+              <a href="{{ food_category | menu_category_url }}">{{ food_category.name }}</a>
             </li>
           {% endfor %}
         </ul>

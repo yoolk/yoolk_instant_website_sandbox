@@ -877,21 +877,24 @@
           ]
         },
         {
-          "id": 21,
-          "name": "3rd floor",
-          "description": "&lt;div&gt;show me something&lt;/div&gt;<br><blockquote>and a host of new technologies, </blockquote><b>Special features</b><ul><li>widen space</li><li>Security</li></ul>",
+          "id": 10,
+          "name": "4th floor",
+          "description": "<u>Fresh air</u>",
           "properties": [
             {
-              "Basin": "9.3 sqm"
+              "Floor Slab": "288.66 sqm"
             },
             {
-              "Rooftop": "94.28 sqm"
+              "Mezzanine": "118.19 sqm"
             },
             {
-              "Stair Area": "7.52 sqm"
+              "Balcony": "57.57 sqm"
             },
             {
-              "Total": "111.1 sqm"
+              "IT room": "6.64 sqm"
+            },
+            {
+              "Bathroom": "14.48 sqm"
             }
           ],
           "photos": []

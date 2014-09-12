@@ -12,6 +12,16 @@ class ApplicationController < ActionController::Base
       { theme: request.parameters['theme'], alias_id: params[:alias_id], locale: params[:locale] }
     end
 
+    def extract_alias_id(text)
+      text  = text.to_s.dup.force_encoding("ISO-8859-1")
+      match = /^([A-Za-z]+-)?[A-Za-z]+\d+/.match(text)
+      if match.present?
+        match[0]
+      else
+        text
+      end
+    end
+
   private
 
     def set_listing
