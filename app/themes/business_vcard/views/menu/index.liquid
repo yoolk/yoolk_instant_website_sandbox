@@ -1,28 +1,26 @@
-<h1 class="page-title">menus</h1>
+<h1 class="page-title">menu</h1>
 
 {% for category in listing.food_categories %}
   {% for food in category.foods %}
     <div class="catalog">
-      <a href="/menu/{{category.id}}/{{food.id}}">
+      <a href="{{ food.url }}">
         <h2 class="catalog-title">{{ food.name }}</h2>
       </a>
       <div class="catalog-body">
         <div class="catalog-image">
-          {% if food.photos.first != blank %}
+          {% if food.cover_photo != blank %}
             <a href="#" class="cboxElement">
-              {{ food.photos.first.attachment_meta.large.url | image_tag }}
+              {{ food.cover_photo | attachment_url: 'large' | image_tag }}
             </a>
           {% endif %}
         </div>
         <ol class="catalog-thumbnails">
           {% for photo in food.photos %}
-            {% if photo != blank %}
-              <li class="catalog-thumbnails-image" data-photo-url="#">
-                <a class="active" href="" rel="" title="" >
-                  {{ photo.attachment_meta.thumbnail.url | image_tag }}
-                </a>
-              </li>
-            {% endif %}
+            <li class="catalog-thumbnails-image" data-photo-url="#">
+              <a class="active" href="" rel="" title="" >
+                {{ photo | attachment_url: 'thumbnail' | image_tag }}
+              </a>
+            </li>
           {% endfor %}
         </ol>
         <div class="catalog-info">

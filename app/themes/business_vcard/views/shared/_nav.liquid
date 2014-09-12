@@ -32,7 +32,7 @@
         <ul class="sub-nav">
           {% for service_category in listing.service_categories %}
             <li>
-              <a href="{{ service_category | services_category_url }}">{{ service_category.name }}</a>
+              <a href="{{ service_category.url }}">{{ service_category.name }}</a>
             </li>
           {% endfor %}
         </ul>
