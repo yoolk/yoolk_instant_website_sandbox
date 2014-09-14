@@ -10,9 +10,9 @@
       <li>
         {{ 'photos'     | link_to_galleries }}
         <ul class="sub-nav">
-          {% for album in listing.image_galleries %}
+          {% for gallery in listing.galleries %}
             <li>
-              <a href="{{ album | gallery_url }}">{{ album.name }}</a>
+              <a href="{{ gallery.url }}">{{ gallery.name }}</a>
             </li>
           {% endfor %}
         </ul>

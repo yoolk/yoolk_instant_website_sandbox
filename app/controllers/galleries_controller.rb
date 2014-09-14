@@ -3,6 +3,6 @@ class GalleriesController < ApplicationController
   end
 
   def show
-    @image_gallery = @listing.image_galleries.select{|album| album.id == params[:id].to_i }[0]
+    @gallery = @listing.image_galleries.find { |gallery| gallery.id == params[:id].to_i }
   end
 end

@@ -1,10 +1,8 @@
 <h1 class="page-title">photo</h1>
 <div id="galleries" class="collage effect-parent">
-  {% for album in listing.image_galleries %}
-    {% for gallery_image in album.gallery_images %}
-      <a href="{{ gallery_image.image.attachment_meta.large.url }}" rel="group" data-colorbox="true" data-colorbox-height="95%25" data-colorbox-width="95%25" data-colorbox-photo="true" data-colorbox-static="true">
-        {{ gallery_image.image.attachment_meta.medium.url | image_tag }}
-      </a>
-    {% endfor %}
+  {% for image in listing.images %}
+    <a href="{{ image.url }}" rel="group" data-colorbox="true" data-colorbox-height="95%25" data-colorbox-width="95%25" data-colorbox-photo="true" data-colorbox-static="true">
+      {{ image | attachment_url: 'large' | image_tag }}
+    </a>
   {% endfor %}
 </div>
