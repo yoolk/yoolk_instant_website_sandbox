@@ -4,7 +4,7 @@
     <h2 class="title-item">{{ catalog_item.title }}</h2>
     <p class="item-description">{{ catalog_item.html_text }}</p>
     {% if catalog_item.image != blank %}
-      {{ catalog_item | attachment_url: 'large' | image_tag }}
-    {% endif%}
+      {{ catalog_item.image | attachment_url: 'large' | image_tag }}
+    {% endif %}
   </article>
 {% endfor %}

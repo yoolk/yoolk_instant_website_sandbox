@@ -1,6 +1,8 @@
 <h1 class="page-title">brochures</h1>
 <div id="prochures">
-  {% for brochure in listing.artworks %}
-    {{ brochure.image.attachment_meta.large.url | image_tag }}
+  {% for brochure in listing.brochures %}
+    {% if brochure.image != blank %}
+      {{ brochure.image | attachment_url: 'large' | image_tag }}
+    {% endif %}
   {% endfor %}
 </div>
