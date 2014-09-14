@@ -1,43 +1,37 @@
 <h1 class="page-title">products</h1>
 
-{% for category in listing.product_categories %}
-  {% for product in category.products %}
-    <div class="catalog">
-      <a href="/products/{{category.id}}/{{product.id}}">
-        <h2 class="catalog-title">{{ product.name }}</h2>
-      </a>
-      <div class="catalog-body">
-        <div class="catalog-image">
-          {% if product.photos.first != blank %}
-            <a href="#" class="cboxElement">
-              {{ product.photos.first.attachment_meta.large.url | image_tag }}
-            </a>
-          {% endif %}
-        </div>
-        <ol class="catalog-thumbnails">
-          {% for photo in product.photos %}
-            {% if photo != blank %}
-              <li class="catalog-thumbnails-image" data-photo-url="#">
-                <a class="active" href="" rel="" title="" >
-                  {{ photo.attachment_meta.thumbnail.url | image_tag }}
-                </a>
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ol>
-        <div class="catalog-info">
-          <ul class="catalog-info-specifications list-dotted">
-            {% for feature_hash in product.features %}
-              {% for feature in feature_hash %}
-                <li class="clearfix product-list">
-                  <span class="ellipsis">{{ feature[0] }}</span><span class="ellipsis">{{ feature[1] }}</span>
-                </li>
-              {% endfor %}
-            {% endfor %}
-          </ul>
-        </div>
-        <div class="clear"></div>
+{% for product in listing.products %}
+  <div class="catalog">
+    <a href="{{ product.url }}">
+      <h2 class="catalog-title">{{ product.name }}</h2>
+    </a>
+    <div class="catalog-body">
+      <div class="catalog-image">
+        {% if product.photos.first != blank %}
+          <a href="#" class="cboxElement">
+            {{ product.cover_photo | attachment_url: 'large' | image_tag }}
+          </a>
+        {% endif %}
       </div>
+      <ol class="catalog-thumbnails">
+        {% for photo in product.photos %}
+          <li class="catalog-thumbnails-image" data-photo-url="#">
+            <a class="active" href="" rel="" title="" >
+              {{ photo | attachment_url: 'thumbnail' | image_tag }}
+            </a>
+          </li>
+        {% endfor %}
+      </ol>
+      <div class="catalog-info">
+        <ul class="catalog-info-specifications list-dotted">
+          {% for feature in product.features %}
+            <li class="clearfix product-list">
+              <span class="ellipsis">{{ feature.name }}</span><span class="ellipsis">{{ feature.value }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="clear"></div>
     </div>
-  {% endfor %}
+  </div>
 {% endfor %}

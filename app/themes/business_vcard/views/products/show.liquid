@@ -13,6 +13,6 @@
     {% endfor %}
   </ul>
   {% for photo in product.photos %}
-    {{ photo.attachment_meta.large.url | image_tag }}
+    {{ photo | attachment_url: 'large' | image_tag }}
   {% endfor %}
 </div>

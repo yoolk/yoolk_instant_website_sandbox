@@ -3,6 +3,6 @@ class AnnouncementsController < ApplicationController
   end
 
   def show
-    @announcement = @listing.announcements.select{|announcement| announcement.id == params[:id].to_i }[0]
+    @announcement = @listing.announcements.find { |announcement| announcement.id == params[:id].to_i }
   end
 end
