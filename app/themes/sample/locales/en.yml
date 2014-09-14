@@ -1,5 +1,5 @@
 en:
-  business_vcard:
+  sample:
     welcome: 'Welcome'
     global:
       copyright:              "Copyright © %{year}. All Rights Reserved"

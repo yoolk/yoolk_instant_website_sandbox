@@ -29,6 +29,6 @@ class ApplicationController < ActionController::Base
     end
 
     def theme_resolver
-      @current_theme ||= (params[:theme] || 'business_vcard')
+      @current_theme ||= (params[:theme] || 'sample')
     end
 end
