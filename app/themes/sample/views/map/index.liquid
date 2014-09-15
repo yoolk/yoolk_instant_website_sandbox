@@ -1,13 +1,13 @@
 <h1 class="page-title">map</h1>
-<div id="map-canvas" data-lat="{{listing.lat}}" data-long="{{listing.long}}"></div>
+<div id="map-canvas" data-lat="{{ listing.lat }}" data-long="{{ listing.long }}"></div>
 <script id="tmpl-infowindow" type="text/x-jsrender">
   <div class='infowindowt' itemscope='' itemtype='http://schema.org/ContactPoint'>
-  <h2 class='infowindow-listing-name'>Yellow Tower Co., Ltd.</h2>
-  <address class='infowindow-address'>No. 191, Tonle Sap (Rd.), Village 1, Sangkat Chroy Changva, 12110 Phnom Penh, Cambodia</address>
+  <h2 class='infowindow-listing-name'>{{ listing.name }}</h2>
+  <address class='infowindow-address'>{{ listing.address }}</address>
   <ul class='infowindow-communication-list list-dotted'>
     <li class='infowindow-communication-list-item'>
-      <span itemprop='contactType'>Tel</span>
-      <span itemprop='telephone'>012 869 111</span>
+      <span itemprop='contactType'>{{ listing.telephone.type }}</span>
+      <span itemprop='telephone'>{{ listing.telephone.value }}</span>
     </li>
   </ul>
   </div>

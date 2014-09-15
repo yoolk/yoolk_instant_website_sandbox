@@ -1,6 +1,8 @@
 <div class="nav">
   <div class="side-nav">
-    {{ listing.logo.image.attachment_meta.medium.url | image_tag | link_to_home}}
+    {% if listing.logo != blank %}
+      {{ listing.logo | attachment_url: 'medium' | image_tag | link_to_home }}
+    {% endif %}
 
     <ul>
       <li>{{ 'contact us' | link_to_home }}</li>
@@ -22,7 +24,7 @@
         <ul class="sub-nav">
           {% for product_category in listing.product_categories %}
             <li>
-              <a href="{{ product_category | products_category_url }}">{{ product_category.name }}</a>
+              <a href="{{ product_category.url }}">{{ product_category.name }}</a>
             </li>
           {% endfor %}
         </ul>
@@ -42,7 +44,7 @@
         <ul class="sub-nav">
           {% for food_category in listing.food_categories %}
             <li>
-              <a href="{{ food_category | menu_category_url }}">{{ food_category.name }}</a>
+              <a href="{{ food_category.url }}">{{ food_category.name }}</a>
             </li>
           {% endfor %}
         </ul>
