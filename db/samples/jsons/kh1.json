@@ -1010,7 +1010,16 @@
       "is_active": true,
       "sharing_status": "Public",
       "nationality": {"name": "Norwegian"},
-      "language": ["English", "Japan"],
+      "languages": [
+        {
+          "name": "English",
+          "two_code": "en"
+        },
+        {
+          "name": "Japan",
+          "two_code": "jp"
+        }
+      ],
       "photo":
         {
           "id": 189,
