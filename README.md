@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/yoolk/yoolk_liquid.svg?branch=master)](https://travis-ci.org/yoolk/yoolk_liquid) [![Coverage Status](https://coveralls.io/repos/yoolk/yoolk_liquid/badge.png?branch=master)](https://coveralls.io/r/yoolk/yoolk_liquid?branch=master)
 Summary
 =======
 
@@ -5,11 +6,13 @@ A sandbox rails application that allows you to develop and run your instant webs
 
 ## Installation
 
-Clone this repo
+For the first time, clone this repo
 
     $ git clone git@github.com:yoolk/yoolk_instant_website_sandbox.git
     $ git init submodule
     $ git submodule update
+
+Later,
 
     $ git pull
     $ git submodule update
@@ -49,7 +52,7 @@ app/
             all.js.coffee
       views/
         layouts/
-          [theme_name].html.erb
+          [theme_name].liquid
       locales/
 </pre>
 
