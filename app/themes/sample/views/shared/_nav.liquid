@@ -49,8 +49,10 @@
           {% endfor %}
         </ul>
       </li>
-      <li>people</li>
-      <li>about us</li>
+      <li>
+        {{'people' | link_to_people }}
+      </li>
+      <li>contact us</li>
       <li>reservation</li>
       <li>feedback</li>
       <li>{{ 'announcements' | link_to_announcements }}</li>
