@@ -37,7 +37,7 @@ Then, go to your browser [http://localhost:3000](http://localhost:3000).
 
 ## Theme Skeleton
 
-**Yoolk Instant Website Theme** is built based on the popular [template engine liquid](https://github.com/Shopify/liquid). It is composed of three things:
+**Yoolk Instant Website Theme** is built based on the popular [template engine liquid](https://github.com/Shopify/liquid). Check out the [theme documentation](http://yoolk.github.io/liquid-documentation/) for details. It is composed of three things:
 
   1. Assets: images, javascripts, stylesheets
   2. Views: templates and layouts
