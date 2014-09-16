@@ -138,6 +138,7 @@
       "id": 1,
       "name": "Open Space",
       "embed_script": "<iframe height='450' frameborder='0' width='630' scrolling='no' src='https://maps.google.com/maps?q=&amp;layer=c&amp;sll=33.533085,-117.776074&amp;cid=4215633868679829652&amp;panoid=Ecx4lyIFvPT6cIjaiKvgdA&amp;cbp=13,137.23,,0,2.94&amp;gl=US&amp;hl=en&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=33.533085,-117.776074&amp;spn=0.006295,0.006295&amp;t=m&amp;cbll=33.533213,-117.776073&amp;source=embed&amp;output=svembed' marginwidth='0' marginheight='0'></iframe>",
+      "description": "some description about 'Open Space'",
       "created_at": "2014-08-13 08:59:54 UTC",
       "updated_at": "2014-08-13 08:59:54 UTC"
     }
@@ -1065,5 +1066,57 @@
       "created_at": "Fri, 05 Apr 2013 02:45:08 UTC +00:00",
       "updated_at": "Tue, 18 Mar 2014 07:59:12 UTC +00:00"
     }
-  ]
+  ],
+  "medias": [
+    {
+      "embed_script": "<iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/embed/DlayORza9gg\" frameborder=\"0\" allowfullscreen></iframe>",
+      "is_active": true,
+      "created_at": "Fri, 05 Apr 2013 02:45:08 UTC +00:00",
+      "updated_at": "Tue, 18 Mar 2014 07:59:12 UTC +00:00"
+    },
+    {
+      "embed_script": "<iframe src=\"//player.vimeo.com/video/93120068\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href=\"http://vimeo.com/93120068\">Wonderful London 1924 & 2014</a> from <a href=\"http://vimeo.com/mrsimonsmith\">Simon Smith</a> on <a href=\"https://vimeo.com\">Vimeo</a>.</p>",
+      "is_active": false,
+      "created_at": "Fri, 05 Apr 2013 02:45:08 UTC +00:00",
+      "updated_at": "Tue, 18 Mar 2014 07:59:12 UTC +00:00"
+    }
+  ],
+  "alias_names": [
+    {
+      "name": "YT",
+      "type": "Abbreviation"
+    },
+    {
+      "name": "YellowTower",
+      "type": "Known As"
+    },
+    {
+      "name": "Yoolk",
+      "type": "Former Name"
+    }
+  ],
+  "product_catalog_pdf": {
+    "content_type": "application/pdf",
+    "attachment_meta": {
+      "original": {
+        "url": "/samples/pdfs/product_catalog.pdf"
+      }
+    }
+  },
+  "service_catalog_pdf": {
+    "content_type": "application/pdf",
+    "attachment_meta": {
+      "original": {
+        "url": "/samples/pdfs/service_catalog.pdf"
+      }
+    }
+  },
+  "menu_pdf": {
+    "content_type": "application/pdf",
+    "attachment_meta": {
+      "original": {
+        "url": "/samples/pdfs/menu.pdf"
+      }
+    }
+  }
 }
