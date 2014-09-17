@@ -93,6 +93,10 @@ app/
           show.liquid
         layouts/
           [theme_name].liquid
+        reservation/
+          index.liquid
+        feedback
+          index.liquid
       locales/
 </pre>
 
