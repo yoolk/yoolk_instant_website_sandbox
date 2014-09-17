@@ -1,0 +1,56 @@
+<h1 class="page-title">reservation</h1>
+<div class="reservation">
+  <section class="reservation-form">
+    <form method="post">
+      <div class="form-group">
+        <input type="textbox" class="reservation-track" placeholder="Check In">
+        <input type="textbox" class="reservation-track" placeholder="Check Out">
+      </div>
+      <div class="form-group">
+        <select>
+          <option>Guests</option>
+          <option>1</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <select>
+          <option>Room Types</option>
+          <option>1</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input type="textbox" placeholder="Name">
+      </div>
+      <div class="form-group">
+        <input type="textbox" placeholder="Phone">
+      </div>
+      <div class="form-group">
+        <input type="textbox" placeholder="*Email">
+      </div>
+      <div class="form-group">
+        <input type="textbox" placeholder="Special Request">
+      </div>
+      <div class="form-group">
+        <input type="submit" name="submit">
+      </div>
+    </form>
+  </section>
+  <section class="addresses">
+    <h3>{{ listing.name }}</h3>
+    <dl class="list-horizontal">
+      {% for alias in listing.alias_names %}
+        <dt>{{ alias.type }}</dt>
+          <dd>{{ alias.name }}</dd>
+      {% endfor %}
+    </dl>
+    <p>{{ listing.address }}</p>
+    <ul class="list-dotted">
+      {% for communication in listing.communications %}
+        <li>
+          <span>{{ communication.type }}</span>
+          <span>{{ communication.value }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>

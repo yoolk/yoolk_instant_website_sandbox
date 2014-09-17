@@ -1,0 +1,31 @@
+.reservation-form {
+  width: 40%;
+  float: left;
+  padding: 15px;
+  [type],
+  select,
+  option {
+    width: 100%;
+  }
+  .reservation-track {
+    width: 47%;
+    &:last-child {
+      float: right;
+    }
+  }
+}
+.addresses {
+  padding: 15px;
+  width: 50%;
+  float: left;
+}
+.list-horizontal {
+  dt { float: left; }
+  dd:before {
+    content: ": ";
+  }
+}
+
+.list-horizontal + * {
+  clear: both;
+}

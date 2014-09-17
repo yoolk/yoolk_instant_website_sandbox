@@ -50,10 +50,14 @@
         </ul>
       </li>
       <li>
-        {{'people' | link_to_people }}
+        {{ 'people' | link_to_people }}
       </li>
-      <li>reservation</li>
-      <li>feedback</li>
+      <li>
+        {{ 'reservation' | link_to_reservation }}
+      </li>
+      <li>
+        {{ 'feedback' | link_to_feedback }}
+      </li>
       <li>{{ 'announcements' | link_to_announcements }}</li>
     </ul>
 
