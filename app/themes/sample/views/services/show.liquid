@@ -8,7 +8,8 @@
     {% for feature_hash in service.properties %}
       {% for feature in feature_hash %}
         <li class="clearfix service-list">
-          <span class="ellipsis">{{ feature[0] }}</span><span class="ellipsis">{{ feature[1] }}</span>
+          <span class="ellipsis body-bg-color">{{ feature[0] }}</span>
+          <span class="ellipsis body-bg-color">{{ feature[1] }}</span>
         </li>
       {% endfor %}
     {% endfor %}

@@ -92,6 +92,9 @@ body {
     background: white;
   }
 }
+.body-bg-color {
+  background: $body-bg-color !important;
+}
 .page-title {
   margin: 0;
   font-weight: normal;
