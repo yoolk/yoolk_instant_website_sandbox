@@ -1,42 +1,5 @@
 <h1 class="page-title">{{ product_category.name }}</h1>
 
 {% for product in product_category.products %}
-  <div class="catalog">
-    <a href="{{ product.url }}">
-      <h2 class="catalog-title">{{ product.name }}</h2>
-    </a>
-    <div class="catalog-body">
-      <div class="catalog-image">
-        {% if product.cover_photo != blank %}
-          <a href="#" class="cboxElement">
-            {{ product.cover_photo | attachment_url: 'large' | image_tag }}
-          </a>
-        {% endif %}
-      </div>
-      <ol class="catalog-thumbnails">
-        {% for photo in product.photos %}
-          {% if photo != blank %}
-            <li class="catalog-thumbnails-image" data-photo-url="#">
-              <a class="active" href="" rel="" title="" >
-                {{ photo | attachment_url: 'thumbnail' | image_tag }}
-              </a>
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ol>
-      <div class="catalog-info">
-        <ul class="catalog-info-specifications list-dotted">
-
-          {% for f in product.features %}
-            <li>
-              <span>{{f.name}}</span>
-              <span>{{f.value}}</span>
-            </li>
-          {% endfor %}
-
-        </ul>
-      </div>
-      <div class="clear"></div>
-    </div>
-  </div>
+  {% include 'products/item' %}
 {% endfor %}
