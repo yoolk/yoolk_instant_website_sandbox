@@ -12,11 +12,8 @@
     border-radius: 4px;
     padding-left: 7px;
   }
-  .reservation-track {
-    width: 47%;
-    &:last-child {
+  .reservation-track:last-child {
       float: right;
-    }
   }
 }
 .addresses {

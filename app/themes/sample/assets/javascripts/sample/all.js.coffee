@@ -1,6 +1,7 @@
 # libs
 #= require jquery
 #= require sample/shared/jquery.render
+#= require sample/datepicker/zebra_datepicker.js
 
 # collage image
 #= require sample/plugins/collage_removeWhitespace-min
@@ -17,3 +18,4 @@
 #= require sample/map/index
 #= require sample/galleries/index
 #= require sample/announcements/index
+#= require sample/reservation/index
