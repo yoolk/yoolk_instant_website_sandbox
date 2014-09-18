@@ -1,3 +1,38 @@
 <h1 class="page-title">People</h1>
 
-{{ listing.people.director[0].first_name }}
+<h2>{{ "director" | translate }}</h2>
+{% for director in listing.people.directors %}
+  <p>{{ director.first_name | append: " " | append: director.last_name }}</p>
+  <p>{{ director.position_title }}</p>
+  <ul>
+    {% for com in director.communications %}
+      <li>
+        {{ com.type }}: {{ com.value }}
+      </li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+<h2>{{ "manager" | translate }}</h2>
+{% for manager in listing.people.managers %}
+  <p>{{ manager.first_name | append: " " | append: manager.last_name }}</p>
+  <p>{{ manager.position_title }}</p>
+  <ul>
+    {% for com in manager.communications %}
+      <li>
+        {{ com.type }}: {{ com.value }}
+      </li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+<h2>{{ "employee" | translate }}</h2>
+{% for employee in listing.people.employees %}
+  <p>{{ employee.first_name | append: " " | append: employee.last_name }}</p>
+  <p>{{ employee.position_title }}</p>
+  <ul>
+    {% for com in employee.communications %}
+      <li>
+        {{ com.type }}: {{ com.value }}
+      </li>
+    {% endfor %}
+  </ul>
+{% endfor %}
