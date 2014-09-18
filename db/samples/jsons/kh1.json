@@ -1029,27 +1029,27 @@
             "original": {
               "width": 1440,
               "height": 956,
-              "url": "/attachments/images/foods/original/410.jpg"
+              "url": "/attachments/images/people/original/410.jpg"
             },
             "large": {
               "width": 994,
               "height": 660,
-              "url": "/attachments/images/foods/large/410.jpg"
+              "url": "/attachments/images/people/large/410.jpg"
             },
             "medium": {
               "width": 364,
               "height": 242,
-              "url": "/attachments/images/foods/medium/410.jpg"
+              "url": "/attachments/images/people/medium/410.jpg"
             },
             "small": {
               "width": 196,
               "height": 130,
-              "url": "/attachments/images/foods/small/410.jpg"
+              "url": "/attachments/images/people/small/410.jpg"
             },
             "thumbnail": {
               "width": 50,
               "height": 50,
-              "url": "/attachments/images/foods/thumbnail/410.jpg"
+              "url": "/attachments/images/people/thumbnail/410.jpg"
             }
           }
         },
@@ -1094,12 +1094,12 @@
           "medium": {
             "width": 206,
             "height": 239,
-            "url": "/samples/images/people/medium/1.png"
+            "url": "/attachments/images/people/medium/1.png"
           },
           "small": {
             "width": 139,
             "height": 161,
-            "url": "/samples/images/people/small/1.png"
+            "url": "/attachments/images/people/small/1.png"
           }
         }
       },
@@ -1143,12 +1143,12 @@
           "medium": {
             "width": 206,
             "height": 239,
-            "url": "/samples/images/people/medium/2.png"
+            "url": "/attachments/images/people/medium/2.png"
           },
           "small": {
             "width": 139,
             "height": 161,
-            "url": "/samples/images/people/small/2.png"
+            "url": "/attachments/images/people/small/2.png"
           }
         }
       },
@@ -1192,12 +1192,12 @@
           "medium": {
             "width": 206,
             "height": 239,
-            "url": "/samples/images/people/medium/3.png"
+            "url": "/attachments/images/people/medium/3.png"
           },
           "small": {
             "width": 139,
             "height": 161,
-            "url": "/samples/images/people/small/3.png"
+            "url": "/attachments/images/people/small/3.png"
           }
         }
       },
@@ -1241,12 +1241,12 @@
           "medium": {
             "width": 206,
             "height": 239,
-            "url": "/samples/images/people/medium/4.png"
+            "url": "/attachments/images/people/medium/4.png"
           },
           "small": {
             "width": 139,
             "height": 161,
-            "url": "/samples/images/people/small/4.png"
+            "url": "/attachments/images/people/small/4.png"
           }
         }
       },
@@ -1290,12 +1290,12 @@
           "medium": {
             "width": 206,
             "height": 239,
-            "url": "/samples/images/people/medium/5.png"
+            "url": "/attachments/images/people/medium/5.png"
           },
           "small": {
             "width": 139,
             "height": 161,
-            "url": "/samples/images/people/small/5.png"
+            "url": "/attachments/images/people/small/5.png"
           }
         }
       },

@@ -1,38 +1,63 @@
 <h1 class="page-title">People</h1>
+<div id="people">
+  <h2 class="position-level">{{ "directors" | translate }}</h2>
+  {% for director in listing.people.directors %}
+    <article class="person">
+      <section class="person-image">
+        {{ director.photo | attachment_url: 'small' | image_tag }}
+      </section>
+      <section class="person-info">
+        <p class="person-name">{{ director.first_name | append: " " | append: director.last_name }}</p>
+        <p class="person-position">{{ director.position_title }}</p>
+        <ul class="person-communication">
+          {% for com in director.communications %}
+            <li>
+              {{ com.type }}: {{ com.value }}
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+    </article>
+  {% endfor %}
 
-<h2>{{ "director" | translate }}</h2>
-{% for director in listing.people.directors %}
-  <p>{{ director.first_name | append: " " | append: director.last_name }}</p>
-  <p>{{ director.position_title }}</p>
-  <ul>
-    {% for com in director.communications %}
-      <li>
-        {{ com.type }}: {{ com.value }}
-      </li>
+  <h2 class="position-level">{{ "managers" | translate }}</h2>
+  {% for manager in listing.people.managers %}
+    <article class="person">
+      <section class="person-image">
+        {{ manager.photo | attachment_url: 'small' | image_tag }}
+      </section>
+      <section class="person-info">
+        <p class="person-name">{{ manager.first_name | append: " " | append: manager.last_name }}</p>
+        <p class="person-position">{{ manager.position_title }}</p>
+        <ul class="person-communication">
+          {% for com in manager.communications %}
+            <li>
+              {{ com.type }}: {{ com.value }}
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+    </article>
+  {% endfor %}
+
+
+  <h2 class="position-level">{{ "employees" | translate }}</h2>
+    {% for employee in listing.people.employees %}
+      <article class="person">
+        <section class="person-image">
+          {{ employee.photo | attachment_url: 'small' | image_tag }}
+        </section>
+        <section class="person-info">
+          <p class="person-name">{{ employee.first_name | append: " " | append: employee.last_name }}</p>
+          <p class="person-position">{{ employee.position_title }}</p>
+          <ul class="person-communication">
+            {% for com in employee.communications %}
+              <li>
+                {{ com.type }}: {{ com.value }}
+              </li>
+            {% endfor %}
+          </ul>
+        </section>
+      </article>
     {% endfor %}
-  </ul>
-{% endfor %}
-<h2>{{ "manager" | translate }}</h2>
-{% for manager in listing.people.managers %}
-  <p>{{ manager.first_name | append: " " | append: manager.last_name }}</p>
-  <p>{{ manager.position_title }}</p>
-  <ul>
-    {% for com in manager.communications %}
-      <li>
-        {{ com.type }}: {{ com.value }}
-      </li>
-    {% endfor %}
-  </ul>
-{% endfor %}
-<h2>{{ "employee" | translate }}</h2>
-{% for employee in listing.people.employees %}
-  <p>{{ employee.first_name | append: " " | append: employee.last_name }}</p>
-  <p>{{ employee.position_title }}</p>
-  <ul>
-    {% for com in employee.communications %}
-      <li>
-        {{ com.type }}: {{ com.value }}
-      </li>
-    {% endfor %}
-  </ul>
-{% endfor %}
+</div>

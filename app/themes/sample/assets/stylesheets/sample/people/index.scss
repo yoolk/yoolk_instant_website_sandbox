@@ -1,0 +1,43 @@
+#people {
+
+  padding: 0 0 78px 40px;
+  max-width: 740px;
+  .person {
+    margin-bottom: 30px;
+  }
+
+  .person-image {
+    width: 20%;
+    display: inline-block;
+    img {
+      max-width: 102px;
+      padding: 2px;
+      border: 1px solid #ebebeb;
+      border-radius: 3px;
+    }
+  }
+
+  .position-level {
+    margin: 34px 0 32px;
+  }
+
+  .person-info {
+    width: 79%;
+    display: inline-block;
+    float: right;
+  }
+
+  .person-name {
+    font-weight: bold;
+  }
+
+  .person-position {
+    font-style: italic;
+  }
+
+  .person-communication {
+    list-style: none;
+    padding: 0;
+  }
+
+}
