@@ -758,13 +758,13 @@
     },
     "cover_photos": [
       {
-        "_id": 1,
+        "id": "1",
         "caption": null,
         "created_at": "Tue, 10 Jun 2014 06:59:09 UTC +00:00",
         "dimension": "1140x422",
         "display_order": null,
         "image": {
-          "_id": 1,
+          "id": "1",
           "attachment_meta": {
             "original": {
               "width": 1140,
@@ -786,13 +786,13 @@
         "updated_at": "Thu, 31 Jul 2014 09:43:20 UTC +00:00"
       },
       {
-        "_id": 2,
+        "id": "2",
         "caption": null,
         "created_at": "Tue, 10 Jun 2014 07:00:24 UTC +00:00",
         "dimension": "1140x422",
         "display_order": null,
         "image": {
-          "_id": 2,
+          "id": "2",
           "attachment_meta": {
             "original": {
               "width": 1280,
@@ -814,13 +814,13 @@
         "updated_at": "Thu, 31 Jul 2014 10:04:24 UTC +00:00"
       },
       {
-        "_id": 4,
+        "id": "4",
         "caption": null,
         "created_at": "Tue, 10 Jun 2014 07:13:47 UTC +00:00",
         "dimension": "1140x422",
         "display_order": null,
         "image": {
-          "_id": 4,
+          "id": "4",
           "attachment_meta": {
             "original": {
               "width": 1280,
@@ -840,6 +840,17 @@
           "updated_at": "Fri, 01 Aug 2014 03:22:03 UTC +00:00"
         },
         "updated_at": "Fri, 01 Aug 2014 03:22:03 UTC +00:00"
+      }
+    ],
+    "domains": [
+      {
+        "id": 1,
+        "created_at": "Fri, 18 Oct 2013 06:33:15 UTC +00:00",
+        "google_analytics_key": "",
+        "is_primary": true,
+        "name": "elegant-party-decorations-phnom-penh.iwstaging.yoolk.com",
+        "type": "pointed",
+        "updated_at": "Thu, 16 Jan 2014 10:51:22 UTC +00:00"
       }
     ]
   },
