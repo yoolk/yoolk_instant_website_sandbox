@@ -25,13 +25,17 @@
     "priority": 1
   },
   "portal": {
-    "id": "1",
-    "domain_name": "yellowpages-cambodia.dev",
     "abbreviation": "kh",
-    "created_at": "2014-08-13 08:59:54 UTC",
-    "updated_at": "2014-08-13 08:59:54 UTC",
+    "domain_name": "cambodiastaging.yoolk.com",
+    "description": "Cambodia's official Yellow Pages business directory online edition. Find up-to-date listings with contact information, profile, advertisement, email and web addresses. Also Cambodia maps and residential phone number",
+    "official_name": "Cambodia Yellow Pages",
+    "keywords": "Cambodia yellow pages, search, small business resources, small business, phone numbers, yellowpages, phone book, small business information, business directory, phone directory, business phone, phone number, telephone directory, business directories, telephone numbers, business yellow pages, classification, search business",
+    "time_zone": "Bangkok",
+    "listings_count": 41098,
+    "country": {
+      "name": "Cambodia"
+    },
     "language": {
-      "id": "1",
       "name": "English",
       "two_code": "en"
     }
@@ -138,6 +142,7 @@
       "id": 1,
       "name": "Open Space",
       "embed_script": "<iframe height='450' frameborder='0' width='630' scrolling='no' src='https://maps.google.com/maps?q=&amp;layer=c&amp;sll=33.533085,-117.776074&amp;cid=4215633868679829652&amp;panoid=Ecx4lyIFvPT6cIjaiKvgdA&amp;cbp=13,137.23,,0,2.94&amp;gl=US&amp;hl=en&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=33.533085,-117.776074&amp;spn=0.006295,0.006295&amp;t=m&amp;cbll=33.533213,-117.776073&amp;source=embed&amp;output=svembed' marginwidth='0' marginheight='0'></iframe>",
+      "description": "some description about 'Open Space'",
       "created_at": "2014-08-13 08:59:54 UTC",
       "updated_at": "2014-08-13 08:59:54 UTC"
     }
@@ -707,38 +712,145 @@
     }
   ],
   "instant_website": {
-    "cover_photos": [
-      {
-        "caption": "some",
+    "id": "1",
+    "google_analytics_key": "333333",
+    "is_live": true,
+    "is_active": true,
+    "free_plan": false,
+    "template": {
+      "name": "business_pundit",
+      "description": "",
+      "is_responsive": true,
+      "industries": [
+        "Clothing & Fashion",
+        "Media & Advertising",
+        "Optical Products"
+      ],
+      "pages": [
+        "Galleries",
+        "Products",
+        "About Us",
+        "Announcements",
+        "People",
+        "Contact Us"
+      ],
+      "thumbnail": {
+        "content_type": "image/png",
+        "attachment_meta": {
+          "original": {
+            "url": "/attachments/images/instant_website/template/thumbnail/original/1.png"
+          }
+        }
+      },
+      "cover_photo": {
+        "dimension": "1140x422",
         "image": {
           "attachment_meta": {
             "original": {
-              "width": 558,
-              "height": 372,
-              "url": "1.jpg"
-            },
-            "large": {
-              "width": 994,
-              "height": 368,
-              "url": "cover.png"
-            },
-            "medium": {
-              "width": 364,
-              "height": 243,
-              "url": "/samples/images/products/medium/1.png"
-            },
-            "small": {
-              "width": 196,
-              "height": 131,
-              "url": "/samples/images/products/small/1.png"
-            },
-            "thumbnail": {
-              "width": 60,
-              "height": 40,
-              "url": "/samples/images/products/thumbnail/1.png"
+              "width": 1140,
+              "height": 422,
+              "size": 388563,
+              "url": "/attachments/images/instant_website/template/cover_photo/original/1.png"
             }
           }
         }
+      }
+    },
+    "cover_photos": [
+      {
+        "id": "1",
+        "caption": null,
+        "created_at": "Tue, 10 Jun 2014 06:59:09 UTC +00:00",
+        "dimension": "1140x422",
+        "display_order": null,
+        "image": {
+          "id": "1",
+          "attachment_meta": {
+            "original": {
+              "width": 1140,
+              "height": 422,
+              "size": 762059,
+              "url": "http://s-staging-yoolk-assets.s3.amazonaws.com/kh/instant_website/website_cover_photos/original/1406799799/1.png?1406799799"
+            },
+            "large": {
+              "width": 1140,
+              "height": 422,
+              "size": 723417,
+              "url": "http://s-staging-yoolk-assets.s3.amazonaws.com/kh/instant_website/website_cover_photos/large/1406799799/1.png?1406799799"
+            }
+          },
+          "content_type": "image/png",
+          "created_at": "Tue, 10 Jun 2014 06:59:09 UTC +00:00",
+          "updated_at": "Thu, 31 Jul 2014 09:43:20 UTC +00:00"
+        },
+        "updated_at": "Thu, 31 Jul 2014 09:43:20 UTC +00:00"
+      },
+      {
+        "id": "2",
+        "caption": null,
+        "created_at": "Tue, 10 Jun 2014 07:00:24 UTC +00:00",
+        "dimension": "1140x422",
+        "display_order": null,
+        "image": {
+          "id": "2",
+          "attachment_meta": {
+            "original": {
+              "width": 1280,
+              "height": 800,
+              "size": 269269,
+              "url": "http://s-staging-yoolk-assets.s3.amazonaws.com/kh/instant_website/website_cover_photos/original/1406801063/2.jpg?1406801063"
+            },
+            "large": {
+              "width": 1140,
+              "height": 422,
+              "size": 153781,
+              "url": "http://s-staging-yoolk-assets.s3.amazonaws.com/kh/instant_website/website_cover_photos/large/1406801063/2.jpg?1406801063"
+            }
+          },
+          "content_type": "image/jpeg",
+          "created_at": "Tue, 10 Jun 2014 07:00:24 UTC +00:00",
+          "updated_at": "Thu, 31 Jul 2014 10:04:24 UTC +00:00"
+        },
+        "updated_at": "Thu, 31 Jul 2014 10:04:24 UTC +00:00"
+      },
+      {
+        "id": "4",
+        "caption": null,
+        "created_at": "Tue, 10 Jun 2014 07:13:47 UTC +00:00",
+        "dimension": "1140x422",
+        "display_order": null,
+        "image": {
+          "id": "4",
+          "attachment_meta": {
+            "original": {
+              "width": 1280,
+              "height": 720,
+              "size": 239209,
+              "url": "http://s-staging-yoolk-assets.s3.amazonaws.com/kh/instant_website/website_cover_photos/original/1406863322/4.jpg?1406863322"
+            },
+            "large": {
+              "width": 1140,
+              "height": 422,
+              "size": 135378,
+              "url": "http://s-staging-yoolk-assets.s3.amazonaws.com/kh/instant_website/website_cover_photos/large/1406863322/4.jpg?1406863322"
+            }
+          },
+          "content_type": "image/jpeg",
+          "created_at": "Tue, 10 Jun 2014 07:13:47 UTC +00:00",
+          "updated_at": "Fri, 01 Aug 2014 03:22:03 UTC +00:00"
+        },
+        "updated_at": "Fri, 01 Aug 2014 03:22:03 UTC +00:00"
+      }
+    ],
+    "domains": [
+      {
+        "id": 1,
+        "created_at": "Fri, 18 Oct 2013 06:33:15 UTC +00:00",
+        "google_analytics_key": "",
+        "is_primary": true,
+        "name": "elegant-party-decorations-phnom-penh.iwstaging.yoolk.com",
+        "type": "pointed",
+        "updated_at": "Thu, 16 Jan 2014 10:51:22 UTC +00:00"
       }
     ]
   },
@@ -999,5 +1111,417 @@
       "created_at": "2014-01-06 07:55:41 UTC",
       "updated_at": "2014-01-06 07:55:41 UTC"
     }
-  ]
+  ],
+  "people": [
+    {
+      "title": "Mr.",
+      "first_name": "Kim",
+      "last_name": "Gjemmestad",
+      "gender": "Male",
+      "position_title": "Web developer",
+      "is_active": true,
+      "sharing_status": "Public",
+      "nationality": {
+        "name": "Norwegian"
+      },
+      "languages": [
+        {
+          "name": "English",
+          "two_code": "en"
+        },
+        {
+          "name": "Japan",
+          "two_code": "jp"
+        }
+      ],
+      "photo": {
+        "id": 189,
+        "content_type": "image/jpeg",
+        "attachment_meta": {
+          "original": {
+            "width": 1440,
+            "height": 956,
+            "url": "/attachments/images/people/original/410.jpg"
+          },
+          "large": {
+            "width": 994,
+            "height": 660,
+            "url": "/attachments/images/people/large/410.jpg"
+          },
+          "medium": {
+            "width": 364,
+            "height": 242,
+            "url": "/attachments/images/people/medium/410.jpg"
+          },
+          "small": {
+            "width": 196,
+            "height": 130,
+            "url": "/attachments/images/people/small/410.jpg"
+          },
+          "thumbnail": {
+            "width": 50,
+            "height": 50,
+            "url": "/attachments/images/people/thumbnail/410.jpg"
+          }
+        }
+      },
+      "position_level": {
+        "name": "CEO"
+      },
+      "communications": [
+        {
+          "id": 123,
+          "type": "Mobile Phone",
+          "value": "093 555 225",
+          "is_first_line": true,
+          "image_url": ""
+        }
+      ],
+      "created_at": "Fri, 05 Apr 2013 02:45:08 UTC +00:00",
+      "updated_at": "Tue, 18 Mar 2014 07:59:12 UTC +00:00"
+    },
+    {
+      "id": 10,
+      "first_name": "Chamnap",
+      "last_name": "Chhorn",
+      "title": "Mr.",
+      "position_title": "Software Engineer",
+      "gender": "Male",
+      "is_active": true,
+      "sharing_status": "Public",
+      "languages": [
+        {
+          "id": 1,
+          "name": "English",
+          "two_code": "en"
+        },
+        {
+          "id": 2,
+          "name": "Khmer",
+          "two_code": "km"
+        }
+      ],
+      "photo": {
+        "id": 1,
+        "content_type": "image/png",
+        "attachment_meta": {
+          "medium": {
+            "width": 206,
+            "height": 239,
+            "url": "/attachments/images/people/medium/1.png"
+          },
+          "small": {
+            "width": 139,
+            "height": 161,
+            "url": "/attachments/images/people/small/1.png"
+          }
+        }
+      },
+      "nationality": {
+        "id": 1,
+        "name": "Cambodian"
+      },
+      "position_level": {
+        "id": 1,
+        "name": "Director",
+        "sort_order": 1
+      },
+      "communications": [
+        {
+          "id": 1,
+          "type": "Tel",
+          "label": "Tel",
+          "value": "010 559 239"
+        },
+        {
+          "id": 2,
+          "type": "E-Mail",
+          "label": "E-Mail",
+          "value": "chamnap@yoolk.com"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "first_name": "Vorleak",
+      "last_name": "Chy",
+      "title": "Mr.",
+      "position_title": "Software Engineer",
+      "gender": "Male",
+      "is_active": true,
+      "sharing_status": "Public",
+      "photo": {
+        "id": 2,
+        "content_type": "image/png",
+        "attachment_meta": {
+          "medium": {
+            "width": 206,
+            "height": 239,
+            "url": "/attachments/images/people/medium/2.png"
+          },
+          "small": {
+            "width": 139,
+            "height": 161,
+            "url": "/attachments/images/people/small/2.png"
+          }
+        }
+      },
+      "nationality": {
+        "id": 1,
+        "name": "Cambodian"
+      },
+      "position_level": {
+        "id": 1,
+        "name": "Director",
+        "sort_order": 1
+      },
+      "communications": [
+        {
+          "id": 1,
+          "type": "Tel",
+          "label": "Tel",
+          "value": "012 444 555"
+        },
+        {
+          "id": 2,
+          "type": "E-Mail",
+          "label": "E-Mail",
+          "value": "vorleak@yoolk.com"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "first_name": "Dourng Dara",
+      "last_name": "Koeurt",
+      "title": "Mr.",
+      "position_title": "Software Engineer",
+      "gender": "Male",
+      "is_active": true,
+      "sharing_status": "Public",
+      "photo": {
+        "id": 3,
+        "content_type": "image/png",
+        "attachment_meta": {
+          "medium": {
+            "width": 206,
+            "height": 239,
+            "url": "/attachments/images/people/medium/3.png"
+          },
+          "small": {
+            "width": 139,
+            "height": 161,
+            "url": "/attachments/images/people/small/3.png"
+          }
+        }
+      },
+      "nationality": {
+        "id": 1,
+        "name": "Cambodian"
+      },
+      "position_level": {
+        "id": 1,
+        "name": "Manager",
+        "sort_order": 2
+      },
+      "communications": [
+        {
+          "id": 1,
+          "type": "Tel",
+          "label": "Tel",
+          "value": "012 344 555"
+        },
+        {
+          "id": 2,
+          "type": "E-Mail",
+          "label": "E-Mail",
+          "value": "dara@yoolk.com"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "first_name": "Radin",
+      "last_name": "Reth",
+      "title": "Mr.",
+      "position_title": "Software Engineer",
+      "gender": "Male",
+      "is_active": true,
+      "sharing_status": "Public",
+      "photo": {
+        "id": 4,
+        "content_type": "image/png",
+        "attachment_meta": {
+          "medium": {
+            "width": 206,
+            "height": 239,
+            "url": "/attachments/images/people/medium/4.png"
+          },
+          "small": {
+            "width": 139,
+            "height": 161,
+            "url": "/attachments/images/people/small/4.png"
+          }
+        }
+      },
+      "nationality": {
+        "id": 1,
+        "name": "Cambodian"
+      },
+      "position_level": {
+        "id": 1,
+        "name": "Employee",
+        "sort_order": 3
+      },
+      "communications": [
+        {
+          "id": 1,
+          "type": "Tel",
+          "label": "Tel",
+          "value": "012 244 455"
+        },
+        {
+          "id": 2,
+          "type": "E-Mail",
+          "label": "E-Mail",
+          "value": "radin@yoolk.com"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "first_name": "Srey mouch",
+      "last_name": "Leng",
+      "title": "Miss.",
+      "position_title": "Software Engineer",
+      "gender": "Female",
+      "is_active": true,
+      "sharing_status": "Public",
+      "photo": {
+        "id": 5,
+        "content_type": "image/png",
+        "attachment_meta": {
+          "medium": {
+            "width": 206,
+            "height": 239,
+            "url": "/attachments/images/people/medium/5.png"
+          },
+          "small": {
+            "width": 139,
+            "height": 161,
+            "url": "/attachments/images/people/small/5.png"
+          }
+        }
+      },
+      "nationality": {
+        "id": 1,
+        "name": "Cambodian"
+      },
+      "position_level": {
+        "id": 1,
+        "name": "Employee",
+        "sort_order": 3
+      },
+      "communications": [
+        {
+          "id": 1,
+          "type": "Tel",
+          "label": "Tel",
+          "value": "012 234 445"
+        },
+        {
+          "id": 2,
+          "type": "E-Mail",
+          "label": "E-Mail",
+          "value": "sreymouch@yoolk.com"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "first_name": "Kimleng",
+      "last_name": "Heng",
+      "title": "Mr.",
+      "position_title": "Software Designer",
+      "gender": "Male",
+      "is_active": true,
+      "sharing_status": "Public",
+      "photo": {},
+      "nationality": {
+        "id": 1,
+        "name": "Cambodian"
+      },
+      "position_level": {
+        "id": 1,
+        "name": "Employee",
+        "sort_order": 3
+      },
+      "communications": [
+        {
+          "id": 1,
+          "type": "Tel",
+          "label": "Tel",
+          "value": "010 222 239"
+        },
+        {
+          "id": 2,
+          "type": "E-Mail",
+          "label": "E-Mail",
+          "value": "kimleng@yoolk.com"
+        }
+      ]
+    }
+  ],
+  "medias": [
+    {
+      "embed_script": "<iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/embed/DlayORza9gg\" frameborder=\"0\" allowfullscreen></iframe>",
+      "is_active": true,
+      "created_at": "Fri, 05 Apr 2013 02:45:08 UTC +00:00",
+      "updated_at": "Tue, 18 Mar 2014 07:59:12 UTC +00:00"
+    },
+    {
+      "embed_script": "<iframe src=\"//player.vimeo.com/video/93120068\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href=\"http://vimeo.com/93120068\">Wonderful London 1924 & 2014</a> from <a href=\"http://vimeo.com/mrsimonsmith\">Simon Smith</a> on <a href=\"https://vimeo.com\">Vimeo</a>.</p>",
+      "is_active": false,
+      "created_at": "Fri, 05 Apr 2013 02:45:08 UTC +00:00",
+      "updated_at": "Tue, 18 Mar 2014 07:59:12 UTC +00:00"
+    }
+  ],
+  "alias_names": [
+    {
+      "name": "YT",
+      "type": "Abbreviation"
+    },
+    {
+      "name": "YellowTower",
+      "type": "Known As"
+    },
+    {
+      "name": "Yoolk",
+      "type": "Former Name"
+    }
+  ],
+  "product_catalog_pdf": {
+    "content_type": "application/pdf",
+    "attachment_meta": {
+      "original": {
+        "url": "/samples/pdfs/product_catalog.pdf"
+      }
+    }
+  },
+  "service_catalog_pdf": {
+    "content_type": "application/pdf",
+    "attachment_meta": {
+      "original": {
+        "url": "/samples/pdfs/service_catalog.pdf"
+      }
+    }
+  },
+  "menu_pdf": {
+    "content_type": "application/pdf",
+    "attachment_meta": {
+      "original": {
+        "url": "/samples/pdfs/menu.pdf"
+      }
+    }
+  }
 }

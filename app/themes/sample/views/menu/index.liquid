@@ -2,40 +2,6 @@
 
 {% for category in listing.food_categories %}
   {% for food in category.foods %}
-    <div class="catalog">
-      <a href="{{ food.url }}">
-        <h2 class="catalog-title">{{ food.name }}</h2>
-      </a>
-      <div class="catalog-body">
-        <div class="catalog-image">
-          {% if food.cover_photo != blank %}
-            <a href="#" class="cboxElement">
-              {{ food.cover_photo | attachment_url: 'large' | image_tag }}
-            </a>
-          {% endif %}
-        </div>
-        <ol class="catalog-thumbnails">
-          {% for photo in food.photos %}
-            <li class="catalog-thumbnails-image" data-photo-url="#">
-              <a class="active" href="" rel="" title="" >
-                {{ photo | attachment_url: 'thumbnail' | image_tag }}
-              </a>
-            </li>
-          {% endfor %}
-        </ol>
-        <div class="catalog-info">
-          <ul class="catalog-info-specifications list-dotted">
-            {% for feature_hash in food.properties %}
-              {% for feature in feature_hash %}
-                <li class="clearfix food-list">
-                  <span class="ellipsis">{{ feature[0] }}</span><span class="ellipsis">{{ feature[1] }}</span>
-                </li>
-              {% endfor %}
-            {% endfor %}
-          </ul>
-        </div>
-        <div class="clear"></div>
-      </div>
-    </div>
+    {% include 'menu/item' %}
   {% endfor %}
 {% endfor %}
