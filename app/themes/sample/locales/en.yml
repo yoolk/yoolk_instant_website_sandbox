@@ -5,3 +5,7 @@ en:
       copyright:              "Copyright © %{year}. All Rights Reserved"
     links:
       home: 'Home'
+    people:
+      directors: 'Directors'
+      managers: 'Managers'
+      employees: 'Employees'
