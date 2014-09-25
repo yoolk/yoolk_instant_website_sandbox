@@ -8,19 +8,18 @@ GIT
       rails (>= 3.1.1)
 
 GIT
-  remote: git://github.com/yoolk/liquid-rails.git
-  revision: 953a6cb3b5af507f4b675ad53ac871bda3ae5a09
-  specs:
-    liquid-rails (0.1.0)
-      liquid (~> 3.0.0.rc1)
-      rails (>= 3.2)
-
-GIT
   remote: git://github.com/yoolk/themes_on_rails.git
   revision: fde714319bf9d169ec07b9d8de6850d6ef9fc9a7
   branch: liquid
   specs:
     themes_on_rails (0.3.0)
+      rails (>= 3.2)
+
+PATH
+  remote: /home/radin/dev/liquid-rails
+  specs:
+    liquid-rails (0.1.0)
+      liquid (~> 3.0.0.rc1)
       rails (>= 3.2)
 
 PATH
