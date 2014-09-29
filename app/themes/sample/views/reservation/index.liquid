@@ -1,7 +1,7 @@
 <h1 class="page-title">reservation</h1>
 <div class="reservation">
   <section class="reservation-form">
-    <form method="post">
+    {% form action="/contact" class="contact_form"%}
       <div class="form-group">
         <input type="textbox" class="reservation-track datepicker" placeholder="Check In">
         <input type="textbox" class="reservation-track datepicker" placeholder="Check Out">
@@ -33,7 +33,8 @@
       <div class="form-group">
         <input type="button" value="submit">
       </div>
-    </form>
+    {% endform %}
+
   </section>
   <section class="addresses">
     <h3>{{ listing.name }}</h3>
