@@ -1,37 +1,38 @@
 <h1 class="page-title">reservation</h1>
 <div class="reservation">
   <section class="reservation-form">
-    {% form action="/contact" class="contact_form"%}
+    {% form action="/reservation" class="contact_form"%}
+
       <div class="form-group">
-        <input type="textbox" class="reservation-track datepicker" placeholder="Check In">
-        <input type="textbox" class="reservation-track datepicker" placeholder="Check Out">
+        <input type="textbox" class="reservation-track datepicker" placeholder="Check In" name="reservation[check_in]">
+        <input type="textbox" class="reservation-track datepicker" placeholder="Check Out" name="reservation[check_out]">
       </div>
       <div class="form-group">
-        <select>
+        <select name="reservation[guests]">
           <option>Guests</option>
           <option>1</option>
         </select>
       </div>
       <div class="form-group">
-        <select>
+        <select name="reservation[room_types]">
           <option>Room Types</option>
           <option>1</option>
         </select>
       </div>
       <div class="form-group">
-        <input type="textbox" placeholder="Name">
+        <input type="textbox" placeholder="Name" name="reservation[name]">
       </div>
       <div class="form-group">
-        <input type="textbox" placeholder="Phone">
+        <input type="textbox" placeholder="Phone" name="reservation[phone]">
       </div>
       <div class="form-group">
-        <input type="textbox" placeholder="*Email">
+        <input type="textbox" placeholder="*Email" name="reservation[email]">
       </div>
       <div class="form-group">
-        <input type="textbox" placeholder="Special Request">
+        <input type="textbox" placeholder="Special Request" name="reservation[request]">
       </div>
       <div class="form-group">
-        <input type="button" value="submit">
+        <input type="submit" value="submit">
       </div>
     {% endform %}
 
