@@ -21,12 +21,11 @@
     </ol>
     <div class="catalog-info">
       <ul class="catalog-info-specifications list-dotted">
-        {% for feature_hash in service.properties %}
-          {% for feature in feature_hash %}
-            <li class="clearfix service-list">
-              <span class="ellipsis">{{ feature[0] }}</span><span class="ellipsis">{{ feature[1] }}</span>
-            </li>
-          {% endfor %}
+        {% for f in service.read_properties %}
+          <li class="clearfix service-list">
+            <span class="ellipsis">{{ f.name }}</span>
+            <span class="ellipsis">{{ f.value }}</span>
+          </li>
         {% endfor %}
       </ul>
     </div>
