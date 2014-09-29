@@ -7,14 +7,8 @@
   <ul class="catalog-detail-specifications list-dotted">
     {% for f in food.properties %}
       <li>
-        {% comment %}
-          <span>{{ f.name }}</span>
-          <span>{{ f.value }}</span>
-        {% endcomment %}
-        <li>
-          <span class="body-bg-color">type</span>
-          <span class="body-bg-color">ice cream</span>
-        </li>
+        <span class="body-bg-color">{{ f.name }}</span>
+        <span class="body-bg-color">{{ f.value }}</span>
       </li>
     {% endfor %}
   </ul>

@@ -21,7 +21,7 @@
     </ol>
     <div class="catalog-info">
       <ul class="catalog-info-specifications list-dotted">
-        {% for f in service.read_properties %}
+        {% for f in service.properties %}
           <li class="clearfix service-list">
             <span class="ellipsis">{{ f.name }}</span>
             <span class="ellipsis">{{ f.value }}</span>
