@@ -1,6 +1,6 @@
 <h1 class="page-title">announcements</h1>
 <article class="article-item">
-  {{ announcement.image | attachment_url: 'large' | image_tag }}
+  {{ announcement | attachment_url: 'large' | image_tag }}
   <p class="item-description">{{ announcement.text }}</p>
   <p>
     <time class="timeago icon-time-default tooltip_link" data-toggle="tooltip" datetime="{{ announcement.updated_at | date: '%Y-%m-%d' }}" title="{{ announcement.updated_at | date: '%B %d, %Y %k:%M' }}"></time>

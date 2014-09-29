@@ -2,7 +2,7 @@
 <div id="prochures">
   {% for brochure in listing.brochures %}
     {% if brochure.image != blank %}
-      {{ brochure.image | attachment_url: 'large' | image_tag }}
+      {{ brochure | attachment_url: 'large' | image_tag }}
     {% endif %}
   {% endfor %}
 </div>

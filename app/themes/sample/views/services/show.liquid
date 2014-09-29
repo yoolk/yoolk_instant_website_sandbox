@@ -5,13 +5,11 @@
     <p>{{ service.description }}</p>
   </div>
   <ul class="catalog-detail-specifications list-dotted">
-    {% for feature_hash in service.properties %}
-      {% for feature in feature_hash %}
-        <li class="clearfix service-list">
-          <span class="ellipsis body-bg-color">{{ feature[0] }}</span>
-          <span class="ellipsis body-bg-color">{{ feature[1] }}</span>
-        </li>
-      {% endfor %}
+    {% for property in service.properties %}
+      <li class="clearfix service-list">
+        <span class="ellipsis body-bg-color">{{ property.name }}</span>
+        <span class="ellipsis body-bg-color">{{ property.value }}</span>
+      </li>
     {% endfor %}
   </ul>
   {% for photo in service.photos %}
