@@ -1,8 +1,9 @@
 <h1 class="page-title">reservation</h1>
 <div class="reservation">
   <section class="reservation-form">
-    {% form action="/reservation" class="contact_form"%}
+    {% form contact %}
 
+      {{ form.errors | join: ', ' }}
       <div class="form-group">
         <input type="textbox" class="reservation-track datepicker" placeholder="Check In" name="reservation[check_in]">
         <input type="textbox" class="reservation-track datepicker" placeholder="Check Out" name="reservation[check_out]">
