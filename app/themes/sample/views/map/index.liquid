@@ -1,4 +1,9 @@
 <h1 class="page-title">map</h1>
+
+{% contentfor map %}
+  {{ 'http://maps.google.com/maps/api/js?sensor=true' | javascript_include_tag }}
+{% endcontentfor%}
+
 <div id="map-canvas" data-lat="{{ listing.lat }}" data-long="{{ listing.long }}"></div>
 <script id="tmpl-infowindow" type="text/x-jsrender">
   <div class='infowindowt' itemscope='' itemtype='http://schema.org/ContactPoint'>
