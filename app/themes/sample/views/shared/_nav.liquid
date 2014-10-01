@@ -14,7 +14,7 @@
         <ul class="sub-nav">
           {% for gallery in listing.galleries %}
             <li>
-              <a href="{{ gallery.url }}">{{ gallery.name }}</a>
+              <a href="{{ gallery.url }}">{{ gallery.name }} ({{ gallery.images.count }})</a>
             </li>
           {% endfor %}
         </ul>

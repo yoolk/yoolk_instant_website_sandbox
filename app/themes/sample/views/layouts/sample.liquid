@@ -8,7 +8,7 @@
   {{ 'http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css' | stylesheet_link_tag }}
 
   {{ 'sample/all.css' | asset_url | stylesheet_link_tag }}
-  {% csrf_meta_tags %}
+  {{ content_for_header }}
 
 </head>
 <body>

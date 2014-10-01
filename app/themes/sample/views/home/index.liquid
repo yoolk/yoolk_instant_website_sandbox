@@ -27,13 +27,13 @@
             <ul class="listing-contact-list list-dotted">
               {% if listing.telephone %}
                 <li>
-                  <span>Tel</span>
+                  <span>{{ listing.telephone.type }}</span>
                   <span class="bold color333">{{ listing.telephone.value }}<span>
                 </li>
               {% endif %}
               {% if listing.email %}
                 <li>
-                  <span>E-Mail</span>
+                  <span>{{ listing.email.type }}</span>
                   <span class="bold color333">{{ listing.email.value | mail_to }}</span>
                 </li>
               {% endif %}

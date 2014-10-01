@@ -1,7 +1,7 @@
 <h1 class="page-title">announcement</h1>
 {% for announcement in listing.announcements %}
   <article class="announcement">
-    {{ announcement.image | attachment_url: 'large' | image_tag }}
+    {{ announcement | attachment_url: 'large' | image_tag }}
     <div class="announcement-description">
       <p>
         {{ announcement.text }}

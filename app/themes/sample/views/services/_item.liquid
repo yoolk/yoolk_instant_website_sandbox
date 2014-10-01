@@ -21,10 +21,10 @@
     </ol>
     <div class="catalog-info">
       <ul class="catalog-info-specifications list-dotted">
-        {% for f in service.properties %}
+        {% for property in service.properties %}
           <li class="clearfix service-list">
-            <span class="ellipsis">{{ f.name }}</span>
-            <span class="ellipsis">{{ f.value }}</span>
+            <span class="ellipsis">{{ property.name }}</span>
+            <span class="ellipsis">{{ property.value }}</span>
           </li>
         {% endfor %}
       </ul>

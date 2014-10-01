@@ -5,10 +5,10 @@
     <p>{{ product.description }}</p>
   </div>
   <ul class="catalog-detail-specifications list-dotted">
-    {% for f in product.features %}
+    {% for feature in product.features %}
       <li>
-        <span class="body-bg-color">{{ f.name }}</span>
-        <span class="body-bg-color">{{ f.value }}</span>
+        <span class="body-bg-color">{{ feature.name }}</span>
+        <span class="body-bg-color">{{ feature.value }}</span>
       </li>
     {% endfor %}
   </ul>
