@@ -1523,5 +1523,17 @@
         "url": "/samples/pdfs/menu.pdf"
       }
     }
+  },
+  "facebook_page": {
+    "id": 51,
+    "page_id": "344113609007752",
+    "page_url": "https://www.facebook.com/pages/Mkmusics/344113609007752",
+    "page_name": "Mkmusics",
+    "page_access_token": "CAACUqwsjYKgBACxnq35ys8YzAZAuUeAwEAgOR6aB03VyZA6JFzkvXoXT1tWxSoI0efqjEGeVlr0tPH9DVIfJPreJj06pCd5UCqWmrKgKFixIZBxo06fVaVQhbT9J3SmhAFeJFbYPMHxZAnlB3xURkR2vxpdEtSkhC71Ds2gp8Odwl4lkZAIb6",
+    "cover_photo_url": null,
+    "installed_page_ids": null,
+    "photo_uploaded_status": "finished",
+    "is_published": true,
+    "last_photo_uploaded_at": "Thu, 12 Dec 2013 03:01:04 UTC +00:00"
   }
 }
