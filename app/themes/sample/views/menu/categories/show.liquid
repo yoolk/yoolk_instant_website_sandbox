@@ -1,5 +1,5 @@
-<h1 class="page-title">{{ menu.name }}</h1>
+<h1 class="page-title">{{ food_category.name }}</h1>
 
-{% for food in menu.foods %}
+{% for food in food_category.foods %}
   {% include 'menu/item' %}
 {% endfor %}

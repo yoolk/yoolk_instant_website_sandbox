@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git://github.com/yoolk/themes_on_rails.git
-  revision: fde714319bf9d169ec07b9d8de6850d6ef9fc9a7
+  revision: f003314f2e095c36729ed1471352c9abd5198443
   branch: liquid
   specs:
     themes_on_rails (0.3.0)
@@ -27,7 +27,7 @@ GIT
 PATH
   remote: yoolk_liquid
   specs:
-    yoolk_liquid (1.0.0.alpha1)
+    yoolk_liquid (1.0.0.alpha3)
       bootstrap-sass (~> 3.2.0)
       coffee-rails (~> 4.0.1)
       jquery-rails (~> 3.1.2)
