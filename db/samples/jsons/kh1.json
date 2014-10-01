@@ -1535,5 +1535,11 @@
     "photo_uploaded_status": "finished",
     "is_published": true,
     "last_photo_uploaded_at": "Thu, 12 Dec 2013 03:01:04 UTC +00:00"
+  },
+  "twitter_account": {
+    "username": "Listing_1",
+    "email": "info@zaman.edu.kh",
+    "published": true,
+    "profile_url": "https://twitter.com/Listing_1"
   }
 }
