@@ -1,7 +1,5 @@
 <h1 class="page-title">menu</h1>
 
-{% for category in listing.food_categories %}
-  {% for food in category.foods %}
-    {% include 'menu/item' %}
-  {% endfor %}
+{% for category in listing.foods %}
+  {% include 'menu/item' %}
 {% endfor %}
