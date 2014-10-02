@@ -1,0 +1,36 @@
+<h1 class="page-title">Contact us</h1>
+
+<section class="reservation-form">
+  {% form 'contact' %}
+    {% if form.errors != blank %}
+      <div class="errorForm feedback">
+        <p>Oops, sorry. We were unable to submit your inquiry because it contained {{ form.errors | size | pluralize: 'an error', 'errors' }}. Please correct the following and submit again:</p>
+        <ul>
+          {% for field in form.errors %}
+            <li>
+              <span>{{ field }}</span>
+              <span>{{ form.errors.messages[field] }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    <div class="form-group">
+      <input type="textbox" name="contact[name]" value="{{ form.name }}" placeholder="Name">
+    </div>
+    <div class="form-group">
+      <input type="textbox" name="contact[phone]" value="{{ form.phone }}" placeholder="Phone">
+    </div>
+    <div class="form-group">
+      <input type="textbox" name="contact[sender]" value="{{ form.sender }}" placeholder="* Email">
+      {{ form.errors.messages['sender'] }}
+    </div>
+    <div class="form-group">
+      <textarea name="contact[body]" rows="5" cols="61">{{ form.body }}</textarea>
+      {{ form.errors.messages['body'] }}
+    </div>
+    <div class="form-group">
+      <input type="submit" name="submit" value="Send">
+    </div>
+  {% endform %}
+</section>
