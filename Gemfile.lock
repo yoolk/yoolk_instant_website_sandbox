@@ -9,10 +9,9 @@ GIT
 
 GIT
   remote: git://github.com/yoolk/liquid-rails.git
-  revision: 0a6532245ab79ae23ad66d4a046d526e1633860b
+  revision: 953a6cb3b5af507f4b675ad53ac871bda3ae5a09
   specs:
     liquid-rails (0.1.0)
-      kaminari (~> 0.16.1)
       liquid (~> 3.0.0.rc1)
       rails (>= 3.2)
 
@@ -27,7 +26,8 @@ GIT
 PATH
   remote: yoolk_liquid
   specs:
-    yoolk_liquid (1.0.0.alpha3)
+    yoolk_liquid (4.0.0.alpha3)
+      autoprefixer-rails (~> 3.1.0.20140911)
       bootstrap-sass (~> 3.2.0)
       coffee-rails (~> 4.0.1)
       jquery-rails (~> 3.1.2)
@@ -67,6 +67,8 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.2)
+    autoprefixer-rails (3.1.0.20140911)
+      execjs
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
