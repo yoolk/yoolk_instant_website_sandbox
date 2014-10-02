@@ -2,8 +2,14 @@
 
 <section class="reservation-form">
   {% form 'contact' %}
+    {% if form.posted_successfully? %}
+      <div class="successForm contact">
+        <p>Thanks for contacting us! We'll get back to you as soon as possible.</p>
+      </div>
+    {% endif %}
+
     {% if form.errors != blank %}
-      <div class="errorForm feedback">
+      <div class="errorForm contact">
         <p>Oops, sorry. We were unable to submit your inquiry because it contained {{ form.errors | size | pluralize: 'an error', 'errors' }}. Please correct the following and submit again:</p>
         <ul>
           {% for field in form.errors %}
@@ -14,7 +20,7 @@
           {% endfor %}
         </ul>
       </div>
-      {% endif %}
+    {% endif %}
     <div class="form-group">
       <input type="textbox" name="contact[name]" value="{{ form.name }}" placeholder="Name">
     </div>
