@@ -1,5 +1,5 @@
 class Menu::FoodsController < ApplicationController
   def show
-    @food = @listing.foods.select{|food| food.id == params[:id].to_i }[0]
+    @food = @listing.foods.find { |food| food.id == params[:id].to_i }
   end
 end

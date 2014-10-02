@@ -1,7 +1,5 @@
 <h1 class="page-title">services</h1>
 
-{% for category in listing.service_categories %}
-  {% for service in category.services %}
-    {% include 'services/item' %}
-  {% endfor %}
+{% for category in listing.service %}
+  {% include 'services/item' %}
 {% endfor %}
