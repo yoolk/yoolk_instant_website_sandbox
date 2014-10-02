@@ -5,7 +5,7 @@
     {% endif %}
 
     <ul>
-      <li>{{ 'contact us' | link_to_home }}</li>
+      <li>{{ 'home'       | link_to_home }}</li>
       <li>{{ 'map'        | link_to_map }}</li>
       <li>{{ 'about us'   | link_to_about_us }}</li>
       <li>{{ 'brochures'  | link_to_brochures }}</li>
@@ -58,7 +58,12 @@
       <li>
         {{ 'feedback' | link_to_feedback }}
       </li>
-      <li>{{ 'announcements' | link_to_announcements }}</li>
+      <li>
+        {{ 'contact us' | link_to_contact_us }}
+      </li>
+      <li>
+        {{ 'announcements' | link_to_announcements }}
+      </li>
     </ul>
 
     <div class="office">
