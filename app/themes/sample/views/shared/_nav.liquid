@@ -70,7 +70,7 @@
       {% if current_account %}
         <a href="{{ listing.instant_website.office_url }}">My office</a>
       {% else %}
-        {{ 'sign in' | sign_in_link }}
+        {{ 'sign in' | link_to_sign_in }}
       {% endif %}
     </div>
   </div>
