@@ -68,11 +68,9 @@
 
     <div class="office">
       {% if current_account %}
-        <a href="...">
-          <img src="...">
-        </a>
+        <a href="{{ listing.instant_website.office_url }}">My office</a>
       {% else %}
-        {{ 'signin' | sign_in_link }}
+        {{ 'sign in' | sign_in_link }}
       {% endif %}
     </div>
   </div>
