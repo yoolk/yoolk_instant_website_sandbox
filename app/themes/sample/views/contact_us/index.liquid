@@ -1,15 +1,15 @@
-<h1 class="page-title">Feedback</h1>
+<h1 class="page-title">Contact us</h1>
 
 <section class="reservation-form">
-  {% form 'feedback' %}
+  {% form 'contact' %}
     {% if form.posted_successfully? %}
-      <div class="successForm feedback">
-        <p>Thank you for submitting your feedback! We'll get back to you as soon as possible.</p>
+      <div class="successForm contact">
+        <p>Thanks for contacting us! We'll get back to you as soon as possible.</p>
       </div>
     {% endif %}
 
     {% if form.errors != blank %}
-      <div class="errorForm feedback">
+      <div class="errorForm contact">
         <p>Oops, sorry. We were unable to submit your inquiry because it contained {{ form.errors | size | pluralize: 'an error', 'errors' }}. Please correct the following and submit again:</p>
         <ul>
           {% for field in form.errors %}
@@ -22,14 +22,17 @@
       </div>
     {% endif %}
     <div class="form-group">
-      <input type="textbox" name="feedback[name]" value="{{ form.name }}" placeholder="Name">
+      <input type="textbox" name="contact[name]" value="{{ form.name }}" placeholder="Name">
     </div>
     <div class="form-group">
-      <input type="textbox" name="feedback[sender]" value="{{ form.sender }}" placeholder="* Email">
+      <input type="textbox" name="contact[phone]" value="{{ form.phone }}" placeholder="Phone">
+    </div>
+    <div class="form-group">
+      <input type="textbox" name="contact[sender]" value="{{ form.sender }}" placeholder="* Email">
       {{ form.errors.messages['sender'] }}
     </div>
     <div class="form-group">
-      <textarea name="feedback[body]" rows="5" cols="61">{{ form.body }}</textarea>
+      <textarea name="contact[body]" rows="5" cols="61">{{ form.body }}</textarea>
       {{ form.errors.messages['body'] }}
     </div>
     <div class="form-group">

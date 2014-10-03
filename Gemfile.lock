@@ -27,6 +27,7 @@ PATH
   remote: yoolk_liquid
   specs:
     yoolk_liquid (4.0.0.alpha3)
+      activemodel (~> 4.0.10)
       autoprefixer-rails (~> 3.1.0.20140911)
       bootstrap-sass (~> 3.2.0)
       coffee-rails (~> 4.0.1)
