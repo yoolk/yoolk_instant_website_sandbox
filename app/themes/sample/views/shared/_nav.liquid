@@ -67,9 +67,11 @@
     </ul>
 
     <div class="office">
-      <a href="/office" class="office-account">
-        <img src="{{'sample/male-office.png' | asset_url }}" class="office-img"> my office
-      </a>
+      {% if current_account %}
+        <a href="{{ listing.instant_website.office_url }}">My office</a>
+      {% else %}
+        {{ 'sign in' | link_to_sign_in }}
+      {% endif %}
     </div>
   </div>
 </div>

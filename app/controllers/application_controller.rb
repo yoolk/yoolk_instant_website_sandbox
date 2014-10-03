@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   before_action :set_listing
+  before_action :set_account
   before_action :set_content_for_header
   theme         :theme_resolver
 
@@ -27,6 +28,10 @@ class ApplicationController < ActionController::Base
 
     def set_listing
       @listing = Yoolk::Sandbox::Listing.find(params[:alias_id] || 'kh1')
+    end
+
+    def set_account
+      @current_account = Yoolk::Sandbox::Account.find(params['login'])
     end
 
     def set_content_for_header

@@ -12,7 +12,6 @@ GIT
   revision: 9fee697fcdf7802b60f4a438bc4cae6d309da5c9
   specs:
     liquid-rails (0.1.0)
-      kaminari (~> 0.16.1)
       liquid (~> 3.0.0.rc1)
       rails (>= 3.2)
 
