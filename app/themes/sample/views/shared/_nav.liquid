@@ -67,7 +67,13 @@
     </ul>
 
     <div class="office">
-      {{ 'signin' | login_link }}
+      {% if current_account %}
+        <a href="...">
+          <img src="...">
+        </a>
+      {% else %}
+        {{ 'signin' | sign_in_link }}
+      {% endif %}
     </div>
   </div>
 </div>
