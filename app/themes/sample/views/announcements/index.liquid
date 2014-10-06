@@ -1,4 +1,4 @@
-<h1 class="page-title">announcement</h1>
+<h1 class="page-title">{{ 'sample.links.announcements' | translate }}</h1>
 {% for announcement in listing.announcements %}
   <article class="announcement">
     {{ announcement | attachment_url: 'large' | image_tag }}
@@ -6,7 +6,7 @@
       <p>
         {{ announcement.text }}
         <strong class="readmore">
-          <a href="{{ announcement.url }}">read more</a>
+          <a href="{{ announcement.url }}">{{ 'sample.read_more' | translate }}</a>
         </strong>
       </p>
     </div>

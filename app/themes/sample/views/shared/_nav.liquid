@@ -5,12 +5,12 @@
     {% endif %}
 
     <ul>
-      <li>{{ 'home'       | link_to_home }}</li>
-      <li>{{ 'map'        | link_to_map }}</li>
-      <li>{{ 'about us'   | link_to_about_us }}</li>
-      <li>{{ 'brochures'  | link_to_brochures }}</li>
+      <li>{{ 'sample.links.home'      | translate | link_to_home }}</li>
+      <li>{{ 'sample.links.map'       | translate | link_to_map }}</li>
+      <li>{{ 'sample.links.about_us'  | translate | link_to_about_us }}</li>
+      <li>{{ 'sample.links.brochures' | translate | link_to_brochures }}</li>
       <li>
-        {{ 'photos'     | link_to_galleries }}
+        {{ 'sample.links.photos'      | translate | link_to_galleries }}
         <ul class="sub-nav">
           {% for gallery in listing.galleries %}
             <li>
@@ -20,7 +20,7 @@
         </ul>
       </li>
       <li>
-        {{ 'products'   | link_to_products }}
+        {{ 'sample.links.products' | translate | link_to_products }}
         <ul class="sub-nav">
           {% for product_category in listing.product_categories %}
             <li>
@@ -30,7 +30,7 @@
         </ul>
       </li>
       <li>
-        {{ 'services'   | link_to_services }}
+        {{ 'sample.links.services' | translate | link_to_services }}
         <ul class="sub-nav">
           {% for service_category in listing.service_categories %}
             <li>
@@ -40,7 +40,7 @@
         </ul>
       </li>
       <li>
-        {{ 'menu'       | link_to_menu }}
+        {{ 'sample.links.menu'    | translate | link_to_menu }}
         <ul class="sub-nav">
           {% for food_category in listing.food_categories %}
             <li>
@@ -50,27 +50,27 @@
         </ul>
       </li>
       <li>
-        {{ 'people' | link_to_people }}
+        {{ 'sample.links.people'        | translate | link_to_people }}
       </li>
       <li>
-        {{ 'reservation' | link_to_reservation }}
+        {{ 'sample.links.reservation'   | translate | link_to_reservation }}
       </li>
       <li>
-        {{ 'feedback' | link_to_feedback }}
+        {{ 'sample.links.feedback'      | translate | link_to_feedback }}
       </li>
       <li>
-        {{ 'contact us' | link_to_contact_us }}
+        {{ 'sample.links.contact_us'    | translate  | link_to_contact_us }}
       </li>
       <li>
-        {{ 'announcements' | link_to_announcements }}
+        {{ 'sample.links.announcements' | translate  | link_to_announcements }}
       </li>
     </ul>
 
     <div class="office">
       {% if current_account %}
-        <a href="{{ listing.instant_website.office_url }}">My office</a>
+        <a href="{{ listing.instant_website.office_url }}">{{ 'sample.my_office' | translate }}</a>
       {% else %}
-        {{ 'sign in' | link_to_sign_in }}
+        {{ 'sample.links.sign_in' | translate | link_to_sign_in }}
       {% endif %}
     </div>
   </div>
