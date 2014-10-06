@@ -1,5 +1,7 @@
 <h1 class="page-title">{{ 'sample.links.menu' | translate }}</h1>
 
-{% for food in listing.foods %}
-  {% include 'menu/item' %}
+{% for category in listing.food_categories %}
+  {% for food in category.foods %}
+    {% include 'menu/item' %}
+  {% endfor %}
 {% endfor %}

@@ -1,5 +1,7 @@
 <h1 class="page-title">{{ 'sample.links.services' | translate }}</h1>
 
-{% for category in listing.service %}
-  {% include 'services/item' %}
+{% for category in listing.service_categories %}
+  {% for service in category.services %}
+    {% include 'services/item' %}
+  {% endfor %}
 {% endfor %}
