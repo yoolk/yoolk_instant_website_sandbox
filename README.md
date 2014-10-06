@@ -35,6 +35,24 @@ You can run this sandbox app by:
 
 Then, go to your browser [http://localhost:3000](http://localhost:3000).
 
+## Sandbox Usage
+
+1. To switch theme, pass `theme` param. By default, it will pick up the theme from `listing.instant_website.template_name`. In this sandbox app, it will choose `sample` theme otherwise.
+
+    [http://localhost:3000/?theme=sample](http://localhost:3000/?login=developer@yoolk.com)
+
+2. To switch locale, pass `locale` param. By default, it will pick up from current listing's locale.
+
+    [http://localhost:3000/?locale=km](http://localhost:3000/?login=developer@yoolk.com)
+
+3. To switch listing, pass `alias_id` param. By default, it will pick up [kh1.json](https://github.com/yoolk/yoolk_instant_website_sandbox/blob/master/db/samples/jsons/kh1.json). You can create more listings on your development machine if you like. Just follow the sample schema.
+
+    [http://localhost:3000/?alias_id=kh1](http://localhost:3000/?login=developer@yoolk.com)
+
+4. To switch account, pass `login` param. Have a look on [developer@yoolk.com.json](https://github.com/yoolk/yoolk_instant_website_sandbox/blob/master/db/samples/jsons/developer@yoolk.com.json).
+
+    [http://localhost:3000/?login=developer@yoolk.com](http://localhost:3000/?login=developer@yoolk.com)
+
 ## Theme Skeleton
 
 **Yoolk Instant Website Theme** is built based on the popular [template engine liquid](https://github.com/Shopify/liquid). Check out the [theme documentation](http://yoolk.github.io/liquid-documentation/) for details. It is composed of three things:

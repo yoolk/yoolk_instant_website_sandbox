@@ -1,10 +1,23 @@
 en:
   sample:
-    welcome: 'Welcome'
-    global:
-      copyright:              "Copyright © %{year}. All Rights Reserved"
+    read_more: 'read more'
+    my_office: 'My office'
     links:
       home: 'Home'
+      about_us: 'About us'
+      contact_us: 'Contact us'
+      feedback: 'Feedback'
+      announcement: 'Announcement'
+      announcements: 'Announcements'
+      brochures: 'Brochures'
+      photos: 'Photos'
+      map: 'Map'
+      menu: 'Menu'
+      people: 'People'
+      products: 'Products'
+      services: 'Services'
+      reservation: 'Reservation'
+      sign_in: 'Sign in'
     people:
       directors: 'Directors'
       managers: 'Managers'
