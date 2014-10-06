@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   before_action :set_listing
+  before_action :set_locale
   before_action :set_account
   before_action :set_content_for_header
   theme         :theme_resolver
@@ -30,8 +31,14 @@ class ApplicationController < ActionController::Base
       @listing = Yoolk::Sandbox::Listing.find(params[:alias_id] || 'kh1')
     end
 
+    def set_locale
+      locale = (params[:locale].presence || @listing.locale).to_sym
+
+      ::I18n.locale   = locale
+    end
+
     def set_account
-      @current_account = Yoolk::Sandbox::Account.find(params['login'])
+      @current_account = Yoolk::Sandbox::Account.find(params[:login])
     end
 
     def set_content_for_header
@@ -39,6 +46,6 @@ class ApplicationController < ActionController::Base
     end
 
     def theme_resolver
-      @current_theme ||= (params[:theme] || 'sample')
+      params[:theme].presence || 'sample'
     end
 end
