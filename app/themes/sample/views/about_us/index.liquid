@@ -1,4 +1,16 @@
 <h1 class="page-title">{{ 'sample.links.about_us' | translate }}</h1>
+<article class="article-item">
+  <div class="flexslider">
+    <ul class="slides">
+      {% for cover_photo in listing.instant_website.cover_photos %}
+        <li>
+          {{ cover_photo | attachment_url: 'large' | image_tag }}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</article>
+
 {% for catalog_item in listing.catalog_items %}
   <article class="article-item">
     <h2 class="title-item">{{ catalog_item.title }}</h2>

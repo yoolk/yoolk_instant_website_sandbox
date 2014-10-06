@@ -8,6 +8,8 @@
 #= require sample/plugins/collageCaption-min
 #= require sample/plugins/collage_plus
 
+#= require sample/shared/jquery.flexslider
+
 # timeago
 #= require sample/plugins/jquery.timeago
 
@@ -19,3 +21,4 @@
 #= require sample/galleries/index
 #= require sample/announcements/index
 #= require sample/reservation/index
+#= require sample/about_us/index
