@@ -1,33 +1,35 @@
-<div class="catalog">
-  <a href="{{ service.url }}">
-    <h2 class="catalog-title">{{ service.name }}</h2>
-  </a>
-  <div class="catalog-body">
-    <div class="catalog-image">
-      {% if service.photos.first != blank %}
-        <a href="#" class="cboxElement">
-          {{ service.photos[0] | attachment_url: 'large' | image_tag }}
-        </a>
-      {% endif %}
-    </div>
-    <ol class="catalog-thumbnails">
-      {% for photo in service.photos %}
-        <li class="catalog-thumbnails-image" data-photo-url="">
-          <a class="active" href="" rel="" title="" >
-            {{ photo | attachment_url: 'thumbnail' | image_tag }}
+{% for service in category.services %}
+  <div class="catalog">
+    <a href="{{ service.url }}">
+      <h2 class="catalog-title">{{ service.name }}</h2>
+    </a>
+    <div class="catalog-body">
+      <div class="catalog-image">
+        {% if service.photos.first != blank %}
+          <a href="#" class="cboxElement">
+            {{ service.photos[0] | attachment_url: 'large' | image_tag }}
           </a>
-        </li>
-      {% endfor %}
-    </ol>
-    <div class="catalog-info">
-      <ul class="catalog-info-specifications list-dotted">
-        {% for property in service.properties %}
-          <li class="clearfix service-list">
-            <span class="ellipsis">{{ property.name }}</span><span class="ellipsis">{{ property.value }}</span>
+        {% endif %}
+      </div>
+      <ol class="catalog-thumbnails">
+        {% for photo in service.photos %}
+          <li class="catalog-thumbnails-image" data-photo-url="">
+            <a class="active" href="" rel="" title="" >
+              {{ photo | attachment_url: 'thumbnail' | image_tag }}
+            </a>
           </li>
         {% endfor %}
-      </ul>
+      </ol>
+      <div class="catalog-info">
+        <ul class="catalog-info-specifications list-dotted">
+          {% for property in service.properties %}
+            <li class="clearfix service-list">
+              <span class="ellipsis">{{ property.name }}</span><span class="ellipsis">{{ property.value }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="clear"></div>
     </div>
-    <div class="clear"></div>
   </div>
-</div>
+{% endfor %}
