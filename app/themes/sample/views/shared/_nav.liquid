@@ -39,6 +39,7 @@
           {% endfor %}
         </ul>
       </li>
+      {% if listing.food_categories != blank %}
       <li>
         {{ 'sample.links.menu'    | translate | link_to_menu }}
         <ul class="sub-nav">
@@ -49,6 +50,7 @@
           {% endfor %}
         </ul>
       </li>
+      {% endif %}
       <li>
         {{ 'sample.links.people'        | translate | link_to_people }}
       </li>
