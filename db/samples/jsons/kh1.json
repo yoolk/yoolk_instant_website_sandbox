@@ -715,7 +715,7 @@
   "instant_website": {
     "id": "1",
     "google_analytics_key": "333333",
-    "is_live": true,
+    "is_live": false,
     "is_active": true,
     "free_plan": false,
     "template": {
