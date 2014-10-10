@@ -42,7 +42,20 @@ class ApplicationController < ActionController::Base
     end
 
     def set_content_for_header
-      @content_for_header = Yoolk::Liquid::ContentHeader.new(@listing, view_context).to_s
+      # binding.pry
+      @content_for_header = Yoolk::Liquid::ContentHeader.new(@listing, view_context, seo).to_s
+    end
+
+    def seo
+      class_name = "seo/#{controller_path}/#{action_name}".classify
+      @obj = [@announcement,
+              @product, @listing.product_categories,
+              @service, @listing.service_categories,
+              @food, @listing.food_categories,
+              @album].compact
+
+      # binding.pry
+      class_name.constantize.new(@listing, @obj.first)
     end
 
     def theme_resolver
