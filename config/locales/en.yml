@@ -20,4 +20,12 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  seo:
+    in:                     "in"
+    is_located_in:          "is located in"
+    and_classified_as:      "and classified as"
+    brochures_of:           "Brochures of"
+    contact_info:           "For more information, please contact us directly by"
+    visit_address:          "or visit us by this address"
+    photo_gallery_of:       "Photo Gallery of"
+    by:                     "by"
