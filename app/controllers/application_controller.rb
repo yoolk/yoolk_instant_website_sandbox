@@ -47,7 +47,7 @@ class ApplicationController < ActionController::Base
     end
 
     def seo
-      class_name = "seo/#{controller_path}/#{action_name}".classify
+      class_name = "yoolk/seo/#{controller_path}/#{action_name}".classify
       @obj = [@announcement,
               @product, @listing.product_categories,
               @service, @listing.service_categories,
