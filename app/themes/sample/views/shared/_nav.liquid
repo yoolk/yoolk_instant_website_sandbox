@@ -14,7 +14,7 @@
         <ul class="sub-nav">
           {% for gallery in listing.galleries %}
             <li>
-              <a href="{{ gallery.url }}">{{ gallery.name }} ({{ gallery.images.count }})</a>
+              <a href="{{ gallery.url }}" {% if gallery.current? %}class="active"{% endif %}>{{ gallery.name }} ({{ gallery.images.count }})</a>
             </li>
           {% endfor %}
         </ul>
@@ -24,7 +24,7 @@
         <ul class="sub-nav">
           {% for product_category in listing.product_categories %}
             <li>
-              <a href="{{ product_category.url }}">{{ product_category.name }}</a>
+              <a href="{{ product_category.url }}" {% if product_category.current? %}class="active"{% endif %}>{{ product_category.name }}</a>
             </li>
           {% endfor %}
         </ul>
@@ -34,7 +34,7 @@
         <ul class="sub-nav">
           {% for service_category in listing.service_categories %}
             <li>
-              <a href="{{ service_category.url }}">{{ service_category.name }}</a>
+              <a href="{{ service_category.url }}" {% if service_category.current? %}class="active"{% endif %}>{{ service_category.name }}</a>
             </li>
           {% endfor %}
         </ul>
@@ -44,7 +44,7 @@
         <ul class="sub-nav">
           {% for food_category in listing.food_categories %}
             <li>
-              <a href="{{ food_category.url }}">{{ food_category.name }}</a>
+              <a href="{{ food_category.url }}" {% if food_category.current? %}class="active"{% endif %}>{{ food_category.name }}</a>
             </li>
           {% endfor %}
         </ul>
