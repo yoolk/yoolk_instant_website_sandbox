@@ -9,17 +9,15 @@ GIT
 
 GIT
   remote: git://github.com/yoolk/liquid-rails.git
-  revision: 04fdb1a58c30cdbe0eb8e32e9aea8ac782e340a2
+  revision: 5d235f814abc40c8b136ba4f6c0a3369ac041c78
   specs:
     liquid-rails (0.1.0)
       kaminari (~> 0.16.1)
       liquid (~> 3.0.0.rc1)
       rails (>= 3.2)
 
-GIT
-  remote: git://github.com/yoolk/themes_on_rails.git
-  revision: f003314f2e095c36729ed1471352c9abd5198443
-  branch: liquid
+PATH
+  remote: /home/radin/dev/themes_on_rails
   specs:
     themes_on_rails (0.3.0)
       rails (>= 3.2)

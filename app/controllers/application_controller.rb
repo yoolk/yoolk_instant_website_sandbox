@@ -7,6 +7,7 @@ class ApplicationController < ActionController::Base
   before_action :set_locale
   before_action :set_account
   before_action :set_content_for_header
+  before_action :theme_css
   theme         :theme_resolver
 
   protected
@@ -43,6 +44,11 @@ class ApplicationController < ActionController::Base
 
     def set_content_for_header
       @content_for_header = Yoolk::Liquid::ContentHeader.new(@listing, view_context).to_s
+    end
+
+    def theme_css
+      style = params[:style].presence || ''
+      @theme_css = "#{theme_resolver}/all#{style}.css"
     end
 
     def theme_resolver
