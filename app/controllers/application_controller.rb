@@ -6,7 +6,6 @@ class ApplicationController < ActionController::Base
   before_action :set_listing
   before_action :set_locale
   before_action :set_account
-  before_action :set_content_for_header
   theme         :theme_resolver
 
   protected
@@ -16,7 +15,7 @@ class ApplicationController < ActionController::Base
     end
 
     def extract_alias_id(text)
-      text  = text.to_s.dup.force_encoding("ISO-8859-1")
+      text  = text.to_s.dup.force_encoding('ISO-8859-1')
       match = /^([A-Za-z]+-)?[A-Za-z]+\d+/.match(text)
       if match.present?
         match[0]
@@ -41,24 +40,26 @@ class ApplicationController < ActionController::Base
       @current_account = Yoolk::Sandbox::Account.find(params[:login])
     end
 
-    def set_content_for_header
-      # binding.pry
-      @content_for_header = Yoolk::Liquid::ContentHeader.new(@listing, view_context, seo).to_s
+    def content_for_header
+      Yoolk::Liquid::ContentHeader.new(@listing, view_context, seo).to_s
     end
 
     def seo
       class_name = "yoolk/seo/#{controller_path}/#{action_name}".classify
       @obj = [@announcement,
-              @product, @listing.product_categories,
-              @service, @listing.service_categories,
-              @food, @listing.food_categories,
-              @album].compact
+              @product, @product_category,
+              @service, @service_category,
+              @food, @food_category,
+              @gallery].compact
 
-      # binding.pry
       class_name.constantize.new(@listing, @obj.first)
     end
 
     def theme_resolver
       params[:theme].presence || 'sample'
+    end
+
+    def liquid_assigns
+      view_assigns.merge('content_for_header' => content_for_header)
     end
 end
