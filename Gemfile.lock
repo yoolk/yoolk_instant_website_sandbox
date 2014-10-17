@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: git://github.com/yoolk/liquid-rails.git
-  revision: 3921a0778c9e14fea87586a721b96508e78b1ff8
+  revision: 906bb2793d6dd7ade8274b00b0021d7cc99f1d36
   specs:
     liquid-rails (0.1.0)
       kaminari (~> 0.16.1)
@@ -110,7 +110,7 @@ GEM
     mail (2.6.1)
       mime-types (>= 1.16, < 3)
     method_source (0.8.2)
-    mime-types (2.4.1)
+    mime-types (2.4.2)
     minitest (4.7.5)
     multi_json (1.10.1)
     oj (2.10.2)
