@@ -1542,5 +1542,18 @@
     "email": "info@zaman.edu.kh",
     "published": true,
     "profile_url": "https://twitter.com/Listing_1"
-  }
+  },
+  "opening_hours": [
+    {
+      "day": 1,
+      "open": {
+        "hour":   "00",
+        "minute": "15"
+      },
+      "close": {
+        "hour":   "01",
+        "minute": "15"
+      }
+    }
+  ]
 }
