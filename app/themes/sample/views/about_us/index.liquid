@@ -1,7 +1,10 @@
 <h1 class="page-title">{{ 'sample.links.about_us' | translate }}</h1>
 
 <article class="article-item">
-  {{ listing | google_static_image_tag: width: 500, height: 100 }}
+  <img src="{{ listing | google_static_map: width: 500, height: 200 }}" alt="static image">
+</article>
+<article class="article-item">
+  <img src="{{ listing | google_static_map }}" alt="static map">
 </article>
 
 {% if listing.instant_website.cover_photos %}
