@@ -3,9 +3,6 @@
 <head>
   <title>{{ listing.name }}</title>
   {{ 'http://fonts.googleapis.com/css?family=Source+Sans+Pro' | stylesheet_link_tag }}
-
-  {{ 'http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css' | stylesheet_link_tag }}
-
   {{ 'sample/all.css' | stylesheet_link_tag }}
   {{ content_for_header }}
 </head>
@@ -18,6 +15,5 @@
 
   {{ 'sample/all.js' | javascript_include_tag }}
   {% yield 'map' %}
-  {{ 'http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js' | javascript_include_tag }}
 </body>
 </html>

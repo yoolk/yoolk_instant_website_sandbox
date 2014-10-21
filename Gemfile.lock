@@ -1,13 +1,4 @@
 GIT
-  remote: git://github.com/radin-reth/colorbox-rails.git
-  revision: 48ac41376f0e87a6c9138a9d2d65b0794fca0d77
-  branch: 0-1-2-stable
-  specs:
-    colorbox-rails (0.1.2)
-      jquery-rails
-      rails (>= 3.1.1)
-
-GIT
   remote: git://github.com/yoolk/liquid-rails.git
   revision: 06cdc4e3cff19d95126ae1b18210c1141e191369
   specs:
@@ -23,6 +14,12 @@ GIT
   specs:
     themes_on_rails (0.3.0)
       rails (>= 3.2)
+
+PATH
+  remote: /Users/chamnapchhorn/workspace/me/assets-rails
+  specs:
+    assets-rails (0.1.0)
+      railties (>= 3.2)
 
 PATH
   remote: yoolk_liquid
@@ -180,7 +177,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  colorbox-rails!
+  assets-rails!
   liquid-rails!
   pry-rails
   quiet_assets
