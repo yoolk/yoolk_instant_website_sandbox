@@ -60,6 +60,10 @@ class ApplicationController < ActionController::Base
     end
 
     def liquid_assigns
-      view_assigns.merge('content_for_header' => content_for_header)
+      view_assigns.merge({'content_for_header' => content_for_header, 'page' => page_drop})
+    end
+
+    def page_drop
+      Yoolk::Liquid::PageDrop.new
     end
 end
