@@ -1545,14 +1545,80 @@
   },
   "opening_hours": [
     {
-      "day": 1,
+      "day": 0,
       "open": {
-        "hour":   "00",
-        "minute": "15"
+        "hour":   "17",
+        "minute": "30"
       },
       "close": {
-        "hour":   "01",
-        "minute": "15"
+        "hour":   "23",
+        "minute": "45"
+      }
+    },
+    {
+      "day": 1,
+      "open": {
+        "hour":   "08",
+        "minute": "00"
+      },
+      "close": {
+        "hour":   "17",
+        "minute": "30"
+      }
+    },
+    {
+      "day": 2,
+      "open": {
+        "hour":   "08",
+        "minute": "00"
+      },
+      "close": {
+        "hour":   "17",
+        "minute": "30"
+      }
+    },
+    {
+      "day": 3,
+      "open": {
+        "hour":   "08",
+        "minute": "00"
+      },
+      "close": {
+        "hour":   "17",
+        "minute": "30"
+      }
+    },
+    {
+      "day": 4,
+      "open": {
+        "hour":   "08",
+        "minute": "00"
+      },
+      "close": {
+        "hour":   "17",
+        "minute": "30"
+      }
+    },
+    {
+      "day": 5,
+      "open": {
+        "hour":   "08",
+        "minute": "00"
+      },
+      "close": {
+        "hour":   "17",
+        "minute": "30"
+      }
+    },
+    {
+      "day": 6,
+      "open": {
+        "hour":   "08",
+        "minute": "00"
+      },
+      "close": {
+        "hour":   "17",
+        "minute": "30"
       }
     }
   ]
