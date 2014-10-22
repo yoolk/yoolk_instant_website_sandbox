@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
   before_action :set_listing
   before_action :set_locale
   before_action :set_account
+  before_action :set_request
   theme         :theme_resolver
 
   protected
@@ -33,11 +34,15 @@ class ApplicationController < ActionController::Base
     def set_locale
       locale = (params[:locale].presence || @listing.locale).to_sym
 
-      ::I18n.locale   = locale
+      ::I18n.locale = locale
     end
 
     def set_account
       @current_account = Yoolk::Sandbox::Account.find(params[:login])
+    end
+
+    def set_request
+      @request = Yoolk::Liquid::RequestDrop.new
     end
 
     def content_for_header
