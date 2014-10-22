@@ -41,7 +41,7 @@
   {% endform %}
 </section>
 <section class="business-hour">
-<table class="tab-opening-hour">
+<table class="tab-opening-hour" rules="rows">
   <tr>
     <th>Sun</th>
     <th>Mon</th>
@@ -52,11 +52,11 @@
     <th>Sat</th>
   </tr>
   <tr>
-    <td col-span='7'>
-      {% for business_hour in listing.opening_hours %}
-        {{ business_hour.open.hour }}:{{ business_hour.open.minute }}-{{ business_hour.close.hour }}:{{ business_hour.close.minute }}
-      {% endfor %}
-    </td>
+    {% for business_hour in listing.opening_hours %}
+      <td>
+        {{ business_hour.open.to_time }} <br>-<br> {{ business_hour.close.to_time }}
+      </td>
+    {% endfor %}
   </tr>
 </table>
 </section>

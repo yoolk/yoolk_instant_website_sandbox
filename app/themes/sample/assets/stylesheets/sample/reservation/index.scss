@@ -23,10 +23,19 @@
 }
 .tab-opening-hour {
   th {
-    padding: 5px 11px;
-    font-weight: normal;
+    padding: 5px 28px;
+  }
+  th,
+  tr {
+    text-align: center;
   }
 }
+
+.opening-active {
+  background-color: #00CC00;
+  font-weight: bold;
+}
+
 .addresses {
   padding: 15px;
   width: 50%;
