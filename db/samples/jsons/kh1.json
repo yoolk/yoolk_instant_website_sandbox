@@ -943,16 +943,20 @@
           "description": "&lt;div&gt;show me something&lt;/div&gt;<br><blockquote>and a host of new technologies, </blockquote><b>Special features</b><ul><li>widen space</li><li>Security</li></ul>",
           "properties": [
             {
-              "Basin": "9.3 sqm"
+              "name": "Basin",
+              "value": "9.3 sqm"
             },
             {
-              "Rooftop": "94.28 sqm"
+              "name": "Rooftop",
+              "value": "94.28 sqm"
             },
             {
-              "Stair Area": "7.52 sqm"
+              "name": "Stair Area",
+              "value": "7.52 sqm"
             },
             {
-              "Total": "111.1 sqm"
+              "name": "Total",
+              "value": "111.1 sqm"
             }
           ],
           "photos": [
@@ -995,19 +999,24 @@
           "description": "<u>Fresh air</u>",
           "properties": [
             {
-              "Floor Slab": "288.66 sqm"
+              "name": "Floor Slab",
+              "value": "288.66 sqm"
             },
             {
-              "Mezzanine": "118.19 sqm"
+              "name": "Mezzanine",
+              "value": "118.19 sqm"
             },
             {
-              "Balcony": "57.57 sqm"
+              "name": "Balcony",
+              "value": "57.57 sqm"
             },
             {
-              "IT room": "6.64 sqm"
+              "name": "IT room",
+              "value": "6.64 sqm"
             },
             {
-              "Bathroom": "14.48 sqm"
+              "name": "Bathroom",
+              "value": "14.48 sqm"
             }
           ],
           "photos": []
@@ -1029,10 +1038,12 @@
           "updated_at": "2014-08-13 08:59:54 UTC",
           "properties": [
             {
-              "Type": "Ice Cream"
+              "name": "Type",
+              "value": "Ice Cream"
             },
             {
-              "Flavor": "Strawberry"
+              "name": "Flavor",
+              "value": "Strawberry"
             }
           ],
           "photos": [
