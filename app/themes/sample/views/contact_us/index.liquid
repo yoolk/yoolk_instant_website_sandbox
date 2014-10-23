@@ -52,7 +52,7 @@
     <th>Sat</th>
   </tr>
   <tr>
-    {% for business_hour in listing.opening_hours %}
+    {% for business_hour in listing.business_hours %}
       <td>
         {{ business_hour.open.to_time }} <br>-<br> {{ business_hour.close.to_time }}
       </td>
