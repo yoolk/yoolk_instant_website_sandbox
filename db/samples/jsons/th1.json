@@ -1,0 +1,22 @@
+{
+  "id": "39CD51B2-76C8-465D-BEF1-13300DEC90AA",
+  "alias_id": "th1",
+  "name": "Thai Yellow Tower",
+  "address": "Bangkok, Thailand",
+  "lat": 101.574302136424594,
+  "long": 103.93494145572186,
+  "portal": {
+    "language": {
+      "name": "Thai",
+      "two_code": "th"
+    }
+  },
+  "instant_website": {
+    "domains": [
+      {
+        "name": "thaistaging.yoolk.com",
+        "is_primary": true
+      }
+    ]
+  }
+}
