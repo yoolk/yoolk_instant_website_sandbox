@@ -1,0 +1,22 @@
+{
+  "id": "292D51B2-76C8-465D-BEF1-13300DEC90FA",
+  "alias_id": "en1",
+  "name": "English Yellow Tower",
+  "address": "London, England",
+  "lat": 101.574302136424594,
+  "long": 103.93494145572186,
+  "portal": {
+    "language": {
+      "name": "English",
+      "two_code": "en"
+    }
+  },
+  "instant_website": {
+    "domains": [
+      {
+        "name": "englishstaging.yoolk.com",
+        "is_primary": true
+      }
+    ]
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "id": "1",
+  "id": "BB3EC566-3DC2-11E2-ACB8-12314000C811",
   "alias_id": "kh1",
   "name": "Yellow Tower",
   "address": "No. 191, Tonle Sap (Rd.), Village 1, Sangkat Chroy Changva, 12110 Phnom Penh",
@@ -37,8 +37,8 @@
       "name": "Cambodia"
     },
     "language": {
-      "name": "English",
-      "two_code": "en"
+      "name": "Khmer",
+      "two_code": "km"
     }
   },
   "listing_categories": [
