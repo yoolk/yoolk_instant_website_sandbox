@@ -1554,5 +1554,42 @@
     "published": true,
     "profile_url": "https://twitter.com/Listing_1"
   },
-  "multilingual_ids": ["292D51B2-76C8-465D-BEF1-13300DEC90FA", "39CD51B2-76C8-465D-BEF1-13300DEC90AA"]
+  "multilingual_ids": ["km1", "th1"],
+  "opening_hours": [
+    {
+      "day":   0,
+      "open":  { "hour":"17", "minute":"30" },
+      "close": { "hour":"23", "minute":"45" }
+    },
+    {
+      "day":   1,
+      "open":  null,
+      "close": null
+    },
+    {
+      "day":   2,
+      "open":  { "hour":"08", "minute":"00" },
+      "close": { "hour":"17", "minute":"30" }
+    },
+    {
+      "day":   3,
+      "open":  { "hour":"08", "minute":"00" },
+      "close": { "hour":"17", "minute":"30" }
+    },
+    {
+      "day":   4,
+      "open":  { "hour":"08", "minute":"00" },
+      "close": { "hour":"17", "minute":"30" }
+    },
+    {
+      "day":   5,
+      "open":  null,
+      "close": null
+    },
+    {
+      "day":   6,
+      "open":  { "hour":"08", "minute":"00" },
+      "close": { "hour":"17", "minute":"30" }
+    }
+  ]
 }

@@ -16,3 +16,4 @@
 #= require sample/announcements/index
 #= require sample/reservation/index
 #= require sample/about_us/index
+#= require sample/contact_us/index
