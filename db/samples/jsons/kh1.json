@@ -1553,5 +1553,42 @@
     "email": "info@zaman.edu.kh",
     "published": true,
     "profile_url": "https://twitter.com/Listing_1"
-  }
+  },
+  "opening_hours": [
+    {
+      "day":   0,
+      "open":  { "hour":"17", "minute":"30" },
+      "close": { "hour":"23", "minute":"45" }
+    },
+    {
+      "day":   1,
+      "open":  null,
+      "close": null
+    },
+    {
+      "day":   2,
+      "open":  { "hour":"08", "minute":"00" },
+      "close": { "hour":"17", "minute":"30" }
+    },
+    {
+      "day":   3,
+      "open":  { "hour":"08", "minute":"00" },
+      "close": { "hour":"17", "minute":"30" }
+    },
+    {
+      "day":   4,
+      "open":  { "hour":"08", "minute":"00" },
+      "close": { "hour":"17", "minute":"30" }
+    },
+    {
+      "day":   5,
+      "open":  null,
+      "close": null
+    },
+    {
+      "day":   6,
+      "open":  { "hour":"08", "minute":"00" },
+      "close": { "hour":"17", "minute":"30" }
+    }
+  ]
 }
