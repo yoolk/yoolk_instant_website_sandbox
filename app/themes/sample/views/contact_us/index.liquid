@@ -54,11 +54,13 @@
   <tr>
     {% for business_hour in listing.business_hours %}
       <td>
-        {% if business_hour.full_day? %}
+        {% if business_hour.closed? %}
+          Closed
+        {% elsif business_hour.full_day? %}
           24h
         {% else %}
-          {{ business_hour.open.to_time | date: "%I:%M %p" }} <br>-<br>
-          {{ business_hour.close.to_time | date: "%I:%M %p" }}
+          {{ business_hour.open  | date: "%I:%M %p" }} <br>-<br>
+          {{ business_hour.close | date: "%I:%M %p" }}
         {% endif %}
       </td>
     {% endfor %}

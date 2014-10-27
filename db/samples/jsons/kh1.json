@@ -1562,8 +1562,8 @@
     },
     {
       "day":   1,
-      "open":  { "hour":"08", "minute":"00" },
-      "close": { "hour":"17", "minute":"30" }
+      "open":  null,
+      "close": null
     },
     {
       "day":   2,
@@ -1582,8 +1582,8 @@
     },
     {
       "day":   5,
-      "open":  { "hour":"00", "minute":"00" },
-      "close": { "hour":"23", "minute":"59" }
+      "open":  null,
+      "close": null
     },
     {
       "day":   6,
