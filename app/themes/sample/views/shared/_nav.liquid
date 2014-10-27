@@ -66,6 +66,22 @@
       </li>
     </ul>
 
+    <div class="multilingual">
+      <a href="#" id="dLabel" class="dropdown-toggle" data-toggle="dropdown" data-target="#" role="button">
+        <span>{{ listing.language.name }}</span>
+        <span class="caret"></span>
+      </a>
+      <ul id="lang-ul" aria-labelledby="dLabel" class="dropdown-menu" role="menu">
+        {% for multilingual in listing.multilinguals %}
+          <li>
+            <a href="http://{{ multilingual.instant_website.primary_domain.name }}">
+              {{ multilingual.language.name }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
     <div class="office">
       {% if current_account %}
         <a href="{{ listing.instant_website.office_url }}">{{ 'sample.my_office' | translate }}</a>
