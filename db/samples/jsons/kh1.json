@@ -1,5 +1,5 @@
 {
-  "id": "1",
+  "id": "BB3EC566-3DC2-11E2-ACB8-12314000C811",
   "alias_id": "kh1",
   "name": "Yellow Tower",
   "address": "No. 191, Tonle Sap (Rd.), Village 1, Sangkat Chroy Changva, 12110 Phnom Penh",
@@ -7,7 +7,7 @@
   "long": 104.93494145572186,
   "zoom_level": 16,
   "is_active": true,
-  "locale": "km",
+  "locale": "en",
   "created_at": "2014-08-13 08:59:54 UTC",
   "updated_at": "2014-08-13 08:59:54 UTC",
   "business_type": {
@@ -849,7 +849,7 @@
         "created_at": "Fri, 18 Oct 2013 06:33:15 UTC +00:00",
         "google_analytics_key": "",
         "is_primary": true,
-        "name": "localhost",
+        "name": "localhost:3000",
         "type": "pointed",
         "updated_at": "Thu, 16 Jan 2014 10:51:22 UTC +00:00"
       }
@@ -1553,5 +1553,43 @@
     "email": "info@zaman.edu.kh",
     "published": true,
     "profile_url": "https://twitter.com/Listing_1"
-  }
+  },
+  "multilingual_ids": ["km1"],
+  "opening_hours": [
+    {
+      "day":   0,
+      "open":  { "hour":"17", "minute":"30" },
+      "close": { "hour":"23", "minute":"45" }
+    },
+    {
+      "day":   1,
+      "open":  null,
+      "close": null
+    },
+    {
+      "day":   2,
+      "open":  { "hour":"08", "minute":"00" },
+      "close": { "hour":"17", "minute":"30" }
+    },
+    {
+      "day":   3,
+      "open":  { "hour":"08", "minute":"00" },
+      "close": { "hour":"17", "minute":"30" }
+    },
+    {
+      "day":   4,
+      "open":  { "hour":"08", "minute":"00" },
+      "close": { "hour":"17", "minute":"30" }
+    },
+    {
+      "day":   5,
+      "open":  null,
+      "close": null
+    },
+    {
+      "day":   6,
+      "open":  { "hour":"08", "minute":"00" },
+      "close": { "hour":"17", "minute":"30" }
+    }
+  ]
 }
