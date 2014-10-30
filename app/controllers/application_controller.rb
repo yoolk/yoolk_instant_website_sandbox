@@ -3,6 +3,7 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
+  before_action :set_domain
   before_action :set_listing
   before_action :set_locale
   before_action :set_account
@@ -39,11 +40,14 @@ class ApplicationController < ActionController::Base
 
   private
 
-    def set_listing
-      domain   = Yoolk::Sandbox::InstantWebsite::Domain.find(request.host)
-      render file: "#{::Rails.root}/public/404.html", status: 404 and return if domain.nil?
+    def set_domain
+      @current_domain = Yoolk::Sandbox::InstantWebsite::Domain.find(request.host)
+    end
 
-      @listing = Yoolk::Sandbox::Listing.find(params[:alias_id]) || domain.listing
+    def set_listing
+      render file: "#{::Rails.root}/public/404.html", status: 404 and return if @current_domain.nil?
+
+      @listing = Yoolk::Sandbox::Listing.find(params[:alias_id]) || @current_domain.listing
     end
 
     def set_locale
