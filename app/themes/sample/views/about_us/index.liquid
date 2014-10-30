@@ -7,7 +7,7 @@
 <article class="article-item">
   <div class="flexslider">
     <ul class="slides">
-      {% if listing.instant_website.cover_photos %}
+      {% if listing.instant_website.cover_photos != blank %}
         {% for cover_photo in listing.instant_website.cover_photos %}
           <li>
             {{ cover_photo | attachment_url: 'large' | image_tag }}
