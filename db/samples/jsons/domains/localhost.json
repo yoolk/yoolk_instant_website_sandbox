@@ -5,5 +5,6 @@
   "is_primary": true,
   "name": "localhost",
   "type": "pointed",
+  "listing_alias_id": "kh1",
   "updated_at": "Thu, 16 Jan 2014 10:51:22 UTC +00:00"
 }
