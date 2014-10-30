@@ -1558,38 +1558,78 @@
   "opening_hours": [
     {
       "day":   0,
-      "open":  { "hour":"17", "minute":"30" },
-      "close": { "hour":"23", "minute":"45" }
+      "periods": [
+        {
+          "open":  { "hour":"08", "minute":"00" },
+          "close": { "hour":"12", "minute":"00" }
+        },
+        {
+          "open":  { "hour":"14", "minute":"00" },
+          "close": { "hour":"17", "minute":"00" }
+        }
+      ]
     },
     {
       "day":   1,
-      "open":  null,
-      "close": null
+      "periods": [
+        {
+          "open":  null,
+          "close": null
+        }
+      ]
     },
     {
       "day":   2,
-      "open":  { "hour":"08", "minute":"00" },
-      "close": { "hour":"17", "minute":"30" }
+      "periods": [
+        {
+          "open":  { "hour":"00", "minute":"00" },
+          "close": { "hour":"23", "minute":"59" }
+        }
+      ]
     },
     {
       "day":   3,
-      "open":  { "hour":"08", "minute":"00" },
-      "close": { "hour":"17", "minute":"30" }
+      "periods": [
+        {
+          "open":  { "hour":"08", "minute":"00" },
+          "close": { "hour":"12", "minute":"00" }
+        },
+        {
+          "open":  { "hour":"14", "minute":"00" },
+          "close": { "hour":"17", "minute":"00" }
+        }
+      ]
     },
     {
       "day":   4,
-      "open":  { "hour":"08", "minute":"00" },
-      "close": { "hour":"17", "minute":"30" }
+      "periods": [
+        {
+          "open":  { "hour":"00", "minute":"00" },
+          "close": { "hour":"23", "minute":"59" }
+        }
+      ]
     },
     {
       "day":   5,
-      "open":  null,
-      "close": null
+      "periods": [
+        {
+          "open":  { "hour":"08", "minute":"00" },
+          "close": { "hour":"12", "minute":"00" }
+        },
+        {
+          "open":  { "hour":"14", "minute":"00" },
+          "close": { "hour":"17", "minute":"00" }
+        }
+      ]
     },
     {
       "day":   6,
-      "open":  { "hour":"08", "minute":"00" },
-      "close": { "hour":"17", "minute":"30" }
+      "periods": [
+        {
+          "open":  null,
+          "close": null
+        }
+      ]
     }
   ]
 }
