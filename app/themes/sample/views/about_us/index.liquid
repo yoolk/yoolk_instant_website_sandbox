@@ -4,26 +4,25 @@
   <img src="{{ listing | google_static_map_url: size: '500x200' }}" alt="static image">
 </article>
 
-  <article class="article-item">
-    <div class="flexslider">
-      <ul class="slides">
-        {% if listing.instant_website.cover_photos %}
-          {% for cover_photo in listing.instant_website.cover_photos %}
-            <li>
-              {{ cover_photo | attachment_url: 'large' | image_tag }}
-            </li>
-          {% endfor %}
-        {% elsif listing.instant_website.template.cover_photo %}
+<article class="article-item">
+  <div class="flexslider">
+    <ul class="slides">
+      {% if listing.instant_website.cover_photos %}
+        {% for cover_photo in listing.instant_website.cover_photos %}
           <li>
-            {{ listing.instant_website.template.cover_photo | attachment_url: 'original' | image_tag }}
+            {{ cover_photo | attachment_url: 'large' | image_tag }}
           </li>
-        {% elsif request.preview_mode? %}
-          <li> {{ current_template.cover_photo | attachment_url: 'original' }} </li>
-        {% endif %}
-      </ul>
-    </div>
-  </article>
-
+        {% endfor %}
+      {% elsif listing.instant_website.template.cover_photo %}
+        <li>
+          {{ listing.instant_website.template.cover_photo | attachment_url: 'original' | image_tag }}
+        </li>
+      {% elsif request.preview_mode? %}
+        <li> {{ current_template.cover_photo | attachment_url: 'original' }} </li>
+      {% endif %}
+    </ul>
+  </div>
+</article>
 
 {% for catalog_item in listing.catalog_items %}
   <article class="article-item">
