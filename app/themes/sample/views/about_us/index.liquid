@@ -3,14 +3,19 @@
 <article class="article-item">
   <img src="{{ listing | google_static_map_url: size: '500x200' }}" alt="static image">
 </article>
-
-{% if listing.instant_website.cover_photos %}
+{% if listing.instant_website.cover_photos != blank %}
   <article class="article-item">
     <div class="flexslider">
       <ul class="slides">
         {% for cover_photo in listing.instant_website.cover_photos %}
           <li>
-            {{ cover_photo | attachment_url: 'large' | image_tag }}
+            {% assign photo_url = cover_photo | attachment_url: 'large' %}
+
+            {% if photo_url == blank %}
+              {{ cover_photo | attachment_url: 'original' | image_tag }}
+            {% else %}
+              {{ cover_photo | attachment_url: 'large' | image_tag }}
+            {% endif %}
           </li>
         {% endfor %}
       </ul>
