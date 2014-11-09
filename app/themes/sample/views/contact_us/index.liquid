@@ -41,7 +41,7 @@
   {% endform %}
 </section>
 <section class="business-hour">
-<table class="tab-opening-hour" rules="rows">
+{% comment %}<table class="tab-opening-hour" rules="rows">
   <tr>
     <th>Sun</th>
     <th>Mon</th>
@@ -65,5 +65,13 @@
       </td>
     {% endfor %}
   </tr>
-</table>
+</table>{% endcomment %}
+{% for business_hour in listing.business_hours %}
+  {% comment %}{{ business_hour.days }} : {{ business_hour.time }}{% endcomment %}
+  {{ business_hour.days }}{% comment %}: {{ business_hour.time }} {% endcomment %}<br>
+  {% comment %}{% for group in business_hour %}
+    {{ group.day }}
+  {% endfor %}{% endcomment %}
+{% endfor %}
+
 </section>
