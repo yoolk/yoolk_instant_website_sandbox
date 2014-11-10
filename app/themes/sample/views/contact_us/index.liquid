@@ -68,7 +68,7 @@
 </table>{% endcomment %}
 {% for business_hour in listing.business_hours %}
   {% comment %}{{ business_hour.days }} : {{ business_hour.time }}{% endcomment %}
-  {{ business_hour.days }}{% comment %}: {{ business_hour.time }} {% endcomment %}<br>
+  {{ business_hour.days }}: {{ business_hour.time }} <br>
   {% comment %}{% for group in business_hour %}
     {{ group.day }}
   {% endfor %}{% endcomment %}
