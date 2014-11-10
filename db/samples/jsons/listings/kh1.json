@@ -1560,12 +1560,8 @@
       "day":   0,
       "periods": [
         {
-          "open":  { "hour":"08", "minute":"00" },
-          "close": { "hour":"12", "minute":"00" }
-        },
-        {
-          "open":  { "hour":"14", "minute":"00" },
-          "close": { "hour":"17", "minute":"00" }
+          "open":  null,
+          "close": null
         }
       ]
     },
