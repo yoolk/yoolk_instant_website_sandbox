@@ -1,39 +1,18 @@
-GIT
-  remote: git://github.com/yoolk/assets-rails.git
-  revision: bf3d4af4acfcd47c21a75d724f52337921bdd0d8
-  specs:
-    assets-rails (0.1.0)
-      railties (>= 3.2)
-
-GIT
-  remote: git://github.com/yoolk/liquid-rails.git
-  revision: d5962d004de959ae6a4df2f1b278dfd0db7f54aa
-  specs:
-    liquid-rails (0.1.0)
-      kaminari (~> 0.16.1)
-      liquid (~> 3.0.0.rc1)
-      rails (>= 3.2)
-
-GIT
-  remote: git://github.com/yoolk/themes_on_rails.git
-  revision: f003314f2e095c36729ed1471352c9abd5198443
-  branch: liquid
-  specs:
-    themes_on_rails (0.3.0)
-      rails (>= 3.2)
-
 PATH
   remote: yoolk_liquid
   specs:
     yoolk_liquid (4.0.0.alpha3)
       activemodel (~> 4.0.10)
+      assets-rails (~> 0.1.0)
       autoprefixer-rails (~> 3.1.0.20140911)
       coffee-rails (~> 4.0.1)
       jquery-rails (~> 3.1.2)
       kaminari (~> 0.16.1)
+      liquid-rails (~> 0.1.0)
       oj (~> 2.10.2)
       rails (~> 4.0.10)
       sass-rails (~> 4.0.2)
+      themes_on_rails (~> 0.3.0)
       therubyracer (~> 0.12.1)
       uglifier (>= 1.3.0)
       virtus (~> 1.0.3)
@@ -66,6 +45,8 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.2)
+    assets-rails (0.1.0)
+      railties (>= 3.2)
     autoprefixer-rails (3.1.0.20140911)
       execjs
     axiom-types (0.1.1)
@@ -89,7 +70,7 @@ GEM
     equalizer (0.0.9)
     erubis (2.7.0)
     eventmachine (1.0.3)
-    execjs (2.2.1)
+    execjs (2.2.2)
     hike (1.2.3)
     i18n (0.6.11)
     ice_nine (0.11.0)
@@ -102,13 +83,17 @@ GEM
       activesupport (>= 3.0.0)
     libv8 (3.16.14.7)
     liquid (3.0.0.rc1)
-    mail (2.6.1)
+    liquid-rails (0.1.0)
+      kaminari (~> 0.16.1)
+      liquid (~> 3.0.0.rc1)
+      rails (>= 3.2)
+    mail (2.6.3)
       mime-types (>= 1.16, < 3)
     method_source (0.8.2)
     mime-types (2.4.3)
     minitest (4.7.5)
     multi_json (1.10.1)
-    oj (2.10.2)
+    oj (2.10.4)
     pry (0.10.0)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -136,13 +121,13 @@ GEM
     rake (10.3.2)
     ref (1.0.5)
     sass (3.2.19)
-    sass-rails (4.0.3)
+    sass-rails (4.0.4)
       railties (>= 4.0.0, < 5.0)
-      sass (~> 3.2.0)
-      sprockets (~> 2.8, <= 2.11.0)
+      sass (~> 3.2.2)
+      sprockets (~> 2.8, < 2.12)
       sprockets-rails (~> 2.0)
     slop (3.6.0)
-    sprockets (2.11.0)
+    sprockets (2.11.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
@@ -151,6 +136,8 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
+    themes_on_rails (0.3.0)
+      rails (>= 3.2)
     therubyracer (0.12.1)
       libv8 (~> 3.16.14.0)
       ref
@@ -175,10 +162,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  assets-rails!
-  liquid-rails!
   pry-rails
   quiet_assets
-  themes_on_rails!
   thin
   yoolk_liquid!
