@@ -3,25 +3,26 @@
 <article class="article-item">
   <img src="{{ listing | google_static_map_url: size: '500x200' }}" alt="static image">
 </article>
-{% if listing.instant_website.cover_photos != blank %}
-  <article class="article-item">
-    <div class="flexslider">
-      <ul class="slides">
+
+<article class="article-item">
+  <div class="flexslider">
+    <ul class="slides">
+      {% if listing.instant_website.cover_photos != blank %}
         {% for cover_photo in listing.instant_website.cover_photos %}
           <li>
-            {% assign photo_url = cover_photo | attachment_url: 'large' %}
-
-            {% if photo_url == blank %}
-              {{ cover_photo | attachment_url: 'original' | image_tag }}
-            {% else %}
-              {{ cover_photo | attachment_url: 'large' | image_tag }}
-            {% endif %}
+            {{ cover_photo | attachment_url: 'large' | image_tag }}
           </li>
         {% endfor %}
-      </ul>
-    </div>
-  </article>
-{% endif %}
+      {% elsif listing.instant_website.template.cover_photo %}
+        <li>
+          {{ listing.instant_website.template.cover_photo | attachment_url: 'original' | image_tag }}
+        </li>
+      {% elsif request.preview_mode? %}
+        <li> {{ current_template.cover_photo | attachment_url: 'original' }} </li>
+      {% endif %}
+    </ul>
+  </div>
+</article>
 
 {% for catalog_item in listing.catalog_items %}
   <article class="article-item">
