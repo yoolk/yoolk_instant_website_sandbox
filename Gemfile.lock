@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/yoolk/assets-rails.git
-  revision: ce314a2f26f5edf5344b722e78ed3c3405694700
+  revision: 44d54f950a7f0124c12c7f5f11f643d408907899
   specs:
     assets-rails (0.1.0)
       railties (>= 3.2)
@@ -28,7 +28,6 @@ PATH
     yoolk_liquid (4.0.0.alpha3)
       activemodel (~> 4.0.10)
       autoprefixer-rails (~> 3.1.0.20140911)
-      bootstrap-sass (~> 3.2.0)
       coffee-rails (~> 4.0.1)
       jquery-rails (~> 3.1.2)
       kaminari (~> 0.16.1)
@@ -73,8 +72,6 @@ GEM
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
       thread_safe (~> 0.3, >= 0.3.1)
-    bootstrap-sass (3.2.0.2)
-      sass (~> 3.2)
     builder (3.1.4)
     coderay (1.1.0)
     coercible (1.0.0)
