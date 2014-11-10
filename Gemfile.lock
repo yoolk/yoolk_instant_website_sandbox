@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/yoolk/assets-rails.git
-  revision: 44d54f950a7f0124c12c7f5f11f643d408907899
+  revision: bf3d4af4acfcd47c21a75d724f52337921bdd0d8
   specs:
     assets-rails (0.1.0)
       railties (>= 3.2)
@@ -161,7 +161,7 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
-    tzinfo (0.3.41)
+    tzinfo (0.3.42)
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
