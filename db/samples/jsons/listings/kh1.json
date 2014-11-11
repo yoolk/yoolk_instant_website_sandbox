@@ -58,7 +58,11 @@
         "categories": [
           {
             "id": "1",
-            "text": "Office Rental Services"
+            "name": "Office Rental Services"
+          },
+          {
+            "id": "2",
+            "name": "Real estate PP"
           }
         ]
       },
@@ -77,7 +81,16 @@
       "listings_count": 1,
       "level": 1,
       "created_at": "2014-08-13 08:59:54 UTC",
-      "updated_at": "2014-08-13 08:59:54 UTC"
+      "updated_at": "2014-08-13 08:59:54 UTC",
+      "short_description": {
+        "text": "A large collection of business related classifications, mainly B2B (business to business) services like accounting, advertising and consultants. Also employment agencies and business associations can be found here.",
+        "categories": [
+          {
+            "id": "1",
+            "name": "services like accounting"
+          }
+        ]
+      }
     }
   ],
   "keyphrases": [

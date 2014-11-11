@@ -5,6 +5,19 @@
 </article>
 
 <article class="article-item">
+  {% for short_description in listing.short_descriptions %}
+    <div class="short-desc">
+      <p>{{ short_description.text }}</p>
+      <ul>
+        {% for category in short_description.categories %}
+          <li>{{ category.name }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+</article>
+
+<article class="article-item">
   <div class="flexslider">
     <ul class="slides">
       {% if listing.instant_website.cover_photos != blank %}
