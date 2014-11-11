@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'yoolk_liquid',       path:   'yoolk_liquid'
 
 group :development do
+  gem 'thin',            '~> 1.6.3'
   gem 'quiet_assets'
-  gem 'thin'
   gem 'pry-rails'
 end
