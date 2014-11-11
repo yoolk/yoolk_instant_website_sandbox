@@ -1,10 +1,12 @@
 <h1 class="page-title">{{ 'sample.links.about_us' | translate }}</h1>
 
 <article class="article-item">
+  <h2 class="title-item">Google Static Image Map</h2>
   <img src="{{ listing | google_static_map_url: size: '500x200' }}" alt="static image">
 </article>
 
 <article class="article-item">
+  <h2 class="title-item">Short Descriptions</h2>
   {% for short_description in listing.short_descriptions %}
     <div class="short-desc">
       <p>{{ short_description.text }}</p>
@@ -18,6 +20,7 @@
 </article>
 
 <article class="article-item">
+  <h2 class="title-item">Cover Photos</h2>
   <div class="flexslider">
     <ul class="slides">
       {% if listing.instant_website.cover_photos != blank %}
