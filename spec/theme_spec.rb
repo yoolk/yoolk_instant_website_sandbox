@@ -7,7 +7,7 @@ ThemesOnRails.all.each do |theme|
   views_directory   = "#{theme_directory}/views"
   locales_directory = "#{theme_directory}/locales"
 
-  context "#{theme}: view files" do
+  context "Theme #{theme}: view files" do
     it 'contains only liquid templates' do
       files             = Dir["#{views_directory}/**/*"].reject { |file| File.directory?(file) }
       non_liquid_files  = files.count { |file| !file.end_with?('.liquid') }
@@ -16,7 +16,7 @@ ThemesOnRails.all.each do |theme|
     end
   end
 
-  context "#{theme}: locales files" do
+  context "Theme #{theme}: locales files" do
     Dir["#{locales_directory}/*"].each do |yaml_file|
       it 'parses successfully' do
         expect { YAML.load_file(yaml_file) }.to_not raise_error
