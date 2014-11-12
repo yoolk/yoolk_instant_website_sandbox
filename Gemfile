@@ -1,15 +1,13 @@
 source 'https://rubygems.org'
 
 # Liquid
-gem 'liquid-rails',       github: 'yoolk/liquid-rails'
-# gem 'themes_on_rails',    github: 'yoolk/themes_on_rails', branch: 'liquid'
-gem 'themes_on_rails',    path:   '/home/radin/dev/themes_on_rails'
 gem 'yoolk_liquid',       path:   'yoolk_liquid'
 
-group :development do
+group :development, :test do
+  gem 'thin',            '~> 1.6.3'
   gem 'quiet_assets'
-  gem 'colorbox-rails',   github: 'radin-reth/colorbox-rails', branch: '0-1-2-stable'
 
-  gem 'thin'
   gem 'pry-rails'
+  gem 'rspec-rails',     '~> 3.1.0'
+  gem 'guard-rspec',     '~> 4.3.1'
 end

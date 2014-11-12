@@ -25,7 +25,19 @@ body {
   width: 1047px;
   float: right;
 }
-
+.multilingual {
+  position: relative;
+}
+ul#lang-ul {
+  position: absolute;
+  top: 0;
+  left: 60px;
+  a {
+    padding: 5px 10px;
+    font-size: 11px;
+    font-weight: normal;
+  }
+}
 .nav ul {
   list-style: none;
   padding: 0;
