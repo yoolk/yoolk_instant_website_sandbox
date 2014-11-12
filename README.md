@@ -12,7 +12,7 @@ For the first time, clone this repo
     $ git submodule init
     $ git submodule update
 
-Later,
+Because this repo is new and young, please keep your local repo up to date with new features by the following commands,
 
     $ git pull
     $ git submodule update
