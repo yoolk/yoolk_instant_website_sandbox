@@ -50,9 +50,9 @@ class ApplicationController < ActionController::Base
     end
 
     def set_listing
-      render file: "#{::Rails.root}/public/404.html", status: 404 and return if @current_domain.nil?
+      @listing = Yoolk::Sandbox::Listing.find(params[:alias_id]) || @current_domain.try(:listing)
 
-      @listing = Yoolk::Sandbox::Listing.find(params[:alias_id]) || @current_domain.listing
+      render file: "#{::Rails.root}/public/404.html", status: 404 and return if @listing.nil?
     end
 
     def set_locale
@@ -70,10 +70,10 @@ class ApplicationController < ActionController::Base
     end
 
     def set_theme_style_url
-      style = params[:style].presence || current_listing.instant_website.style_name
+      params[:style] = params[:style].presence || current_listing.instant_website.style_name
 
-      @theme_style_url = if style.present?
-        "#{params[:theme]}/all_#{style}"
+      @theme_style_url = if params[:style].present?
+        "#{params[:theme]}/all_#{params[:style]}"
       else
         "#{params[:theme]}/all"
       end

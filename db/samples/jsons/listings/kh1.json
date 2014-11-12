@@ -718,7 +718,7 @@
     "is_live": false,
     "is_active": true,
     "free_plan": false,
-    "style_name": "blue",
+    "style_name": "gray",
     "template": {
       "name": "sample",
       "description": "",
