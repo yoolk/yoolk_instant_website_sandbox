@@ -1,20 +1,20 @@
 {% unless request.home_page? %}
   <ul class='breadcrumb'>
-    <li><a href="{{ request.root_path }}">Home</a></li>
+    <li><a href="{{ request.root_path }}">{{'sample.links.home' | translate }}</a></li>
     {% if request.map_page? %}
-      <li>Map</li>
+      <li>{{'sample.links.map' | translate }}</li>
     {% elsif request.about_us_page? %}
-      <li>about us</li>
+      <li>{{'sample.links.about_us' | translate }}</li>
     {% elsif request.brochures_page? %}
-      <li>brochures</li>
+      <li>{{'sample.links.brochures' | translate }}</li>
     {% elsif request.people_page? %}
-      <li>people</li>
+      <li>{{'sample.links.people' | translate }}</li>
     {% elsif request.reservation_page? %}
-      <li>reservation</li>
+      <li>{{'sample.links.reservation' | translate }}</li>
     {% elsif request.feedback_page? %}
-      <li>feedback</li>
+      <li>{{'sample.links.feedback' | translate }}</li>
     {% elsif request.contact_us_page? %}
-      <li>contact us</li>
+      <li>{{'sample.links.contact_us' | translate }}</li>
     {% else %}
       {% if request.collection.category? %}
         <li>
