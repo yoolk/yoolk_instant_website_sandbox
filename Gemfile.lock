@@ -189,7 +189,7 @@ GEM
     tilt (1.4.1)
     timers (4.0.1)
       hitimes
-    tzinfo (0.3.42)
+    tzinfo (0.3.41)
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)

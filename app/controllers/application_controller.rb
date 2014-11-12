@@ -10,6 +10,11 @@ class ApplicationController < ActionController::Base
   before_action :set_request
   theme         :theme_resolver
   before_action :set_template
+  before_action :set_theme_style_url
+
+  def current_listing
+    @listing
+  end
 
   protected
 
@@ -25,7 +30,7 @@ class ApplicationController < ActionController::Base
     end
 
     def default_url_options
-      { theme: request.parameters['theme'], alias_id: params[:alias_id], locale: params[:locale] }
+      { theme: request.parameters['theme'], style: request.parameters['style'], alias_id: params[:alias_id], locale: params[:locale] }
     end
 
     def extract_alias_id(text)
@@ -45,9 +50,9 @@ class ApplicationController < ActionController::Base
     end
 
     def set_listing
-      render file: "#{::Rails.root}/public/404.html", status: 404 and return if @current_domain.nil?
+      @listing = Yoolk::Sandbox::Listing.find(params[:alias_id]) || @current_domain.try(:listing)
 
-      @listing = Yoolk::Sandbox::Listing.find(params[:alias_id]) || @current_domain.listing
+      render file: "#{::Rails.root}/public/404.html", status: 404 and return if @listing.nil?
     end
 
     def set_locale
@@ -62,6 +67,16 @@ class ApplicationController < ActionController::Base
 
     def set_request
       @request = Yoolk::Liquid::RequestDrop.new
+    end
+
+    def set_theme_style_url
+      params[:style] = params[:style].presence || current_listing.instant_website.style_name
+
+      @theme_style_url = if params[:style].present?
+        "#{params[:theme]}/all_#{params[:style]}"
+      else
+        "#{params[:theme]}/all"
+      end
     end
 
     def theme_resolver
