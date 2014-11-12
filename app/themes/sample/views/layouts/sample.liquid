@@ -3,7 +3,7 @@
 <head>
   <title>{{ listing.name }}</title>
   {{ 'http://fonts.googleapis.com/css?family=Source+Sans+Pro' | stylesheet_link_tag }}
-  {{ theme_style_url | stylesheet_link_tag }}
+  {{ request.theme_style_url | stylesheet_link_tag }}
   {{ content_for_header }}
 </head>
 <body>

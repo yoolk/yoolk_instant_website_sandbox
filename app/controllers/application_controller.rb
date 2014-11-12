@@ -16,6 +16,10 @@ class ApplicationController < ActionController::Base
     @listing
   end
 
+  def theme_style_url
+    @theme_style_url
+  end
+
   protected
 
     def seo
