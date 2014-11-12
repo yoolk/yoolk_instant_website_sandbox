@@ -41,7 +41,7 @@ Then, go to your browser [http://localhost:3000](http://localhost:3000).
 
     [http://localhost:3000/?theme=sample](http://localhost:3000/?theme=sample)
 
-2. To switch style, pass 'style' param. By default, it will pick up the style from 'listing.instant_website.style_name'. In this sandbox app, it could have one of these twos: `blue` or `gray`.
+2. To switch style, pass `style` param. By default, it will pick up the style from 'listing.instant_website.style_name'. In this sandbox app, it could have one of these twos: `blue` or `gray`.
 
     [http://localhost:3000/?style=gray](http://localhost:3000/?style=gray)
 
