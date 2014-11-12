@@ -25,13 +25,15 @@
         </li>
 
                   {% if request.collection.category.item_detail? %}
-                    {% unless request.collection.announcement? %}
+
+                    {% unless request.collection.announcements? or request.collection.galleries? %}
                     <li>
                       <a href="{{ request.collection.category.url }}">
                         {{ request.collection.category.name }}
                       </a>
                     </li>
                     {%endunless%}
+
                     <li>
                       {{ request.collection.category.item_detail }}
                     </li>
