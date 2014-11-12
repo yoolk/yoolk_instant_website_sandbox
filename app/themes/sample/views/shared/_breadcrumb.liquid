@@ -1,10 +1,50 @@
 {% unless request.home_page? %}
   <ul class='breadcrumb'>
-    <li><a href="">Home</a></li>
+    <li><a href="{{ request.root_path }}">Home</a></li>
     {% if request.map_page? %}
-      <li><a href="">Map</a></li>
-    {% else %}
-      <li><a href="">...Others</a></li>
+      <li>Map</li>
+    {% elsif request.about_us_page? %}
+      <li>about us</li>
+    {% elsif request.brochures_page? %}
+      <li>brochures</li>
+    {% elsif request.people_page? %}
+      <li>people</li>
+    {% elsif request.reservation_page? %}
+      <li>reservation</li>
+    {% elsif request.feedback_page? %}
+      <li>feedback</li>
+    {% elsif request.contact_us_page? %}
+      <li>contact us</li>
+    {% else %} {% comment %} collection {% endcomment %}
+      {% if request.collection.category? %}
+
+        <li>
+          <a href="{{ request.collection.url }}">
+            {{ request.collection.name }}
+          </a>
+        </li>
+
+                  {% if request.collection.category.item_detail? %}
+                    {% unless request.collection.announcement? %}
+                    <li>
+                      <a href="{{ request.collection.category.url }}">
+                        {{ request.collection.category.name }}
+                      </a>
+                    </li>
+                    {%endunless%}
+                    <li>
+                      {{ request.collection.category.item_detail }}
+                    </li>
+                  {% else %}
+                    <li>
+                      {{ request.collection.category.name }}
+                    </li>
+                  {% endif %}
+      {% else %}
+        <li>
+          {{ request.collection.name }}
+        </li>
+      {% endif %}
     {% endif %}
   </ul>
 {% endunless %}
