@@ -6,6 +6,9 @@
       {% for comm in listing.communications %}
         {{ comm.li }}
       {% endfor %}
+      {% for extra_comm in listing.extra_communications %}
+        {{ extra_comm.li }}
+      {% endfor %}
     </ul>
   </div>
 
