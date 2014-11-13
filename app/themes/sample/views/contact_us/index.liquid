@@ -41,29 +41,9 @@
   {% endform %}
 </section>
 <section class="business-hour">
-<table class="tab-opening-hour" rules="rows">
-  <tr>
-    <th>Sun</th>
-    <th>Mon</th>
-    <th>Tue</th>
-    <th>Wed</th>
-    <th>Thu</th>
-    <th>Fri</th>
-    <th>Sat</th>
-  </tr>
-  <tr>
-    {% for business_hour in listing.business_hours %}
-      <td>
-        {% if business_hour.closed? %}
-          Closed
-        {% elsif business_hour.full_day? %}
-          24h
-        {% else %}
-          {{ business_hour.open  | date: "%I:%M %p" }} <br>-<br>
-          {{ business_hour.close | date: "%I:%M %p" }}
-        {% endif %}
-      </td>
-    {% endfor %}
-  </tr>
-</table>
+
+{% for business_hour in listing.business_hours %}
+  {{ business_hour.days }} : {{ business_hour.time }} <br>
+{% endfor %}
+
 </section>
