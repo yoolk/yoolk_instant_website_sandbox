@@ -1,8 +1,9 @@
 <h1 class="page-title">{{ 'sample.links.contact_us' | translate }}</h1>
 
 <section class="reservation-form">
+  <h3>Communications</h3>
   <div class="contact-info">
-    <ul>
+    <ul class="contact-list">
       {% for comm in listing.communications %}
         {{ comm.li }}
       {% endfor %}
@@ -11,7 +12,7 @@
       {% endfor %}
     </ul>
   </div>
-
+  <h3>Form</h3>
   {% form 'contact' %}
     {% if form.posted_successfully? %}
       <div class="successForm contact">
@@ -52,29 +53,30 @@
   {% endform %}
 </section>
 <section class="business-hour">
-<table class="tab-opening-hour" rules="rows">
-  <tr>
-    <th>Sun</th>
-    <th>Mon</th>
-    <th>Tue</th>
-    <th>Wed</th>
-    <th>Thu</th>
-    <th>Fri</th>
-    <th>Sat</th>
-  </tr>
-  <tr>
-    {% for business_hour in listing.business_hours %}
-      <td>
-        {% if business_hour.closed? %}
-          Closed
-        {% elsif business_hour.full_day? %}
-          24h
-        {% else %}
-          {{ business_hour.open  | date: "%I:%M %p" }} <br>-<br>
-          {{ business_hour.close | date: "%I:%M %p" }}
-        {% endif %}
-      </td>
-    {% endfor %}
-  </tr>
-</table>
+  <h3>Business Hour</h3>
+  <table class="tab-opening-hour" rules="rows">
+    <tr>
+      <th>Sun</th>
+      <th>Mon</th>
+      <th>Tue</th>
+      <th>Wed</th>
+      <th>Thu</th>
+      <th>Fri</th>
+      <th>Sat</th>
+    </tr>
+    <tr>
+      {% for business_hour in listing.business_hours %}
+        <td>
+          {% if business_hour.closed? %}
+            Closed
+          {% elsif business_hour.full_day? %}
+            24h
+          {% else %}
+            {{ business_hour.open  | date: "%I:%M %p" }} <br>-<br>
+            {{ business_hour.close | date: "%I:%M %p" }}
+          {% endif %}
+        </td>
+      {% endfor %}
+    </tr>
+  </table>
 </section>
