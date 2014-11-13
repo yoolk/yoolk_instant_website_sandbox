@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/yoolk/themes_on_rails.git
+  revision: 5530f239138ea0e92add38bff06e9f569c1cdd76
+  specs:
+    themes_on_rails (0.3.0)
+      rails (>= 3.2)
+
 PATH
   remote: yoolk_liquid
   specs:
@@ -175,8 +182,6 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
-    themes_on_rails (0.3.0)
-      rails (>= 3.2)
     therubyracer (0.12.1)
       libv8 (~> 3.16.14.0)
       ref
@@ -207,5 +212,6 @@ DEPENDENCIES
   pry-rails
   quiet_assets
   rspec-rails (~> 3.1.0)
+  themes_on_rails!
   thin (~> 1.6.3)
   yoolk_liquid!
