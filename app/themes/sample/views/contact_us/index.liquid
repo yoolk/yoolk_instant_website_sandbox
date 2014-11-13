@@ -1,6 +1,14 @@
 <h1 class="page-title">{{ 'sample.links.contact_us' | translate }}</h1>
 
 <section class="reservation-form">
+  <div class="contact-info">
+    <ul>
+      {% for comm in listing.communications %}
+        {{ comm.li }}
+      {% endfor %}
+    </ul>
+  </div>
+
   {% form 'contact' %}
     {% if form.posted_successfully? %}
       <div class="successForm contact">
