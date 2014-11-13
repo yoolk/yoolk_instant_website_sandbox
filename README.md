@@ -12,7 +12,7 @@ For the first time, clone this repo
     $ git submodule init
     $ git submodule update
 
-Later,
+Because this repo is new and young, please keep your local repo up to date with new features by the following commands,
 
     $ git pull
     $ git submodule update
@@ -40,6 +40,10 @@ Then, go to your browser [http://localhost:3000](http://localhost:3000).
 1. To switch theme, pass `theme` param. By default, it will pick up the theme from `listing.instant_website.template_name`. In this sandbox app, it will choose `sample` theme otherwise.
 
     [http://localhost:3000/?theme=sample](http://localhost:3000/?theme=sample)
+
+2. To switch style, pass `style` param. By default, it will pick up the style from 'listing.instant_website.style_name'. In this sandbox app, it could have one of these twos: `blue` or `gray`.
+
+    [http://localhost:3000/?style=gray](http://localhost:3000/?style=gray)
 
 2. To switch locale, pass `locale` param. By default, it will pick up from current listing's locale.
 
