@@ -1,3 +1,9 @@
+{% breadcrumb %}
+  {% link home_page %}
+  {% link map_page %}
+  {% link collection_page %}
+{% endbreadcrumb %}
+
 {% unless request.home_page? %}
   <ul class='breadcrumb'>
     <li><a href="{{ request.root_path }}">{{'sample.links.home' | translate }}</a></li>
