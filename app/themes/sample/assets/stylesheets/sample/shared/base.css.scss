@@ -21,11 +21,25 @@ body {
   width: 20%;
   background: white;
 }
+
+.nav-style-blue {
+  float: right;
+  right: 0;
+  top: 0;
+  left: auto;
+  bottom: auto;
+}
+
 .main-container {
   // width: 1047px;
   width: 80%;
   float: right;
 }
+
+.main-container-style-blue {
+  float: left;
+}
+
 .multilingual {
   position: relative;
 }
