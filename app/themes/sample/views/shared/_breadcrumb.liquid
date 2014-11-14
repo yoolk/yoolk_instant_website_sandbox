@@ -1,26 +1,9 @@
-{% breadcrumb %}
-  {% link home_page %}
-  {% link map_page %}
-  {% link collection_page %}
-{% endbreadcrumb %}
+{% breadcrumb separator="&raquo;" class_active="active" %}
 
-{% unless request.home_page? %}
+
+{% comment %}{% unless request.home_page? %}
   <ul class='breadcrumb'>
-    <li><a href="{{ request.root_path }}">{{'sample.links.home' | translate }}</a></li>
-    {% if request.map_page? %}
-      <li>{{'sample.links.map' | translate }}</li>
-    {% elsif request.about_us_page? %}
-      <li>{{'sample.links.about_us' | translate }}</li>
-    {% elsif request.brochures_page? %}
-      <li>{{'sample.links.brochures' | translate }}</li>
-    {% elsif request.people_page? %}
-      <li>{{'sample.links.people' | translate }}</li>
-    {% elsif request.reservation_page? %}
-      <li>{{'sample.links.reservation' | translate }}</li>
-    {% elsif request.feedback_page? %}
-      <li>{{'sample.links.feedback' | translate }}</li>
-    {% elsif request.contact_us_page? %}
-      <li>{{'sample.links.contact_us' | translate }}</li>
+
     {% else %}
       {% if request.collection.category? %}
         <li>
@@ -51,6 +34,5 @@
           {{ request.collection.name }}
         </li>
       {% endif %}
-    {% endif %}
   </ul>
-{% endunless %}
+{% endunless %}{% endcomment %}
