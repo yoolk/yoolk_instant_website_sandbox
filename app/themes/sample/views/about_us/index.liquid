@@ -1,6 +1,20 @@
 <h1 class="page-title">{{ 'sample.links.about_us' | translate }}</h1>
 
 <article class="article-item">
+  <h2>Business Photos</h2>
+  {% for business_photo in listing.business_photos %}
+    <div class="business-photo-wrapper">
+      <div class="business-title">
+        <h4>{{ business_photo.name }}</h4>
+      </div>
+      <div class="business-photo">
+        {{ business_photo.embed_script }}
+      </div>
+    </div>
+  {% endfor %}
+</article>
+
+<article class="article-item">
   <img src="{{ listing | google_static_map_url: size: '500x200' }}" alt="static image">
 </article>
 
