@@ -6,6 +6,14 @@ GIT
       rails (>= 3.2)
 
 PATH
+  remote: /home/radin/dev/liquid-rails
+  specs:
+    liquid-rails (0.1.1)
+      kaminari (~> 0.16.1)
+      liquid (~> 3.0.0)
+      rails (>= 3.2)
+
+PATH
   remote: yoolk_liquid
   specs:
     yoolk_liquid (4.0.0.alpha3)
@@ -100,11 +108,7 @@ GEM
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
     libv8 (3.16.14.7)
-    liquid (3.0.0.rc1)
-    liquid-rails (0.1.0)
-      kaminari (~> 0.16.1)
-      liquid (~> 3.0.0.rc1)
-      rails (>= 3.2)
+    liquid (3.0.0)
     listen (2.7.11)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
@@ -209,6 +213,7 @@ PLATFORMS
 
 DEPENDENCIES
   guard-rspec (~> 4.3.1)
+  liquid-rails!
   pry-rails
   quiet_assets
   rspec-rails (~> 3.1.0)

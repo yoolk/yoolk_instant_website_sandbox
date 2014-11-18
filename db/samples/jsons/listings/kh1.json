@@ -931,6 +931,12 @@
       "published": true,
       "display_order": 1,
       "image": null
+    },
+    {
+      "id": "5b266eb0-b3c3-11e2-ac49-12314105333b",
+      "title": "interior",
+      "html_text": "fantastic design from Cambodian designer.",
+      "published": true
     }
   ],
   "service_categories": [
