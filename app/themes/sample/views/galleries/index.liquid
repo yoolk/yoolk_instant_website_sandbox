@@ -1,10 +1,12 @@
 <h1 class="page-title">{{ 'sample.links.photos' | translate }}</h1>
 {% paginate listing.images by 4 %}
-  <div id="galleries" class="collage effect-parent">
+  <div class="Collage effect-parent">
     {% for image in paginate.collection %}
-      <a href="{{ image.url }}" rel="group" data-colorbox="true" data-colorbox-height="95%25" data-colorbox-width="95%25" data-colorbox-photo="true" data-colorbox-static="true">
-        {{ image | attachment_url: 'large' | image_tag }}
-      </a>
+      <div class="image-wrapper">
+        <a href="{{ image.url }}" rel="group" data-colorbox="true" data-colorbox-height="95%25" data-colorbox-width="95%25" data-colorbox-photo="true" data-colorbox-static="true">
+          {{ image | attachment_url: 'medium' | image_tag }}
+        </a>
+      </div>
     {% endfor %}
   </div>
   <div>

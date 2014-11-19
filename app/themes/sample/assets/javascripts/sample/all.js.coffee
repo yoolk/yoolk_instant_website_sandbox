@@ -8,6 +8,7 @@
 #= require jquery.collageplus/v0.3.3
 #= require jquery.collageplus/v0.3.3/jquery.collagecaption
 #= require jquery.collageplus/v0.3.3/remove_whitespace
+#= require sample/galleries/imagesloaded.min
 #= require zebra_datepicker/v1.8.9
 
 # pages
