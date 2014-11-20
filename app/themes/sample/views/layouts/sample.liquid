@@ -3,13 +3,13 @@
 <head>
   <title>{{ listing.name }}</title>
   {{ 'http://fonts.googleapis.com/css?family=Source+Sans+Pro' | stylesheet_link_tag }}
-  {{ 'sample/all.css' | stylesheet_link_tag }}
+  {{ request.theme_style_url | stylesheet_link_tag }}
   {{ content_for_header }}
 </head>
 <body>
   {% draft_stamp %}
   {% include 'shared/nav' %}
-  <div class="main-container">
+  <div class="main-container main-container-style-{{request.style_name}}">
     {{ content_for_layout }}
   </div>
 

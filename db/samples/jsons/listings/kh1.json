@@ -731,6 +731,7 @@
     "is_live": false,
     "is_active": true,
     "free_plan": false,
+    "style_name": "gray",
     "template": {
       "name": "sample",
       "description": "",
@@ -739,6 +740,10 @@
         "Clothing & Fashion",
         "Media & Advertising",
         "Optical Products"
+      ],
+      "styles": [
+        "blue",
+        "gray"
       ],
       "pages": [
         "Galleries",
@@ -939,6 +944,12 @@
       "published": true,
       "display_order": 1,
       "image": null
+    },
+    {
+      "id": "5b266eb0-b3c3-11e2-ac49-12314105333b",
+      "title": "interior",
+      "html_text": "fantastic design from Cambodian designer.",
+      "published": true
     }
   ],
   "service_categories": [

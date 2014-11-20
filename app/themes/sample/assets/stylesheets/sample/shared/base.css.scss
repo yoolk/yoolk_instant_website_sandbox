@@ -24,11 +24,24 @@ body {
   width: 270px;
   background: white;
 }
+
+.nav-style-blue {
+  float: right;
+  right: 0;
+  top: 0;
+  left: auto;
+  bottom: auto;
+}
+
 .main-container {
-  // width: 1030px;
   width: 1047px;
   float: right;
 }
+
+.main-container-style-blue {
+  float: left;
+}
+
 .multilingual {
   position: relative;
 }
