@@ -47,3 +47,11 @@
     {% endif %}
   </article>
 {% endfor %}
+<article class="article-item">
+  <h2>Medias</h2>
+  {% for media in listing.medias %}
+    <div class="media">
+      {{ media.embed_script }}
+    </div>
+  {% endfor %}
+</article>
