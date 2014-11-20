@@ -22,3 +22,9 @@ en:
       directors: 'Directors'
       managers: 'Managers'
       employees: 'Employees'
+    addthis:
+      facebook:  'Facebook'
+      twitter:  'Twitter'
+      email:  'Email'
+      print:  'Print'
+      more: 'More'
