@@ -1,13 +1,13 @@
 GIT
   remote: git://github.com/yoolk/assets-rails.git
-  revision: 9e87e1ed9f6f6b6cb715d0aec2a64812718398dc
+  revision: 6fe8c9351ea69417d28b310caa39e8f313cc04dd
   specs:
     assets-rails (0.1.0)
       railties (>= 3.2)
 
 GIT
   remote: git://github.com/yoolk/liquid-rails.git
-  revision: 998c199235e5b8d47986fb6ae2480f5ab46098fb
+  revision: 4c81ca6e70bb27c0fd851d9bd97855482e062c9f
   specs:
     liquid-rails (0.1.1)
       kaminari (~> 0.16.1)
