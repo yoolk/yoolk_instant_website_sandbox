@@ -116,6 +116,8 @@ GEM
       activesupport (>= 3.0.0)
     libv8 (3.16.14.7)
     liquid (3.0.0)
+    liquid-validator (1.0.0)
+      liquid (>= 2.4.0)
     listen (2.7.11)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
@@ -224,6 +226,7 @@ DEPENDENCIES
   assets-rails!
   guard-rspec (~> 4.3.1)
   liquid-rails!
+  liquid-validator (~> 1.0.0)
   pry-rails
   quiet_assets
   rspec-rails (~> 3.1.0)
