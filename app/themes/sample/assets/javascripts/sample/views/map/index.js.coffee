@@ -3,11 +3,11 @@ class Views.Map.IndexView extends Views.ApplicationView
   render: ->
     super()
 
-    _initMapCanvasHeight = ->
+    initMapCanvasHeight = ->
       win_height  = $(window).height()
       $("#map-canvas").css("height", win_height - 75 )
 
-    _renderMap   = ->
+    renderMap   = ->
       if window['google'] and window['google']['maps']
         mapCanvas  = $("#map-canvas")
         lat        = mapCanvas.data("lat")
@@ -38,8 +38,8 @@ class Views.Map.IndexView extends Views.ApplicationView
         google.maps.event.addListener marker, "click", ->
           infowindow.open map, marker
 
-    _initMapCanvasHeight()
-    _renderMap()
+    initMapCanvasHeight()
+    renderMap()
 
   cleanup: ->
     super()
