@@ -2,7 +2,7 @@
 Summary
 =======
 
-A sandbox rails application that allows you to develop and run your instant website theme locally.
+A sandbox rails application that allows you to develop and run your instant website theme locally. It was originally developed by [Chamnap Chhorn](http://github.com/chamnap), and it is currently maintained by him.
 
 ## Installation
 
