@@ -12,9 +12,33 @@
 #= require zebra_datepicker/v1.8.9
 
 # pages
-#= require sample/map/index
-#= require sample/galleries/index
-#= require sample/announcements/index
-#= require sample/reservation/index
-#= require sample/about_us/index
-#= require sample/contact_us/index
+# require sample/view/galleries/index
+# require sample/view/announcements/index
+# require sample/view/reservation/index
+# require sample/view/contact_us/index
+
+#no-js
+#= require sample/widgets/social
+#= require sample/views/application_view
+#= require sample/views/about_us/index
+#= require sample/views/map/index
+
+pageLoad = ->
+  className = $('body').attr('data-class-name')
+  window.applicationView = try
+    eval("new #{className}()")
+  catch error
+    new Views.ApplicationView()
+  window.applicationView.render()
+
+$ ->
+  pageLoad()
+  $(document).on 'page:load', pageLoad
+  $(document).on 'page:before-change', ->
+    window.applicationView.cleanup()
+    true
+  $(document).on 'page:restore', ->
+    window.applicationView.cleanup()
+    pageLoad()
+    true
+
