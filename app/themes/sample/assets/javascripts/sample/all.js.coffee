@@ -21,8 +21,9 @@
 #= require sample/views/application_view
 #= require sample/views/about_us/index
 #= require sample/views/map/index
-#= require sample/views/galleries/index
 #= require sample/views/galleries/collage
+#= require sample/views/galleries/index
+#= require sample/views/galleries/show
 
 pageLoad = ->
   className = $('body').attr('data-class-name')
