@@ -14,6 +14,15 @@ ThemesOnRails.all.each do |theme|
 
       expect(non_liquid_files).to be_zero
     end
+
+    it 'must be valid liquid syntax' do
+      files  = Dir["#{views_directory}/**/*"].reject { |file| File.directory?(file) && !file.end_with?('.liquid') }
+      files.each do |file|
+        validator = LiquidValidator::Validator.new(File.read(file))
+
+        expect(validator.valid?).to be_truthy, "template: #{file}, errors: #{validator.errors}"
+      end
+    end
   end
 
   context "Theme #{theme}: locales files" do
