@@ -25,7 +25,10 @@
 #= require sample/views/galleries/index
 #= require sample/views/galleries/show
 
+#= require sample/views/announcements/timeago
+#= require sample/views/announcements/tooltip
 #= require sample/views/announcements/index
+#= require sample/views/announcements/show
 
 pageLoad = ->
   className = $('body').attr('data-class-name')

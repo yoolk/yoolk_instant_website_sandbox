@@ -1,5 +1,5 @@
 window.Views.Announcements ||= {}
-class Views.Announcements.IndexView extends Views.ApplicationView
+class Views.Announcements.ShowView extends Views.ApplicationView
   render: ->
     super()
     Announcements.ToolTip.enable()
