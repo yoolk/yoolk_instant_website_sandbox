@@ -1,10 +1,12 @@
-$(window).load ->
-  _active_opening_hour = ->
-
+window.Views.ContactUs ||= {}
+class Views.ContactUs.IndexView extends Views.ApplicationView
+  render: ->
+    super()
     date = new Date()
     rows = $("tr td:nth-child(#{ date.getDay() + 1 }),
               tr th:nth-child(#{ date.getDay() + 1 })")
 
     rows.addClass("opening-active")
 
-  _active_opening_hour()
+  cleanup: ->
+    super()
