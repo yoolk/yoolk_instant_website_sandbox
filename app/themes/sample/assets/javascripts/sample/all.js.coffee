@@ -12,7 +12,6 @@
 #= require zebra_datepicker/v1.8.9
 
 # pages
-# require sample/view/reservation/index
 # require sample/view/contact_us/index
 
 #no-js
@@ -29,6 +28,8 @@
 #= require sample/views/announcements/tooltip
 #= require sample/views/announcements/index
 #= require sample/views/announcements/show
+
+#= require sample/views/reservation/index
 
 pageLoad = ->
   className = $('body').attr('data-class-name')
