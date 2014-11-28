@@ -1,16 +1,12 @@
-$(window).load ->
-
-  _collageRemoveWhiteSpace = ->
-    $('.collage').removeWhitespace().collagePlus()
-
-  _collage = ->
-    $('.collage').collagePlus({
-      'targetHeight'        : 200,
-      'fadeSpeed'           : 3000,
-      'effect'              : 'effect-2',
-      'direction'           : 'vertical',
-      'allowPartialLastRow' : true
+$(document).ready ->
+  initCollageImages = ->
+  $(".Collage").imagesLoaded ->
+    $(".Collage").removeWhitespace()
+    $(".Collage").collagePlus({
+      "targetHeight"        : 200,
+      "fadeSpeed"           : 3000,
+      "effect"              : "effect-6",
+      "direction"           : "vertical",
+      "allowPartialLastRow" : true
       })
-
-  _collageRemoveWhiteSpace()
-  _collage()
+  initCollageImages()

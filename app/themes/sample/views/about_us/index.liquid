@@ -35,23 +35,33 @@
 
 <article class="article-item">
   <h2 class="title-item">Cover Photos</h2>
-  <div class="flexslider">
-    <ul class="slides">
-      {% if listing.instant_website.cover_photos != blank %}
+  {% if listing.instant_website.cover_photos !=  blank %}
+    <div class="flexslider">
+      <ul class="slides">
         {% for cover_photo in listing.instant_website.cover_photos %}
           <li>
             {{ cover_photo | attachment_url: 'large' | image_tag }}
           </li>
         {% endfor %}
-      {% elsif listing.instant_website.template.cover_photo %}
+      </ul>
+    </div>
+  {% elsif listing.instant_website.template.cover_photo %}
+    <div class="flexslider">
+      <ul class="slides">
         <li>
           {{ listing.instant_website.template.cover_photo | attachment_url: 'original' | image_tag }}
         </li>
-      {% elsif request.preview_mode? %}
-        <li> {{ current_template.cover_photo | attachment_url: 'original' }} </li>
-      {% endif %}
-    </ul>
-  </div>
+      </ul>
+    </div>
+  {% elsif request.preview_mode? and current_template.cover_photo %}
+    <div class="flexslider">
+      <ul class="slides">
+        <li>
+          {{ current_template.cover_photo | attachment_url: 'original' | image_tag }}
+        </li>
+      </ul>
+    </div>
+  {% endif %}
 </article>
 
 {% for catalog_item in listing.catalog_items %}
