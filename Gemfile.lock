@@ -16,7 +16,7 @@ GIT
 
 GIT
   remote: git://github.com/yoolk/themes_on_rails.git
-  revision: 5530f239138ea0e92add38bff06e9f569c1cdd76
+  revision: 094efedc9c6a2af69cf16b39160f86536f2359cc
   specs:
     themes_on_rails (0.3.0)
       rails (>= 3.2)
@@ -193,7 +193,7 @@ GEM
       tilt (~> 1.1, != 1.3.0)
     sprockets-derailleur (0.0.9)
       sprockets (~> 2)
-    sprockets-rails (2.2.0)
+    sprockets-rails (2.2.1)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
