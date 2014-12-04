@@ -8,6 +8,7 @@ class ApplicationController < ActionController::Base
   before_action :set_locale
   before_action :set_account
   before_action :set_request
+  before_action :set_i18n
   theme         :theme_resolver
   before_action :set_template
   before_action :set_theme_style_url
@@ -71,6 +72,10 @@ class ApplicationController < ActionController::Base
 
     def set_request
       @request = Yoolk::Liquid::RequestDrop.new
+    end
+
+    def set_i18n
+      @i18n = Yoolk::Liquid::I18nDrop.new
     end
 
     def set_theme_style_url
