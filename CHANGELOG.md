@@ -1,5 +1,10 @@
 # Overview
 
+## 2014-12-04
+
+* Add `breadcrumb` tag
+* Add `business_hour` object
+
 ## 2014-11-21
 
 * Fix scope on: `catalog_items`, `medias`, and `artworks`
