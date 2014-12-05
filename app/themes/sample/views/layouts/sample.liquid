@@ -10,6 +10,7 @@
   {% draft_stamp %}
   {% include 'shared/nav' %}
   <div class="main-container main-container-style-{{request.style_name}}">
+    {% include 'shared/breadcrumb' %}
     {{ content_for_layout }}
   </div>
 

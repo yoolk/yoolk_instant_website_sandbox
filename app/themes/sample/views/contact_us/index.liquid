@@ -52,31 +52,45 @@
     </div>
   {% endform %}
 </section>
+
 <section class="business-hour">
-  <h3>Business Hour</h3>
-  <table class="tab-opening-hour" rules="rows">
-    <tr>
-      <th>Sun</th>
-      <th>Mon</th>
-      <th>Tue</th>
-      <th>Wed</th>
-      <th>Thu</th>
-      <th>Fri</th>
-      <th>Sat</th>
-    </tr>
-    <tr>
-      {% for business_hour in listing.business_hours %}
-        <td>
+<table class="tab-opening-hour" rules="rows">
+  <tr>
+    {% for day_name in i18n.day_names %}
+      {% assign current = 'now' | date: '%A' %}
+      {% if current == day_name %}
+        <td class="opening-active">{{ day_name }}</td>
+      {% else %}
+        <td>{{ day_name }}</td>
+      {% endif %}
+    {% endfor %}
+  </tr>
+  <tr>
+    {% assign business_hours = listing.business_hours | group_by: 'day_name' %}
+    {% for group_by in business_hours %}
+      <td>
+        {% for business_hour in group_by[1] %}
           {% if business_hour.closed? %}
             Closed
           {% elsif business_hour.full_day? %}
             24h
           {% else %}
-            {{ business_hour.open  | date: "%I:%M %p" }} <br>-<br>
-            {{ business_hour.close | date: "%I:%M %p" }}
+            {{ business_hour | open_closed: '%I:%M %p-%I:%M %p' }}<br>
           {% endif %}
-        </td>
-      {% endfor %}
-    </tr>
-  </table>
+        {% endfor %}
+      </td>
+    {% endfor %}
+  </tr>
+</table>
+</section>
+
+<section class="business-hour">
+  <ul>
+    {% for business_hour in listing.summary_business_hours %}
+      <li>
+        <span>{{ business_hour.abbr_day_name }}</span>
+        <span>{{ business_hour | open_closed: '%I:%M %p-%I:%M %p' }}</span>
+      </li>
+    {% endfor %}
+  </ul>
 </section>
