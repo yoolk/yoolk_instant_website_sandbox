@@ -13,11 +13,14 @@
 
 # pages
 #= require sample/widgets/announcement
+#= require sample/widgets/contact_us
+#= require sample/widgets/gallery
+#= require sample/widgets/map
+
 #= require sample/views/application_view
 #= require sample/views/about_us/index
 #= require sample/views/map/index
 
-#= require sample/views/galleries/collage
 #= require sample/views/galleries/index
 #= require sample/views/galleries/show
 
