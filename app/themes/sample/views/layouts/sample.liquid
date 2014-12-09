@@ -6,7 +6,7 @@
   {{ request.theme_style_url | stylesheet_link_tag }}
   {{ content_for_header }}
 </head>
-<body data-class-name = {{ js_class_name }}>
+<body data-class-name = {{ request.js_class_name }}>
   {% draft_stamp %}
   {% include 'shared/nav' %}
   <div class="main-container main-container-style-{{request.style_name}}">

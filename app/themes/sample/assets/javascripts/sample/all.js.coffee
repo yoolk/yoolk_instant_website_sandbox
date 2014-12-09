@@ -12,6 +12,7 @@
 #= require zebra_datepicker/v1.8.9
 
 # pages
+#= require sample/widgets/announcement
 #= require sample/views/application_view
 #= require sample/views/about_us/index
 #= require sample/views/map/index
@@ -20,8 +21,6 @@
 #= require sample/views/galleries/index
 #= require sample/views/galleries/show
 
-#= require sample/views/announcements/timeago
-#= require sample/views/announcements/tooltip
 #= require sample/views/announcements/index
 #= require sample/views/announcements/show
 

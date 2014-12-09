@@ -12,7 +12,6 @@ class ApplicationController < ActionController::Base
   theme         :theme_resolver
   before_action :set_template
   before_action :set_theme_style_url
-  before_action :js_class_name
 
   def current_listing
     @listing
@@ -103,9 +102,5 @@ class ApplicationController < ActionController::Base
 
     def liquid_assigns
       view_assigns.merge('content_for_header' => content_for_header)
-    end
-
-    def js_class_name
-      @js_class_name = "Views.#{self.class.name.gsub('::', '.').gsub(/Controller$/, '')}.#{action_name.camelize}View"
     end
 end
