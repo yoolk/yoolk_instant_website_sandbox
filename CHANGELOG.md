@@ -1,5 +1,9 @@
 # Overview
 
+## ?
+
+* Organize Javascript code with `Rails with no JS framework`
+
 ## 2014-12-04
 
 * Add `breadcrumb` tag
