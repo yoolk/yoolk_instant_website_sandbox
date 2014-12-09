@@ -47,4 +47,3 @@ $ ->
     window.applicationView.cleanup()
     pageLoad()
     true
-

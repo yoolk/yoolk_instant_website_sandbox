@@ -21,3 +21,19 @@
 
 en:
   welcome:        "Welcome"
+  breadcrumb:
+    home: 'Home'
+    about_us: 'About us'
+    contact_us: 'Contact us'
+    feedback: 'Feedback'
+    announcement: 'Announcement'
+    announcements: 'Announcements'
+    brochures: 'Brochures'
+    photos: 'Photos'
+    map: 'Map'
+    menu: 'Menu'
+    people: 'People'
+    products: 'Products'
+    services: 'Services'
+    reservation: 'Reservation'
+    sign_in: 'Sign in'
