@@ -11,9 +11,30 @@
 #= require imagesloaded/v3.1.8
 #= require zebra_datepicker/v1.8.9
 
-# pages
-#= require sample/map/index
-#= require sample/galleries/index
-#= require sample/announcements/index
-#= require sample/reservation/index
-#= require sample/about_us/index
+# theme, widgets, and views
+#= require theme
+#= require sample/widgets/announcement
+#= require sample/widgets/contact_us
+#= require sample/widgets/gallery
+#= require sample/widgets/map
+#= require_tree ./views
+
+
+pageLoad = ->
+  className = $('body').attr('data-class-name')
+  window.applicationView = try
+    eval("new #{className}()")
+  catch error
+    new Views.ApplicationView()
+  window.applicationView.render()
+
+$ ->
+  pageLoad()
+  $(document).on 'page:load', pageLoad
+  $(document).on 'page:before-change', ->
+    window.applicationView.cleanup()
+    true
+  $(document).on 'page:restore', ->
+    window.applicationView.cleanup()
+    pageLoad()
+    true
