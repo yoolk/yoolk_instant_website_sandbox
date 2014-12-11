@@ -2,10 +2,11 @@ require 'rails_helper'
 require 'rake'
 Rails.application.load_tasks
 
-ThemesOnRails.all.each do |theme|
+ThemesOnRails.all.delete_if { |directory| directory.start_with?('.') }.each do |theme|
   theme_directory   = "app/themes/#{theme}"
   views_directory   = "#{theme_directory}/views"
   locales_directory = "#{theme_directory}/locales"
+  assets_directory  = "#{theme_directory}/assets"
 
   context "Theme #{theme}: view files" do
     it 'contains only liquid templates' do
@@ -25,7 +26,29 @@ ThemesOnRails.all.each do |theme|
     end
   end
 
-  context "Theme #{theme}: locales files" do
+  context "Theme #{theme}: directory structure" do
+    it 'contains assets directory' do
+      expect(File.exists?(assets_directory)).to be_truthy, "there must be `assets` directory inside #{theme}"
+    end
+
+    it 'contains all.js.coffee' do
+      js_directory = assets_directory + "/javascripts/#{theme}/all*.js.coffee"
+
+      expect(Dir.glob(js_directory)).to be_present, "there must be `all.js.coffee` inside app/themes/#{theme}/javascripts/#{theme}/"
+    end
+
+    it 'contains all.scss' do
+      css_directory = assets_directory + "/stylesheets/#{theme}/all*.scss"
+
+      expect(Dir.glob(css_directory)).to be_present, "there must be `all.scss` inside app/themes/#{theme}/stylesheets/#{theme}/"
+    end
+
+    it 'contains views directory' do
+      expect(File.exists?(views_directory)).to be_truthy, "there is must be `views` directory inside #{theme}"
+    end
+  end
+
+  context "Theme #{theme}: theme directory structure" do
     Dir["#{locales_directory}/*"].each do |yaml_file|
       it 'parses successfully' do
         expect { YAML.load_file(yaml_file) }.to_not raise_error
