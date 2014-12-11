@@ -34,8 +34,9 @@ ThemesOnRails.all.each do |theme|
       it 'contains valid keys' do
         locale = YAML.load_file(yaml_file)
 
-        expect(locale.keys.length).to eq(1)
-        expect(locale[locale.keys[0]].keys).to eq([theme])
+        expect(locale.keys.length).to           eq(1)
+        expect(I18n.available_locales).to       include(locale.keys.first.to_sym)
+        expect(locale[locale.keys[0]].keys).to  eq([theme])
       end
     end
   end
