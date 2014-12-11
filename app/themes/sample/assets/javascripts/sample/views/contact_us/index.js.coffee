@@ -1,4 +1,3 @@
-window.Views.ContactUs ||= {}
 class Views.ContactUs.IndexView extends Views.ApplicationView
   render: ->
     super()

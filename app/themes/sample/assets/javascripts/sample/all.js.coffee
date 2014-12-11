@@ -11,25 +11,14 @@
 #= require imagesloaded/v3.1.8
 #= require zebra_datepicker/v1.8.9
 
-# pages
+# theme, widgets, and views
+#= require theme
 #= require sample/widgets/announcement
 #= require sample/widgets/contact_us
 #= require sample/widgets/gallery
 #= require sample/widgets/map
+#= require_tree ./views
 
-#= require sample/views/application_view
-#= require sample/views/about_us/index
-#= require sample/views/map/index
-
-#= require sample/views/galleries/index
-#= require sample/views/galleries/show
-
-#= require sample/views/announcements/index
-#= require sample/views/announcements/show
-
-#= require sample/views/reservation/index
-
-#= require sample/views/contact_us/index
 
 pageLoad = ->
   className = $('body').attr('data-class-name')

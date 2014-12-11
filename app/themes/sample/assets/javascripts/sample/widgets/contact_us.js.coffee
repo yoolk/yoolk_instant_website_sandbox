@@ -1,4 +1,3 @@
-window.Widgets ||= {}
 class Widgets.ContactUs
   @enable:  ->
     date = new Date()

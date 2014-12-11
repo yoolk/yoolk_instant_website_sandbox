@@ -1,4 +1,3 @@
-window.Views.Announcements ||= {}
 class Views.Announcements.IndexView extends Views.ApplicationView
   render: ->
     super()

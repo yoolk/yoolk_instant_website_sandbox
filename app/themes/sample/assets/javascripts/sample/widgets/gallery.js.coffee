@@ -1,4 +1,3 @@
-window.Widgets ||= {}
 class Widgets.Gallery
   @enable:  ->
     $(".Collage").imagesLoaded ->

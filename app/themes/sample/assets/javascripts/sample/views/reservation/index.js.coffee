@@ -1,4 +1,3 @@
-window.Views.Reservation ||= {}
 class Views.Reservation.IndexView extends Views.ApplicationView
   render: ->
     super()
