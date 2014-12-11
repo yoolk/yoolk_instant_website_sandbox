@@ -1,8 +1,10 @@
 # Overview
 
-## ?
+## 2014-12-12
 
 * Organize Javascript code with `Rails with no JS framework`
+* Add `js_class_name` to `request` object
+* Add `theme.js`, `namespace.js`, and `application_view.js`
 
 ## 2014-12-04
 
