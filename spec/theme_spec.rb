@@ -2,12 +2,12 @@ require 'rails_helper'
 require 'rake'
 Rails.application.load_tasks
 
-themes = ThemesOnRails.all.reject { |directory| directory.start_with?('.') && !File.directory?(directory) }
-themes.each do |theme|
+ThemesOnRails.all.each do |theme|
   theme_directory   = "app/themes/#{theme}"
   views_directory   = "#{theme_directory}/views"
   locales_directory = "#{theme_directory}/locales"
   assets_directory  = "#{theme_directory}/assets"
+  available_locales = %w(af ar az bg bn bs ca cs cy da de de-AT de-CH el en en-AU en-CA en-GB en-IE en-IN en-NZ en-US en-ZA eo es es-419 es-AR es-CL es-CO es-CR es-EC es-MX es-PA es-PE es-US es-VE et eu fa fi fr fr-CA fr-CH gl he hi hi-IN hr hu id is it it-CH ja km kn ko lo lt lv mk mn ms nb ne nl nn or pl pt pt-BR rm ro ru sk sl sr sv sw ta th tl tr uk ur uz vi wo zh-CN zh-HK zh-TW zh-YUE)
 
   context "Theme #{theme}: view files" do
     it 'contains only liquid templates' do
@@ -56,11 +56,12 @@ themes.each do |theme|
       end
 
       it 'contains valid keys' do
-        locale = YAML.load_file(yaml_file)
+        locale     = YAML.load_file(yaml_file)
+        locale_key = locale.keys.first
 
         expect(locale.keys.length).to           eq(1)
-        expect(I18n.available_locales).to       include(locale.keys.first.to_sym)
-        expect(locale[locale.keys[0]].keys).to  eq([theme])
+        expect(available_locales).to            include(locale_key)
+        expect(locale[locale_key].keys).to  eq([theme])
       end
     end
   end
