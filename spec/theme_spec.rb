@@ -2,7 +2,8 @@ require 'rails_helper'
 require 'rake'
 Rails.application.load_tasks
 
-ThemesOnRails.all.delete_if { |directory| directory.start_with?('.') }.each do |theme|
+themes = ThemesOnRails.all.reject { |directory| directory.start_with?('.') && !File.directory?(directory) }
+themes.each do |theme|
   theme_directory   = "app/themes/#{theme}"
   views_directory   = "#{theme_directory}/views"
   locales_directory = "#{theme_directory}/locales"
