@@ -11,10 +11,28 @@
   {% include 'shared/nav' %}
   <div class="main-container main-container-style-{{request.style_name}}">
     {% include 'shared/breadcrumb' %}
+
+
+    {% comment %}
+      + size : width x height
+               if not specified , pickup the image original
+
+      + alt  : image name
+    {% endcomment %}
+
+    {% addthis 'follow' %}
+      {% facebook page: "page-name", image: { url: "someurl.jpg", size: "10x20" } %}
+      {% twitter  page: "page-name" %}
+    {% endaddthis %}
+
+    <script src="//s7.addthis.com/js/300/addthis_widget.js"
+            type="text/javascript" async></script>
+
     {{ content_for_layout }}
   </div>
 
   {{ 'sample/all' | javascript_include_tag }}
   {% yield 'map' %}
+
 </body>
 </html>
