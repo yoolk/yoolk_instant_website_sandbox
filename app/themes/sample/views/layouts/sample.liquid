@@ -20,9 +20,13 @@
       + alt  : image name
     {% endcomment %}
 
-    {% addthis 'follow' %}
-      {% facebook page: "page-name", image: { url: "someurl.jpg", size: "10x20" } %}
-      {% twitter  page: "page-name" %}
+    {% addthis tool: 'follow', style: 'large' %}
+      {% facebook image: { url: 'http://www.penta.com/Penta/Public/Buttons/_facebook_64.png', size: '10x10' } %}
+      {% twitter image: { url: {{ 'sample/twitter.png' | image_path }}, size: '10x10' } %}
+
+      {% comment %}{% facebook %}
+      {% twitter  %}{% endcomment %}
+      <h2>some</h2>
     {% endaddthis %}
 
     <script src="//s7.addthis.com/js/300/addthis_widget.js"

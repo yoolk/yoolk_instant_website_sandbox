@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/yoolk/assets-rails.git
-  revision: 6fe8c9351ea69417d28b310caa39e8f313cc04dd
+  revision: 489f45724d10453ff1a91eca4579cb939cbdb880
   specs:
     assets-rails (0.1.0)
       railties (>= 3.2)
@@ -24,7 +24,7 @@ GIT
 PATH
   remote: yoolk_liquid
   specs:
-    yoolk_liquid (4.0.0.alpha3)
+    yoolk_liquid (4.0.0.beta1)
       activemodel (~> 4.0.10)
       assets-rails (~> 0.1.0)
       autoprefixer-rails (~> 3.1.0.20140911)
@@ -109,7 +109,7 @@ GEM
     hike (1.2.3)
     hitimes (1.2.2)
     i18n (0.6.11)
-    ice_nine (0.11.0)
+    ice_nine (0.11.1)
     json (1.8.1)
     kaminari (0.16.1)
       actionpack (>= 3.0.0)
@@ -211,7 +211,7 @@ GEM
     timers (4.0.1)
       hitimes
     tzinfo (0.3.42)
-    uglifier (2.5.3)
+    uglifier (2.6.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     virtus (1.0.3)
