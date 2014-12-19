@@ -84,6 +84,16 @@
       </div>
     {% endif %}
 
+    <div class="social-media">
+      {% addthis tool: 'follow' %}
+        {% facebook %}
+        {% twitter  %}
+      {% endaddthis %}
+
+      <script src="//s7.addthis.com/js/300/addthis_widget.js"
+              type="text/javascript" async></script>
+    </div>
+
     <div class="office">
       {% if current_account %}
         <a href="{{ listing.instant_website.office_url }}">{{ 'sample.my_office' | translate }}</a>
