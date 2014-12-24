@@ -85,7 +85,15 @@
     {% endif %}
 
     <div class="social-media">
-      {% addthis_follow %}
+      <h5>share</h5>
+      {% addthis_share style: 'medium' %}
+        {% facebook %}
+        {% twitter  %}
+        {% counter %}
+      {% endaddthis_share %}
+
+      <h5>follow</h5>
+      {% addthis_follow style: 'large' %}
         {% facebook %}
         {% twitter  %}
       {% endaddthis_follow %}
