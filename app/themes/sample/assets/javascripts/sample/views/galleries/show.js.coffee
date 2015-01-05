@@ -1,7 +1,7 @@
-class Views.Galleries.ShowView extends Views.ApplicationView
+class Yoolk.Views.Galleries.ShowView extends Yoolk.Views.ApplicationView
   render: ->
     super()
-    Widgets.Gallery.enable()
+    Yoolk.Widgets.Gallery.enable()
 
   cleanup: ->
     super()

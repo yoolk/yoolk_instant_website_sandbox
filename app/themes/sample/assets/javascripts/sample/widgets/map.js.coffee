@@ -1,4 +1,4 @@
-class Widgets.Map
+class Yoolk.Widgets.Map
   @enable:  ->
     initMapCanvasHeight = ->
       win_height  = $(window).height()

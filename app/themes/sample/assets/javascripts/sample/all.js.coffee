@@ -12,29 +12,11 @@
 #= require zebra_datepicker/v1.8.9
 
 # theme, widgets, and views
-#= require theme
+#= require yoolk/namespace
+#= require yoolk/application_view
 #= require sample/widgets/announcement
 #= require sample/widgets/contact_us
 #= require sample/widgets/gallery
 #= require sample/widgets/map
 #= require_tree ./views
-
-
-pageLoad = ->
-  className = $('body').attr('data-class-name')
-  window.applicationView = try
-    eval("new #{className}()")
-  catch error
-    new Views.ApplicationView()
-  window.applicationView.render()
-
-$ ->
-  pageLoad()
-  $(document).on 'page:load', pageLoad
-  $(document).on 'page:before-change', ->
-    window.applicationView.cleanup()
-    true
-  $(document).on 'page:restore', ->
-    window.applicationView.cleanup()
-    pageLoad()
-    true
+#= require yoolk/page_load

@@ -1,7 +1,7 @@
-class Views.Announcements.IndexView extends Views.ApplicationView
+class Yoolk.Views.Announcements.IndexView extends Yoolk.Views.ApplicationView
   render: ->
     super()
-    Widgets.Announcement.enable()
+    Yoolk.Widgets.Announcement.enable()
 
   cleanup: ->
     super()
