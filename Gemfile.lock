@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/yoolk/assets-rails.git
-  revision: 6fe8c9351ea69417d28b310caa39e8f313cc04dd
+  revision: af3dd0f0c248299016ea7500a054c167aed1eb0a
   specs:
-    assets-rails (0.1.0)
+    assets-rails (0.1.2)
       railties (>= 3.2)
 
 GIT
@@ -108,7 +108,7 @@ GEM
       rspec (>= 2.14, < 4.0)
     hike (1.2.3)
     hitimes (1.2.2)
-    i18n (0.6.11)
+    i18n (0.7.0)
     ice_nine (0.11.1)
     json (1.8.1)
     kaminari (0.16.1)
