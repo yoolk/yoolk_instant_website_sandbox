@@ -12,6 +12,7 @@
 #= require jquery.collageplus/v0.3.3
 #= require jquery.collageplus/v0.3.3/jquery.collagecaption
 #= require jquery.collageplus/v0.3.3/remove_whitespace
+#= require jquery.fakecrop/jquery.fakecrop
 #= require imagesloaded/v3.1.8
 #= require zebra_datepicker/v1.8.9
 
@@ -22,5 +23,6 @@
 #= require sample/widgets/contact_us
 #= require sample/widgets/gallery
 #= require sample/widgets/map
+#= require sample/widgets/catalog_base
 #= require_tree ./views
 #= require yoolk/page_load
