@@ -19,70 +19,27 @@
 
             <div class="team-six">
               <div class="row">
+                {% for person in listing.people %}
                 <div class="col-md-3 col-sm-6">
                   <!-- Team Member -->
                   <div class="team-member">
                     <!-- Image -->
-                    <img class="img-responsive" src="{{'brave/user/1.jpg' | asset_path }}" alt="" />
+                    {{ person.photo | attachment_url: "small" | image_tag }}
+
                     <!-- Name -->
-                    <h4>Jennifer Doe</h4>
-                    <span class="deg">Creative</span>
+                    <h4>{{ person.full_name }}</h4>
+                    <span class="deg">{{ person.position_title }}</span>
                     <!-- Team Links -->
                     <div class="team-links">
-                      <a href="#"><i class="fa fa-comment"></i></a>
-                      <a href="#"><i class="fa fa-envelope"></i></a>
-                      <a href="#"><i class="fa fa-phone"></i></a>
+
+                      {% for com in person.communications %}
+                        <span>{{com.type}}: {{com.value}}</span> <br>
+                      {% endfor %}
+
                     </div>
                   </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                  <!-- Team Member -->
-                  <div class="team-member">
-                    <!-- Image -->
-                    <img class="img-responsive" src="{{'brave/user/2.jpg' | asset_path }}" alt="" />
-                    <!-- Name -->
-                    <h4>Jennifer Doe</h4>
-                    <span class="deg">Programmer</span>
-                    <!-- Team Links -->
-                    <div class="team-links">
-                      <a href="#"><i class="fa fa-comment"></i></a>
-                      <a href="#"><i class="fa fa-envelope"></i></a>
-                      <a href="#"><i class="fa fa-phone"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <!-- Team Member -->
-                  <div class="team-member">
-                    <!-- Image -->
-                    <img class="img-responsive" src="{{'brave/user/3.jpg' | asset_path }}" alt="" />
-                    <!-- Name -->
-                    <h4>Jennifer Doe</h4>
-                    <span class="deg">CEO</span>
-                    <!-- Team Links -->
-                    <div class="team-links">
-                      <a href="#"><i class="fa fa-comment"></i></a>
-                      <a href="#"><i class="fa fa-envelope"></i></a>
-                      <a href="#"><i class="fa fa-phone"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <!-- Team Member -->
-                  <div class="team-member">
-                    <!-- Image -->
-                    <img class="img-responsive" src="{{'brave/user/4.jpg' | asset_path }}" alt="" />
-                    <!-- Name -->
-                    <h4>Jennifer Doe</h4>
-                    <span class="deg">Manager</span>
-                    <!-- Team Links -->
-                    <div class="team-links">
-                      <a href="#"><i class="fa fa-comment"></i></a>
-                      <a href="#"><i class="fa fa-envelope"></i></a>
-                      <a href="#"><i class="fa fa-phone"></i></a>
-                    </div>
-                  </div>
-                </div>
+                {% endfor %}
               </div>
             </div>
 
