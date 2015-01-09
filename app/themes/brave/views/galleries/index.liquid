@@ -23,24 +23,24 @@
               <!-- Add filter names inside "data-filter". For example ".web-design", ".seo", etc., Filter names are used to filter the below images. -->
               <div id="filters">
                 <a href="#" data-filter="*" class="btn btn-color">All</a>
-                <a href="#" data-filter=".design" class="btn btn-color">Web Design</a>
-                <a href="#" data-filter=".php" class="btn btn-color">PHP</a>
-                <a href="#" data-filter=".java" class="btn btn-color">JAVA</a>
-                <a href="#" data-filter=".development" class="btn btn-color">Web Development</a>
+                {% for gallery in listing.galleries %}
+                  <a href="#" data-filter=".{{gallery.name | downcase | replace:' ','-' }}" class="btn btn-color">{{ gallery.name }}</a>
+                {% endfor %}
               </div>
               <div id="portfolio">
                 <!-- Portfolio Image and Text Container -->
-                <div class="p-element design java">
+                {% for image in listing.images %}
+                <div class="p-element {{ image.gallery.name | downcase | replace:' ','-' }} java">
                   <div class="element">
                     <div class="image-style-one">
                       <!-- Image -->
-                      <img class="img-responsive" src="{{'brave/gallery/small/1.jpg' | asset_path }}" alt="" />
+                      <img class="img-responsive" src="{{image | attachment_url: 'medium' }}" alt="" />
                       <!-- image hover style for image #1 -->
                       <div class="image-hover">
                         <!-- Image Caption -->
                         <div class="image-caption">
                           <!-- Heading -->
-                          <h4>Some Heading</h4>
+                          <h4>{{ image.caption }}</h4>
                           <!-- Paragraph -->
                           <p>Neque porro quisquam est quisquam qui dolorem.</p>
                           <a href="img/gallery/small/1.jpg" class="lightbox"><i class="fa fa-search"></i></a> &nbsp;
@@ -50,6 +50,8 @@
                     </div>
                   </div>
                 </div>
+                {% endfor %}
+
                 <!-- Portfolio Image and Text Container -->
                 <div class="p-element php java">
                   <div class="element">
