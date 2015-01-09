@@ -203,6 +203,27 @@
     {{ 'brave/all' | javascript_include_tag }}
 
     <script type="text/javascript">
+      var $container = $('#portfolio');
+
+      // Initialize isotope
+      $container.imagesLoaded( function(){
+        $container.fadeIn(1000).isotope({
+         layoutMode : 'fitRows',
+         itemSelector : '.p-element'
+        });
+      });
+
+      // Filter items when filter link is clicked
+
+      $('#filters a').click(function(){
+        var selector = $(this).attr('data-filter');
+        $container.isotope({ filter: selector });
+        return false;
+      });
+    </script>
+
+
+    <script type="text/javascript">
       <!-- Counting code -->
       $(document).ready(function(){
         // Way Points With Count To()
