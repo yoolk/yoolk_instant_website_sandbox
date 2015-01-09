@@ -1,0 +1,75 @@
+<div class="container">
+
+  <div class="ecommerce">
+    <div class="row">
+      <div class="col-md-9 col-sm-8 col-md-push-3 col-sm-push-4">
+        <!-- Shopping items content -->
+        <div class="shopping-content">
+          <!-- Block Title -->
+          <h4><i class="fa fa-laptop color"></i>&nbsp; Phones&nbsp;<small>Quine Poor Squamo</small></h4>
+          <hr />
+          <div class="row">
+            {% for product in listing.products %}
+              <div class="col-md-4 col-sm-6">
+                <!-- Shopping items -->
+                <div class="shopping-item">
+                  <!-- Image -->
+
+                  <a href = "{{ product.url }}">
+                    {{ product.cover_photo | attachment_url: "medium" | image_tag: class: "img-responsive" }}
+                  </a>
+
+                  <!-- Shopping item name / Heading -->
+                  <h4>
+                    <a href = "{{ product.url }}">
+                      {{ product.name | link_to_products }}<span class=" pull-right">$49</span>
+                    </a>
+                  </h4>
+                  <div class="clearfix"></div>
+                  <!-- Buy now button -->
+                  <div class="visible-xs">
+                    <a class="btn btn-color btn-sm" href="#">Buy Now</a>
+                  </div>
+                  <!-- Shopping item hover block & link -->
+                  <div class="item-hover bg-color hidden-xs">
+                    <a href="#">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+          <!-- Pagination -->
+          <ul class="pagination">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul>
+          <!-- Pagination end-->
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-4 col-md-pull-9 col-sm-pull-8">
+          <!-- Shopping Sidebar -->
+        <div class="sidebar">
+          <!-- Heading -->
+          <h2>Category</h2>
+          <!-- Sidebar Menu -->
+          <ul class="list-unstyled my-list">
+            {% for category in listing.product_categories %}
+              <a href="{{ category.url }}">
+                <li>{{ category.name }}</li>
+              </a>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+</div>
