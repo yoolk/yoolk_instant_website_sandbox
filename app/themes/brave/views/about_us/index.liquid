@@ -16,20 +16,15 @@
 
         <div class="container">
 
+        {% for catalog in listing.catalog_items %}
           <div class="row">
 
             <div class="col-md-5 col-sm-6">
 
               <div class="image-style-seven">
                 <!-- Image -->
-                <img class="img-responsive" src="{{'brave/gallery/big/1.jpg' | asset_path }}" alt="" />
-                <div class="image-hover">
-                  <!-- Image Caption -->
-                  <div class="image-caption">
-                    <a href="#"><i class="fa fa-play"></i></a>
-                    <a href="img/gallery/big/1.jpg" class="lightbox"><i class="fa fa-search"></i></a>
-                  </div>
-                </div>
+
+                {{ catalog | attachment_url: "medium" | image_tag }}
               </div>
 
             </div>
@@ -37,19 +32,15 @@
             <div class="col-md-7 col-sm-12">
               <!-- Heading -->
               <div class="block-heading-two">
-                <h3><span>Google Inc</span></h3>
+                <h3><span>{{catalog.title}}</span></h3>
               </div>
               <!-- Tags -->
-              <p><strong>Tags :</strong> <a href="#" class="label label-grey">web</a> <a href="#" class="label label-grey">design</a> <a href="#" class="label label-grey">php</a> <a href="#" class="label label-grey">java</a></p>
-              <!-- Para -->
-              <p>Itaque earum rerum hic tenetur a atque atatum dele niti atque tenetur a atque atatum tenetur volup tatum. Itaque earum rerum hic tenetur a atque atatum dele niti atque tenetur a atque atatum tenetur volup tatum. Itaque earum rerum hic tenetur a atque atatum dele niti atque tenetur a atque atatum tenetur volup tatum.</p>
-              <!-- Button -->
-              <a href="#" class="btn btn-color">Live Demo</a> <a href="#" class="btn btn-white">Contact</a>
+              <p>catalog.html_text</p>
             </div>
 
           </div>
-
           <hr />
+        {% endfor %}
 
           <div class="row">
 
