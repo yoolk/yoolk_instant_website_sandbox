@@ -718,7 +718,7 @@
     "is_live": false,
     "is_active": true,
     "free_plan": false,
-    "style_name": "gray",
+    "style_name": "green",
     "template": {
       "name": "sample",
       "description": "",
@@ -729,8 +729,10 @@
         "Optical Products"
       ],
       "styles": [
+        "black",
         "blue",
-        "gray"
+        "brown",
+        "green"
       ],
       "pages": [
         "Galleries",
