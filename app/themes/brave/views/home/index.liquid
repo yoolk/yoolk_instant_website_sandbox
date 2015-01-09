@@ -255,230 +255,26 @@
     <!-- Shopping items content -->
     <div class="shopping-content ecommerce">
       <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <!-- Shopping items -->
-          <div class="shopping-item">
-            <!-- Image -->
-            <a href="ecom-item-single.html"><img class="img-responsive" src="{{'brave/ecommerce/items/2.png' | asset_path }}" alt="" /></a>
-            <!-- Shopping item name / Heading -->
-            <h4><a href="ecom-item-single.html">Quasi Architects</a><span class="color pull-right">$49</span></h4>
-            <div class="clearfix"></div>
-            <!-- Buy now button -->
-            <div class="visible-xs">
-              <a class="btn btn-color btn-sm" href="#">Buy Now</a>
-            </div>
-            <!-- Shopping item hover block & link -->
-            <div class="item-hover bg-color hidden-xs">
-              <a href="#">Add to cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <!-- Shopping items -->
-          <div class="shopping-item">
-            <!-- Image -->
-            <a href="ecom-item-single.html"><img class="img-responsive" src="{{'brave/ecommerce/items/3.png' | asset_path }}" alt="" /></a>
-            <!-- Shopping item name / Heading -->
-            <h4><a href="ecom-item-single.html">Byances Kcepte</a><span class="color pull-right">$49</span></h4>
-            <div class="clearfix"></div>
-            <!-- Buy now button -->
-            <div class="visible-xs">
-              <a class="btn btn-color btn-sm" href="#">Buy Now</a>
-            </div>
-            <!-- Shopping item hover block & link -->
-            <div class="item-hover bg-color hidden-xs">
-              <a href="#">Add to cart</a>
-            </div>
-            <!-- Hot tag -->
-            <span class="hot-tag bg-red">NEW</span>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <!-- Shopping items -->
-          <div class="shopping-item">
-            <!-- Image -->
-            <a href="ecom-item-single.html"><img class="img-responsive" src="{{'brave/ecommerce/items/4.png' | asset_path }}" alt="" /></a>
-            <!-- Shopping item name / Heading -->
-            <h4><a href="ecom-item-single.html">Cepturi Sintocc</a><span class="color pull-right">$49</span></h4>
-            <div class="clearfix"></div>
-            <!-- Buy now button -->
-            <div class="visible-xs">
-              <a class="btn btn-color btn-sm" href="#">Buy Now</a>
-            </div>
-            <!-- Shopping item hover block & link -->
-            <div class="item-hover bg-color hidden-xs">
-              <a href="#">Add to cart</a>
+        {% for product in listing.products limit: 12 %}
+          <div class="col-md-3 col-sm-6">
+            <!-- Shopping items -->
+            <div class="shopping-item">
+              <!-- Image -->
+              <a href="ecom-item-single.html"><img class="img-responsive" src="{{ product.cover_photo | attachment_url: 'large' }}" alt="" /></a>
+              <!-- Shopping item name / Heading -->
+              <h4><a href="ecom-item-single.html">{{ product.name }}</a><span class="color pull-right">$49</span></h4>
+              <div class="clearfix"></div>
+              <!-- Buy now button -->
+              <div class="visible-xs">
+                <a class="btn btn-color btn-sm" href="#">Buy Now</a>
+              </div>
+              <!-- Shopping item hover block & link -->
+              <div class="item-hover bg-color hidden-xs">
+                <a href="#">Add to cart</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <!-- Shopping items -->
-          <div class="shopping-item">
-            <!-- Image -->
-            <a href="ecom-item-single.html"><img class="img-responsive" src="{{'brave/ecommerce/items/5.png' | asset_path }}" alt="" /></a>
-            <!-- Shopping item name / Heading -->
-            <h4><a href="ecom-item-single.html">Excepteur Sint</a><span class="color pull-right">$49</span></h4>
-            <div class="clearfix"></div>
-            <!-- Buy now button -->
-            <div class="visible-xs">
-              <a class="btn btn-color btn-sm" href="#">Buy Now</a>
-            </div>
-            <!-- Shopping item hover block & link -->
-            <div class="item-hover bg-color hidden-xs">
-              <a href="#">Add to cart</a>
-            </div>
-            <!-- Hot tag -->
-            <span class="hot-tag bg-lblue">HOT</span>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <!-- Shopping items -->
-          <div class="shopping-item">
-            <!-- Image -->
-            <a href="ecom-item-single.html"><img class="img-responsive" src="{{'brave/ecommerce/items/6.png' | asset_path }}" alt="" /></a>
-            <!-- Shopping item name / Heading -->
-            <h4><a href="ecom-item-single.html">Occam Cupid</a><span class="color pull-right">$49</span></h4>
-            <div class="clearfix"></div>
-            <!-- Buy now button -->
-            <div class="visible-xs">
-              <a class="btn btn-color btn-sm" href="#">Buy Now</a>
-            </div>
-            <!-- Shopping item hover block & link -->
-            <div class="item-hover bg-color hidden-xs">
-              <a href="#">Add to cart</a>
-            </div>
-            <!-- Hot tag -->
-            <span class="hot-tag bg-red">NEW</span>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <!-- Shopping items -->
-          <div class="shopping-item">
-            <!-- Image -->
-            <a href="ecom-item-single.html"><img class="img-responsive" src="{{'brave/ecommerce/items/7.png' | asset_path }}" alt="" /></a>
-            <!-- Shopping item name / Heading -->
-            <h4><a href="ecom-item-single.html">Fugiat Nulla</a><span class="color pull-right">$49</span></h4>
-            <div class="clearfix"></div>
-            <!-- Buy now button -->
-            <div class="visible-xs">
-              <a class="btn btn-color btn-sm" href="#">Buy Now</a>
-            </div>
-            <!-- Shopping item hover block & link -->
-            <div class="item-hover bg-color hidden-xs">
-              <a href="#">Add to cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <!-- Shopping items -->
-          <div class="shopping-item">
-            <!-- Image -->
-            <a href="ecom-item-single.html"><img class="img-responsive" src="{{'brave/ecommerce/items/8.png' | asset_path }}" alt="" /></a>
-            <!-- Shopping item name / Heading -->
-            <h4><a href="ecom-item-single.html">Eos Qui Ratione</a><span class="color pull-right">$49</span></h4>
-            <div class="clearfix"></div>
-            <!-- Buy now button -->
-            <div class="visible-xs">
-              <a class="btn btn-color btn-sm" href="#">Buy Now</a>
-            </div>
-            <!-- Shopping item hover block & link -->
-            <div class="item-hover bg-color hidden-xs">
-              <a href="#">Add to cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <!-- Shopping items -->
-          <div class="shopping-item">
-            <!-- Image -->
-            <a href="ecom-item-single.html"><img class="img-responsive" src="{{'brave/ecommerce/items/9.png' | asset_path }}" alt="" /></a>
-            <!-- Shopping item name / Heading -->
-            <h4><a href="ecom-item-single.html">Natus Erwor Site</a><span class="color pull-right">$49</span></h4>
-            <div class="clearfix"></div>
-            <!-- Buy now button -->
-            <div class="visible-xs">
-              <a class="btn btn-color btn-sm" href="#">Buy Now</a>
-            </div>
-            <!-- Shopping item hover block & link -->
-            <div class="item-hover bg-color hidden-xs">
-              <a href="#">Add to cart</a>
-            </div>
-            <!-- Hot tag -->
-            <span class="hot-tag bg-green">HOT</span>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <!-- Shopping items -->
-          <div class="shopping-item">
-            <!-- Image -->
-            <a href="ecom-item-single.html"><img class="img-responsive" src="{{'brave/ecommerce/items/10.png' | asset_path }}" alt="" /></a>
-            <!-- Shopping item name / Heading -->
-            <h4><a href="ecom-item-single.html">Quasi Architects</a><span class="color pull-right">$49</span></h4>
-            <div class="clearfix"></div>
-            <!-- Buy now button -->
-            <div class="visible-xs">
-              <a class="btn btn-color btn-sm" href="#">Buy Now</a>
-            </div>
-            <!-- Shopping item hover block & link -->
-            <div class="item-hover bg-color hidden-xs">
-              <a href="#">Add to cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <!-- Shopping items -->
-          <div class="shopping-item">
-            <!-- Image -->
-            <a href="ecom-item-single.html"><img class="img-responsive" src="{{'brave/ecommerce/items/11.png' | asset_path }}" alt="" /></a>
-            <!-- Shopping item name / Heading -->
-            <h4><a href="ecom-item-single.html">Quasi Architects</a><span class="color pull-right">$49</span></h4>
-            <div class="clearfix"></div>
-            <!-- Buy now button -->
-            <div class="visible-xs">
-              <a class="btn btn-color btn-sm" href="#">Buy Now</a>
-            </div>
-            <!-- Shopping item hover block & link -->
-            <div class="item-hover bg-color hidden-xs">
-              <a href="#">Add to cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <!-- Shopping items -->
-          <div class="shopping-item">
-            <!-- Image -->
-            <a href="ecom-item-single.html"><img class="img-responsive" src="{{'brave/ecommerce/items/12.png' | asset_path }}" alt="" /></a>
-            <!-- Shopping item name / Heading -->
-            <h4><a href="ecom-item-single.html">Quasi Architects</a><span class="color pull-right">$49</span></h4>
-            <div class="clearfix"></div>
-            <!-- Buy now button -->
-            <div class="visible-xs">
-              <a class="btn btn-color btn-sm" href="#">Buy Now</a>
-            </div>
-            <!-- Shopping item hover block & link -->
-            <div class="item-hover bg-color hidden-xs">
-              <a href="#">Add to cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <!-- Shopping items -->
-          <div class="shopping-item">
-            <!-- Image -->
-            <a href="ecom-item-single.html"><img class="img-responsive" src="{{'brave/ecommerce/items/13.png' | asset_path }}" alt="" /></a>
-            <!-- Shopping item name / Heading -->
-            <h4><a href="ecom-item-single.html">Quasi Architects</a><span class="color pull-right">$49</span></h4>
-            <div class="clearfix"></div>
-            <!-- Buy now button -->
-            <div class="visible-xs">
-              <a class="btn btn-color btn-sm" href="#">Buy Now</a>
-            </div>
-            <!-- Shopping item hover block & link -->
-            <div class="item-hover bg-color hidden-xs">
-              <a href="#">Add to cart</a>
-            </div>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </div>
 
@@ -489,61 +285,21 @@
 
 <div class="container">
   <div class="block-heading-two">
-      <h3><span>Recent Works</span></h3>
+      <h3><span>Recent Images</span></h3>
     </div>
 
     <div class="img-box-4 text-center">
       <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <!-- Image Box #4 Item -->
-          <div class="img-box-4-item">
-            <!-- Image -->
-            <a href="img/gallery/small/1.jpg" class="lightbox"><img src="{{'brave/gallery/small/1.jpg' | asset_path }}" alt="" class="img-responsive" /></a>
-            <!-- Image Box #4 Content -->
-            <div class="img-box-4-content">
-              <!-- Icon -->
-              <a href="#"><i class="fa fa-picture-o bg-red"></i></a>
-              <!-- Heading -->
-              <h4><a href="#">Blinded Desire</a></h4>
-              <!-- Border -->
-              <div class="bor bg-red"></div>
-              <!-- Paragraph -->
-              <p>Certain circumstances and owing libero tempore minus to the owing claims of duty.</p>
+        {% for image in listing.images limit: 4 %}
+          <div class="col-md-3 col-sm-6">
+            <!-- Image Box #4 Item -->
+            <div class="img-box-4-item">
+              <!-- Image -->
+              {{ image | attachment_url: 'medium' | image_tag: class: 'img-responsive' | link_to: "#", class: "lightbox" }}
+              <!-- Image Box #4 Content -->
             </div>
           </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="img-box-4-item">
-            <a href="img/gallery/small/2.jpg" class="lightbox"><img src="{{'brave/gallery/small/2.jpg' | asset_path }}" alt="" class="img-responsive" /></a>
-            <div class="img-box-4-content">
-              <a href="#"><i class="fa fa-video-camera bg-lblue"></i></a>
-              <h4><a href="#">Itaque Earum</a></h4>
-              <div class="bor bg-lblue"></div>
-              <p>Certain circumstances and owing libero tempore minus to the owing claims of duty.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="img-box-4-item">
-            <a href="img/gallery/small/3.jpg" class="lightbox"><img src="{{'brave/gallery/small/3.jpg' | asset_path }}" alt="" class="img-responsive" /></a>
-            <div class="img-box-4-content">
-              <a href="#"><i class="fa fa-music bg-green"></i></a>
-              <h4><a href="#">Rerum Tenetur</a></h4>
-              <div class="bor bg-green"></div>
-              <p>Certain circumstances and owing libero tempore minus to the owing claims of duty.</p>
-            </div>
-          </div>
-        </div><div class="col-md-3 col-sm-6">
-          <div class="img-box-4-item">
-            <a href="img/gallery/small/4.jpg" class="lightbox"><img src="{{'brave/gallery/small/4.jpg' | asset_path }}" alt="" class="img-responsive" /></a>
-            <div class="img-box-4-content">
-              <a href="#"><i class="fa fa-picture-o bg-purple"></i></a>
-              <h4><a href="#">Maiores Alias</a></h4>
-              <div class="bor bg-purple"></div>
-              <p>Certain circumstances and owing libero tempore minus to the owing claims of duty.</p>
-            </div>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </div>
 </div>
