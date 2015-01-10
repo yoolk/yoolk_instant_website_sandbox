@@ -13,3 +13,10 @@
 
 #= require brave/externals/imagesloaded.min
 #= require brave/externals/isotope
+
+#= require yoolk/namespace
+#= require yoolk/application_view
+
+#= require brave/widgets/map
+#= require_tree ./views
+#= require yoolk/page_load

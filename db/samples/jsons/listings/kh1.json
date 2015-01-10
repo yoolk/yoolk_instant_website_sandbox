@@ -1751,8 +1751,8 @@
     {
       "id": 12,
       "day":   6,
-      "open":  null,
-      "closed": null
+      "open":  { "hour":"14", "minute":"00" },
+      "closed": { "hour":"17", "minute":"00" }
     }
   ]
 }

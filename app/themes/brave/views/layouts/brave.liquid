@@ -200,8 +200,9 @@
     <!-- Scroll to top -->
     <span class="totop"><a href="#"><i class="fa fa-angle-up bg-color"></i></a></span>
 
-    {{ 'brave/all' | javascript_include_tag }}
 
+    {{ 'brave/all' | javascript_include_tag }}
+    {% yield 'map' %}
     <script type="text/javascript">
       var $container = $('#portfolio');
 
