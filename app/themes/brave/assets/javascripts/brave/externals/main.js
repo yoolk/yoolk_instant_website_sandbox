@@ -3,14 +3,6 @@
 /* Author name : Ashok      */
 /* ************************ */
 
-/* ****************** */
-/* Tooltips & Popover */
-/* ****************** */
-
-$(".b-tooltip").tooltip();
-
-$(".b-popover").popover();
-
 /* ************** */
 /* Magnific Popup */
 /* ************** */
@@ -30,7 +22,7 @@ $(document).ready(function(){
 		if (hidden){
            $(this).next('.b-dropdown-block').slideToggle(400, function(){hidden = false;});
       }
-	}); 
+	});
 	$('html').click(function() {
         if (!hidden) {
             $('.b-dropdown-block').slideUp();
@@ -39,47 +31,7 @@ $(document).ready(function(){
    });
    $('.b-dropdown-block').click(function(event) {
         event.stopPropagation();
-   }); 
-});
-
-/* ************ */
-/* Owl Carousel */
-/* ************ */
-
-$(document).ready(function() {	
-	/* Owl carousel */
-	$(".owl-carousel").owlCarousel({
-		slideSpeed : 500,
-		rewindSpeed : 1000,
-		mouseDrag : true,
-		stopOnHover : true
-	});
-	/* Own navigation */
-	$(".owl-nav-prev").click(function(){
-		$(this).parent().next(".owl-carousel").trigger('owl.prev');
-	});
-	$(".owl-nav-next").click(function(){
-		$(this).parent().next(".owl-carousel").trigger('owl.next');
-	});
-});
-
-/* ************* */
-/* Scroll to top */
-/* ************* */
-
-$(document).ready(function() {
-	$(window).scroll(function(){
-		if ($(this).scrollTop() > 200) {
-			$('.totop').fadeIn();
-		} else {
-			$('.totop').fadeOut();
-		}
-	});
-	$(".totop a").click(function(e) {
-		e.preventDefault();
-		$("html, body").animate({ scrollTop: 0 }, "slow");
-		return false;
-	});
+   });
 });
 
 /* *************** */
@@ -90,7 +42,7 @@ $(document).ready(function(){
 
 
 	$.fn.menumaker = function(options) {
-      
+
     var cssmenu = $(this), settings = $.extend({
         title: "Menu",
         format: "dropdown",
@@ -98,12 +50,12 @@ $(document).ready(function(){
       }, options);
 
       return this.each(function() {
-		
+
 		cssmenu.prepend('<div id="menu-button">' + settings.title + '</div>');
 		$(this).find("#menu-button").on('click', function(){
 		  $(this).toggleClass('menu-opened');
 		  var mainmenu = $(this).next('ul');
-		  if (mainmenu.hasClass('open')) { 
+		  if (mainmenu.hasClass('open')) {
 			mainmenu.slideUp().removeClass('open');
 		  }
 		  else {
@@ -113,7 +65,7 @@ $(document).ready(function(){
 			}
 		  }
 		});
-		
+
 		cssmenu.find('li ul').parent().addClass('has-sub');
 
 		multiTg = function() {
@@ -131,8 +83,8 @@ $(document).ready(function(){
 
 		if (settings.format === 'multitoggle') multiTg();
 		else cssmenu.addClass('dropdown');
-		
-		
+
+
       });
 	};
 

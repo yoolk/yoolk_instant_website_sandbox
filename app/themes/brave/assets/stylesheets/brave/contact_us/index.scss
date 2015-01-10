@@ -1,20 +1,3 @@
-.contact-list {
-  list-style: none;
-  li {
-    clear: both;
-    background: asset-url("sample/dotted_line.png") repeat-x bottom;
-    height: 17px;
-  }
-  span { background-color: #f9f9f9; }
-  span:first-child {
-    float: left;
-  }
-  span:last-child {
-    float: right;
-  }
-  &> span { display: block; clear: both;}
-}
-
 #map-canvas {
   height: 300px;
   width: 100%;
