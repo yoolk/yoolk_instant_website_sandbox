@@ -845,7 +845,14 @@
         "black",
         "blue",
         "brown",
-        "green"
+        "green",
+        "lblue",
+        "less",
+        "orange",
+        "purple",
+        "red",
+        "rose",
+        "yellow"
       ],
       "pages": [
         "Galleries",

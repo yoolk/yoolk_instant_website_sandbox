@@ -6,51 +6,51 @@
 /* Theme Skin     */
 /******************/
 ::selection {
-  background-color: #cb79e6;
+  background-color: $primary-color;
 }
 ::-moz-selection {
-  background-color: #cb79e6;
+  background-color: $primary-color;
 }
 /***************/
 /* Link Colors */
 /***************/
 a {
-  color: #ba4ede;
+  color: #4d4d4d;
 }
 a:hover {
-  color: #cb79e6;
+  color: $primary-color;
 }
 /*****************************/
 /* Default Theme Color Class */
 /*****************************/
 .color {
-  color: #cb79e6 !important;
+  color: $primary-color !important;
 }
 a.color {
-  color: #cb79e6 !important;
+  color: $primary-color !important;
 }
 a.color:hover,
 a.color:focus {
-  color: #ba4ede;
+  color: #4d4d4d;
 }
 .bg-color {
-  background-color: #cb79e6 !important;
+  background-color: $primary-color !important;
 }
 .br-color {
-  border: 1px solid #cb79e6;
+  border: 1px solid $primary-color;
 }
 .dropcap-1 {
-  color: #cb79e6;
+  color: $primary-color;
 }
 .dropcap-2,
 .dropcap-3 {
-  background: #cb79e6;
+  background: $primary-color;
 }
 blockquote {
-  border-color: #cb79e6;
+  border-color: $primary-color;
 }
 blockquote.blockquote-reverse {
-  border-color: #cb79e6;
+  border-color: $primary-color;
 }
 /***************/
 /* List styles */
@@ -64,50 +64,50 @@ blockquote.blockquote-reverse {
 .list-7 li:before,
 .list-8 li:before,
 .list-9 li:before {
-  color: #cb79e6;
+  color: $primary-color;
 }
 /*********************************/
 /* Theme Button, Label and Badge */
 /*********************************/
 .btn.btn-color {
   color: #ffffff;
-  background: #cb79e6;
-  border: 1px solid #ba4ede;
+  background: $primary-color;
+  border: 1px solid #4d4d4d;
 }
 .btn.btn-color:hover,
 .btn.btn-color:focus,
 .btn.btn-color.active,
 .btn.btn-color:active {
-  background: #ba4ede;
+  background: #4d4d4d;
   color: #ffffff;
 }
 .btn.btn-color.btn-outline {
   background: transparent !important;
-  border: 1px solid #ba4ede !important;
-  color: #ba4ede;
+  border: 1px solid #4d4d4d !important;
+  color: #4d4d4d;
 }
 .label.label-color {
-  background: #cb79e6;
+  background: $primary-color;
   color: #ffffff;
 }
 .badge.badge-color {
-  background: #cb79e6;
+  background: $primary-color;
   color: #ffffff;
 }
 .highlight-color {
-  background: #cb79e6;
+  background: $primary-color;
 }
 /*****************/
 /* Dropdown menu */
 /*****************/
 .dropdown-menu > li.active > a {
-  background-color: #cb79e6;
+  background-color: $primary-color;
 }
 .dropdown-menu > li.active > a:hover {
-  background-color: #cb79e6;
+  background-color: $primary-color;
 }
 .dropdown-menu > li.active > a:focus {
-  background-color: #cb79e6;
+  background-color: $primary-color;
 }
 /**************/
 /* Pagination */
@@ -116,44 +116,44 @@ blockquote.blockquote-reverse {
   color: #555555;
 }
 .pagination li a:hover {
-  background-color: #cb79e6;
-  border-color: #ba4ede;
+  background-color: $primary-color;
+  border-color: #4d4d4d;
   color: #ffffff;
 }
 .pagination li.active a {
-  background-color: #cb79e6;
-  border-color: #ba4ede;
+  background-color: $primary-color;
+  border-color: #4d4d4d;
 }
 .pagination li.active a:hover {
-  background-color: #cb79e6;
-  border-color: #ba4ede;
+  background-color: $primary-color;
+  border-color: #4d4d4d;
 }
 .pagination li.active a:focus {
-  background-color: #cb79e6;
-  border-color: #ba4ede;
+  background-color: $primary-color;
+  border-color: #4d4d4d;
 }
 .pagination li.active span {
-  background-color: #cb79e6;
-  border-color: #ba4ede;
+  background-color: $primary-color;
+  border-color: #4d4d4d;
 }
 .pagination li.active span:hover {
-  background-color: #cb79e6;
-  border-color: #ba4ede;
+  background-color: $primary-color;
+  border-color: #4d4d4d;
 }
 .pagination li.active span:focus {
-  background-color: #cb79e6;
-  border-color: #ba4ede;
+  background-color: $primary-color;
+  border-color: #4d4d4d;
 }
 /*********/
 /* Pager */
 /*********/
 .pager li a {
-  background-color: #cb79e6;
+  background-color: $primary-color;
   color: #ffffff;
-  border-color: #ba4ede;
+  border-color: #4d4d4d;
 }
 .pager li a:hover {
-  background: #ba4ede;
+  background: #4d4d4d;
 }
 /********************/
 /* Nav Tabs Default */
@@ -162,33 +162,33 @@ blockquote.blockquote-reverse {
   color: #555555;
 }
 .nav-tabs > li > a:hover {
-  background: #cb79e6;
+  background: $primary-color;
   color: #ffffff;
-  border-color: #cb79e6;
+  border-color: $primary-color;
 }
 .nav-tabs > li.active > a {
-  background-color: #cb79e6;
-  border-color: #cb79e6;
+  background-color: $primary-color;
+  border-color: $primary-color;
   color: #ffffff;
 }
 .nav-tabs > li.active > a:hover {
-  background-color: #cb79e6;
-  border-color: #cb79e6;
+  background-color: $primary-color;
+  border-color: $primary-color;
   color: #ffffff;
 }
 .nav-tabs > li.open > a {
-  background-color: #cb79e6;
-  border-color: #cb79e6;
+  background-color: $primary-color;
+  border-color: $primary-color;
   color: #ffffff;
 }
 .nav-tabs > li.open > a:hover {
-  background-color: #cb79e6;
-  border-color: #cb79e6;
+  background-color: $primary-color;
+  border-color: $primary-color;
   color: #ffffff;
 }
 .nav-tabs > li.open > a:focus {
-  background-color: #cb79e6;
-  border-color: #cb79e6;
+  background-color: $primary-color;
+  border-color: $primary-color;
   color: #ffffff;
 }
 /*********************/
@@ -198,33 +198,33 @@ blockquote.blockquote-reverse {
   color: #555555;
 }
 .nav-tabs-one .nav-tabs > li > a:hover {
-  background: #cb79e6;
+  background: $primary-color;
   color: #ffffff;
-  border-color: #cb79e6;
+  border-color: $primary-color;
 }
 .nav-tabs-one .nav-tabs > li.active > a {
-  background-color: #cb79e6;
-  border-color: #cb79e6;
+  background-color: $primary-color;
+  border-color: $primary-color;
   color: #ffffff;
 }
 .nav-tabs-one .nav-tabs > li.active > a:hover {
-  background-color: #cb79e6;
-  border-color: #cb79e6;
+  background-color: $primary-color;
+  border-color: $primary-color;
   color: #ffffff;
 }
 .nav-tabs-one .nav-tabs > li.open > a {
-  background-color: #cb79e6;
-  border-color: #cb79e6;
+  background-color: $primary-color;
+  border-color: $primary-color;
   color: #ffffff;
 }
 .nav-tabs-one .nav-tabs > li.open > a:hover {
-  background-color: #cb79e6;
-  border-color: #cb79e6;
+  background-color: $primary-color;
+  border-color: $primary-color;
   color: #ffffff;
 }
 .nav-tabs-one .nav-tabs > li.open > a:focus {
-  background-color: #cb79e6;
-  border-color: #cb79e6;
+  background-color: $primary-color;
+  border-color: $primary-color;
   color: #ffffff;
 }
 /*********************/
@@ -234,43 +234,43 @@ blockquote.blockquote-reverse {
   color: #555555;
 }
 .nav-tabs-two .nav-tabs > li > a:hover {
-  border-top: 2px solid #cb79e6;
+  border-top: 2px solid $primary-color;
 }
 .nav-tabs-two .nav-tabs > li.active > a {
-  border-top: 2px solid #cb79e6;
+  border-top: 2px solid $primary-color;
 }
 .nav-tabs-two .nav-tabs > li.active > a:hover {
-  border-top: 2px solid #cb79e6;
+  border-top: 2px solid $primary-color;
 }
 .nav-tabs-two .nav-tabs > li.open > a {
-  border-top: 2px solid #cb79e6;
+  border-top: 2px solid $primary-color;
 }
 .nav-tabs-two .nav-tabs > li.open > a:hover {
-  border-top: 2px solid #cb79e6;
+  border-top: 2px solid $primary-color;
 }
 .nav-tabs-two .nav-tabs > li.open > a:focus {
-  border-top: 2px solid #cb79e6;
+  border-top: 2px solid $primary-color;
 }
 /*********************/
 /* Nav tabs style #3 */
 /*********************/
 .nav-tabs-three .nav li a:hover {
-  background: #cb79e6;
-  border-color: #cb79e6;
+  background: $primary-color;
+  border-color: $primary-color;
 }
 .nav-tabs-three .nav li.active a {
-  border-color: #cb79e6;
-  background: #cb79e6;
+  border-color: $primary-color;
+  background: $primary-color;
 }
 /*********/
 /* Panel */
 /*********/
 .panel.panel-default {
-  border-color: #ba4ede;
+  border-color: #4d4d4d;
 }
 .panel.panel-default .panel-heading {
-  background: #cb79e6;
-  border-color: #ba4ede;
+  background: $primary-color;
+  border-color: #4d4d4d;
   color: #ffffff;
 }
 .panel.panel-default .panel-heading h4 a {
@@ -280,8 +280,8 @@ blockquote.blockquote-reverse {
   color: #ffffff;
 }
 .panel.panel-default .panel-footer {
-  background: #cb79e6;
-  border-color: #ba4ede;
+  background: $primary-color;
+  border-color: #4d4d4d;
   color: #ffffff;
 }
 /*************/
@@ -293,31 +293,31 @@ blockquote.blockquote-reverse {
   color: #555555;
 }
 .nav-pills > li > a:hover {
-  background: #cb79e6;
+  background: $primary-color;
   color: #ffffff;
-  border-color: #cb79e6;
+  border-color: $primary-color;
 }
 .nav-pills > li.active > a {
-  background-color: #cb79e6;
-  border-color: #cb79e6;
+  background-color: $primary-color;
+  border-color: $primary-color;
   color: #ffffff;
 }
 .nav-pills > li.active > a:hover {
-  background-color: #ba4ede;
+  background-color: #4d4d4d;
   color: #ffffff;
 }
 .nav-pills > li.open > a {
-  background-color: #cb79e6;
-  border-color: #cb79e6;
+  background-color: $primary-color;
+  border-color: $primary-color;
   color: #ffffff;
 }
 .nav-pills > li.open > a:hover {
-  background-color: #ba4ede;
+  background-color: #4d4d4d;
   color: #ffffff;
 }
 .nav-pills > li.open > a:focus {
-  background-color: #cb79e6;
-  border-color: #ba4ede;
+  background-color: $primary-color;
+  border-color: #4d4d4d;
   color: #ffffff;
 }
 /**************/
@@ -331,12 +331,12 @@ blockquote.blockquote-reverse {
   color: #555555;
 }
 .list-group a.active {
-  background: #cb79e6;
-  border-color: #ba4ede;
+  background: $primary-color;
+  border-color: #4d4d4d;
 }
 .list-group a.active:hover {
-  background: #cb79e6;
-  border-color: #ba4ede;
+  background: $primary-color;
+  border-color: #4d4d4d;
   color: #ffffff;
 }
 .list-group a.active:hover .list-group-item-heading {
@@ -355,203 +355,203 @@ blockquote.blockquote-reverse {
 /* Brand - theme color */
 /**********************/
 .brand-color a i {
-  color: #cb79e6;
+  color: $primary-color;
 }
 .brand-color a i:hover {
-  color: #b239da;
+  color: #404040;
 }
 /****************************/
 /* Brand - theme background */
 /****************************/
 .brand-bg-color a i {
   color: #ffffff;
-  background: #cb79e6;
+  background: $primary-color;
 }
 .brand-bg-color a i:hover {
   color: #ffffff !important;
-  background: #b239da;
+  background: #404040;
 }
 /* Owl carousel */
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span {
-  background: #cb79e6;
+  background: $primary-color;
 }
 .owl-nav a i:hover {
-  background: #cb79e6;
-  border-color: #ba4ede;
+  background: $primary-color;
+  border-color: #4d4d4d;
 }
 /*************************/
 /* Header one            */
 /* Logo & Navigation bar */
 /*************************/
 .header-1 .logo h1 a i {
-  color: #cb79e6;
+  color: $primary-color;
 }
 .header-1 .navi {
-  background: #cb79e6;
-  border-bottom: 3px solid #c364e2;
+  background: $primary-color;
+  border-bottom: 3px solid #595959;
 }
 .header-1 .navi .navy ul > li.has-sub > a:after {
-  color: #ba4ede;
+  color: #4d4d4d;
 }
 .header-1 .navi .navy > ul > li > ul {
-  border-top: 2px solid #cb79e6;
-  border-bottom: 2px solid #cb79e6;
+  border-top: 2px solid $primary-color;
+  border-bottom: 2px solid $primary-color;
 }
 .header-1 .navi .navy ul ul ul {
-  border-top: 2px solid #cb79e6;
-  border-bottom: 2px solid #cb79e6;
+  border-top: 2px solid $primary-color;
+  border-bottom: 2px solid $primary-color;
 }
 .header-1 .navi .navy #menu-button {
-  background: #cb79e6;
+  background: $primary-color;
 }
 .header-1 .navi .navy ul .submenu-button:after {
-  color: #cb79e6;
+  color: $primary-color;
 }
 /*************************/
 /* Header two            */
 /* Logo & Navigation bar */
 /*************************/
 .header-2 .logo h1 a i {
-  color: #cb79e6;
+  color: $primary-color;
 }
 .header-2 .navy ul > li.has-sub > a:after {
-  color: #cb79e6;
+  color: $primary-color;
 }
 .header-2 .navy > ul > li > ul {
-  border-top: 2px solid #cb79e6;
-  border-bottom: 2px solid #cb79e6;
+  border-top: 2px solid $primary-color;
+  border-bottom: 2px solid $primary-color;
 }
 .header-2 .navy ul ul ul {
-  border-top: 2px solid #cb79e6;
-  border-bottom: 2px solid #cb79e6;
+  border-top: 2px solid $primary-color;
+  border-bottom: 2px solid $primary-color;
 }
 .header-2 .navy #menu-button {
-  background: #cb79e6;
+  background: $primary-color;
 }
 .header-2 .navy ul .submenu-button:after {
-  color: #cb79e6;
+  color: $primary-color;
 }
 /* Block heading */
 .block-heading-two h3 span {
-  border-color: #cb79e6;
+  border-color: $primary-color;
 }
 .block-heading-three h3 {
-  border-color: #cb79e6;
+  border-color: $primary-color;
 }
 /* Team Four */
 .team-four .team-member:hover .team-details {
-  background: #cb79e6;
-  border: 1px solid #ba4ede;
+  background: $primary-color;
+  border: 1px solid #4d4d4d;
 }
 /* Image style #1 */
 .image-style-one .image-caption a {
-  background: #cb79e6;
+  background: $primary-color;
 }
 /* Image style #2 */
 .image-style-two .image-caption a {
-  background: #cb79e6;
+  background: $primary-color;
 }
 /* Image style #5 */
 .image-style-five .image-caption h4 {
-  border-color: #cb79e6;
+  border-color: $primary-color;
 }
 /* Image style #6 */
 .image-style-six .image-caption {
-  background: #cb79e6;
+  background: $primary-color;
 }
 .image-style-six .image-caption span a {
-  color: #b745dc;
+  color: #474747;
 }
 /* Image style #7 */
 .image-style-seven .image-caption a i {
-  background: #cb79e6;
+  background: $primary-color;
 }
 .image-style-seven .image-caption a i:hover {
-  background: #ba4ede;
+  background: #4d4d4d;
 }
 /* Facts */
 .facts .fact-value span {
-  color: #cb79e6;
+  color: $primary-color;
 }
 .facts .fact-content p span {
-  color: #ba4ede;
+  color: #4d4d4d;
 }
 /* Pricing table #1 */
 .pricing-one .pricing-item {
-  border-top: 3px solid #cb79e6;
+  border-top: 3px solid $primary-color;
 }
 /* Pricing table #2 */
 .pricing-two i {
-  color: #cb79e6;
+  color: $primary-color;
 }
 /* Pricing table #3 */
 .pricing-three h4 span {
-  color: #cb79e6;
+  color: $primary-color;
 }
 /* Image Box #8 */
 .img-box-8 .img-box-8-item:hover .img-box-8-cap {
-  background: #cb79e6;
+  background: $primary-color;
 }
 /* V Card */
 .v-card header ul li.active a {
-  background: #cb79e6;
-  border-color: #ba4ede;
+  background: $primary-color;
+  border-color: #4d4d4d;
 }
 .v-card header ul li.active a:hover {
-  background: #cb79e6;
+  background: $primary-color;
 }
 .v-card header ul li a:hover {
-  background: #cb79e6;
-  border-color: #ba4ede;
+  background: $primary-color;
+  border-color: #4d4d4d;
   color: #ffffff;
 }
 /* Letter Head */
 .letter-head {
-  border-top: 3px solid #cb79e6;
-  border-bottom: 3px solid #cb79e6;
+  border-top: 3px solid $primary-color;
+  border-bottom: 3px solid $primary-color;
 }
 /* Box shadow block */
 .box-shadow-block {
-  border-top: 2px solid #cb79e6;
+  border-top: 2px solid $primary-color;
 }
 /* Block quote #2 */
 .quote-two .quote-two-content span {
-  background: #cb79e6;
+  background: $primary-color;
 }
 /* Client block #1 */
 .client-one .c1-item .img-hover {
-  background: #cb79e6;
+  background: $primary-color;
 }
 /* Accordion */
 #accordion-alt3 .panel .panel-heading h4 a i {
-  background: #cb79e6;
+  background: $primary-color;
 }
 /* Blog one */
 .blog-one .blog-one-content .blog-bor {
-  background: #cb79e6;
+  background: $primary-color;
 }
 /* Blog masonry */
 .blog-masonry .item .grid-entry .grid-img i.hover-icon {
-  background: #cb79e6;
+  background: $primary-color;
 }
 .blog-masonry .item .grid-entry .bor {
-  background: #cb79e6;
+  background: $primary-color;
 }
 /* Parallax Slider */
 .da-dots span {
-  background: #cb79e6;
+  background: $primary-color;
 }
 .da-arrows span {
-  background: #cb79e6;
+  background: $primary-color;
 }
 /* Bootstrap carousel*/
 .carousel .carousel-indicators .active {
-  background-color: #cb79e6;
+  background-color: $primary-color;
 }
 /* Resume */
 .resume .main-block {
-  background: #cb79e6 url(../../img/overlay.png) repeat;
+  background: $primary-color url(../../img/overlay.png) repeat;
   background-size: 252px 230px;
 }
 /* Smart forms */
@@ -559,67 +559,67 @@ blockquote.blockquote-reverse {
 .smart-forms .rating:hover .rating-star:hover,
 .smart-forms .rating:hover .rating-star:hover ~ .rating-star,
 .smart-forms .rating-input:checked ~ .rating-star {
-  color: #cb79e6;
+  color: $primary-color;
 }
 /* Toggle switch */
 .smart-forms .switch > input:checked + label {
-  background: #cb79e6;
-  border-color: #cb79e6;
+  background: $primary-color;
+  border-color: $primary-color;
 }
 .smart-forms .switch > input:checked + label:after {
-  color: #cb79e6;
+  color: $primary-color;
 }
 .smart-forms .switch > input:checked:focus + label {
-  background: #cb79e6;
-  border-color: #cb79e6;
+  background: $primary-color;
+  border-color: $primary-color;
 }
 /* Date & Time picker */
 .ui-datepicker-today a,
 .ui-datepicker-today a:hover,
 .ui-datepicker .ui-state-highlight {
-  background: #cb79e6 !important;
+  background: $primary-color !important;
 }
 .smart-forms .ui-slider .ui-slider-handle {
-  border-color: #cb79e6;
+  border-color: $primary-color;
 }
 .smart-forms .ui-slider .ui-slider-handle:before {
-  background: #cb79e6;
+  background: $primary-color;
 }
 /* Index slim */
 .slim-feature .feature-content ul li:before {
-  color: #cb79e6;
+  color: $primary-color;
 }
 /* Ecommerce ui #4 */
 .ecom-ui-four:hover {
-  border: 2px solid #cb79e6;
+  border: 2px solid $primary-color;
 }
 /* Ecommerce ui #5 */
 .ecom-ui-five {
-  border: 2px solid #cb79e6;
+  border: 2px solid $primary-color;
 }
 .ecom-ui-five .p-media a {
-  border-right: 2px solid #cb79e6;
+  border-right: 2px solid $primary-color;
 }
 /* Ecommerce ui #6 */
 .ecom-ui-six:hover {
-  border-color: #cb79e6;
+  border-color: $primary-color;
 }
 /* Wedding */
 .wedding-header {
-  background: #cb79e6 url("../../img/wedding/overlay.png") repeat;
+  background: $primary-color url("../../img/wedding/overlay.png") repeat;
   background-size: 252px 230px;
 }
 /* Restaurant */
 .restaurant .rest-item:hover {
-  border-color: #cb79e6;
+  border-color: $primary-color;
 }
 /* Icon box 9 */
 .icon-box-9 .icon-box-9-item:hover {
-  background: #cb79e6;
+  background: $primary-color;
 }
 /********/
 /* Foot */
 /********/
 .foot {
-  border-color: #cb79e6;
+  border-color: $primary-color;
 }
