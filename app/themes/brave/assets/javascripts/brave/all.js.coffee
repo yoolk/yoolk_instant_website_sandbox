@@ -7,7 +7,6 @@
 #= require brave/externals/html5shiv
 #= require brave/externals/jquery.themepunch.tools.min
 #= require brave/externals/jquery.themepunch.revolution.min
-#= require brave/externals/waypoints.min
 #= require brave/externals/jquery.countTo
 
 #= require brave/externals/imagesloaded.min
