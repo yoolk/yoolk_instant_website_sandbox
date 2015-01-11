@@ -26,3 +26,5 @@ en:
       recent_products: 'Recent Products'
       recent_images: 'Recent Images'
       readmore: 'READ MORE'
+    footer:
+      copyright: "Copyright &copy; {{ year }}. All Rights Reserved"

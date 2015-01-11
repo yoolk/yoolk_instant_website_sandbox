@@ -2,7 +2,8 @@ source 'https://rubygems.org'
 
 # Liquid
 gem 'yoolk_liquid',       path: 'yoolk_liquid'
-gem 'liquid-rails',       github: 'yoolk/liquid-rails'
+# gem 'liquid-rails',       github: 'yoolk/liquid-rails'
+gem 'liquid-rails',       path: '/home/radin/dev/liquid-rails'
 gem 'themes_on_rails',    github: 'yoolk/themes_on_rails'
 gem 'assets-rails',       github: 'yoolk/assets-rails'
 
