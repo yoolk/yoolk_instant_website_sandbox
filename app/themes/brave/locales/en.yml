@@ -22,3 +22,7 @@ en:
       directors: 'Directors'
       managers: 'Managers'
       employees: 'Employees'
+    home:
+      recent_products: 'Recent Products'
+      recent_images: 'Recent Images'
+      readmore: 'READ MORE'

@@ -16,3 +16,7 @@ vi:
       reservation:            "Đặt Chỗ"
       map:                    "bản đồ"
       brochures:              "Tài liệu"
+    home:
+      recent_products: 'Recent Products'
+      recent_images: 'Recent Images'
+      readmore: 'READ MORE'

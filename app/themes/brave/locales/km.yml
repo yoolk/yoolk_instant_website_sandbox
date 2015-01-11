@@ -22,3 +22,7 @@ km:
       directors: 'នាយក'
       managers: 'អ្នកចាត់ការទូទៅ'
       employees: 'បុគ្គលិក'
+    home:
+      recent_products: 'ផលិតផលថ្មីៗ'
+      recent_images: 'Recent Images'
+      readmore: 'READ MORE'
