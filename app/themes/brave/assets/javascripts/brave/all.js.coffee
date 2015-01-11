@@ -15,10 +15,13 @@
 #= require brave/externals/isotope
 
 #= require yoolk/namespace
+#= require brave/widgets/custom_dropdown
 #= require brave/widgets/to_top
-#= require yoolk/application_view
-
+#= require brave/widgets/responsive_nav
 #= require brave/widgets/map
 #= require brave/widgets/owl_carousel
+#= require brave/widgets/magnific_popup
+#= require brave/views/application_view
+
 #= require_tree ./views
 #= require yoolk/page_load
