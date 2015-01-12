@@ -42,9 +42,7 @@
                           <!-- Heading -->
                           <h4>{{ image.caption }}</h4>
                           <!-- Paragraph -->
-                          <p>Neque porro quisquam est quisquam qui dolorem.</p>
-                          <a href="img/gallery/small/1.jpg" class="lightbox"><i class="fa fa-search"></i></a> &nbsp;
-                          <a href="#"><i class="fa fa-link"></i></a>
+                          <a href="{{image | attachment_url: 'large' }}" class="lightbox"><i class="fa fa-search"></i></a> &nbsp;
                         </div>
                       </div>
                     </div>
