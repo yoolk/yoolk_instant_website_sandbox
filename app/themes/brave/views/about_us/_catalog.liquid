@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-md-5 col-sm-6">
+    <div class="image-style-seven">
+      {{ catalog | attachment_url: "medium" | image_tag }}
+    </div>
+  </div>
+  <div class="col-md-7 col-sm-12">
+    <div class="block-heading-two">
+      <h3><span>{{catalog.title}}</span></h3>
+    </div>
+    <p>{{ catalog.html_text }}</p>
+  </div>
+</div>
+<hr />
