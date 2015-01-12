@@ -24,3 +24,15 @@ vi:
       copyright: "Copyright &copy; {{ year }}. All Rights Reserved"
     products:
       category: 'Category'
+    contact_us:
+      call_us: 'Call Us'
+      mail_us: 'Mail Us'
+      address: 'Address'
+      opening_hours: 'Opening Hours'
+      open: 'Open'
+      closed: 'Closed'
+      today: 'Today'
+      contact_form: 'Contact Form'
+      success_msg: "Thanks for contacting us! We'll get back to you as soon as possible."
+      fail_msg: "Oops, sorry. We were unable to submit your inquiry because it contained {{ errors_num }}. Please correct the following and submit again:"
+      connect: 'Connect'

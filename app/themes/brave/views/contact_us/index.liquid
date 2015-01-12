@@ -3,147 +3,25 @@
 {% endcontent_for %}
 
 <div class="main-block">
-
-        <div class="contact-us-one">
-
-          <div class="contact-map">
-            <!-- Map Link -->
-            <div id="map-canvas" data-lat="{{ listing.lat }}" data-long="{{ listing.long }}"></div>
+  <div class="contact-us-one">
+    <div class="contact-map">
+      <div id="map-canvas" data-lat="{{ listing.lat }}" data-long="{{ listing.long }}"></div>
+    </div>
+    <br />
+    <div class="container">
+      <div class="row">
+        {% include 'contact_us/address' %}
+        <div class="col-md-5 col-sm-6">
+          <div class="contact-item">
+            {% include 'contact_us/form' %}
           </div>
-
-          <br />
-
-          <div class="container">
-
-            <div class="row">
-              <div class="col-md-3 col-sm-6 col-xs-6">
-                <!-- Contact Item -->
-                <div class="text-center">
-                  <!-- Contact No -->
-                  <div class="contact-item">
-                    <!-- Icon -->
-                    <i class="fa fa-phone bg-lblue circle-3"></i>
-                    <!-- Heading -->
-                    <h5>Call Us</h5>
-                    <!-- Paragraph -->
-                    <p>
-                    {% for tel in listing.telephones %}
-                      {{ tel.label }} : {{ tel.value }} <br />
-                    {% endfor %}
-                    </p>
-                  </div>
-                  <!-- Contact Mail -->
-                  <div class="contact-item">
-                    <i class="fa fa-envelope bg-green circle-3"></i>
-                    <h5>Mail Us</h5>
-                    <p>
-                      {% for email in listing.emails %}
-                        {{email.value}} <br />
-                      {% endfor %}
-                    </p>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2 col-sm-6 col-xs-6">
-                <!-- Contact Item -->
-                <div class="text-center">
-                  <!-- Contact Address -->
-                  <div class="contact-item">
-                    <i class="fa fa-building-o bg-red circle-3"></i>
-                    <h5>Address</h5>
-                    <p>{{listing.address}}
-                    </p>
-                  </div>
-                  <!-- contact Info -->
-                  <div class="contact-item">
-                    <i class="fa fa-calendar bg-purple circle-3"></i>
-                    <h5>Business Hours</h5>
-                    <p>
-                      {% assign today = listing.business_hours.today | first %}
-                      <i class="fa fa-clock-o"></i>
-                      {% if today.open? %}
-                        Open
-                        Today
-
-                        {% for business_hour in listing.business_hours.today %}
-                          {{ business_hour | open_closed: '%I:%M %p-%I:%M %p' }}<br/>
-                        {% endfor %}
-                      {% else %}
-                        Closed
-                      {% endif %}
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-5 col-sm-6">
-                <div class="contact-item">
-                  <!-- Contact Form -->
-                  <div class="contact-form">
-                    <h5>Contact Form</h5>
-
-                    {% form 'contact' %}
-                      {% if form.posted_successfully? %}
-                        <div class="successForm contact">
-                          <p>Thanks for contacting us! We'll get back to you as soon as possible.</p>
-                        </div>
-                      {% endif %}
-
-                      {% if form.errors != blank %}
-                        <div class="errorForm contact">
-                          <p>Oops, sorry. We were unable to submit your inquiry because it contained {{ form.errors | size | pluralize: 'an error', 'errors' }}. Please correct the following and submit again:</p>
-                          <ul>
-                            {% for field in form.errors %}
-                              <li>
-                                <span>{{ field }}</span>
-                                <span>{{ form.errors.messages[field] }}</span>
-                              </li>
-                            {% endfor %}
-                          </ul>
-                        </div>
-                      {% endif %}
-
-                      <div class="form-group">
-                        <input class="form-control" type="textbox" name="contact[name]" value="{{ form.name }}" placeholder="Name">
-                      </div>
-                      <div class="form-group">
-                        <input class="form-control" type="textbox" name="contact[phone]" value="{{ form.phone }}" placeholder="Phone">
-                      </div>
-                      <div class="form-group">
-                        <input class="form-control" type="textbox" name="contact[sender]" value="{{ form.sender }}" placeholder="* Email">
-                        {{ form.errors.messages['sender'] }}
-                      </div>
-                      <div class="form-group">
-                        <textarea class="form-control" name="contact[body]" rows="5" cols="61">{{ form.body }}</textarea>
-                        {{ form.errors.messages['body'] }}
-                      </div>
-                      <!-- Button -->
-                      <input type="submit" class="btn btn-red"> &nbsp;
-                      <input type="reset" class="btn btn-default">
-                    {% endform %}
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2 col-sm-6">
-                <div class="contact-item">
-                  <!-- Social -->
-                  <div class="brand-bg">
-                    <!-- Heading -->
-                    <h5>Connect</h5>
-                    <!-- Order List -->
-                    <ul class="list-unstyled">
-                      <!-- Social Media Icons -->
-                      <li><a href="#" class="facebook"><i class="fa fa-facebook circle-2"></i> Facebook</a></li>
-                      <li><a href="#" class="twitter"><i class="fa fa-twitter circle-2"></i> Twitter</a></li>
-                      <li><a href="#" class="google-plus"><i class="fa fa-google-plus circle-2"> </i> Google-plus</a></li>
-                      <li><a href="#" class="linkedin"><i class="fa fa-linkedin circle-2"></i> Linkedin</a></li>
-                      <li><a href="#" class="pinterest"><i class="fa fa-pinterest circle-2"></i> Pinterest</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <div class="contact-item">
+            {% include 'contact_us/social_share' %}
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
