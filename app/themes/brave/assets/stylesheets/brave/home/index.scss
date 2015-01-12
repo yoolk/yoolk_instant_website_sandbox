@@ -1,0 +1,7 @@
+.shopping-item {
+  height: 287px;
+  @include phone {
+      height: 332px;
+    }
+
+}
