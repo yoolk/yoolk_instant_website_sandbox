@@ -36,3 +36,5 @@ vi:
       success_msg: "Thanks for contacting us! We'll get back to you as soon as possible."
       fail_msg: "Oops, sorry. We were unable to submit your inquiry because it contained {{ errors_num }}. Please correct the following and submit again:"
       connect: 'Connect'
+    galleries:
+      all: 'All'
