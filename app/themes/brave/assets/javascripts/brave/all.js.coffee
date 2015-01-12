@@ -15,7 +15,6 @@
 #= require brave/externals/isotope
 
 #= require yoolk/namespace
-#= require brave/widgets/custom_dropdown
 #= require brave/widgets/to_top
 #= require brave/widgets/responsive_nav
 #= require brave/widgets/map
