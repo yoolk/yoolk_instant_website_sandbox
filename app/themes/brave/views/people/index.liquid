@@ -1,53 +1,17 @@
 <div class="main-block">
-        <!-- Page heading two starts -->
 
-        <div class="page-heading-two">
-          <div class="container">
-            <h2>{{ 'brave.links.people' | translate }}</h2>
-            <div class="breads">
-              {% breadcrumb %}
-            </div>
-            <div class="clearfix"></div>
-          </div>
-        </div>
+  {% assign page_title = 'brave.links.people' | translate %}
+  {% include 'shared/page_title' with page_title %}
 
-        <!-- Page heading two ends -->
-
-        <div class="container">
-
-          <div class="about-us-one">
-
-            <div class="team-six">
-              <div class="row">
-                {% for person in listing.people %}
-                <div class="col-md-3 col-sm-6">
-                  <!-- Team Member -->
-                  <div class="team-member">
-                    <!-- Image -->
-                    {{ person.photo | attachment_url: "small" | image_tag }}
-
-                    <!-- Name -->
-                    <h4>{{ person.full_name }}</h4>
-                    <span class="deg">{{ person.position_title }}</span>
-                    <!-- Team Links -->
-                    <div class="team-links">
-
-                      {% for com in person.communications %}
-                        <span>{{com.type}}: {{com.value}}</span> <br>
-                      {% endfor %}
-
-                    </div>
-                  </div>
-                </div>
-                {% endfor %}
-              </div>
-            </div>
-
-            <!-- Our team ends -->
-
-            <br />
-
-          </div>
-
+  <div class="container">
+    <div class="about-us-one">
+      <div class="team-six">
+        <div class="row">
+          {% for person in listing.people %}
+          {% include 'person' %}
+          {% endfor %}
         </div>
       </div>
+    </div>
+  </div>
+</div>

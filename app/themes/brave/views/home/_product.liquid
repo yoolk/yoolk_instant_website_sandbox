@@ -1,0 +1,13 @@
+<div class="col-md-3 col-sm-6">
+  <div class="shopping-item">
+    <a href="ecom-item-single.html"><img class="img-responsive" src="{{ product.cover_photo | attachment_url: 'large' }}" alt="" /></a>
+    <h4><a href="ecom-item-single.html">{{ product.name }}</a><span class="color pull-right">$49</span></h4>
+    <div class="clearfix"></div>
+    <div class="visible-xs">
+      <a class="btn btn-color btn-sm" href="#">{{ 'brave.home.readmore' | translate }}</a>
+    </div>
+    <div class="item-hover bg-color hidden-xs">
+      <a href="#">{{ 'brave.home.readmore' | translate }}</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<br />
+<div class="container">
+  <div class="block-heading-two">
+    <h3><span>{{ 'brave.home.recent_products' | translate }}</span></h3>
+  </div>
+  <div class="shopping-content ecommerce">
+    <div class="row">
+      {% for product in listing.products limit: 12 %}
+        {% include 'product' %}
+      {% endfor %}
+    </div>
+  </div>
+  <br />
+  <br />
+</div>

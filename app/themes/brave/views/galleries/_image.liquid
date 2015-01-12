@@ -1,0 +1,16 @@
+<div class="p-element {{ image.gallery.name | downcase | replace:' ','-' }} java">
+  <div class="element">
+    <div class="image-style-one">
+      <img class="img-responsive" src="{{image | attachment_url: 'medium' }}" alt="" />
+
+      <div class="image-hover">
+        <div class="image-caption">
+          <h4>{{ image.caption }}</h4>
+          <a href="{{image | attachment_url: 'large' }}" class="lightbox">
+            <i class="fa fa-search"></i>
+          </a> &nbsp;
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

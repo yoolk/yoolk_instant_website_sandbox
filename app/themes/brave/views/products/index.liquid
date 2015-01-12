@@ -1,20 +1,8 @@
 <div class="main-block">
 
-  <!-- Page heading two starts -->
+  {% assign page_title = 'brave.links.products' | translate %}
+  {% include 'shared/page_title' with page_title %}
 
-  <div class="page-heading-two">
-    <div class="container">
-      <h2>{{ 'brave.links.products' | translate }}</h2>
-      <div class="breads">
-        {% breadcrumb %}
-      </div>
-      <div class="clearfix"></div>
-    </div>
-  </div>
-
-  <!-- Page heading two ends -->
-
-  <!-- Shopping Items -->
   {% include 'products/items' %}
 
 </div>

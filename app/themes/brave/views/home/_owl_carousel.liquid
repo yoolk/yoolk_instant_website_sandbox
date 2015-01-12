@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="block-heading-two">
+    <h3><span>{{ 'brave.home.recent_images' | translate }}</span></h3>
+  </div>
+
+  <div class="owl-nav">
+    <a class="owl-nav-prev"><i class="fa fa-chevron-left"></i></a>
+    <a class="owl-nav-next"><i class="fa fa-chevron-right"></i></a>
+  </div>
+
+  <div class="owl-carousel" data-items="4" data-auto-play="true" data-pagination="false" data-single-item="false">
+    {% for image in listing.images %}
+    <div class="owl-content">
+      <a href="{{ image | attachment_url: 'large' }}" class="lightbox">
+        <img src="{{ image | attachment_url: 'medium' }}" alt="" class="img-responsive img-thumbnail" /></a>
+      <h4><a href="#">{{ image.caption }}</a></h4>
+    </div>
+    {% endfor %}
+  </div>
+</div>

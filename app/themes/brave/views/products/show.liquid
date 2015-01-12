@@ -1,14 +1,7 @@
 <div class="main-block">
 
-  <div class="page-heading-two">
-    <div class="container">
-      <h2>{{ product.name }}</h2>
-      <div class="breads">
-        {% breadcrumb %}
-      </div>
-      <div class="clearfix"></div>
-    </div>
-  </div>
+  {% assign page_title = product.name %}
+  {% include 'shared/page_title' with page_title %}
 
   <div class="container">
 

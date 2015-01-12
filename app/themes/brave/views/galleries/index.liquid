@@ -1,13 +1,8 @@
 <div class="main-block">
-  <div class="page-heading-two">
-    <div class="container">
-      <h2>{{ 'brave.links.photos' | translate }}</h2>
-      <div class="breads">
-        {% breadcrumb %}
-      </div>
-      <div class="clearfix"></div>
-    </div>
-  </div>
+
+  {% assign page_title = 'brave.links.photos' | translate %}
+  {% include 'shared/page_title' with page_title %}
+
   <div class="container">
     <div class="portfolio pf-one">
       <div class="portfolio-content">
@@ -19,24 +14,7 @@
         </div>
         <div id="portfolio">
           {% for image in listing.images %}
-          <div class="p-element {{ image.gallery.name | downcase | replace:' ','-' }} java">
-            <div class="element">
-              <div class="image-style-one">
-                <!-- Image -->
-                <img class="img-responsive" src="{{image | attachment_url: 'medium' }}" alt="" />
-                <!-- image hover style for image #1 -->
-                <div class="image-hover">
-                  <!-- Image Caption -->
-                  <div class="image-caption">
-                    <!-- Heading -->
-                    <h4>{{ image.caption }}</h4>
-                    <!-- Paragraph -->
-                    <a href="{{image | attachment_url: 'large' }}" class="lightbox"><i class="fa fa-search"></i></a> &nbsp;
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          {% include 'image' %}
           {% endfor %}
           <div class="clearfix"></div>
         </div>

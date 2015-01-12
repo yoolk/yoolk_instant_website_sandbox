@@ -1,0 +1,13 @@
+<div class="r-slider">
+  <div class="bannercontainer">
+    <div class="banner">
+      <ul>
+        {% for cover_photo in listing.instant_website.cover_photos %}
+          <li data-transition="zoomin" data-slotamount="5" >
+            {{ cover_photo | attachment_url: 'large' | image_tag }}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
