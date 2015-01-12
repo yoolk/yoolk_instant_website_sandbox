@@ -1,192 +1,37 @@
 <div class="main-block">
 
-        <!-- Page heading two starts -->
+  <div class="page-heading-two">
+    <div class="container">
+      <h2>{{ product.name }}</h2>
+      <div class="breads">
+        {% breadcrumb %}
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
 
-        <div class="page-heading-two">
-          <div class="container">
-            <h2>{{ product.name }}</h2>
-            <div class="breads">
-              {% breadcrumb %}
-            </div>
-            <div class="clearfix"></div>
-          </div>
-        </div>
+  <div class="container">
 
-        <!-- Page heading two ends -->
+    <div class="ecommerce">
+      <div class="row">
+        <div class="col-md-12 col-sm-8">
+          <div class="shopping-content">
+            <div class="shopping-single">
+              <div class="row">
+                <div class="col-md-4 col-sm-6">
 
-        <div class="container">
+                  {% include 'products/product_slide' %}
 
-          <!-- Actual content -->
-          <div class="ecommerce">
-            <div class="row">
-              <div class="col-md-12 col-sm-8">
-                <!-- Shopping items content -->
-                <div class="shopping-content">
+                </div>
+                <div class="col-md-8 col-sm-6">
+                  {% include 'products/product_info' %}
 
-                  <div class="shopping-single">
-                    <div class="row">
-                      <div class="col-md-4 col-sm-6">
-
-                        <!-- Carousel -->
-
-                        <!-- Bootstrap carousel usage
-                          Bootstrap carousel should have id. Below i am using "bs-carousel-X". Where "X" denotes number". If a page has more than 1 carousel, then add the new carousel with the id "bs-carousel-1", "bs-carousel-2". You also need to update the id in, "carousel indicators" section and "carousel control" section.
-
-                          Carousel comes with 3 main data attributes which you can customize. They are...
-                          data-interval - Time delay between item cycle. Default value "5000".
-                          data-pause - Pause on hover. Default value "pause".
-                          data-wrap - Continues cycle or stop at the end. Default value "true".
-                        -->
-
-                        <!-- Outer layer -->
-                        <div id="bs-carousel-1" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="hover" data-wrap="true">
-                          <!-- Bootstrap indicators. If you don't need indicators, remove the below section -->
-                          <ol class="carousel-indicators">
-                            {% for i in product.photos %}
-                              <li data-target="#bs-carousel-1" data-slide-to="{{ forloop.index | minus: 1 }}" class='{% if forloop.index == 1 %}active{% endif %}'></li>
-                            {% endfor %}
-                          </ol>
-                          <!-- Slides. You can also add captions -->
-                          <div class="carousel-inner">
-                            <!-- Item, First item should have extra class "active" -->
-                            {% for photo in product.photos %}
-                              <div class="item {% if forloop.index == 1 %}active{% endif %}">
-                                <!-- Image -->
-                                {{ photo | attachment_url: 'medium' | image_tag }}
-                              </div>
-                            {% endfor %}
-
-                          </div>
-                          <!-- Carousel controls (arrows). If you don't need controls, remove the below section -->
-                          <a class="left carousel-control" href="#bs-carousel-1" role="button" data-slide="prev">
-                            <span class="fa fa-chevron-left"></span>
-                          </a>
-                          <a class="right carousel-control" href="#bs-carousel-1" role="button" data-slide="next">
-                            <span class="fa fa-chevron-right"></span>
-                          </a>
-                        </div>
-
-                      </div>
-                      <div class="col-md-8 col-sm-6">
-                        <h4>{{product.name}}</h4>
-                        <p>{{product.description}}</p>
-
-                        <!-- Product Details -->
-                        <div class="table-responsive">
-                          <table class="table table-bordered sitem-table">
-                            {% for f in product.features %}
-                              <tr>
-                                <th>{{ f.name }}</th>
-                                <td>{{ f.value }}</td>
-                              </tr>
-                            {% endfor %}
-
-                          </table>
-                        </div>
-
-                      </div>
-                    </div>
-                    <br />
-
-                  </div>
                 </div>
               </div>
-
             </div>
-
-            <br />
-
-            <!-- Recent items Starts -->
-
-            <div class="recent-items">
-
-              <!-- Block heading two -->
-              <div class="block-heading-two">
-                <h3><span>Recent Items</span></h3>
-              </div>
-
-              <!-- Owl carousel block starts -->
-                <!-- Change values of data-items, data-auto-play, data-pagination & data-single-item based on your needs -->
-                <div class="owl-carousel" data-items="5" data-auto-play="true" data-pagination="true" data-single-item="false">
-                  <!-- Carousel item -->
-                  <div class="owl-content">
-                    <div class="padd-15">
-                      <a href="#"><img src="{{'brave/ecommerce/items/1.png' | asset_path }}" alt="" class="img-responsive" /></a>
-                      <h4><a href="#"> Motorola G <span class="color pull-right">$25</span></a></h4>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
-                  <div class="owl-content">
-                    <div class="padd-15">
-                      <a href="#"><img src="{{'brave/ecommerce/items/2.png' | asset_path }}" alt="" class="img-responsive" /></a>
-                      <h4><a href="#"> Google Nexus 7 <span class="color pull-right">$25</span></a></h4>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
-                  <div class="owl-content">
-                    <div class="padd-15">
-                      <a href="#"><img src="{{'brave/ecommerce/items/3.png' | asset_path }}" alt="" class="img-responsive" /></a>
-                      <h4><a href="#"> Samsung Galaxy <span class="color pull-right">$25</span></a></h4>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
-                  <div class="owl-content">
-                    <div class="padd-15">
-                      <a href="#"><img src="{{'brave/ecommerce/items/4.png' | asset_path }}" alt="" class="img-responsive" /></a>
-                      <h4><a href="#"> Lenovo Phonepad <span class="color pull-right">$25</span></a></h4>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
-                  <div class="owl-content">
-                    <div class="padd-15">
-                      <a href="#"><img src="{{'brave/ecommerce/items/5.png' | asset_path }}" alt="" class="img-responsive" /></a>
-                      <h4><a href="#"> Asus Ideapad <span class="color pull-right">$25</span></a></h4>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
-                  <div class="owl-content">
-                    <div class="padd-15">
-                      <a href="#"><img src="{{'brave/ecommerce/items/6.png' | asset_path }}" alt="" class="img-responsive" /></a>
-                      <h4><a href="#"> Micromax Canvas <span class="color pull-right">$25</span></a></h4>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
-                  <div class="owl-content">
-                    <div class="padd-15">
-                      <a href="#"><img src="{{'brave/ecommerce/items/7.png' | asset_path }}" alt="" class="img-responsive" /></a>
-                      <h4><a href="#"> Sony Xperia Pro <span class="color pull-right">$25</span></a></h4>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
-                  <div class="owl-content">
-                    <div class="padd-15">
-                      <a href="#"><img src="{{'brave/ecommerce/items/8.png' | asset_path }}" alt="" class="img-responsive" /></a>
-                      <h4><a href="#"> Apple iPhone 5S <span class="color pull-right">$25</span></a></h4>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
-                  <div class="owl-content">
-                    <div class="padd-15">
-                      <a href="#"><img src="{{'brave/ecommerce/items/9.png' | asset_path }}" alt="" class="img-responsive" /></a>
-                      <h4><a href="#"> Galaxy Tab 2 <span class="color pull-right">$25</span></a></h4>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
-                  <div class="owl-content">
-                    <div class="padd-15">
-                      <a href="#"><img src="{{'brave/ecommerce/items/10.png' | asset_path }}" alt="" class="img-responsive" /></a>
-                      <h4><a href="#"> Karboon Tab <span class="color pull-right">$25</span></a></h4>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
-              <!-- Owl carousel block ends -->
-
-            </div>
-
-            <!-- Recent items Ends -->
-
           </div>
-
         </div>
       </div>
+    </div>
+  </div>
+</div>
