@@ -1,47 +1,35 @@
 <div class="main-block">
 
-        <!-- Page heading two starts -->
+  <div class="page-heading-two">
+    <div class="container">
+      <h2>{{ 'brave.links.about_us' | translate }}</h2>
+      <div class="breads">
+        {% breadcrumb %}
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
 
-        <div class="page-heading-two">
-          <div class="container">
-            <h2>{{ 'brave.links.about_us' | translate }}</h2>
-            <div class="breads">
-              {% breadcrumb %}
-            </div>
-            <div class="clearfix"></div>
-          </div>
-        </div>
-
-        <!-- Page heading two ends -->
-
-        <div class="container">
-        {% paginate listing.catalog_items by 2 %}
-        {% for catalog in paginate.collection %}
-          <div class="row">
-            <div class="col-md-5 col-sm-6">
-              <div class="image-style-seven">
-                {{ catalog | attachment_url: "medium" | image_tag }}
-              </div>
-            </div>
-            <div class="col-md-7 col-sm-12">
-              <div class="block-heading-two">
-                <h3><span>{{catalog.title}}</span></h3>
-              </div>
-              <p>{{ catalog.html_text }}</p>
-            </div>
-          </div>
-          <hr />
-        {% endfor %}
-          <ul class="pagination">
-            <li><a href="#">&laquo;</a></li>
-            <li class="active"><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">&raquo;</a></li>
-          </ul>
-          {{ paginate | default_pagination }}
-        {% endpaginate %}
+  <div class="container">
+  {% paginate listing.catalog_items by 1 %}
+  {% for catalog in paginate.collection %}
+    <div class="row">
+      <div class="col-md-5 col-sm-6">
+        <div class="image-style-seven">
+          {{ catalog | attachment_url: "medium" | image_tag }}
         </div>
       </div>
+      <div class="col-md-7 col-sm-12">
+        <div class="block-heading-two">
+          <h3><span>{{catalog.title}}</span></h3>
+        </div>
+        <p>{{ catalog.html_text }}</p>
+      </div>
+    </div>
+    <hr />
+  {% endfor %}
+    {{ paginate | bootstrap_pagination }}
+  {% endpaginate %}
+
+  </div>
+</div>
