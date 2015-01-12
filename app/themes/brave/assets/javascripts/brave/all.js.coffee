@@ -8,9 +8,10 @@
 #= require brave/externals/jquery.themepunch.tools.min
 #= require brave/externals/jquery.themepunch.revolution.min
 #= require brave/externals/jquery.countTo
-#= require brave/widgets/masonry.pkgd.min
+
 
 #= require brave/externals/imagesloaded.min
+#= require brave/widgets/masonry.pkgd.min
 #= require brave/externals/isotope
 
 #= require yoolk/namespace
