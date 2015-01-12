@@ -8,6 +8,7 @@
 #= require brave/externals/jquery.themepunch.tools.min
 #= require brave/externals/jquery.themepunch.revolution.min
 #= require brave/externals/jquery.countTo
+#= require brave/widgets/masonry.pkgd.min
 
 #= require brave/externals/imagesloaded.min
 #= require brave/externals/isotope
@@ -19,6 +20,7 @@
 #= require brave/widgets/map
 #= require brave/widgets/owl_carousel
 #= require brave/widgets/magnific_popup
+#= require brave/widgets/masonry
 #= require brave/views/application_view
 
 #= require_tree ./views
