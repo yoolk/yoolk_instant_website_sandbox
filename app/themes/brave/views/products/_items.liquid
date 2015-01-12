@@ -5,11 +5,9 @@
       <div class="col-md-9 col-sm-8 col-md-push-3 col-sm-push-4">
         <!-- Shopping items content -->
         <div class="shopping-content">
-          <!-- Block Title -->
-          <h4><i class="fa fa-laptop color"></i>&nbsp; Phones&nbsp;<small>Quine Poor Squamo</small></h4>
-          <hr />
+          {% paginate listing.products by 3 %}
           <div class="row">
-            {% for product in listing.products %}
+            {% for product in paginate.collection %}
               <div class="col-md-4 col-sm-6">
                 <!-- Shopping items -->
                 <div class="shopping-item">
@@ -28,11 +26,11 @@
                   <div class="clearfix"></div>
                   <!-- Buy now button -->
                   <div class="visible-xs">
-                    <a class="btn btn-color btn-sm" href="#">Buy Now</a>
+                    <a class="btn btn-color btn-sm" href="#">{{ 'brave.home.readmore' | translate }}</a>
                   </div>
                   <!-- Shopping item hover block & link -->
                   <div class="item-hover bg-color hidden-xs">
-                    <a href="#">Add to cart</a>
+                    <a href="#">{{ 'brave.home.readmore' | translate }}</a>
                   </div>
                 </div>
               </div>
@@ -41,13 +39,17 @@
           <!-- Pagination -->
           <ul class="pagination">
             <li class="disabled"><a href="#">&laquo;</a></li>
-            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="#">1 <span class="sr">(current)</span></a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
             <li><a href="#">4</a></li>
             <li><a href="#">5</a></li>
             <li><a href="#">&raquo;</a></li>
           </ul>
+          <div class="paginate">
+            {{ paginate | default_pagination }}
+          </div>
+          {% endpaginate %}
           <!-- Pagination end-->
         </div>
       </div>
@@ -55,7 +57,7 @@
           <!-- Shopping Sidebar -->
         <div class="sidebar">
           <!-- Heading -->
-          <h2>Category</h2>
+          <h2>{{ 'brave.products.category' | translate }}</h2>
           <!-- Sidebar Menu -->
           <ul class="list-unstyled my-list">
             {% for category in listing.product_categories %}
@@ -67,9 +69,6 @@
         </div>
       </div>
     </div>
-
-
-
 
   </div>
 </div>

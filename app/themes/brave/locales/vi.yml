@@ -22,3 +22,5 @@ vi:
       readmore: 'READ MORE'
     footer:
       copyright: "Copyright &copy; {{ year }}. All Rights Reserved"
+    products:
+      category: 'Category'
