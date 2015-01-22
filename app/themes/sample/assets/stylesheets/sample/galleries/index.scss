@@ -17,3 +17,11 @@
 .Collage{
     padding: 10px;
 }
+
+.image{
+  vertical-align:bottom;
+  opacity:0;
+  figure {
+    opacity: 0;
+  }
+}

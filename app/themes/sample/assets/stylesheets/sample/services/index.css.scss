@@ -10,6 +10,11 @@
     max-width: 100%;
   }
 }
+
+.catalog-image>a:not(:first-child) {
+  img { display: none; }
+}
+
 .catalog-thumbnails {
   width: 60px;
 

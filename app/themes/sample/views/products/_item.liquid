@@ -3,16 +3,17 @@
     <h2 class="catalog-title">{{ product.name }}</h2>
   </a>
   <div class="catalog-body">
-    <div class="catalog-image">
-      {% if product.photos.first != blank %}
-        <a href="#" class="cboxElement">
-          {{ product.cover_photo | attachment_url: 'large' | image_tag }}
+    <div class="catalog-image photoswipe-gallery">
+      {% for photo in product.photos %}
+        <a href="{{photo | attachment_url: 'large'}}" data-size="{{photo.width}}x{{photo.height}}">
+          <img src="{{photo | attachment_url: 'large'}}">
         </a>
-      {% endif %}
+      {% endfor %}
+
     </div>
     <ol class="catalog-thumbnails">
       {% for photo in product.photos %}
-        <li class="catalog-thumbnails-image" data-photo-url="#">
+        <li class="catalog-thumbnails-image" data-photo-url="{{ photo.url }}">
           <a class="active" href="" rel="" title="" >
             {{ photo | attachment_url: 'thumbnail' | image_tag }}
           </a>
