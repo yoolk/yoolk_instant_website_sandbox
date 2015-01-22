@@ -6,7 +6,7 @@
     <div class="catalog-image photoswipe-gallery">
       {% for photo in food.photos %}
         <a href="{{photo | attachment_url: 'large'}}" data-size="{{photo.width}}x{{photo.height}}">
-          <img src="{{photo | attachment_url: 'large'}}">
+          <img src="{{photo | attachment_url: 'medium'}}">
         </a>
       {% endfor %}
 
