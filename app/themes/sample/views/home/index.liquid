@@ -19,9 +19,19 @@
       </div>
       <div class="listing-communications">
         <div class="listing-address" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
-          <address itemprop="streetAddress">
-            {{ listing.address }}
-          </address>
+          <address itemprop="streetAddress">{{ listing.address }}</address>
+          {% assign today = listing.business_hours.today | first %}
+          <i class="fa fa-clock-o"></i>
+          {% if today.open? %}
+            Open
+            Today
+
+            {% for business_hour in listing.business_hours.today %}
+              {{ business_hour | open_closed: '%I:%M %p-%I:%M %p' }}<br/>
+            {% endfor %}
+          {% else %}
+            Closed
+          {% endif %}
 
           <div class="listing-contact" itemscope="" itemtype="http://schema.org/ContactPoint">
             <ul class="listing-contact-list list-dotted">

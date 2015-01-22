@@ -6,6 +6,8 @@ ThemesOnRails.all.each do |theme|
   theme_directory   = "app/themes/#{theme}"
   views_directory   = "#{theme_directory}/views"
   locales_directory = "#{theme_directory}/locales"
+  assets_directory  = "#{theme_directory}/assets"
+  available_locales = %w(af ar az bg bn bs ca cs cy da de de-AT de-CH el en en-AU en-CA en-GB en-IE en-IN en-NZ en-US en-ZA eo es es-419 es-AR es-CL es-CO es-CR es-EC es-MX es-PA es-PE es-US es-VE et eu fa fi fr fr-CA fr-CH gl he hi hi-IN hr hu id is it it-CH ja km kn ko lo lt lv mk mn ms nb ne nl nn or pl pt pt-BR rm ro ru sk sl sr sv sw ta th tl tr uk ur uz vi wo zh-CN zh-HK zh-TW zh-YUE)
 
   context "Theme #{theme}: view files" do
     it 'contains only liquid templates' do
@@ -25,17 +27,41 @@ ThemesOnRails.all.each do |theme|
     end
   end
 
-  context "Theme #{theme}: locales files" do
+  context "Theme #{theme}: directory structure" do
+    it 'contains assets directory' do
+      expect(File.exists?(assets_directory)).to be_truthy, "there must be `assets` directory inside #{theme}"
+    end
+
+    it 'contains all.js.coffee' do
+      js_directory = assets_directory + "/javascripts/#{theme}/all*.js.coffee"
+
+      expect(Dir.glob(js_directory)).to be_present, "there must be `all.js.coffee` inside app/themes/#{theme}/javascripts/#{theme}/"
+    end
+
+    it 'contains all.scss' do
+      css_directory = assets_directory + "/stylesheets/#{theme}/all*.scss"
+
+      expect(Dir.glob(css_directory)).to be_present, "there must be `all.scss` inside app/themes/#{theme}/stylesheets/#{theme}/"
+    end
+
+    it 'contains views directory' do
+      expect(File.exists?(views_directory)).to be_truthy, "there is must be `views` directory inside #{theme}"
+    end
+  end
+
+  context "Theme #{theme}: theme directory structure" do
     Dir["#{locales_directory}/*"].each do |yaml_file|
       it 'parses successfully' do
         expect { YAML.load_file(yaml_file) }.to_not raise_error
       end
 
       it 'contains valid keys' do
-        locale = YAML.load_file(yaml_file)
+        locale     = YAML.load_file(yaml_file)
+        locale_key = locale.keys.first
 
-        expect(locale.keys.length).to eq(1)
-        expect(locale[locale.keys[0]].keys).to eq([theme])
+        expect(locale.keys.length).to           eq(1)
+        expect(available_locales).to            include(locale_key)
+        expect(locale[locale_key].keys).to  eq([theme])
       end
     end
   end

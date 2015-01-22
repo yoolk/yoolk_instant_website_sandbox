@@ -11,10 +11,12 @@
 #= require imagesloaded/v3.1.8
 #= require zebra_datepicker/v1.8.9
 
-# pages
-#= require sample/map/index
-#= require sample/galleries/index
-#= require sample/announcements/index
-#= require sample/reservation/index
-#= require sample/about_us/index
-#= require sample/contact_us/index
+# theme, widgets, and views
+#= require yoolk/namespace
+#= require yoolk/application_view
+#= require sample/widgets/announcement
+#= require sample/widgets/contact_us
+#= require sample/widgets/gallery
+#= require sample/widgets/map
+#= require_tree ./views
+#= require yoolk/page_load

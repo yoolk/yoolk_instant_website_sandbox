@@ -68,3 +68,7 @@ Then, go to your browser [http://localhost:3000](http://localhost:3000).
 To generate theme inside your app:
 
     $ rails g instant_website:theme theme_name
+    
+To validate your themes:
+
+    $ rake

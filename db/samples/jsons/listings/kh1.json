@@ -1582,39 +1582,76 @@
   "multilingual_ids": ["km1"],
   "opening_hours": [
     {
+      "id": 1,
       "day":   0,
-      "open":  { "hour":"17", "minute":"30" },
-      "close": { "hour":"23", "minute":"45" }
-    },
-    {
-      "day":   1,
       "open":  null,
-      "close": null
+      "closed": null
     },
     {
+      "id": 2,
+      "day":   1,
+      "open":  { "hour":"08", "minute":"00" },
+      "closed": { "hour":"12", "minute":"00" }
+    },
+    {
+      "id": 3,
+      "day":   1,
+      "open":  { "hour":"14", "minute":"00" },
+      "closed": { "hour":"17", "minute":"00" }
+    },
+    {
+      "id": 4,
       "day":   2,
       "open":  { "hour":"08", "minute":"00" },
-      "close": { "hour":"17", "minute":"30" }
+      "closed": { "hour":"12", "minute":"00" }
     },
     {
+      "id": 5,
+      "day":   2,
+      "open":  { "hour":"14", "minute":"00" },
+      "closed": { "hour":"17", "minute":"00" }
+    },
+    {
+      "id": 6,
       "day":   3,
       "open":  { "hour":"08", "minute":"00" },
-      "close": { "hour":"17", "minute":"30" }
+      "closed": { "hour":"12", "minute":"00" }
     },
     {
+      "id": 7,
+      "day":   3,
+      "open":  { "hour":"14", "minute":"00" },
+      "closed": { "hour":"17", "minute":"00" }
+    },
+    {
+      "id": 8,
       "day":   4,
       "open":  { "hour":"08", "minute":"00" },
-      "close": { "hour":"17", "minute":"30" }
+      "closed": { "hour":"12", "minute":"00" }
     },
     {
+      "id": 9,
+      "day":   4,
+      "open":  { "hour":"14", "minute":"00" },
+      "closed": { "hour":"17", "minute":"00" }
+    },
+    {
+      "id": 10,
       "day":   5,
-      "open":  null,
-      "close": null
+      "open":  { "hour":"08", "minute":"00" },
+      "closed": { "hour":"12", "minute":"00" }
     },
     {
+      "id": 11,
+      "day":   5,
+      "open":  { "hour":"14", "minute":"00" },
+      "closed": { "hour":"17", "minute":"00" }
+    },
+    {
+      "id": 12,
       "day":   6,
-      "open":  { "hour":"08", "minute":"00" },
-      "close": { "hour":"17", "minute":"30" }
+      "open":  null,
+      "closed": null
     }
   ]
 }

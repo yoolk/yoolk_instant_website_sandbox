@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/yoolk/assets-rails.git
-  revision: 6fe8c9351ea69417d28b310caa39e8f313cc04dd
+  revision: 2ce48239aff9ab0231913c16062184ac7152c77c
   specs:
-    assets-rails (0.1.0)
+    assets-rails (0.1.2)
       railties (>= 3.2)
 
 GIT
@@ -16,7 +16,7 @@ GIT
 
 GIT
   remote: git://github.com/yoolk/themes_on_rails.git
-  revision: 094efedc9c6a2af69cf16b39160f86536f2359cc
+  revision: 3243b758e8250602ee1ae702a135759d3b7a280c
   specs:
     themes_on_rails (0.3.0)
       rails (>= 3.2)

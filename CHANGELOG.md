@@ -1,5 +1,16 @@
 # Overview
 
+## 2014-12-12
+
+* Organize Javascript code with `Rails with no JS framework`, https://medium.com/@cblavier/rails-with-no-js-framework-26d2d1646cd
+* Add `js_class_name` to `request` object
+* Add `theme.js`, `namespace.js`, and `application_view.js`
+
+## 2014-12-04
+
+* Add `breadcrumb` tag
+* Add `business_hour` object
+
 ## 2014-11-21
 
 * Fix scope on: `catalog_items`, `medias`, and `artworks`
