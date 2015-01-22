@@ -54,6 +54,7 @@
       "listings_count": 1,
       "level": 1,
       "short_description": {
+        "id": "1",
         "text": "• Fresh and Clean Air\n• Constant Breeze\n• Lots of Natural Light\n• Surrounded by Nature\n• Open office Space Plan\n• Minimum Traffic \n• Parking Space\n• IT Friendly\n• ...and a Great View",
         "categories": [
           {
@@ -62,7 +63,7 @@
           },
           {
             "id": "2",
-            "name": "Real estate PP"
+            "name": "Real Estate"
           }
         ]
       },
@@ -86,8 +87,8 @@
         "text": "A large collection of business related classifications, mainly B2B (business to business) services like accounting, advertising and consultants. Also employment agencies and business associations can be found here.",
         "categories": [
           {
-            "id": "1",
-            "name": "services like accounting"
+            "id": "3",
+            "name": "Business Services"
           }
         ]
       }
