@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/yoolk/assets-rails.git
-  revision: 489f45724d10453ff1a91eca4579cb939cbdb880
+  revision: 2ce48239aff9ab0231913c16062184ac7152c77c
   specs:
-    assets-rails (0.1.0)
+    assets-rails (0.1.2)
       railties (>= 3.2)
 
 GIT
@@ -108,7 +108,7 @@ GEM
       rspec (>= 2.14, < 4.0)
     hike (1.2.3)
     hitimes (1.2.2)
-    i18n (0.6.11)
+    i18n (0.7.0)
     ice_nine (0.11.1)
     json (1.8.1)
     kaminari (0.16.1)
@@ -139,7 +139,7 @@ GEM
     quiet_assets (1.0.3)
       railties (>= 3.1, < 5.0)
     rack (1.5.2)
-    rack-test (0.6.2)
+    rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.0.12)
       actionmailer (= 4.0.12)

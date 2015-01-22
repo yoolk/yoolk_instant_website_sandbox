@@ -1,7 +1,7 @@
-class Views.Map.IndexView extends Views.ApplicationView
+class Yoolk.Views.Map.IndexView extends Yoolk.Views.ApplicationView
   render: ->
     super()
-    Widgets.Map.enable()
+    Yoolk.Widgets.Map.enable()
 
   cleanup: ->
     super()

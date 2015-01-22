@@ -1,4 +1,4 @@
-class Widgets.Gallery
+class Yoolk.Widgets.Gallery
   @enable:  ->
     $(".Collage").imagesLoaded ->
       $(".Collage").removeWhitespace()

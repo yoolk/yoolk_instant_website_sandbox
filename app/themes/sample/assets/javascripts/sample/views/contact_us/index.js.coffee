@@ -1,7 +1,7 @@
-class Views.ContactUs.IndexView extends Views.ApplicationView
+class Yoolk.Views.ContactUs.IndexView extends Yoolk.Views.ApplicationView
   render: ->
     super()
-    Widgets.ContactUs.enable()
+    Yoolk.Widgets.ContactUs.enable()
 
   cleanup: ->
     super()

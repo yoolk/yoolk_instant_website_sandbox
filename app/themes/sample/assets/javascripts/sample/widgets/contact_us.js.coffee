@@ -1,4 +1,4 @@
-class Widgets.ContactUs
+class Yoolk.Widgets.ContactUs
   @enable:  ->
     date = new Date()
     rows = $("tr td:nth-child(#{ date.getDay() + 1 }),

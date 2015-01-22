@@ -1,7 +1,7 @@
-class Views.Galleries.IndexView extends Views.ApplicationView
+class Yoolk.Views.Galleries.IndexView extends Yoolk.Views.ApplicationView
   render: ->
     super()
-    Widgets.Gallery.enable()
+    Yoolk.Widgets.Gallery.enable()
 
   cleanup: ->
     super()
