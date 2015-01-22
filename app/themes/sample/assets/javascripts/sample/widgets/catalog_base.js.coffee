@@ -1,7 +1,7 @@
 class Yoolk.Widgets.CatalogBase
   thiz = @
   @enable:  ->
-    Widgets.PhotoSwipe.enable(".photoswipe-gallery")
+    Yoolk.Widgets.PhotoSwipe.enable(".photoswipe-gallery")
     thiz.catalogThumbnails()
     thiz.clickCatalogThumbnails()
 

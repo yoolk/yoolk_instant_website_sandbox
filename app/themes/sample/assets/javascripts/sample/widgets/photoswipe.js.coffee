@@ -1,5 +1,4 @@
-window.Widgets ||= {}
-class Widgets.PhotoSwipe extends PhotoSwipe
+class Yoolk.Widgets.PhotoSwipe extends PhotoSwipe
   @enable: (gallerySelector) ->
     # parse slide data (url, title, size ...) from DOM elements (links)
     parseThumbnailElements = (el) ->

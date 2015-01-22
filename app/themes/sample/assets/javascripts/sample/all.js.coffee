@@ -7,7 +7,6 @@
 
 #= require photoswipe/v4.0.0
 #= require photoswipe/v4.0.0/photoswipe-ui-default
-#= require sample/widgets/photoswipe
 
 #= require jquery.collageplus/v0.3.3
 #= require jquery.collageplus/v0.3.3/jquery.collagecaption
@@ -23,6 +22,7 @@
 #= require sample/widgets/contact_us
 #= require sample/widgets/gallery
 #= require sample/widgets/map
+#= require sample/widgets/photoswipe
 #= require sample/widgets/catalog_base
 #= require_tree ./views
 #= require yoolk/page_load
