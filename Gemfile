@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 # Liquid
+gem 'rails',              '~> 4.0.13'
 gem 'yoolk_liquid',       path: 'yoolk_liquid'
 gem 'liquid-rails',       github: 'yoolk/liquid-rails'
 gem 'themes_on_rails',    github: 'yoolk/themes_on_rails'
@@ -11,7 +12,7 @@ group :development, :test do
   gem 'quiet_assets'
 
   gem 'pry-rails'
-  gem 'rspec-rails',      '~> 3.1.0'
-  gem 'guard-rspec',      '~> 4.3.1'
+  gem 'rspec-rails',      '~> 3.2.0'
+  gem 'guard-rspec',      '~> 4.5.0'
   gem 'liquid-validator', '~> 1.0.0'
 end
