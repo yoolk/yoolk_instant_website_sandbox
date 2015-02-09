@@ -1512,12 +1512,14 @@
   "medias": [
     {
       "embed_script": "<iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/embed/DlayORza9gg\" frameborder=\"0\" allowfullscreen></iframe>",
+      "title": "Title 1",
       "is_active": true,
       "created_at": "Fri, 05 Apr 2013 02:45:08 UTC +00:00",
       "updated_at": "Tue, 18 Mar 2014 07:59:12 UTC +00:00"
     },
     {
       "embed_script": "<iframe src=\"//player.vimeo.com/video/93120068\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href=\"http://vimeo.com/93120068\">Wonderful London 1924 & 2014</a> from <a href=\"http://vimeo.com/mrsimonsmith\">Simon Smith</a> on <a href=\"https://vimeo.com\">Vimeo</a>.</p>",
+      "title": "Title 2",
       "is_active": false,
       "created_at": "Fri, 05 Apr 2013 02:45:08 UTC +00:00",
       "updated_at": "Tue, 18 Mar 2014 07:59:12 UTC +00:00"
