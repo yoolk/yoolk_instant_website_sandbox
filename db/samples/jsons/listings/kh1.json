@@ -54,37 +54,16 @@
       "listings_count": 1,
       "level": 1,
       "short_description": {
+        "id": "1",
         "text": "• Fresh and Clean Air\n• Constant Breeze\n• Lots of Natural Light\n• Surrounded by Nature\n• Open office Space Plan\n• Minimum Traffic \n• Parking Space\n• IT Friendly\n• ...and a Great View",
         "categories": [
           {
             "id": "1",
-            "text": "Office Rental Services",
-            "name": "web"
+            "name": "Office Rental Services"
           },
           {
             "id": "2",
-            "text": "2 Office Rental Services",
-            "name": "Jquery"
-          },
-          {
-            "id": "3",
-            "text": "3 Office Rental Services",
-            "name": "Ruby on Rails"
-          },
-          {
-            "id": "4",
-            "text": "4 Office Rental Services",
-            "name": "Javascript"
-          },
-          {
-            "id": "5",
-            "text": "5 Office Rental Services",
-            "name": "HTML5"
-          },
-          {
-            "id": "6",
-            "text": "6 Office Rental Services",
-            "name": "CSS3"
+            "name": "Real Estate"
           }
         ]
       },
@@ -103,7 +82,16 @@
       "listings_count": 1,
       "level": 1,
       "created_at": "2014-08-13 08:59:54 UTC",
-      "updated_at": "2014-08-13 08:59:54 UTC"
+      "updated_at": "2014-08-13 08:59:54 UTC",
+      "short_description": {
+        "text": "A large collection of business related classifications, mainly B2B (business to business) services like accounting, advertising and consultants. Also employment agencies and business associations can be found here.",
+        "categories": [
+          {
+            "id": "3",
+            "name": "Business Services"
+          }
+        ]
+      }
     }
   ],
   "keyphrases": [
@@ -1985,12 +1973,14 @@
   "medias": [
     {
       "embed_script": "<iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/embed/DlayORza9gg\" frameborder=\"0\" allowfullscreen></iframe>",
+      "title": "Title 1",
       "is_active": true,
       "created_at": "Fri, 05 Apr 2013 02:45:08 UTC +00:00",
       "updated_at": "Tue, 18 Mar 2014 07:59:12 UTC +00:00"
     },
     {
       "embed_script": "<iframe src=\"//player.vimeo.com/video/93120068\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href=\"http://vimeo.com/93120068\">Wonderful London 1924 & 2014</a> from <a href=\"http://vimeo.com/mrsimonsmith\">Simon Smith</a> on <a href=\"https://vimeo.com\">Vimeo</a>.</p>",
+      "title": "Title 2",
       "is_active": false,
       "created_at": "Fri, 05 Apr 2013 02:45:08 UTC +00:00",
       "updated_at": "Tue, 18 Mar 2014 07:59:12 UTC +00:00"
@@ -2037,8 +2027,8 @@
   "facebook_page": {
     "id": 51,
     "page_id": "344113609007752",
-    "page_url": "https://www.facebook.com/pages/Mkmusics/344113609007752",
-    "page_name": "Mkmusics",
+    "page_url": "https://www.facebook.com/pages/Page-example/596388333755671",
+    "page_name": "Page example",
     "page_access_token": "CAACUqwsjYKgBACxnq35ys8YzAZAuUeAwEAgOR6aB03VyZA6JFzkvXoXT1tWxSoI0efqjEGeVlr0tPH9DVIfJPreJj06pCd5UCqWmrKgKFixIZBxo06fVaVQhbT9J3SmhAFeJFbYPMHxZAnlB3xURkR2vxpdEtSkhC71Ds2gp8Odwl4lkZAIb6",
     "cover_photo_url": null,
     "installed_page_ids": null,
