@@ -182,7 +182,6 @@
       "updated_at": "2014-08-13 08:59:54 UTC"
     }
   ],
-
   "links": [
     {
       "id": 1,
@@ -1442,15 +1441,18 @@
   "instant_website": {
     "id": "1",
     "name": "sample",
-    "display_name": "Sample Theme",
-    "developed_by": "Yoolk Inc.",
     "google_analytics_key": "333333",
     "is_live": false,
     "is_active": true,
     "free_plan": false,
     "color": "gray",
     "template": {
+      "id": 1,
       "name": "sample",
+      "display_name": "Sample Theme",
+      "developed_by": "Yoolk Inc.",
+      "developer_url": "http://www.yoolk.com",
+      "demo_website": "http://groow.io",
       "description": "Sample Theme developed by Yoolk Inc.",
       "is_responsive": true,
       "industries": [
