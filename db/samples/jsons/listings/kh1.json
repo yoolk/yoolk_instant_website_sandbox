@@ -1445,7 +1445,7 @@
     "is_live": false,
     "is_active": true,
     "free_plan": false,
-    "style_name": "orange",
+    "style_name": "gray",
     "template": {
       "name": "sample",
       "description": "",
@@ -1456,6 +1456,7 @@
         "Optical Products"
       ],
       "styles": [
+        "gray",
         "black",
         "blue",
         "brown",

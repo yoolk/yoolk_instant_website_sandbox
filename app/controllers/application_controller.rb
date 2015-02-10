@@ -79,7 +79,9 @@ class ApplicationController < ActionController::Base
     end
 
     def set_theme_style_url
-      params[:style] = params[:style].presence || current_listing.instant_website.style_name
+      params[:style] =  params[:style].presence ||
+                        current_listing.instant_website.style_name.presence ||
+                        current_listing.instant_website.template.styles.first
 
       @theme_style_url = if params[:style].present?
         "#{params[:theme]}/all_#{params[:style]}"
