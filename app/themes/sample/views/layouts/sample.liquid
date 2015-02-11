@@ -9,7 +9,7 @@
 <body data-class-name="{{ request.js_class_name }}">
   {% draft_stamp %}
   {% include 'shared/nav' %}
-  <div class="main-container main-container-style-{{request.style_name}}">
+  <div class="main-container main-container-style-{{request.theme_color}}">
     {% include 'shared/breadcrumb' %}
     {{ content_for_layout }}
   </div>

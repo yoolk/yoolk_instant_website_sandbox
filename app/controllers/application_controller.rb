@@ -80,7 +80,7 @@ class ApplicationController < ActionController::Base
 
     def set_theme_color_url
       params[:color] =  params[:color].presence ||
-                        current_listing.instant_website.color.presence ||
+                        current_listing.instant_website.color_name.presence ||
                         current_listing.instant_website.template.colors.first.try(:name)
 
       @theme_color_url = if params[:color].present?

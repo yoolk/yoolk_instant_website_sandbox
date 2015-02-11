@@ -1445,7 +1445,7 @@
     "is_live": false,
     "is_active": true,
     "free_plan": false,
-    "color": "gray",
+    "color_name": "gray",
     "template": {
       "id": 1,
       "name": "sample",
