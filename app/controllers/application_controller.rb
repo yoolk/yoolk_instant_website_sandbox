@@ -103,6 +103,6 @@ class ApplicationController < ActionController::Base
     end
 
     def liquid_assigns
-      view_assigns.merge('content_for_header' => content_for_header, 'seo_title' => seo.title)
+      view_assigns.merge('content_for_header' => content_for_header)
     end
 end
