@@ -11,14 +11,14 @@ class ApplicationController < ActionController::Base
   before_action :set_i18n
   theme         :theme_resolver
   before_action :set_template
-  before_action :set_theme_style_url
+  before_action :set_theme_color_url
 
   def current_listing
     @listing
   end
 
-  def theme_style_url
-    @theme_style_url
+  def theme_color_url
+    @theme_color_url
   end
 
   protected
@@ -78,13 +78,13 @@ class ApplicationController < ActionController::Base
       @i18n = Yoolk::Liquid::I18nDrop.new
     end
 
-    def set_theme_style_url
-      params[:style] =  params[:style].presence ||
-                        current_listing.instant_website.style_name.presence ||
-                        current_listing.instant_website.template.styles.first
+    def set_theme_color_url
+      params[:color] =  params[:color].presence ||
+                        current_listing.instant_website.color_name.presence ||
+                        current_listing.instant_website.template.colors.first.try(:name)
 
-      @theme_style_url = if params[:style].present?
-        "#{params[:theme]}/all_#{params[:style]}"
+      @theme_color_url = if params[:color].present?
+        "#{params[:theme]}/all_#{params[:color]}"
       else
         "#{params[:theme]}/all"
       end

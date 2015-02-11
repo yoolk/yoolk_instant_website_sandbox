@@ -1,4 +1,4 @@
-<div class="nav nav-style-{{request.style_name}}">
+<div class="nav nav-style-{{request.theme_color}}">
   <div class="side-nav">
     {% if listing.logo != blank %}
       {{ listing.logo | attachment_url: 'medium' | image_tag | link_to_home }}

@@ -41,9 +41,9 @@ Then, go to your browser [http://localhost:3000](http://localhost:3000).
 
     [http://localhost:3000/?theme=sample](http://localhost:3000/?theme=sample)
 
-2. To switch style, pass `style` param. By default, it will pick up the style from 'listing.instant_website.style_name'. In this sandbox app, it could have one of these twos: `blue` or `gray`.
+2. To switch color, pass `color` param. By default, it will pick up the color from 'listing.instant_website.color'. In this sandbox app, it could have one of these twos: `blue` or `gray`.
 
-    [http://localhost:3000/?style=gray](http://localhost:3000/?style=gray)
+    [http://localhost:3000/?color=gray](http://localhost:3000/?color=gray)
 
 2. To switch locale, pass `locale` param. By default, it will pick up from current listing's locale.
 
@@ -68,7 +68,7 @@ Then, go to your browser [http://localhost:3000](http://localhost:3000).
 To generate theme inside your app:
 
     $ rails g instant_website:theme theme_name
-    
+
 To validate your themes:
 
     $ rake
