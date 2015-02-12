@@ -29,7 +29,7 @@ class ApplicationController < ActionController::Base
               @product, @product_category,
               @service, @service_category,
               @food, @food_category,
-              @gallery, @link].compact
+              @gallery].compact
 
       class_name.constantize.new(@listing, obj.first)
     end
