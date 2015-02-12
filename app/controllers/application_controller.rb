@@ -35,7 +35,7 @@ class ApplicationController < ActionController::Base
     end
 
     def default_url_options
-      { theme: request.parameters['theme'], style: request.parameters['style'], alias_id: params[:alias_id], locale: params[:locale] }
+      { theme: request.parameters['theme'], color: request.parameters['color'], alias_id: params[:alias_id], locale: params[:locale] }
     end
 
     def extract_alias_id(text)
