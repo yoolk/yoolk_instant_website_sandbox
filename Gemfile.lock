@@ -6,15 +6,6 @@ GIT
       railties (>= 3.2)
 
 GIT
-  remote: git://github.com/yoolk/liquid-rails.git
-  revision: 7b26ad98a39424e0a86e44b7d2c4d6fc10a96eb6
-  specs:
-    liquid-rails (0.1.1)
-      kaminari (~> 0.16.1)
-      liquid (>= 3.0.0)
-      rails (>= 3.2)
-
-GIT
   remote: git://github.com/yoolk/themes_on_rails.git
   revision: e7439870ecd7a7d15255428f90dd7a0df6a605cb
   specs:
@@ -122,6 +113,10 @@ GEM
       activesupport (>= 3.0.0)
     libv8 (3.16.14.7)
     liquid (3.0.1)
+    liquid-rails (0.1.1)
+      kaminari (~> 0.16.1)
+      liquid (>= 3.0.0)
+      rails (>= 3.2)
     liquid-validator (1.0.0)
       liquid (>= 2.4.0)
     listen (2.8.5)
@@ -239,7 +234,7 @@ PLATFORMS
 DEPENDENCIES
   assets-rails!
   guard-rspec (~> 4.5.0)
-  liquid-rails!
+  liquid-rails (~> 0.1.1)
   liquid-validator (~> 1.0.0)
   pry-rails
   quiet_assets
