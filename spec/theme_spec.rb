@@ -32,6 +32,12 @@ ThemesOnRails.all.each do |theme|
 
       expect(content).to match(/{{\s*content_for_header\s*}}/), "layout file: `#{theme_layout_file}` should include `{{ content_for_header }}` inside <head></head> section."
     end
+
+    it 'should invoke {{content_for_layout}} inside layout file' do
+      content = File.read(theme_layout_file)
+
+      expect(content).to match(/{{\s*content_for_layout\s*}}/), "layout file: `#{theme_layout_file}` should include `{{ content_for_layout }}` inside <body></body> section."
+    end
   end
 
   context "Theme #{theme}: directory structure" do
