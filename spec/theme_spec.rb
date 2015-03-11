@@ -58,7 +58,7 @@ ThemesOnRails.all.each do |theme|
     end
 
     it 'should not contains *.css.scss' do
-      sass_files = Dir.glob(assets_directory + "/stylesheets/#{theme}/*.css.scss")
+      sass_files = Dir.glob(assets_directory + "/stylesheets/#{theme}/*/*.css.scss")
 
       expect(sass_files).to be_empty, "Extra .css in SCSS file is unnecessary: #{sass_files}. Rename these files to end with `.scss` only."
     end
