@@ -1,0 +1,13 @@
+# A sample Bowerfile
+# Check out https://github.com/42dev/bower-rails#ruby-dsl-configuration for more options
+
+asset 'jquery-v1.11.1',            'jquery#1.11.1'
+asset 'bootstrap-v3.2.0',          'bootstrap-sass#3.2.0'
+asset 'font-awesome-v4.3.1',       github: 'FortAwesome/font-awesome-sass#4.3.1'
+asset 'jquery-render-v1.1.0',      github: 'mach3/js-jquery-render#1.1.0'
+asset 'jquery-flexslider-v2.4.0',  github: 'woothemes/FlexSlider#version/2.4.0'
+asset 'jquery-timeago-v1.4.1',     'jquery-timeago#1.4.1'
+asset 'jquery-colorbox-v1.6.0',    'jquery-colorbox#1.6.0'
+asset 'jquery-collagePlus-v0.3.3', github: 'ed-lea/jquery-collagePlus#0.3.3'
+asset 'imagesloaded-v3.1.8',       'imagesloaded#3.1.8'
+asset 'zebra-datepicker-v1.9.0',   'zebra-datepicker#1.9.0'

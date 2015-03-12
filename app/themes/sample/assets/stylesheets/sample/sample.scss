@@ -1,9 +1,10 @@
-@import "bootstrap/v3.2.0";
+@import "bootstrap-v3.2.0/assets/stylesheets/bootstrap-sprockets";
+@import "bootstrap-v3.2.0/assets/stylesheets/bootstrap";
 @import "font-awesome/v4.2.0";
-@import "zebra_datepicker/v1.8.9/default";
+@import "zebra-datepicker-v1.9.0/public/css/default";
 @import "jquery.flexslider/v2.2.2";
 @import "jquery.colorbox/v1.5.14/example3";
-@import "jquery.collageplus/v0.3.3/transitions";
+@import "jquery-collagePlus-v0.3.3/css/transitions";
 
 @import "sample/shared/base";
 @import "sample/shared/mixins";

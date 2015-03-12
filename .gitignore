@@ -18,6 +18,11 @@
 /yoolk_liquid/*
 /yoolk_themes/*
 
+# Ignore bower components
+/vendor/assets/bower_components/*
+/vendor/assets/.bowerrc
+/vendor/assets/bower.json
+
 # Themes directories, http://stackoverflow.com/questions/5533050/gitignore-exclude-folder-but-include-specific-subfolder
 !app/themes/sample/
 app/themes/
