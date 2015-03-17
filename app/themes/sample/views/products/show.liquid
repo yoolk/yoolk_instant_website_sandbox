@@ -5,6 +5,13 @@
     <p>{{ product.description }}</p>
   </div>
   <ul class="catalog-detail-specifications list-dotted">
+    {% if product.price != blank %}
+      <li class="clearfix product-list">
+        <span class="ellipsis">{{ 'global.price' | translate }}</span>
+        <span class="ellipsis">{{ product.price }}</span>
+      </li>
+    {% endif %}
+    
     {% for feature in product.features %}
       <li>
         <span class="body-bg-color">{{ feature.name }}</span>
