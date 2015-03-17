@@ -5,6 +5,13 @@
     <p>{{ food.description }}</p>
   </div>
   <ul class="catalog-detail-specifications list-dotted">
+    {% if food.price != blank %}
+      <li class="clearfix food-list">
+        <span class="ellipsis">{{ 'global.price' | translate }}</span>
+        <span class="ellipsis">{{ food.price }}</span>
+      </li>
+    {% endif %}
+    
     {% for property in food.properties %}
       <li>
           <span class="body-bg-color">{{ property.name }}</span>

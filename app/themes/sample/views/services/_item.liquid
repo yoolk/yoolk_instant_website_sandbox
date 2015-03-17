@@ -21,6 +21,13 @@
     </ol>
     <div class="catalog-info">
       <ul class="catalog-info-specifications list-dotted">
+        {% if service.price != blank %}
+          <li class="clearfix service-list">
+            <span class="ellipsis">{{ 'global.price' | translate }}</span>
+            <span class="ellipsis">{{ service.price }}</span>
+          </li>
+        {% endif %}
+        
         {% for property in service.properties %}
           <li class="clearfix service-list">
             <span class="ellipsis">{{ property.name }}</span><span class="ellipsis">{{ property.value }}</span>
