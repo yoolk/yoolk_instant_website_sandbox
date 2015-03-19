@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/yoolk/assets-rails.git
-  revision: 6cb35bbba2696f6d2dd341e86b65e12418fa7c8b
+  revision: 37648acd2557115ac3044d98f85ec57f1118412e
   specs:
     assets-rails (0.1.2)
       railties (>= 3.2)
