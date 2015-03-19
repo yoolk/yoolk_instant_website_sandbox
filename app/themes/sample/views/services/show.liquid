@@ -8,10 +8,10 @@
     {% if service.price != blank %}
       <li class="clearfix service-list">
         <span class="ellipsis">{{ 'global.price' | translate }}</span>
-        <span class="ellipsis">{{ service.price }}</span>
+        <span class="ellipsis">{{ service.price | money }}</span>
       </li>
     {% endif %}
-        
+
     {% for property in service.properties %}
       <li class="clearfix service-list">
         <span class="ellipsis body-bg-color">{{ property.name }}</span>

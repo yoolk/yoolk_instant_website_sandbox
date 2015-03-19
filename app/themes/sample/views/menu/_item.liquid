@@ -24,7 +24,7 @@
         {% if food.price != blank %}
           <li class="clearfix food-list">
             <span class="ellipsis">{{ 'global.price' | translate }}</span>
-            <span class="ellipsis">{{ food.price }}</span>
+            <span class="ellipsis">{{ food.price | money }}</span>
           </li>
         {% endif %}
 
