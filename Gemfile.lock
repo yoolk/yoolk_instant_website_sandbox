@@ -1,11 +1,4 @@
 GIT
-  remote: git://github.com/yoolk/assets-rails.git
-  revision: 37648acd2557115ac3044d98f85ec57f1118412e
-  specs:
-    assets-rails (0.1.2)
-      railties (>= 3.2)
-
-GIT
   remote: git://github.com/yoolk/themes_on_rails.git
   revision: e7439870ecd7a7d15255428f90dd7a0df6a605cb
   specs:
@@ -13,11 +6,17 @@ GIT
       rails (>= 3.2)
 
 PATH
+  remote: vendor_assets
+  specs:
+    assets-rails (0.2.0.pre)
+      railties (>= 3.2)
+
+PATH
   remote: yoolk_liquid
   specs:
     yoolk_liquid (4.0.0.beta1)
       activemodel (~> 4.0.10)
-      assets-rails (~> 0.1.0)
+      assets-rails (>= 0.1.0)
       autoprefixer-rails (~> 3.1.0.20140911)
       coffee-rails (~> 4.0.1)
       kaminari (~> 0.16.1)

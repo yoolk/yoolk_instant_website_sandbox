@@ -4,8 +4,8 @@ source 'https://rubygems.org'
 gem 'rails',              '~> 4.0.13'
 gem 'liquid-rails',       '~> 0.1.1'
 gem 'yoolk_liquid',       path: 'yoolk_liquid'
+gem 'assets-rails',       path: 'vendor_assets'
 gem 'themes_on_rails',    github: 'yoolk/themes_on_rails'
-gem 'assets-rails',       github: 'yoolk/assets-rails'
 
 group :development, :test do
   gem 'thin',             '~> 1.6.3'

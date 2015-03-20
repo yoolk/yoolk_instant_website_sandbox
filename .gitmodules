@@ -1,3 +1,6 @@
 [submodule "yoolk_liquid"]
 	path = yoolk_liquid
 	url = git@github.com:yoolk/yoolk_liquid.git
+[submodule "vendor_assets"]
+	path = vendor_assets
+	url = git@github.com:yoolk/assets-rails.git
