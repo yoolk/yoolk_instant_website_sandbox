@@ -1481,6 +1481,10 @@
       ],
       "pages": [
         {
+          "name": "Home",
+          "display_order": 0
+        },
+        {
           "name": "Galleries",
           "display_order": 1
         },
