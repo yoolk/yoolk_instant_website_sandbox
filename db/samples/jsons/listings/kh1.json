@@ -1480,12 +1480,30 @@
         { "name": "yellow", "code": "#FFFF00" }
       ],
       "pages": [
-        "Galleries",
-        "Products",
-        "About Us",
-        "Announcements",
-        "People",
-        "Contact Us"
+        {
+          "name": "Galleries",
+          "display_order": 1
+        },
+        {
+          "name": "Services",
+          "display_order": 7
+        },
+        {
+          "name": "About Us",
+          "display_order": 3
+        },
+        {
+          "name": "People",
+          "display_order": 4
+        },
+        {
+          "name": "Contact Us",
+          "display_order": 5
+        },
+        {
+          "name": "Videos",
+          "display_order": 6
+        }
       ],
       "thumbnail": {
         "content_type": "image/png",
