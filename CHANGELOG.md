@@ -1,5 +1,11 @@
 # Overview
 
+## 2015-04-02
+
+* Add `pages` to `instant_website` object.
+* Add `data-theme-name` and `data-listing-alias-id` to body tag inside theme generator.
+* Translates with default from global namespace.
+
 ## 2015-03-20
 
 * Add `assets-rails` gem as submodule so that it's easy to browse and include vendor assets
