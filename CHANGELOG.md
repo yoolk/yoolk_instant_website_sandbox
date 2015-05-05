@@ -1,5 +1,13 @@
 # Overview
 
+## 2015-05-05
+
+* Fix sample images
+* Show favicon and webclip inside `content_for_header`
+* Bump to rails `4.1.x`
+* Render google analytics script for listing owner
+* Theme generator: with locales and pages
+
 ## 2015-04-02
 
 * Add `pages` to `instant_website` object.
