@@ -1557,6 +1557,26 @@
     "is_active": true,
     "free_plan": false,
     "color_name": "gray",
+    "favicon": {
+       "content_type": "image/x-icon",
+       "attachment_meta": {
+         "original": {
+           "width": 32,
+           "height": 32,
+           "url": "/attachments/images/instant_website/favicon/1.ico"
+         }
+       }
+    },
+    "webclip": {
+       "content_type": "image/png",
+       "attachment_meta": {
+         "original": {
+           "width": 180,
+           "height": 180,
+           "url": "/attachments/images/instant_website/webclip/1.png"
+         }
+       }
+    },
     "template": {
       "id": 1,
       "name": "sample",
