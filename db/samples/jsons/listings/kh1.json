@@ -1553,6 +1553,8 @@
     "id": "1",
     "name": "sample",
     "google_analytics_key": "333333",
+    "owner_google_analytics_key": "UA-39933-2",
+    "google_remarketing_tag": "<script type='text/javascript'>console.log('google remarketing tag');</script>",
     "is_live": false,
     "is_active": true,
     "free_plan": false,
