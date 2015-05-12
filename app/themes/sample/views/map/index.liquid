@@ -2,7 +2,7 @@
   {{ 'http://maps.google.com/maps/api/js?sensor=true' | javascript_include_tag }}
 {% endcontent_for %}
 
-<h1 class="page-title">{{ 'sample.links.map' | translate }}</h1>
+<h1 class="page-title">{{ listing.instant_website.map_page.name }}</h1>
 <div id="map-canvas" data-lat="{{ listing.lat }}" data-long="{{ listing.long }}"></div>
 <script id="tmpl-infowindow" type="text/x-jsrender">
   <div class='infowindowt' itemscope='' itemtype='http://schema.org/ContactPoint'>
