@@ -23,13 +23,58 @@
     { "name": "yellow", "code": "#FFFF00" }
   ],
   "pages": [
-    { "name": "Home", "display_order": 0 },
-    { "name": "Galleries", "display_order": 1 },
-    { "name": "Services", "display_order": 7 },
-    { "name": "About Us", "display_order": 3 },
-    { "name": "People", "display_order": 4 },
-    { "name": "Contact Us", "display_order": 5 },
-    { "name": "Videos", "display_order": 6 }
+    {
+      "name": "Home",
+      "display_order": 0
+    },
+    {
+      "name": "Map",
+      "display_order": 1
+    },
+    {
+      "name": "About Us",
+      "display_order": 2
+    },
+    {
+      "name": "Brochures",
+      "display_order": 3
+    },
+    {
+      "name": "Galleries",
+      "display_order": 4
+    },
+    {
+      "name": "Products",
+      "display_order": 5
+    },
+    {
+      "name": "Services",
+      "display_order": 6
+    },
+    {
+      "name": "Menu",
+      "display_order": 7
+    },
+    {
+      "name": "People",
+      "display_order": 8
+    },
+    {
+      "name": "Reservation",
+      "display_order": 9
+    },
+    {
+      "name": "Feedback",
+      "display_order": 10
+    },
+    {
+      "name": "Contact Us",
+      "display_order": 11
+    },
+    {
+      "name": "Announcements",
+      "display_order": 12
+    }
   ],
   "thumbnail": {
     "content_type": "image/png",

@@ -1579,6 +1579,50 @@
          }
        }
     },
+    "pages": [
+      {
+        "name": "Home",
+        "display_order": 0,
+        "template_page": {
+          "name": "Home"
+        }
+      },
+      {
+        "name": "Leaflet",
+        "display_order": 1,
+        "template_page": {
+          "name": "Brochures"
+        }
+      },
+      {
+        "name": "Ablums",
+        "display_order": 2,
+        "template_page": {
+          "name": "Galleries"
+        }
+      },
+      {
+        "name": "Items",
+        "display_order": 3,
+        "template_page": {
+          "name": "Products"
+        }
+      },
+      {
+        "name": "Foods",
+        "display_order": 4,
+        "template_page": {
+          "name": "Menu"
+        }
+      },
+      {
+        "name": "Staffs",
+        "display_order": 5,
+        "template_page": {
+          "name": "People"
+        }
+      }
+    ],
     "template": {
       "id": 1,
       "name": "sample",
