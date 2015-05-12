@@ -5,65 +5,44 @@
     {% endif %}
 
     <ul>
-      <li>{{ 'sample.links.home'      | translate | link_to_home }}</li>
-      <li>{{ 'sample.links.map'       | translate | link_to_map }}</li>
-      <li>{{ 'sample.links.about_us'  | translate | link_to_about_us }}</li>
-      <li>{{ 'sample.links.brochures' | translate | link_to_brochures }}</li>
-      <li>
-        {{ 'sample.links.photos'      | translate | link_to_galleries }}
-        <ul class="sub-nav">
-          {% for gallery in listing.galleries %}
-            <li>
-              <a href="{{ gallery.url }}" {% if gallery.current? %}class="active"{% endif %}>{{ gallery.name }} ({{ gallery.images.count }})</a>
-            </li>
-          {% endfor %}
-        </ul>
-      </li>
-      <li>
-        {{ 'sample.links.products' | translate | link_to_products }}
-        <ul class="sub-nav">
-          {% for product_category in listing.product_categories %}
-            <li>
-              <a href="{{ product_category.url }}" {% if product_category.current? %}class="active"{% endif %}>{{ product_category.name }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      </li>
-      <li>
-        {{ 'sample.links.services' | translate | link_to_services }}
-        <ul class="sub-nav">
-          {% for service_category in listing.service_categories %}
-            <li>
-              <a href="{{ service_category.url }}" {% if service_category.current? %}class="active"{% endif %}>{{ service_category.name }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      </li>
-      <li>
-        {{ 'sample.links.menu'    | translate | link_to_menu }}
-        <ul class="sub-nav">
-          {% for food_category in listing.food_categories %}
-            <li>
-              <a href="{{ food_category.url }}" {% if food_category.current? %}class="active"{% endif %}>{{ food_category.name }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      </li>
-      <li>
-        {{ 'sample.links.people'        | translate | link_to_people }}
-      </li>
-      <li>
-        {{ 'sample.links.reservation'   | translate | link_to_reservation }}
-      </li>
-      <li>
-        {{ 'sample.links.feedback'      | translate | link_to_feedback }}
-      </li>
-      <li>
-        {{ 'sample.links.contact_us'    | translate  | link_to_contact_us }}
-      </li>
-      <li>
-        {{ 'sample.links.announcements' | translate  | link_to_announcements }}
-      </li>
+      {% for page in listing.instant_website.pages %}
+          <li>
+            <a class="{{ 'active' | toggle_class_name: page.active? }}" href="{{ page.url }}">{{ page.name }}</a>
+            {% if page.galleries? %}
+              <ul class="sub-nav">
+                {% for gallery in listing.galleries %}
+                  <li>
+                    <a href="{{ gallery.url }}" {% if gallery.current? %}class="active"{% endif %}>{{ gallery.name }} ({{ gallery.images.count }})</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% elsif page.products? %}
+              <ul class="sub-nav">
+                {% for product_category in listing.product_categories %}
+                  <li>
+                    <a href="{{ product_category.url }}" {% if product_category.current? %}class="active"{% endif %}>{{ product_category.name }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% elsif page.services? %}
+               <ul class="sub-nav">
+                {% for service_category in listing.service_categories %}
+                  <li>
+                    <a href="{{ service_category.url }}" {% if service_category.current? %}class="active"{% endif %}>{{ service_category.name }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% elsif page.menu? %}
+              <ul class="sub-nav">
+                {% for food_category in listing.food_categories %}
+                  <li>
+                    <a href="{{ food_category.url }}" {% if food_category.current? %}class="active"{% endif %}>{{ food_category.name }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
+      {% endfor %}
     </ul>
 
     {% if listing.multilinguals != blank %}

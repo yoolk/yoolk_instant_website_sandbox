@@ -1,4 +1,4 @@
-<h1 class="page-title">{{ 'sample.links.photos' | translate }}</h1>
+<h1 class="page-title">{{ listing.instant_website.galleries_page.name }}</h1>
 {% paginate listing.images by 4 %}
   <div id="galleries" class="Collage effect-parent">
     {% for image in paginate.collection %}
