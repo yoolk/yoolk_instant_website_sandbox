@@ -8,7 +8,7 @@ GIT
 PATH
   remote: vendor_assets
   specs:
-    assets-rails (0.2.0.pre)
+    assets-rails (0.2.0)
       railties (>= 3.2)
 
 PATH
@@ -16,11 +16,11 @@ PATH
   specs:
     yoolk_liquid (4.0.0.beta1)
       activemodel (~> 4.1.10)
-      assets-rails (>= 0.1.0)
+      assets-rails (>= 0.2.0)
       autoprefixer-rails (~> 3.1.0.20140911)
       coffee-rails (~> 4.0.1)
       kaminari (~> 0.16.1)
-      liquid-rails (>= 0.1.1)
+      liquid-rails (~> 0.1.2)
       oj (~> 2.10.2)
       rails (~> 4.1.10)
       rails-i18n (~> 4.0.3)
@@ -80,7 +80,7 @@ GEM
     coffee-script (2.4.1)
       coffee-script-source
       execjs
-    coffee-script-source (1.9.1)
+    coffee-script-source (1.9.1.1)
     daemons (1.2.2)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
@@ -88,7 +88,7 @@ GEM
     equalizer (0.0.11)
     erubis (2.7.0)
     eventmachine (1.0.7)
-    execjs (2.5.0)
+    execjs (2.5.2)
     ffi (1.9.8)
     formatador (0.2.5)
     guard (2.12.5)
@@ -105,7 +105,6 @@ GEM
       guard (~> 2.1)
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
-    hike (1.2.3)
     hitimes (1.2.2)
     i18n (0.7.0)
     ice_nine (0.11.1)
@@ -114,8 +113,8 @@ GEM
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
     libv8 (3.16.14.7)
-    liquid (3.0.1)
-    liquid-rails (0.1.1)
+    liquid (3.0.2)
+    liquid-rails (0.1.2)
       kaminari (~> 0.16.1)
       liquid (>= 3.0.0)
       rails (>= 3.2)
@@ -129,9 +128,8 @@ GEM
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     method_source (0.8.2)
-    mime-types (2.4.3)
-    minitest (5.5.1)
-    multi_json (1.11.0)
+    mime-types (2.5)
+    minitest (5.6.1)
     nenv (0.2.0)
     notiffany (0.0.6)
       nenv (~> 0.1)
@@ -145,7 +143,7 @@ GEM
       pry (>= 0.9.10)
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
-    rack (1.5.2)
+    rack (1.5.3)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.1.10)
@@ -203,12 +201,9 @@ GEM
       tilt (~> 1.1)
     shellany (0.0.1)
     slop (3.6.0)
-    sprockets (2.12.3)
-      hike (~> 1.2)
-      multi_json (~> 1.0)
+    sprockets (3.1.0)
       rack (~> 1.0)
-      tilt (~> 1.1, != 1.3.0)
-    sprockets-rails (2.2.4)
+    sprockets-rails (2.3.1)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
@@ -242,7 +237,7 @@ PLATFORMS
 DEPENDENCIES
   assets-rails!
   guard-rspec (~> 4.5.0)
-  liquid-rails (>= 0.1.1)
+  liquid-rails (>= 0.1.2)
   liquid-validator (~> 1.0.0)
   pry-rails
   quiet_assets
