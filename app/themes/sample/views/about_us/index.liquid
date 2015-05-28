@@ -8,7 +8,9 @@
         <h4>{{ business_photo.name }}</h4>
       </div>
       <div class="business-photo">
-        {{ business_photo.embed_script }}
+        <div class="js-business-view" data-label="{{'sample.global.click_to_view_business_view' | translate }}">
+          {{ business_photo.embed_script }}
+        </div>
       </div>
     </div>
   {% endfor %}
