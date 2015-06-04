@@ -26,7 +26,7 @@ class ApplicationController < ActionController::Base
     def seo
       class_name = "yoolk/seo/#{controller_path}/#{action_name}".classify
       obj =   [@announcement,
-              @product, @product_category, @show_category,
+              @product, @product_category,
               @service, @service_category,
               @food, @food_category,
               @gallery].compact
