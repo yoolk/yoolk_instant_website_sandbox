@@ -360,7 +360,7 @@
           "delivery": false,
           "created_at": "2014-08-13 08:59:54 UTC",
           "updated_at": "2014-08-13 08:59:54 UTC",
-          "categories": [
+          "product_categories": [
             { "id": 1 },
             { "id": 2 }
           ],
@@ -478,7 +478,7 @@
           "delivery": false,
           "created_at": "2014-08-13 08:59:54 UTC",
           "updated_at": "2014-08-13 08:59:54 UTC",
-          "categories": [{ "id": 1 }],
+          "product_categories": [{ "id": 1 }],
           "features": [
             {
               "name": "TYPE",
@@ -593,7 +593,7 @@
           "delivery": false,
           "created_at": "2014-08-13 08:59:54 UTC",
           "updated_at": "2014-08-13 08:59:54 UTC",
-          "categories": [{ "id": 1 }],
+          "product_categories": [{ "id": 1 }],
           "features": [
             {
               "name": "TYPE",
@@ -681,7 +681,7 @@
           "delivery": false,
           "created_at": "2014-08-13 08:59:54 UTC",
           "updated_at": "2014-08-13 08:59:54 UTC",
-          "categories": [{ "id": 1 }],
+          "product_categories": [{ "id": 1 }],
           "features": [
             {
               "name": "TYPE",
@@ -796,7 +796,7 @@
           "delivery": false,
           "created_at": "2014-08-13 08:59:54 UTC",
           "updated_at": "2014-08-13 08:59:54 UTC",
-          "categories": [{ "id": 1 }],
+          "product_categories": [{ "id": 1 }],
           "features": [
             {
               "name": "TYPE",
@@ -918,7 +918,7 @@
           "delivery": false,
           "created_at": "2014-08-13 08:59:54 UTC",
           "updated_at": "2014-08-13 08:59:54 UTC",
-          "categories": [
+          "product_categories": [
             { "id": 1 },
             { "id": 2 }
           ],
@@ -1036,7 +1036,7 @@
           "delivery": false,
           "created_at": "2014-08-13 08:59:54 UTC",
           "updated_at": "2014-08-13 08:59:54 UTC",
-          "categories": [{ "id": 2 }],
+          "product_categories": [{ "id": 2 }],
           "features": [
             {
               "name": "TYPE",
@@ -1120,7 +1120,7 @@
           "delivery": false,
           "created_at": "2014-08-13 08:59:54 UTC",
           "updated_at": "2014-08-13 08:59:54 UTC",
-          "categories": [{ "id": 2 }],
+          "product_categories": [{ "id": 2 }],
           "features": [
             {
               "name": "TYPE",
@@ -1235,7 +1235,7 @@
           "delivery": false,
           "created_at": "2014-08-13 08:59:54 UTC",
           "updated_at": "2014-08-13 08:59:54 UTC",
-          "categories": [{ "id": 2 }],
+          "product_categories": [{ "id": 2 }],
           "features": [
             {
               "name": "TYPE",
