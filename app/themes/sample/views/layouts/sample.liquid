@@ -5,7 +5,7 @@
   {{ request.theme_style_url | stylesheet_link_tag }}
   {{ content_for_header }}
 </head>
-<body data-theme-name="{{ request.theme_name }}" data-class-name="{{ request.js_class_name }}" data-listing-alias-id="{{ listing.alias_id }}">
+<body data-theme-name="{{ request.theme_name }}" data-class-name="{{ request.js_class_name }}" data-listing-alias-id="{{ listing.alias_id }}" data-template-id="{{ request.template.id }}">
   {% draft_stamp %}
   {% include 'shared/nav' %}
   <div class="main-container main-container-style-{{request.theme_color}}">

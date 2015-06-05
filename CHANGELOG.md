@@ -1,5 +1,13 @@
 # Overview
 
+## 2015-05-22
+
+* Add `google_remarketing_tag`.
+* Add `#home_page`, `#products_page`, `#services_page`, `#menu_page`, `#galleries_page`,
+      `#about_us_page`, `#contact_us_page`, `#reservation_page`, `#feedback_page`,
+      `#announcements_page`, `#videos_page`, `#attachments_page`, `#links_page`,
+      `#people_page`, `#map_page`, `#brochures_page` to `#instant_website`.
+
 ## 2015-05-05
 
 * Fix sample images
