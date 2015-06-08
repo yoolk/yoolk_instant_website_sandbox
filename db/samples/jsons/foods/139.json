@@ -1,0 +1,83 @@
+{
+  "id": 139,
+  "name": "SUKI MEATBALL",
+  "price": 2.2,
+  "description": "Looking for an amazing and new taste experience? Try Our Suki Meatball Soup! One of the restaurant specialized and delicious!",
+  "delivery": false,
+  "created_at": "2014-08-13 08:59:54 UTC",
+  "updated_at": "2014-08-13 08:59:54 UTC",
+  "properties": [
+    {
+      "name": "Type",
+      "value": "SUKI SET"
+    },
+    {
+      "name": "INGREDIENT",
+      "value": "MEATBALL"
+    }
+  ],
+  "photos": [
+    {
+      "id": 194,
+      "content_type": "image/jpeg",
+      "attachment_meta": {
+        "original": {
+          "width": 1440,
+          "height": 956,
+          "url": "/attachments/images/foods/original/23880.jpeg"
+        },
+        "large": {
+          "width": 994,
+          "height": 660,
+          "url": "/attachments/images/foods/large/23880.jpeg"
+        },
+        "medium": {
+          "width": 364,
+          "height": 242,
+          "url": "/attachments/images/foods/medium/23880.jpeg"
+        },
+        "small": {
+          "width": 196,
+          "height": 130,
+          "url": "/attachments/images/foods/small/23880.jpeg"
+        },
+        "thumbnail": {
+          "width": 50,
+          "height": 50,
+          "url": "/attachments/images/foods/thumbnail/23880.jpeg"
+        }
+      }
+    },
+    {
+      "id": 195,
+      "content_type": "image/jpeg",
+      "attachment_meta": {
+        "original": {
+          "width": 1440,
+          "height": 956,
+          "url": "/attachments/images/foods/original/23881.jpeg"
+        },
+        "large": {
+          "width": 994,
+          "height": 660,
+          "url": "/attachments/images/foods/large/23881.jpeg"
+        },
+        "medium": {
+          "width": 364,
+          "height": 242,
+          "url": "/attachments/images/foods/medium/23881.jpeg"
+        },
+        "small": {
+          "width": 196,
+          "height": 130,
+          "url": "/attachments/images/foods/small/23881.jpeg"
+        },
+        "thumbnail": {
+          "width": 50,
+          "height": 50,
+          "url": "/attachments/images/foods/thumbnail/23881.jpeg"
+        }
+      }
+    }
+  ]
+}

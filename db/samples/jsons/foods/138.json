@@ -1,0 +1,83 @@
+{
+  "id": 138,
+  "name": "SUKI BUFFE LUNCH",
+  "price": 1.2,
+  "description": "Our Suki Soup chooses for you the freshest vegetables and meats from the best producers for your family, relative, friends and your love",
+  "delivery": false,
+  "created_at": "2014-08-13 08:59:54 UTC",
+  "updated_at": "2014-08-13 08:59:54 UTC",
+  "properties": [
+    {
+      "name": "Type",
+      "value": "SUKI SET"
+    },
+    {
+      "name": "SUKI SET",
+      "value": "MEAT & VEGETABLE"
+    }
+  ],
+  "photos": [
+    {
+      "id": 192,
+      "content_type": "image/jpeg",
+      "attachment_meta": {
+        "original": {
+          "width": 1440,
+          "height": 956,
+          "url": "/attachments/images/foods/original/23876.jpeg"
+        },
+        "large": {
+          "width": 994,
+          "height": 660,
+          "url": "/attachments/images/foods/large/23876.jpeg"
+        },
+        "medium": {
+          "width": 364,
+          "height": 242,
+          "url": "/attachments/images/foods/medium/23876.jpeg"
+        },
+        "small": {
+          "width": 196,
+          "height": 130,
+          "url": "/attachments/images/foods/small/23876.jpeg"
+        },
+        "thumbnail": {
+          "width": 50,
+          "height": 50,
+          "url": "/attachments/images/foods/thumbnail/23876.jpeg"
+        }
+      }
+    },
+    {
+      "id": 193,
+      "content_type": "image/jpeg",
+      "attachment_meta": {
+        "original": {
+          "width": 1440,
+          "height": 956,
+          "url": "/attachments/images/foods/original/23878.jpeg"
+        },
+        "large": {
+          "width": 994,
+          "height": 660,
+          "url": "/attachments/images/foods/large/23878.jpeg"
+        },
+        "medium": {
+          "width": 364,
+          "height": 242,
+          "url": "/attachments/images/foods/medium/23878.jpeg"
+        },
+        "small": {
+          "width": 196,
+          "height": 130,
+          "url": "/attachments/images/foods/small/23878.jpeg"
+        },
+        "thumbnail": {
+          "width": 50,
+          "height": 50,
+          "url": "/attachments/images/foods/thumbnail/23878.jpeg"
+        }
+      }
+    }
+  ]
+}
