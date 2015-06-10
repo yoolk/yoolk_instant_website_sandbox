@@ -360,7 +360,13 @@
       "id": 2,
       "name": "BRICKS",
       "name_path": "Roof Tiles > BRICKS",
-      "product_ids": [1,6,7,8]
+      "product_ids": [1,6,7]
+    },
+    {
+      "id": 3,
+      "name": "uncategorized",
+      "name_path": "path > uncategorized",
+      "product_ids": [8]
     }
   ],
   "image_galleries": [
