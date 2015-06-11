@@ -364,8 +364,8 @@
     },
     {
       "id": 3,
-      "name": "uncategorized",
-      "name_path": "path > uncategorized",
+      "name": "Uncategorized",
+      "name_path": "path > Uncategorized",
       "product_ids": [8]
     }
   ],
@@ -786,7 +786,7 @@
         }
       },
       {
-        "name": "Items",
+        "name": "Products",
         "display_order": 3,
         "template_page": {
           "name": "Products"
@@ -1723,7 +1723,7 @@
     {
       "id": 42,
       "name": "Uncategorized",
-      "foods": [ 144, 145, 146 ]
+      "food_ids": [ 144, 145, 146 ]
     }
   ],
   "artworks": [
