@@ -1708,16 +1708,22 @@
     {
       "id": 40,
       "name": "Suki Suop",
+      "foods_count": 4,
+      "display_order": 1,
       "food_ids": [ 137, 138, 139, 140 ]
     },
     {
       "id": 41,
       "name": "Ice Cream",
+      "foods_count": 3,
+      "display_order": 2,
       "food_ids": [ 141, 142, 143 ]
     },
     {
       "id": 42,
       "name": "Uncategorized",
+      "foods_count": 3,
+      "display_order": 3,
       "food_ids": [ 144, 145, 146 ]
     }
   ],
