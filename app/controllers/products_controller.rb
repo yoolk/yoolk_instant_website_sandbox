@@ -3,6 +3,6 @@ class ProductsController < ApplicationController
   end
 
   def show
-    @product ||= @listing.products.find { |product| product.id == params[:id].to_i }
+    @product = @listing.products.find { |product| product.id == params[:id].to_i }
   end
 end
