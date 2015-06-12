@@ -11,9 +11,6 @@
   "source_name": "",
   "created_at": "2014-08-13 08:59:54 UTC",
   "updated_at": "2014-08-13 08:59:54 UTC",
-  "currency": {
-    "code": "KHR"
-  },
   "business_type": {
     "id": "1",
     "name": "Business Listing",
@@ -30,7 +27,9 @@
     "priority": 1
   },
   "currency": {
-    "code": "KHR"
+    "name": "Cambodian Riel",
+    "code": "KHR",
+    "symbol": "៛"
   },
   "portal": {
     "abbreviation": "kh",
@@ -246,7 +245,6 @@
       "updated_at": "2015-01-14 04:03:32"
     }
   ],
-
   "communications": [
     {
       "id": 1,
@@ -353,19 +351,16 @@
     {
       "id": 1,
       "name": "ROOFING",
-      "name_path": "Roof Tiles > ROOFING",
-      "product_ids": [1,2,3,4,5]
+      "product_ids": [1, 2, 3, 4, 5]
     },
     {
       "id": 2,
       "name": "BRICKS",
-      "name_path": "Roof Tiles > BRICKS",
-      "product_ids": [1,6,7]
+      "product_ids": [1, 6, 7]
     },
     {
       "id": 3,
       "name": "Uncategorized",
-      "name_path": "path > Uncategorized",
       "product_ids": [8]
     }
   ],

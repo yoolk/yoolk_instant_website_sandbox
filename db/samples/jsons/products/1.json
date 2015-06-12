@@ -6,10 +6,7 @@
   "delivery": false,
   "created_at": "2014-08-13 08:59:54 UTC",
   "updated_at": "2014-08-13 08:59:54 UTC",
-  "product_categories": [
-    { "id": 1 },
-    { "id": 2 }
-  ],
+  "product_category_ids": [ 1, 2 ],
   "features": [
     {
       "name": "TYPE",
