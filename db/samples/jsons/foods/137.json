@@ -1,0 +1,114 @@
+{
+  "id": 137,
+  "name": "SUKI SUOP",
+  "price": 5.2,
+  "description": "We offers heart-warming dining experiences at equally endearing prices. You will enjoy unlimited, top-quality fresh pork in paper-thin slices dipped in a selection of delicious soup bases.",
+  "delivery": false,
+  "created_at": "2014-08-13 08:59:54 UTC",
+  "updated_at": "2014-08-13 08:59:54 UTC",
+  "properties": [
+    {
+      "name": "Type",
+      "value": "SUKI SET"
+    },
+    {
+      "name": "INGREDIENT",
+      "value": "MEAT, VEGETABLE ETC..."
+    }
+  ],
+  "photos": [
+    {
+      "id": 189,
+      "content_type": "image/jpeg",
+      "attachment_meta": {
+        "original": {
+          "width": 1440,
+          "height": 956,
+          "url": "/attachments/images/foods/original/23868.jpeg"
+        },
+        "large": {
+          "width": 994,
+          "height": 660,
+          "url": "/attachments/images/foods/large/23868.jpeg"
+        },
+        "medium": {
+          "width": 364,
+          "height": 242,
+          "url": "/attachments/images/foods/medium/23868.jpeg"
+        },
+        "small": {
+          "width": 196,
+          "height": 130,
+          "url": "/attachments/images/foods/small/23868.jpeg"
+        },
+        "thumbnail": {
+          "width": 50,
+          "height": 50,
+          "url": "/attachments/images/foods/thumbnail/23868.jpeg"
+        }
+      }
+    },
+    {
+      "id": 190,
+      "content_type": "image/jpeg",
+      "attachment_meta": {
+        "original": {
+          "width": 1440,
+          "height": 956,
+          "url": "/attachments/images/foods/original/23869.jpeg"
+        },
+        "large": {
+          "width": 994,
+          "height": 660,
+          "url": "/attachments/images/foods/large/23869.jpeg"
+        },
+        "medium": {
+          "width": 364,
+          "height": 242,
+          "url": "/attachments/images/foods/medium/23869.jpeg"
+        },
+        "small": {
+          "width": 196,
+          "height": 130,
+          "url": "/attachments/images/foods/small/23869.jpeg"
+        },
+        "thumbnail": {
+          "width": 50,
+          "height": 50,
+          "url": "/attachments/images/foods/thumbnail/23869.jpeg"
+        }
+      }
+    },
+    {
+      "id": 191,
+      "content_type": "image/jpeg",
+      "attachment_meta": {
+        "original": {
+          "width": 1440,
+          "height": 956,
+          "url": "/attachments/images/foods/original/23870.jpeg"
+        },
+        "large": {
+          "width": 994,
+          "height": 660,
+          "url": "/attachments/images/foods/large/23870.jpeg"
+        },
+        "medium": {
+          "width": 364,
+          "height": 242,
+          "url": "/attachments/images/foods/medium/23870.jpeg"
+        },
+        "small": {
+          "width": 196,
+          "height": 130,
+          "url": "/attachments/images/foods/small/23870.jpeg"
+        },
+        "thumbnail": {
+          "width": 50,
+          "height": 50,
+          "url": "/attachments/images/foods/thumbnail/23870.jpeg"
+        }
+      }
+    }
+  ]
+}

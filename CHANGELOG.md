@@ -1,5 +1,19 @@
 # Overview
 
+## 2015-06-16
+
+* Rename `#url` on `menu/category` object to `#foods_url`.
+* Product has many categories, and they are optional.
+* Food has one category, it is optional.
+* Add `within` filter. Creates a collection-aware product/food URL by prepending "/product-categories/collection-handle/" or "/menu-categories/collection-handle" to a product/food URL, where "collection-handle" is the handle, eg: 19-electronics, of the collection that is currently being viewed.
+
+Input:
+  ``<a href="{{ product.url | within: product_category }}">{{ product.name }}</a>``
+
+Output:
+  ``<a href="/product-categories/19-electronics/products/1-microwave">Microwave</a>``
+
+
 ## 2015-05-22
 
 * Add `google_remarketing_tag`.
