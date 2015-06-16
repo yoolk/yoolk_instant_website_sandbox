@@ -8,10 +8,10 @@
 * Add `within` filter. Creates a collection-aware product/food URL by prepending "/product-categories/collection-handle/" or "/menu-categories/collection-handle" to a product/food URL, where "collection-handle" is the handle, eg: 19-electronics, of the collection that is currently being viewed.
 
 Input:
-  <a href="{{ product.url | within: product_category }}">{{ product.name }}</a>
+  ``<a href="{{ product.url | within: product_category }}">{{ product.name }}</a>``
 
 Output:
-  <a href="/product-categories/19-electronics/products/1-microwave">Microwave</a>
+  ``<a href="/product-categories/19-electronics/products/1-microwave">Microwave</a>``
 
 
 ## 2015-05-22
