@@ -36,7 +36,7 @@
               <ul class="sub-nav">
                 {% for food_category in listing.food_categories %}
                   <li>
-                    <a href="{{ food_category.url }}" {% if food_category.current? %}class="active"{% endif %}>{{ food_category.name }}</a>
+                    <a href="{{ food_category.foods_url }}" {% if food_category.current? %}class="active"{% endif %}>{{ food_category.name }}</a>
                   </li>
                 {% endfor %}
               </ul>
