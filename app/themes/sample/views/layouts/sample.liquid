@@ -15,6 +15,6 @@
 
   {{ 'sample/all' | javascript_include_tag }}
   {% yield 'map' %}
-  {% google_remarketing_tag %}
+  {{ content_for_closing_body }}
 </body>
 </html>

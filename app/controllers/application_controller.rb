@@ -21,6 +21,11 @@ class ApplicationController < ActionController::Base
     @theme_color_url
   end
 
+  def preview_mode?
+    request.host.in?(['iw.yoolk.com', 'iwstaging.yoolk.com', 'localhost']) && params[:alias_id].present?
+  end
+  helper_method :preview_mode?
+
   protected
 
     def seo
@@ -102,7 +107,13 @@ class ApplicationController < ActionController::Base
       Yoolk::Liquid::ContentHeader.new(@listing, view_context, seo).to_s
     end
 
+    def content_for_closing_body
+      Yoolk::Liquid::ContentClosingBody.new(@listing, view_context).to_s
+    end
+
     def liquid_assigns
-      view_assigns.merge('content_for_header' => content_for_header)
+      view_assigns.merge(
+        'content_for_header' => content_for_header,
+        'content_for_closing_body' => content_for_closing_body)
     end
 end

@@ -6,6 +6,8 @@
 * Product has many categories, and they are optional.
 * Food has one category, it is optional.
 * Add `within` filter. Creates a collection-aware product/food URL by prepending "/product-categories/collection-handle/" or "/menu-categories/collection-handle" to a product/food URL, where "collection-handle" is the handle, eg: 19-electronics, of the collection that is currently being viewed.
+* Add `google_conversion_tag`
+
 
 Input:
   ``<a href="{{ product.url | within: product_category }}">{{ product.name }}</a>``
