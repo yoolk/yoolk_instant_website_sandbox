@@ -6,6 +6,8 @@ A sandbox rails application that allows you to develop and run your instant webs
 
 ## Installation
 
+It's required you have install ruby and its dependencies correctly. Follow this blog post by [Ryan Bigg](http://ryanbigg.com/2010/12/ubuntu-ruby-rvm-rails-and-you/) if you are new to ruby. Basically, this sandbox doesn't require the knowledge of Ruby and Rails.
+
 For the first time, clone this repo
 
     $ git clone git@github.com:yoolk/yoolk_instant_website_sandbox.git
@@ -17,8 +19,6 @@ Because this repo is new and young, please keep your local repo up to date with 
 
     $ git pull
     $ git submodule update
-
-It's required you have install ruby and its dependencies correctly. Follow this blog post by [Ryan Bigg](http://ryanbigg.com/2010/12/ubuntu-ruby-rvm-rails-and-you/) if you are new to ruby. Basically, this sandbox doesn't require the knowledge of Ruby and Rails.
 
 There is a [sample theme](https://github.com/yoolk/yoolk_instant_website_sandbox/tree/master/app/themes/sample) inside this repo, which you can browse and see the code.
 
