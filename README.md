@@ -9,6 +9,7 @@ A sandbox rails application that allows you to develop and run your instant webs
 For the first time, clone this repo
 
     $ git clone git@github.com:yoolk/yoolk_instant_website_sandbox.git
+    $ cd yoolk_instant_website_sandbox
     $ git submodule init
     $ git submodule update
 
