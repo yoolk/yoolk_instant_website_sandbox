@@ -739,7 +739,7 @@
     "is_live": false,
     "is_active": true,
     "free_plan": false,
-    "color_name": "gray",
+    "color_name": "",
     "google_webmaster_tag": "<meta name=\"google-site-verification\" content=\"WobF2LRSqa58034R-V2ej2omLROve3-812S7lz3Oyo8\" />",
     "favicon": {
        "content_type": "image/x-icon",
@@ -761,68 +761,7 @@
          }
        }
     },
-    "pages": [
-      {
-        "name": "Home",
-        "meta_title": "Yellow Tower Co., Ltd - office Rental Service - Cambodia Phnom Penh",
-        "meta_description": "Office Rental Services, Phnom Penh by Yellow Tower Co., Ltd.: Fresh and Clean Air. Constant Breeze. Lots of Natural Light. Surrounded by Nature.",
-        "meta_keyword": "Yellow Tower Co., Ltd., Phnom Penh, Property Investment, Office Lease, Office Space, Commercial Lease, Office Building, Commercial Property, International Property, Overseas Property, Commercial Real Estate, Office Rental Services, Office Rental",
-        "display_order": 0,
-        "template_page": {
-          "name": "Home"
-        }
-      },
-      {
-        "name": "Leaflet",
-        "meta_title": null,
-        "meta_description": null,
-        "meta_keyword": null,
-        "display_order": 1,
-        "template_page": {
-          "name": "Brochures"
-        }
-      },
-      {
-        "name": "Ablums",
-        "meta_title": null,
-        "meta_description": null,
-        "meta_keyword": null,
-        "display_order": 2,
-        "template_page": {
-          "name": "Galleries"
-        }
-      },
-      {
-        "name": "Products",
-        "meta_title": null,
-        "meta_description": null,
-        "meta_keyword": null,
-        "display_order": 3,
-        "template_page": {
-          "name": "Products"
-        }
-      },
-      {
-        "name": "Foods",
-        "meta_title": null,
-        "meta_description": null,
-        "meta_keyword": null,
-        "display_order": 4,
-        "template_page": {
-          "name": "Menu"
-        }
-      },
-      {
-        "name": "Staffs",
-        "meta_title": null,
-        "meta_description": null,
-        "meta_keyword": null,
-        "display_order": 5,
-        "template_page": {
-          "name": "People"
-        }
-      }
-    ],
+    "pages": [],
     "template": {
       "id": 1,
       "name": "sample",
@@ -856,53 +795,42 @@
           "display_order": 0
         },
         {
-          "name": "Map",
+          "name": "About Us",
           "display_order": 1
         },
         {
-          "name": "About Us",
+          "name": "Menu",
           "display_order": 2
         },
         {
-          "name": "Brochures",
+          "name": "Galleries",
           "display_order": 3
         },
         {
-          "name": "Galleries",
+          "name": "People",
           "display_order": 4
         },
         {
-          "name": "Products",
+          "name": "Announcements",
           "display_order": 5
         },
         {
-          "name": "Services",
+          "name": "Contact us",
           "display_order": 6
         },
         {
-          "name": "Menu",
+          "name": "Links",
           "display_order": 7
         },
         {
-          "name": "People",
+          "name": "Attachments",
           "display_order": 8
         },
         {
-          "name": "Reservation",
+          "name": "Videos",
           "display_order": 9
-        },
-        {
-          "name": "Feedback",
-          "display_order": 10
-        },
-        {
-          "name": "Contact Us",
-          "display_order": 11
-        },
-        {
-          "name": "Announcements",
-          "display_order": 12
         }
+
       ],
       "thumbnail": {
         "content_type": "image/png",
