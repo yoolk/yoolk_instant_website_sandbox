@@ -1,7 +1,10 @@
 {
   "id": 7,
   "name": "DRESSED FIELDSTONE",
-  "price": 10.2,
+  "price": 4.2,
+  "sale_price": 4.00,
+  "show_price": true,
+  "quantity": 23,
   "description": "The rugged look of Dressed Fieldstone complements any natural environment. Its rich texture and range of color enhance a multitude of architectural designs",
   "delivery": false,
   "created_at": "2014-08-13 08:59:54 UTC",
