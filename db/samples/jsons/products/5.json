@@ -4,7 +4,10 @@
 {
   "id": 5,
   "name": "SLATE 002",
-  "price": 10.2,
+  "price": 290.2,
+  "sale_price": 220.99,
+  "hide_price": false,
+  "quantity": 9,
   "description": "Country Slate is designed to complement the inherent beauty in French and Tudor architectural styles. Available in a broad range of colors, it faithfully captures the appearance of natural slate.",
   "delivery": false,
   "created_at": "2014-08-13 08:59:54 UTC",

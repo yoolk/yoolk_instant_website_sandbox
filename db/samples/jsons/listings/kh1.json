@@ -739,7 +739,7 @@
     "is_live": false,
     "is_active": true,
     "free_plan": false,
-    "color_name": "gray",
+    "color_name": "",
     "google_webmaster_tag": "<meta name=\"google-site-verification\" content=\"WobF2LRSqa58034R-V2ej2omLROve3-812S7lz3Oyo8\" />",
     "favicon": {
        "content_type": "image/x-icon",

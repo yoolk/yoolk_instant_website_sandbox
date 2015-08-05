@@ -4,7 +4,10 @@
 {
   "id": 2,
   "name": "EL CAMINO BLEND 001",
-  "price": 10.3,
+  "price": 9.5,
+  "sale_price": 7.90,
+  "hide_price": false,
+  "quantity": 10,
   "description": "Featuring Flat bottom with raised sides, they represent a classical European aesthetics and style and allow for design flexibility. Romano Pan Can also be used with Standard 2- Piece Mission, Monarch and Cielo Profiles.",
   "delivery": false,
   "created_at": "2014-08-13 08:59:54 UTC",
