@@ -1,3 +1,6 @@
+// 20150805094945
+// https://raw.githubusercontent.com/yoolk/yoolk_instant_website_sandbox/0515a6f91e64f0e86cbbbfff2ed54ca23ee627f0/db/samples/jsons/products/8.json
+
 {
   "id": 8,
   "name": "EUROPEAN CASTLE STONE",
@@ -6,7 +9,9 @@
   "delivery": false,
   "created_at": "2014-08-13 08:59:54 UTC",
   "updated_at": "2014-08-13 08:59:54 UTC",
-  "product_category_ids": [ 3 ],
+  "product_category_ids": [
+    3
+  ],
   "features": [
     {
       "name": "TYPE",
@@ -27,29 +32,29 @@
       "content_type": "image/png",
       "attachment_meta": {
         "original": {
-          "width": 994,
-          "height": 643,
-          "url": "/attachments/images/products/original/120.jpeg"
+          "width": 1198,
+          "height": 1198,
+          "url": "/attachments/images/products/original/120.jpg"
         },
         "large": {
           "width": 994,
-          "height": 643,
-          "url": "/attachments/images/products/large/120.jpeg"
+          "height": 994,
+          "url": "/attachments/images/products/large/120.jpg"
         },
         "medium": {
           "width": 350,
-          "height": 226,
-          "url": "/attachments/images/products/medium/120.jpeg"
+          "height": 350,
+          "url": "/attachments/images/products/medium/120.jpg"
         },
         "small": {
           "width": 186,
-          "height": 120,
-          "url": "/attachments/images/products/small/120.jpeg"
+          "height": 186,
+          "url": "/attachments/images/products/small/120.jpg"
         },
         "thumbnail": {
           "width": 49,
-          "height": 32,
-          "url": "/attachments/images/products/thumbnail/120.jpeg"
+          "height": 49,
+          "url": "/attachments/images/products/thumbnail/120.jpg"
         }
       }
     },
@@ -58,29 +63,29 @@
       "content_type": "image/jpeg",
       "attachment_meta": {
         "original": {
-          "width": 678,
-          "height": 677,
-          "url": "/attachments/images/products/original/121.jpeg"
+          "width": 1280,
+          "height": 1280,
+          "url": "/attachments/images/products/original/121.jpg"
         },
         "large": {
-          "width": 678,
-          "height": 677,
-          "url": "/attachments/images/products/large/121.jpeg"
+          "width": 994,
+          "height": 994,
+          "url": "/attachments/images/products/large/121.jpg"
         },
         "medium": {
           "width": 350,
-          "height": 349,
-          "url": "/attachments/images/products/medium/121.jpeg"
+          "height": 350,
+          "url": "/attachments/images/products/medium/121.jpg"
         },
         "small": {
           "width": 186,
           "height": 186,
-          "url": "/attachments/images/products/small/121.jpeg"
+          "url": "/attachments/images/products/small/121.jpg"
         },
         "thumbnail": {
           "width": 49,
           "height": 49,
-          "url": "/attachments/images/products/thumbnail/121.jpeg"
+          "url": "/attachments/images/products/thumbnail/121.jpg"
         }
       }
     }

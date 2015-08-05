@@ -1,3 +1,6 @@
+// 20150805094851
+// https://raw.githubusercontent.com/yoolk/yoolk_instant_website_sandbox/0515a6f91e64f0e86cbbbfff2ed54ca23ee627f0/db/samples/jsons/products/5.json
+
 {
   "id": 5,
   "name": "SLATE 002",
@@ -6,7 +9,9 @@
   "delivery": false,
   "created_at": "2014-08-13 08:59:54 UTC",
   "updated_at": "2014-08-13 08:59:54 UTC",
-  "product_category_ids": [ 1 ],
+  "product_category_ids": [
+    1
+  ],
   "features": [
     {
       "name": "TYPE",
@@ -23,29 +28,29 @@
       "content_type": "image/png",
       "attachment_meta": {
         "original": {
-          "width": 741,
-          "height": 574,
-          "url": "/attachments/images/products/original/112.jpeg"
+          "width": 640,
+          "height": 640,
+          "url": "/attachments/images/products/original/112.jpg"
         },
         "large": {
-          "width": 741,
-          "height": 574,
-          "url": "/attachments/images/products/large/112.jpeg"
+          "width": 640,
+          "height": 640,
+          "url": "/attachments/images/products/large/112.jpg"
         },
         "medium": {
           "width": 350,
-          "height": 271,
-          "url": "/attachments/images/products/medium/112.jpeg"
+          "height": 350,
+          "url": "/attachments/images/products/medium/112.jpg"
         },
         "small": {
           "width": 186,
-          "height": 144,
-          "url": "/attachments/images/products/small/112.jpeg"
+          "height": 186,
+          "url": "/attachments/images/products/small/112.jpg"
         },
         "thumbnail": {
           "width": 49,
-          "height": 38,
-          "url": "/attachments/images/products/thumbnail/112.jpeg"
+          "height": 49,
+          "url": "/attachments/images/products/thumbnail/112.jpg"
         }
       }
     },
@@ -54,29 +59,29 @@
       "content_type": "image/jpeg",
       "attachment_meta": {
         "original": {
-          "width": 750,
-          "height": 675,
-          "url": "/attachments/images/products/original/113.jpeg"
+          "width": 640,
+          "height": 640,
+          "url": "/attachments/images/products/original/113.jpg"
         },
         "large": {
-          "width": 750,
-          "height": 675,
-          "url": "/attachments/images/products/large/113.jpeg"
+          "width": 640,
+          "height": 640,
+          "url": "/attachments/images/products/large/113.jpg"
         },
         "medium": {
           "width": 350,
-          "height": 315,
-          "url": "/attachments/images/products/medium/113.jpeg"
+          "height": 350,
+          "url": "/attachments/images/products/medium/113.jpg"
         },
         "small": {
           "width": 186,
-          "height": 167,
-          "url": "/attachments/images/products/small/113.jpeg"
+          "height": 186,
+          "url": "/attachments/images/products/small/113.jpg"
         },
         "thumbnail": {
           "width": 49,
-          "height": 44,
-          "url": "/attachments/images/products/thumbnail/113.jpeg"
+          "height": 49,
+          "url": "/attachments/images/products/thumbnail/113.jpg"
         }
       }
     },
@@ -85,29 +90,29 @@
       "content_type": "image/jpeg",
       "attachment_meta": {
         "original": {
-          "width": 994,
-          "height": 994,
-          "url": "/attachments/images/products/original/114.jpeg"
+          "width": 933,
+          "height": 933,
+          "url": "/attachments/images/products/original/114.jpg"
         },
         "large": {
-          "width": 994,
-          "height": 994,
-          "url": "/attachments/images/products/large/114.jpeg"
+          "width": 933,
+          "height": 933,
+          "url": "/attachments/images/products/large/114.jpg"
         },
         "medium": {
           "width": 350,
           "height": 350,
-          "url": "/attachments/images/products/medium/114.jpeg"
+          "url": "/attachments/images/products/medium/114.jpg"
         },
         "small": {
           "width": 186,
           "height": 186,
-          "url": "/attachments/images/products/small/114.jpeg"
+          "url": "/attachments/images/products/small/114.jpg"
         },
         "thumbnail": {
           "width": 49,
           "height": 49,
-          "url": "/attachments/images/products/thumbnail/114.jpeg"
+          "url": "/attachments/images/products/thumbnail/114.jpg"
         }
       }
     }

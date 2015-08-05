@@ -1,3 +1,6 @@
+// 20150805094816
+// https://raw.githubusercontent.com/yoolk/yoolk_instant_website_sandbox/0515a6f91e64f0e86cbbbfff2ed54ca23ee627f0/db/samples/jsons/products/3.json
+
 {
   "id": 3,
   "name": "SANDSTORM 002",
@@ -6,7 +9,9 @@
   "delivery": false,
   "created_at": "2014-08-13 08:59:54 UTC",
   "updated_at": "2014-08-13 08:59:54 UTC",
-  "product_category_ids": [ 1 ],
+  "product_category_ids": [
+    1
+  ],
   "features": [
     {
       "name": "TYPE",
@@ -27,29 +32,29 @@
       "content_type": "image/png",
       "attachment_meta": {
         "original": {
-          "width": 833,
-          "height": 746,
-          "url": "/attachments/images/products/original/107.jpeg"
+          "width": 1601,
+          "height": 1025,
+          "url": "/attachments/images/products/original/107.jpg"
         },
         "large": {
-          "width": 833,
-          "height": 746,
-          "url": "/attachments/images/products/large/107.jpeg"
+          "width": 994,
+          "height": 636,
+          "url": "/attachments/images/products/large/107.jpg"
         },
         "medium": {
           "width": 350,
-          "height": 313,
-          "url": "/attachments/images/products/medium/107.jpeg"
+          "height": 224,
+          "url": "/attachments/images/products/medium/107.jpg"
         },
         "small": {
           "width": 186,
-          "height": 167,
-          "url": "/attachments/images/products/small/107.jpeg"
+          "height": 119,
+          "url": "/attachments/images/products/small/107.jpg"
         },
         "thumbnail": {
           "width": 49,
-          "height": 44,
-          "url": "/attachments/images/products/thumbnail/107.jpeg"
+          "height": 31,
+          "url": "/attachments/images/products/thumbnail/107.jpg"
         }
       }
     },
@@ -58,29 +63,29 @@
       "content_type": "image/jpeg",
       "attachment_meta": {
         "original": {
-          "width": 904,
-          "height": 814,
-          "url": "/attachments/images/products/original/108.jpeg"
+          "width": 750,
+          "height": 1125,
+          "url": "/attachments/images/products/original/108.jpg"
         },
         "large": {
-          "width": 904,
-          "height": 814,
-          "url": "/attachments/images/products/large/108.jpeg"
+          "width": 750,
+          "height": 1125,
+          "url": "/attachments/images/products/large/108.jpg"
         },
         "medium": {
           "width": 350,
-          "height": 315,
-          "url": "/attachments/images/products/medium/108.jpeg"
+          "height": 525,
+          "url": "/attachments/images/products/medium/108.jpg"
         },
         "small": {
           "width": 186,
-          "height": 167,
-          "url": "/attachments/images/products/small/108.jpeg"
+          "height": 279,
+          "url": "/attachments/images/products/small/108.jpg"
         },
         "thumbnail": {
           "width": 49,
-          "height": 44,
-          "url": "/attachments/images/products/thumbnail/108.jpeg"
+          "height": 73,
+          "url": "/attachments/images/products/thumbnail/108.jpg"
         }
       }
     }

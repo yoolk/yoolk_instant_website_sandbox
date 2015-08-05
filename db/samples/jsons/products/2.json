@@ -1,3 +1,6 @@
+// 20150805094801
+// https://raw.githubusercontent.com/yoolk/yoolk_instant_website_sandbox/0515a6f91e64f0e86cbbbfff2ed54ca23ee627f0/db/samples/jsons/products/2.json
+
 {
   "id": 2,
   "name": "EL CAMINO BLEND 001",
@@ -6,7 +9,9 @@
   "delivery": false,
   "created_at": "2014-08-13 08:59:54 UTC",
   "updated_at": "2014-08-13 08:59:54 UTC",
-  "product_category_ids": [ 1 ],
+  "product_category_ids": [
+    1
+  ],
   "features": [
     {
       "name": "TYPE",
@@ -23,29 +28,29 @@
       "content_type": "image/png",
       "attachment_meta": {
         "original": {
-          "width": 575,
-          "height": 575,
-          "url": "/attachments/images/products/original/104.jpeg"
+          "width": 751,
+          "height": 557,
+          "url": "/attachments/images/products/original/104.jpg"
         },
         "large": {
-          "width": 575,
-          "height": 575,
-          "url": "/attachments/images/products/large/104.jpeg"
+          "width": 751,
+          "height": 557,
+          "url": "/attachments/images/products/large/104.jpg"
         },
         "medium": {
           "width": 350,
-          "height": 350,
-          "url": "/attachments/images/products/medium/104.jpeg"
+          "height": 260,
+          "url": "/attachments/images/products/medium/104.jpg"
         },
         "small": {
           "width": 186,
-          "height": 186,
-          "url": "/attachments/images/products/small/104.jpeg"
+          "height": 138,
+          "url": "/attachments/images/products/small/104.jpg"
         },
         "thumbnail": {
           "width": 49,
-          "height": 49,
-          "url": "/attachments/images/products/thumbnail/104.jpeg"
+          "height": 36,
+          "url": "/attachments/images/products/thumbnail/104.jpg"
         }
       }
     },
@@ -54,29 +59,29 @@
       "content_type": "image/jpeg",
       "attachment_meta": {
         "original": {
-          "width": 575,
-          "height": 575,
-          "url": "/attachments/images/products/original/105.jpeg"
+          "width": 1000,
+          "height": 1000,
+          "url": "/attachments/images/products/original/105.jpg"
         },
         "large": {
-          "width": 575,
-          "height": 575,
-          "url": "/attachments/images/products/large/105.jpeg"
+          "width": 994,
+          "height": 994,
+          "url": "/attachments/images/products/large/105.jpg"
         },
         "medium": {
           "width": 350,
           "height": 350,
-          "url": "/attachments/images/products/medium/105.jpeg"
+          "url": "/attachments/images/products/medium/105.jpg"
         },
         "small": {
           "width": 186,
           "height": 186,
-          "url": "/attachments/images/products/small/105.jpeg"
+          "url": "/attachments/images/products/small/105.jpg"
         },
         "thumbnail": {
           "width": 49,
           "height": 49,
-          "url": "/attachments/images/products/thumbnail/105.jpeg"
+          "url": "/attachments/images/products/thumbnail/105.jpg"
         }
       }
     },
@@ -85,29 +90,29 @@
       "content_type": "image/jpeg",
       "attachment_meta": {
         "original": {
-          "width": 994,
-          "height": 994,
-          "url": "/attachments/images/products/original/106.jpeg"
+          "width": 640,
+          "height": 640,
+          "url": "/attachments/images/products/original/106.jpg"
         },
         "large": {
-          "width": 994,
-          "height": 994,
-          "url": "/attachments/images/products/large/106.jpeg"
+          "width": 640,
+          "height": 640,
+          "url": "/attachments/images/products/large/106.jpg"
         },
         "medium": {
           "width": 350,
           "height": 350,
-          "url": "/attachments/images/products/medium/106.jpeg"
+          "url": "/attachments/images/products/medium/106.jpg"
         },
         "small": {
           "width": 186,
           "height": 186,
-          "url": "/attachments/images/products/small/106.jpeg"
+          "url": "/attachments/images/products/small/106.jpg"
         },
         "thumbnail": {
           "width": 49,
           "height": 49,
-          "url": "/attachments/images/products/thumbnail/106.jpeg"
+          "url": "/attachments/images/products/thumbnail/106.jpg"
         }
       }
     }

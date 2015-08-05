@@ -1,3 +1,6 @@
+// 20150805094908
+// https://raw.githubusercontent.com/yoolk/yoolk_instant_website_sandbox/0515a6f91e64f0e86cbbbfff2ed54ca23ee627f0/db/samples/jsons/products/6.json
+
 {
   "id": 6,
   "name": "SALISBURY COLLECTION",
@@ -6,7 +9,9 @@
   "delivery": false,
   "created_at": "2014-08-13 08:59:54 UTC",
   "updated_at": "2014-08-13 08:59:54 UTC",
-  "product_category_ids": [ 2 ],
+  "product_category_ids": [
+    2
+  ],
   "features": [
     {
       "name": "TYPE",
@@ -23,29 +28,29 @@
       "content_type": "image/png",
       "attachment_meta": {
         "original": {
-          "width": 994,
-          "height": 768,
-          "url": "/attachments/images/products/original/115.jpeg"
+          "width": 1000,
+          "height": 1000,
+          "url": "/attachments/images/products/original/115.jpg"
         },
         "large": {
           "width": 994,
-          "height": 768,
-          "url": "/attachments/images/products/large/115.jpeg"
+          "height": 994,
+          "url": "/attachments/images/products/large/115.jpg"
         },
         "medium": {
           "width": 350,
-          "height": 270,
-          "url": "/attachments/images/products/medium/115.jpeg"
+          "height": 350,
+          "url": "/attachments/images/products/medium/115.jpg"
         },
         "small": {
           "width": 186,
-          "height": 144,
-          "url": "/attachments/images/products/small/115.jpeg"
+          "height": 186,
+          "url": "/attachments/images/products/small/115.jpg"
         },
         "thumbnail": {
           "width": 49,
-          "height": 38,
-          "url": "/attachments/images/products/thumbnail/115.jpeg"
+          "height": 49,
+          "url": "/attachments/images/products/thumbnail/115.jpg"
         }
       }
     },
@@ -54,29 +59,29 @@
       "content_type": "image/jpeg",
       "attachment_meta": {
         "original": {
-          "width": 575,
-          "height": 575,
-          "url": "/attachments/images/products/original/116.jpeg"
+          "width": 764,
+          "height": 764,
+          "url": "/attachments/images/products/original/116.jpg"
         },
         "large": {
-          "width": 575,
-          "height": 575,
-          "url": "/attachments/images/products/large/116.jpeg"
+          "width": 764,
+          "height": 764,
+          "url": "/attachments/images/products/large/116.jpg"
         },
         "medium": {
           "width": 350,
           "height": 350,
-          "url": "/attachments/images/products/medium/116.jpeg"
+          "url": "/attachments/images/products/medium/116.jpg"
         },
         "small": {
           "width": 186,
           "height": 186,
-          "url": "/attachments/images/products/small/116.jpeg"
+          "url": "/attachments/images/products/small/116.jpg"
         },
         "thumbnail": {
           "width": 49,
           "height": 49,
-          "url": "/attachments/images/products/thumbnail/116.jpeg"
+          "url": "/attachments/images/products/thumbnail/116.jpg"
         }
       }
     }

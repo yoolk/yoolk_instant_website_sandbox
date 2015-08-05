@@ -1,3 +1,6 @@
+// 20150805094727
+// https://raw.githubusercontent.com/yoolk/yoolk_instant_website_sandbox/0515a6f91e64f0e86cbbbfff2ed54ca23ee627f0/db/samples/jsons/products/1.json
+
 {
   "id": 1,
   "name": "SANDSTORM 001",
@@ -6,7 +9,10 @@
   "delivery": false,
   "created_at": "2014-08-13 08:59:54 UTC",
   "updated_at": "2014-08-13 08:59:54 UTC",
-  "product_category_ids": [ 1, 2 ],
+  "product_category_ids": [
+    1,
+    2
+  ],
   "features": [
     {
       "name": "TYPE",
@@ -23,29 +29,29 @@
       "content_type": "image/png",
       "attachment_meta": {
         "original": {
-          "width": 714,
-          "height": 639,
-          "url": "/attachments/images/products/original/101.jpeg"
+          "width": 1000,
+          "height": 1000,
+          "url": "/attachments/images/products/original/101.jpg"
         },
         "large": {
-          "width": 714,
-          "height": 639,
-          "url": "/attachments/images/products/large/101.jpeg"
+          "width": 994,
+          "height": 994,
+          "url": "/attachments/images/products/large/101.jpg"
         },
         "medium": {
           "width": 350,
-          "height": 313,
-          "url": "/attachments/images/products/medium/101.jpeg"
+          "height": 350,
+          "url": "/attachments/images/products/medium/101.jpg"
         },
         "small": {
           "width": 186,
-          "height": 166,
-          "url": "/attachments/images/products/small/101.jpeg"
+          "height": 186,
+          "url": "/attachments/images/products/small/101.jpg"
         },
         "thumbnail": {
           "width": 49,
-          "height": 44,
-          "url": "/attachments/images/products/thumbnail/101.jpeg"
+          "height": 49,
+          "url": "/attachments/images/products/thumbnail/101.jpg"
         }
       }
     },
@@ -54,29 +60,29 @@
       "content_type": "image/jpeg",
       "attachment_meta": {
         "original": {
-          "width": 575,
-          "height": 575,
-          "url": "/attachments/images/products/original/102.jpeg"
+          "width": 704,
+          "height": 704,
+          "url": "/attachments/images/products/original/102.jpg"
         },
         "large": {
-          "width": 575,
-          "height": 575,
-          "url": "/attachments/images/products/large/102.jpeg"
+          "width": 704,
+          "height": 704,
+          "url": "/attachments/images/products/large/102.jpg"
         },
         "medium": {
           "width": 350,
           "height": 350,
-          "url": "/attachments/images/products/medium/102.jpeg"
+          "url": "/attachments/images/products/medium/102.jpg"
         },
         "small": {
           "width": 186,
           "height": 186,
-          "url": "/attachments/images/products/small/102.jpeg"
+          "url": "/attachments/images/products/small/102.jpg"
         },
         "thumbnail": {
           "width": 49,
           "height": 49,
-          "url": "/attachments/images/products/thumbnail/102.jpeg"
+          "url": "/attachments/images/products/thumbnail/102.jpg"
         }
       }
     },
@@ -85,29 +91,29 @@
       "content_type": "image/jpeg",
       "attachment_meta": {
         "original": {
-          "width": 575,
-          "height": 575,
-          "url": "/attachments/images/products/original/103.jpeg"
+          "width": 800,
+          "height": 800,
+          "url": "/attachments/images/products/original/103.jpg"
         },
         "large": {
-          "width": 575,
-          "height": 575,
-          "url": "/attachments/images/products/large/103.jpeg"
+          "width": 800,
+          "height": 800,
+          "url": "/attachments/images/products/large/103.jpg"
         },
         "medium": {
           "width": 350,
           "height": 350,
-          "url": "/attachments/images/products/medium/103.jpeg"
+          "url": "/attachments/images/products/medium/103.jpg"
         },
         "small": {
           "width": 186,
           "height": 186,
-          "url": "/attachments/images/products/small/103.jpeg"
+          "url": "/attachments/images/products/small/103.jpg"
         },
         "thumbnail": {
           "width": 49,
           "height": 49,
-          "url": "/attachments/images/products/thumbnail/103.jpeg"
+          "url": "/attachments/images/products/thumbnail/103.jpg"
         }
       }
     }

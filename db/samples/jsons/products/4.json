@@ -1,3 +1,6 @@
+// 20150805094831
+// https://raw.githubusercontent.com/yoolk/yoolk_instant_website_sandbox/0515a6f91e64f0e86cbbbfff2ed54ca23ee627f0/db/samples/jsons/products/4.json
+
 {
   "id": 4,
   "name": "SLATE 001",
@@ -6,7 +9,9 @@
   "delivery": false,
   "created_at": "2014-08-13 08:59:54 UTC",
   "updated_at": "2014-08-13 08:59:54 UTC",
-  "product_category_ids": [ 1 ],
+  "product_category_ids": [
+    1
+  ],
   "features": [
     {
       "name": "TYPE",
@@ -23,29 +28,29 @@
       "content_type": "image/png",
       "attachment_meta": {
         "original": {
-          "width": 833,
-          "height": 746,
-          "url": "/attachments/images/products/original/109.jpeg"
+          "width": 1280,
+          "height": 1280,
+          "url": "/attachments/images/products/original/109.jpg"
         },
         "large": {
-          "width": 833,
-          "height": 746,
-          "url": "/attachments/images/products/large/109.jpeg"
+          "width": 994,
+          "height": 994,
+          "url": "/attachments/images/products/large/109.jpg"
         },
         "medium": {
           "width": 350,
-          "height": 313,
-          "url": "/attachments/images/products/medium/109.jpeg"
+          "height": 350,
+          "url": "/attachments/images/products/medium/109.jpg"
         },
         "small": {
           "width": 186,
-          "height": 167,
-          "url": "/attachments/images/products/small/109.jpeg"
+          "height": 186,
+          "url": "/attachments/images/products/small/109.jpg"
         },
         "thumbnail": {
           "width": 49,
-          "height": 44,
-          "url": "/attachments/images/products/thumbnail/109.jpeg"
+          "height": 49,
+          "url": "/attachments/images/products/thumbnail/109.jpg"
         }
       }
     },
@@ -54,29 +59,29 @@
       "content_type": "image/jpeg",
       "attachment_meta": {
         "original": {
-          "width": 903,
-          "height": 813,
-          "url": "/attachments/images/products/original/110.jpeg"
+          "width": 736,
+          "height": 660,
+          "url": "/attachments/images/products/original/110.jpg"
         },
         "large": {
-          "width": 903,
-          "height": 813,
-          "url": "/attachments/images/products/large/110.jpeg"
+          "width": 736,
+          "height": 660,
+          "url": "/attachments/images/products/large/110.jpg"
         },
         "medium": {
           "width": 350,
-          "height": 315,
-          "url": "/attachments/images/products/medium/110.jpeg"
+          "height": 314,
+          "url": "/attachments/images/products/medium/110.jpg"
         },
         "small": {
           "width": 186,
           "height": 167,
-          "url": "/attachments/images/products/small/110.jpeg"
+          "url": "/attachments/images/products/small/110.jpg"
         },
         "thumbnail": {
           "width": 49,
           "height": 44,
-          "url": "/attachments/images/products/thumbnail/110.jpeg"
+          "url": "/attachments/images/products/thumbnail/110.jpg"
         }
       }
     },
@@ -85,29 +90,29 @@
       "content_type": "image/jpeg",
       "attachment_meta": {
         "original": {
-          "width": 994,
-          "height": 663,
-          "url": "/attachments/images/products/original/111.jpeg"
+          "width": 640,
+          "height": 640,
+          "url": "/attachments/images/products/original/111.jpg"
         },
         "large": {
-          "width": 994,
-          "height": 663,
-          "url": "/attachments/images/products/large/111.jpeg"
+          "width": 640,
+          "height": 640,
+          "url": "/attachments/images/products/large/111.jpg"
         },
         "medium": {
           "width": 350,
-          "height": 233,
-          "url": "/attachments/images/products/medium/111.jpeg"
+          "height": 350,
+          "url": "/attachments/images/products/medium/111.jpg"
         },
         "small": {
           "width": 186,
-          "height": 124,
-          "url": "/attachments/images/products/small/111.jpeg"
+          "height": 186,
+          "url": "/attachments/images/products/small/111.jpg"
         },
         "thumbnail": {
           "width": 49,
-          "height": 33,
-          "url": "/attachments/images/products/thumbnail/111.jpeg"
+          "height": 49,
+          "url": "/attachments/images/products/thumbnail/111.jpg"
         }
       }
     }
